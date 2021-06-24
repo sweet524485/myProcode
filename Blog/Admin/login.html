@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>登录页面</title>
+		<link rel="stylesheet" href="./Css/bootstrap.css" />
+		<link rel="stylesheet" href="./Css/login.css" />
+		<script type="text/javascript" src="./JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="./JS/login.js"></script>
+	</head>
+	<body>
+		<!-- 文字区不需要请连css部分代码一并删除 -->
+		<div class="login-box">
+			<div class="login-title">
+				欢迎“仇郯郯”主人登录
+			</div>
+			<div class="login-content">
+				<div class="login-list">
+					<div class="login-listName">
+						<span>*</span>主人姓名：
+					</div>
+					<input type="text" class="login-listInput login-listInput1"/>
+					<div class="login-listError login-listError1"></div>
+				</div>
+				<div class="login-list">
+					<div class="login-listName">
+						<span>*</span>主人密码：
+					</div>
+					<input type="text" class="login-listInput login-listInput2"/>
+					<div class="login-listError login-listError2"></div>
+				</div>
+				<div class="login-list">
+					<div class="login-listName">
+						<span>*</span>验证码：
+					</div>
+					<input type="text" class="login-listInput login-listInput3" style="width:130px;"/>
+					<img src="./Images/verify.png" class="login-listCode"/>
+					<div class="login-listChange">换一张</div>
+					<div class="login-listError login-listError3"></div>
+				</div>
+			</div>
+			<div class="login-list" style="padding-top:15px;">
+				<div class="login-listName"></div>
+				<input type="button" value="登&nbsp;录" class="login-btn" onclick="TestVerfy()"/>
+			</div>
+		</div>
+		<!-- 你可以添加个多“.slideshow-image”项目, 记得修改CSS -->
+		<div class="slideshow">
+			<div class="slideshow-image" style="background-image: url('Images/1.jpg')"></div>
+			<div class="slideshow-image" style="background-image: url('Images/2.jpg')"></div>
+			<div class="slideshow-image" style="background-image: url('Images/3.jpg')"></div>
+			<div class="slideshow-image" style="background-image: url('Images/4.jpg')"></div>
+		</div>
+	</body>
+</html>

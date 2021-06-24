@@ -1,0 +1,83 @@
+.qtt-move-container{
+	width:1000px;
+	height: 300px;
+	margin: 0 auto;
+	padding-top:5px;
+}
+.qtt-move-left{
+	width:600px;
+	height: 300px;
+	float: left;
+}
+.qtt-move-right {
+	float: right;
+    width: 380px;
+    height: 300px;
+    background: url(../Images/jiyu.jpg) no-repeat;
+    background-size:100%;
+    box-shadow: 0 3px 10px #999;
+    position: relative;
+    border-radius: 3px;
+}
+.banner-right-text {
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    right: 15px;
+    bottom: 50px;
+    color: #f7b0b0;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.qtt-move-content{
+	width:480px;
+	height: 300px;
+	float: left;
+	position: relative;
+}
+.qtt-move-conLi{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+}
+.qtt-move-conLi img{
+	width:100%;
+	height: 100%;
+}
+.switch-btn-box{
+	position: relative;
+    width: 110px;
+    float: right;
+    padding-right: 4px;
+}
+.hover-bg {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 124px;
+    height: 64px;
+    z-index: 10;
+    background: url(../Images/move-bg.png);
+}
+.switchBtnBox{
+	position: relative;
+	widows: 110px;
+	overflow: hidden;
+}
+.qtt-move-cLi {
+	display: block;
+    height: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+.qtt-move-cLi img {
+    width: 100px;
+    height: 50px;
+    display: block;
+}

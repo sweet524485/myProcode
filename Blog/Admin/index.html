@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>后台首页</title>
+		<link rel="stylesheet" href="./Css/bootstrap.css" />
+		<link rel="stylesheet" href="./Css/adminIndex.css" />
+		<script type="text/javascript" src="./JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="./JS/adminIndex.js"></script>
+	</head>
+	<body>
+		<div class="admin-main-container">
+			<div class="admin-main-left">
+				<div class="admin-main-logoBox">
+					<div class="admin-main-logo"></div>
+					<div class="admin-main-logoText">
+						欢迎<span	 id="admin">admin</span>
+					</div>
+				</div>
+				<div class="admin-main-menuBox">
+					<a href="#" target="iframe" class="admin-main-menu admin-main-menu1 active">
+						<i class="admin-main-menuIcon"></i>
+						<span class="admin-main-menuTxt">
+							博文管理
+						</span>
+					</a>
+					<a href="#" target="iframe" class="admin-main-menu admin-main-menu2">
+						<i class="admin-main-menuIcon"></i>
+						<span class="admin-main-menuTxt">
+							属性管理
+						</span>
+					</a>
+					<a href="#" target="iframe" class="admin-main-menu admin-main-menu3">
+						<i class="admin-main-menuIcon"></i>
+						<span class="admin-main-menuTxt">
+							分类管理
+						</span>
+					</a>
+					<a href="System/index.html" target="iframe" class="admin-main-menu admin-main-menu4">
+						<i class="admin-main-menuIcon"></i>
+						<span class="admin-main-menuTxt">
+							系统设置
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="admin-main-right">
+				<div class="admin-main-top">
+					<div class="admin-main-locationBox">
+						<span class="admin-main-locationTxt">当前位置：</span>
+						<i class="admin-main-locationIcon"></i>
+						<span class="admin-main-locationTxt">首页</span>
+						<span class="admin-main-locationTxt admin-main-locationLine">></span>
+						<span class="admin-main-locationTxt" id="admin-main-location">博文管理</span>
+					</div>
+					<div class="admin-main-iconBox">
+						<a href="#" class="admin-main-iconBar" title="清除缓存">
+							<img src="./Images/saoIcon.png"/>
+						</a>
+						<a href="#" class="admin-main-iconBar" title="返回首页">
+							<img src="./Images/indexIcon.png"/>
+						</a>
+						<a href="#" class="admin-main-iconBar" title="清除缓存">
+							<img src="./Images/loginOutIcon.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="admin-main-iframeContent">
+					<iframe src="System/index.html" id="iframe" name="iframe" frameborder="0" ></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="admin-footer-container">
+			<div class="admin-footer-box">
+				Copyright  ©  2016 &nbsp;&nbsp;版权归仇郯郯个人所有   
+			</div>
+		</div>
+	</body>
+</html>

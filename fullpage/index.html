@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 仇郯郯动画版</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/qtt.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/qtt.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		scrollingSpeed:500, //滚动速度
+		easing:'easeInQuart', //运动动画
+		loopTop:true,
+		loopBottom:true,
+		'css3': false,
+		'navigation': true,
+		'navigationPosition': 'right',
+		'navigationTooltips': ['tips1', 'tips2', 'tips3', 'tips4','tips5'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+		menu: '#menu',
+		afterRender:function(){
+			$('.section .qiutantan').css('visibility','hidden');
+			$('.section1 .qiutantan').each(function(i,item){
+				var hideName = $(item).attr('hide-animate-effect');
+				if(hideName != undefined){
+					$(item).removeClass(hideName);
+				}
+				var showName = $(item).attr('show-animate-effect');
+				var showDuration = $(item).attr('show-animate-duration');
+				var showDelay = $(item).attr('show-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':showDuration,'-webkit-animation-duration':showDuration,'animation-delay':showDelay,'-webkit-animation-delay':showDelay});
+				$(item).addClass('animated');
+				$(item).addClass(showName);
+			});
+		},
+		afterLoad: function(anchorLink, index){
+            var className = "section" + index;
+			$('.'+className+' .qiutantan').each(function(i,item){
+				// 先删除第一个运动效果class
+				var hideName = $(item).attr('hide-animate-effect');
+				if(hideName != undefined){
+					$(item).removeClass(hideName);
+				}
+				var showName = $(item).attr('show-animate-effect');
+				var showDuration = $(item).attr('show-animate-duration');
+				var showDelay = $(item).attr('show-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':showDuration,'-webkit-animation-duration':showDuration,'animation-delay':showDelay,'-webkit-animation-delay':showDelay});
+				$(item).addClass('animated');
+				$(item).addClass(showName);
+			});
+		},
+		onLeave: function(index, direction){
+			var className = "section" + index;
+			$('.'+className+' .qiutantan').each(function(i,item){
+				// 先删除第一个运动效果class
+				var showName = $(item).attr('show-animate-effect');
+				if(showName != undefined){
+					$(item).removeClass(showName);
+				}
+				var hideName = $(item).attr('hide-animate-effect');
+				var hideDuration = $(item).attr('hide-animate-duration');
+				var hideDelay = $(item).attr('hide-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':hideDuration,'-webkit-animation-duration':hideDuration,'animation-delay':hideDelay,'-webkit-animation-delay':hideDelay});
+				$(item).addClass('animated');
+				$(item).addClass(hideName);
+			});
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="dowebok">
+	<div class="section table section1">
+		<!-- 第一屏内容 -->
+		<div class="tableCell">
+			<div class="bg bg1-3 qiutantan" show-animate-effect="fadeIn" show-animate-duration="1s" show-animate-delay="1s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+			<a class="logo1 qiutantan" show-animate-effect="rubberBand" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s" href="">证券时报网</a>
+			<div class="middle">
+				<div class="left left1 qiutantan" show-animate-effect="bounceInLeft" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<a class="link a1-1" href="http://wap.stcn.com/">开始体验</a>
+				</div>
+				<div class="right right1 qiutantan" show-animate-effect="bounceInRight" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+			</div>
+			<div class="qtcode"></div>
+			<a class="godown" href="#page2"><span></span></a>
+		</div>
+	</div>
+	<div class="section table section2">
+		<div class="tableCell">
+			<!-- <div class="bg bg2-1"></div> -->
+			<!-- <div class="bg bg2-2"></div> -->
+			<div class="bg bg2-3"></div>
+			<div class="top"></div>
+			<a class="logo2 qiutantan" show-animate-effect="swing" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s" href="">财苑社区</a>
+			<div class="middle">
+				<div class="left left2 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<div class="left2-1 qiutantan" show-animate-effect="fadeIn" show-animate-duration="1s" show-animate-delay="1s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+					<div class="left2-2 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="2s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				</div>
+				<div class="right right2 qiutantan" show-animate-effect="fadeInRight" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<a class="link a2-1" href="https://itunes.apple.com/cn/app/cai-yuan-she-qu/id562837853?mt=8" target="_blank">iPhone版</a>
+					<a class="link a2-2" href="http://cy.stcn.com/stcn/tempphone/CaiYuanCommunity.apk" target="_blank">Android版</a>
+				</div>
+				<div class="tip qiutantan" show-animate-effect="showRight" show-animate-duration="1s" show-animate-delay="3s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.001s" hide-animate-delay="0s"></div>
+			    <div class="hand qiutantan" show-animate-effect="showRightHide" show-animate-duration="2s" show-animate-delay="3s" hide-animate-effect="hideRightHide" hide-animate-duration="0.001s" hide-animate-delay="0s"></div>
+			</div>
+			<div class="qtcode"></div>
+			<a class="godown" href="#page3"><span></span></a>
+		</div>
+	</div>
+	<div class="section table section3">
+		<div class="tableCell">
+			<div class="bg bg3-3"></div>
+			<div class="bg bg3-4"><div class="bg"></div></div>
+			<a class="logo3 qiutantan" show-animate-effect="tada" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s" href="">爱股快信</a>
+			<div class="middle">
+				<div class="left left3 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<a class="link a3-1" href="http://itunes.apple.com/cn/app/ai-gu-kuai-xin/id533061827?mt=8" target="_blank">iPhone版</a>
+					<a class="link a3-2" href="http://www.stcn.com/common/mobile/MyStockNews.apk" target="_blank">Android版</a>
+				</div>
+				<div class="right right3 qiutantan" show-animate-effect="fadeInRight" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+			</div>
+			<div class="qtcode"></div>
+			<a class="godown" href="#page4"><span></span></a>
+		</div>
+	</div>
+	<div class="section table section4">
+		<div class="tableCell" style="height: 662px;">
+			<!-- <div class="bg bg4-1"></div> -->
+			<!-- <div class="bg bg4-2"></div> -->
+			<a class="logo4 qiutantan" show-animate-effect="wobble" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s" href="">股票情报</a>
+			<div class="middle">
+				<div class="left left4 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="left4-1 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="1s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="left4-2 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="2s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="left4-4 qiutantan" show-animate-effect="fadeInDown" show-animate-duration="0.5s" show-animate-delay="3.5s" hide-animate-effect="fadeOutUp" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="left4-5 qiutantan" show-animate-effect="fadeInUp" show-animate-duration="0.5s" show-animate-delay="3s" hide-animate-effect="fadeOutDown" hide-animate-duration="0.5s" hide-animate-delay="0s">
+				</div>
+				<div class="dian qiutantan" show-animate-effect="bigOrSmall" show-animate-duration="2s" show-animate-delay="4s" hide-animate-effect="fadeOutDown" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<span></span>
+				</div>
+				<div class="left4-3 qiutantan" show-animate-effect="fadeInDown" show-animate-duration="0.5s" show-animate-delay="3.5s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="right right4 qiutantan" show-animate-effect="fadeInRight" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<a class="link a4-1" href="http://itunes.apple.com/hk/app/id460337689?mt=8" target="_blank">iPhone版</a>
+					<a class="link a4-2" href="http://www.stcn.com/common/mobile/stock_advice_1.0.apk" target="_blank">Android版</a>
+				</div>
+			</div>
+			<div class="qtcode"></div>
+			<a class="godown" href="#page5"><span></span></a>
+		</div>
+	</div>
+	<div class="section table section5">
+		<div class="tableCell">
+			<div class="bg bg5-3"></div>
+			<div class="bg bg5-4"></div>
+			<a class="logo5 qiutantan" show-animate-effect="shake" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOut" hide-animate-duration="0.5s" hide-animate-delay="0s" href="">新股助手</a>
+			<div class="middle">
+				<div class="left left5 qiutantan" show-animate-effect="fadeInLeft" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="0.5s" hide-animate-delay="0s"></div>
+				<div class="right right5 qiutantan" show-animate-effect="fadeInRight" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="zoomOutRight" hide-animate-duration="0.5s" hide-animate-delay="0s">
+					<a class="link a5-1" href="http://itunes.apple.com/hk/app/id460337689?mt=8" target="_blank">iPhone版</a>
+					<a class="link a5-2" href="http://www.stcn.com/common/mobile/NewShare.apk" target="_blank">Android版</a>
+				</div>
+			</div>
+			<div class="qtcode"></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

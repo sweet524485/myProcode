@@ -1,0 +1,340 @@
+*{margin:0;padding:0;}
+
+.slideshow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  -webkit-animation-name: kenburns;
+          animation-name: kenburns;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.slideshow-image:nth-child(1) {
+  -webkit-animation-name: kenburns-1;
+          animation-name: kenburns-1;
+  z-index: 3;
+}
+.slideshow-image:nth-child(2) {
+  -webkit-animation-name: kenburns-2;
+          animation-name: kenburns-2;
+  z-index: 2;
+}
+.slideshow-image:nth-child(3) {
+  -webkit-animation-name: kenburns-3;
+          animation-name: kenburns-3;
+  z-index: 1;
+}
+.slideshow-image:nth-child(4) {
+  -webkit-animation-name: kenburns-4;
+          animation-name: kenburns-4;
+  z-index: 0;
+}
+
+@-webkit-keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+            transform: scale(1.21176);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.login-box {
+  width:700px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: LiSu;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.login-title{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size:26px;
+	color:#555;
+	text-indent: 20px;
+	font-weight: 700;
+	padding-top:20px;
+}
+.login-content{
+	width: 100%;
+	padding-top:25px;
+}
+.login-list{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	margin-top: 15px;
+}
+.login-listName{
+	width:185px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 18px;
+	color:#333;
+	float: left;
+	text-align: right;
+}
+.login-listChange{
+	height: 38px;
+	line-height: 38px;
+	font-size: 18px;
+	color:#0092D0;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.login-listName span{
+	padding-right: 5px;
+	color:red;
+}
+.login-listInput{
+	width: 325px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	color:#666;
+	float: left;
+	margin-left: 5px;
+	border-radius: 4px;
+	border:1px solid #c8c8c8;
+	text-indent: 10px;
+}
+.login-listError{
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	margin-left: 10px;
+	color:red;
+	font-size: 18px;
+}
+.login-listCode{
+	width:120px;
+	height: 36px;
+	float: left;
+	margin-left: 10px;
+}
+.login-btn{
+	border: 0;
+	width: 327px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 20px;
+	color:#fff;
+	float: left;
+	margin-left: 5px;
+	border-radius: 4px;
+	text-align: center;
+	background: #0092D0;
+}
+.login-btn:hover{
+	filter:alpha(opacity:80);
+	opacity: 0.8;
+}

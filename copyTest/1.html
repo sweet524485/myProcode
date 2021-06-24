@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		input{
+	        padding: 5px;
+		    line-height: 1;
+		    height: 30px;
+		    box-sizing: border-box;
+		}
+		a{
+		    text-decoration: none;
+		    background-color: #EC1212;
+		    height: 30px;
+		    box-sizing: border-box;
+		    display: inline-block;
+		    line-height: 30px;
+		    vertical-align: middle;
+		    width: 53px;
+		    text-align: center;
+		    color: #FFF;
+		    font-weight: bold;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery.zclip.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		    $("#cp-btn").zclip({
+		        path:'ZeroClipboard.swf', //记得把ZeroClipboard.swf引入到项目中 
+		        copy:function(){
+		            return $('#inviteUrl').val();
+		        }
+		    });
+		});
+	</script>
+</head>
+<body>
+<input type="text" id="inviteUrl"/>
+<a href="javascript:void(0)" id="cp-btn">复制</a>
+</div>
+</body>
+</html>

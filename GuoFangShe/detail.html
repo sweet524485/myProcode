@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>国防社详细页</title>
+		<link rel="stylesheet" type="text/css" href="css/GuoFangShe-detail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Base.css"/>
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/GuoFangShe-detail.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="gf-header-container">
+				<!--top-->
+				<div class="gf-header-top_content">
+					<!--左侧-->
+					<div class="gf-header-top_left">
+						<div class="gf-header-admin_box">
+							欢迎<span id="userName">admin</span>，
+						</div>
+						<a href="#" target="_blank" class="gf-header-top_left_li">
+							个人中心
+						</a>
+						<a href="#" target="_blank" class="gf-header-top_left_li">
+							退出
+						</a>
+					</div>
+					<!--右侧-->
+					<div class="gf-header-top_right">
+						<a href="#" target="_blank" class="gf-header-top_right_li">
+							登录
+						</a>
+						<a href="#" target="_blank" class="gf-header-top_right_li">
+							注册
+						</a>
+						<a href="#" target="_blank" class="gf-header-top_right_li">
+							收藏本站
+						</a>
+						<a href="#" target="_blank" class="gf-header-top_right_li border0">
+							使用手册
+						</a>
+					</div>
+				</div>
+				<!--logo/search-->
+				<div class="gf-header-bottom_content">
+					<!--logo-->
+					<a href="#" target="_blank" class="gf-header-logo_href">
+						<img src="./Images/gf-logo.png" alt="logo" />
+					</a>
+					<div class="gf-header-search_box">
+						<div class="gf-header-search_main">
+							<input type="text" placeholder="书名&nbsp;作者&nbsp;出版社&nbsp;ISBN&nbsp;关键词&nbsp;简介" class="gf-header-search_input"/>
+							<input type="button" value="搜&nbsp;索" class="gf-header-search_btn"/>
+							<input type="button" value="二次搜索" class="gf-header-search_second"/>
+							<i class="gf-header-search_icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--详细页主体-->
+		<div class="gf-detail-container">
+			<div class="gf-detail-content">
+				<!--左侧-->
+				<div class="gf-detail-left">
+					<!--图书详细-->
+					<div class="gf-bookDetail-container">
+						<div class="gf-bookDetail-content">
+							<a href="#" target="_blank" class="gf-bookDetail-left">
+								<img src="./Images/gf-BookFace.png"/>
+							</a>
+							<div class="gf-bookDetail-right">
+								<a href="#" target="_blank" class="gf-bookDetail-bookTitle">
+									詹天佑写生集
+								</a>
+								<div class="gf-bookDetail-bookList">
+									<div class="gf-bookDetail-bookLi">
+										<span class="gf-bookDetail-bookLiName">
+											作者：
+										</span>
+										<span class="gf-bookDetail-bookLiCon">
+											詹天佑
+										</span>
+									</div>
+									<div class="gf-bookDetail-bookLi">
+										<span class="gf-bookDetail-bookLiName">
+											出版社：
+										</span>
+										<span class="gf-bookDetail-bookLiCon">
+											重庆大学出版社
+										</span>
+									</div>
+									<div class="gf-bookDetail-bookLi">
+										<span class="gf-bookDetail-bookLiName">
+											出版时间：
+										</span>
+										<span class="gf-bookDetail-bookLiCon">
+											2012-10-18
+										</span>
+									</div>
+									<div class="gf-bookDetail-bookLi">
+										<span class="gf-bookDetail-bookLiName">
+											I S B N：
+										</span>
+										<span class="gf-bookDetail-bookLiCon">
+											978-7-6543-7649-6
+										</span>
+									</div>
+									<div class="gf-bookDetail-bookLi">
+										<span class="gf-bookDetail-bookLiName">
+											中图分类号：
+										</span>
+										<span class="gf-bookDetail-bookLiCon">
+											978-7-6543-7649-6
+										</span>
+									</div>
+									<div class="gf-bookDetail-sortBox">
+										<span class="gf-bookDetail-bookLiName">
+											学科分类：
+										</span>
+										<div class="gf-bookDetail-bookLiCon">
+											<div class="gf-bookDetail-bookLis">
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													法学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													科学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													经济学
+												</a>
+											</div>
+											<div class="gf-bookDetail-bookLis">
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													法学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													科学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													经济学
+												</a>
+											</div>
+											<div class="gf-bookDetail-bookLis">
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													法学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													科学
+												</a>
+												<span class="gf-bookDetail-bookR">
+													->
+												</span>
+												<a href="#" target="_blank" class="gf-bookDetail-bookA">
+													经济学
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="gf-bookDetail-pageBox">
+							<div class="gf-bookDetail-page">
+								<a href="#" class="gf-bookDetail-prevPage">
+									上一本
+								</a>
+								<div class="gf-bookDetail-nextPage">
+									<span class="gf-bookDetail-nextPageName">
+										下一本：
+									</span>
+									<a href="#" class="gf-bookDetail-nextPageTitle">
+										材料力学实验指导
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="gf-bookDetail-editBox">
+							<div class="gf-bookDetail-editLeft">
+								<div class="gf-bookDetail-editDList">
+									<span>
+										阅读次数
+									</span>
+									<span class="gf-bookDetail-editDNum">
+										26
+									</span>
+								</div>
+								<div class="gf-bookDetail-editDList">
+									<span>
+										下载次数
+									</span>
+									<span class="gf-bookDetail-editDNum">
+										26
+									</span>
+								</div>
+								<div class="gf-bookDetail-editDList">
+									<span>
+										荐购次数
+									</span>
+									<span class="gf-bookDetail-editDNum">
+										40
+									</span>
+								</div>
+							</div>
+							<div class="gf-bookDetail-editRight">
+								<a href="#" class="gf-bookDetail-editBtn jiangou"></a>
+								<a href="#" class="gf-bookDetail-editBtn yuedu"></a>
+								<a href="#" class="gf-bookDetail-editBtn xiazai"></a>
+							</div>
+						</div>
+					</div>
+					<!--图书简介-->
+					<div class="gf-jianjieDetail-container">
+						<div class="gf-jianjieDetail-navBox">
+							<div class="gf-jianjieDetail-navInner">
+								<a href="javascript:void(0);" class="gf-jianjieDetail-nav gf-jianjieDetail-nav1 active" left="39">
+									简介
+								</a>
+								<a href="javascript:void(0);" class="gf-jianjieDetail-nav gf-jianjieDetail-nav2" left="132">
+									目录
+								</a>
+								<a href="javascript:void(0);" class="gf-jianjieDetail-nav gf-jianjieDetail-nav3" left="237">
+									更多信息
+								</a>
+								<i class="gf-jianjieDetail-navIcon"></i>
+							</div>
+						</div>
+						<div class="gf-jianjieDetail-content">
+							<div class="gf-jianjieDetail-con">
+								<div class="gf-jianjieDetail-innerCon">
+									本书通过考察人本主义马克思主义的总体范畴，阐述了马克思主义的总体观念，发现了马克思主义研究的一个新领域。马克思主义总体性哲学是马克思主义的重要组成部分，是最具开放性的哲学理论。从总体性哲学中可以直接导出关于建构和谐社会的现实原理。
+								</div>
+								<div class="gf-jianjieDetail-bottom">
+									<a href="javascript:void(0);" class="gf-jianjieDetail-bottomClick">
+										<span class="gf-jianjieDetail-bottomTxt">
+											显示全部
+										</span>
+										<i class="gf-jianjieDetail-bottomIcon"></i>
+									</a>
+								</div>
+							</div>
+							<div class="gf-jianjieDetail-con">
+								<div class="gf-jianjieDetail-innerCon">
+									本书通过考察人本主义马克思主义的总体范畴，阐述了马克思主义的总体观念，发现了马克思主义研究的一个新领域。
+									本书通过考察人本主义马克思主义的总体范畴，阐述了马克思主义的总体观念，发现了马克思主义研究的一个新领域。马克思主义总体性哲学是马克思主义的重要组成部分，是最具开放性的哲学理论。从总体性哲学中可以直接导出关于建构和谐社会的现实原理。
+									本书通过考察人本主义马克思主义的总体范畴，阐述了马克思主义的总体观念，发现了马克思主义研究的一个新领域。马克思主义总体性哲学是马克思主义的重要组成部分，是最具开放性的哲学理论。从总体性哲学中可以直接导出关于建构和谐社会的现实原理。
+								</div>
+								<div class="gf-jianjieDetail-bottom">
+									<a href="javascript:void(0);" class="gf-jianjieDetail-bottomClick">
+										<span class="gf-jianjieDetail-bottomTxt">
+											显示全部
+										</span>
+										<i class="gf-jianjieDetail-bottomIcon"></i>
+									</a>
+								</div>
+							</div>
+							<div class="gf-jianjieDetail-con">
+								<div class="gf-jianjieDetail-innerCon">
+									本书通过考察人
+								</div>
+								<div class="gf-jianjieDetail-bottom">
+									<a href="javascript:void(0);" class="gf-jianjieDetail-bottomClick">
+										<span class="gf-jianjieDetail-bottomTxt">
+											显示全部
+										</span>
+										<i class="gf-jianjieDetail-bottomIcon"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--推荐图书-->
+					<div class="gf-tuijianDetail-container">
+						<div class="gf-tuijianDetail-title">
+							推荐图书
+						</div>
+						<div class="gf-tuijianDetail-content">
+							<div class="gf-tuijianDetail-box">
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/1.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/2.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/3.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/4.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/5.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								<div class="gf-tuijianDetail-list">
+									<a href="#" target="_blank" class="gf-tuijianDetail-listImgBox">
+										<img src="./Images/move/6.png" />
+									</a>
+									<a href="#" target="_blank" class="gf-tuijianDetail-listTitle" title="XXXX">
+										东北亚发展关系
+									</a>
+									<div class="gf-tuijianDetail-listAuthor" title="XXX">
+										李爱华
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--右侧-->
+				<div class="gf-detail-right">
+					<div class="gf-rightDetail-container">
+						<div class="gf-rightDetail-title">
+							图书标签
+						</div>
+						<div class="gf-rightDetail-content">
+							<div class="gf-rightDetail-box">
+								<a href="#" target="_blank" class="gf-rightDetail-nav" title="边疆地区">
+									边疆地区
+								</a>
+								<a href="#" target="_blank" class="gf-rightDetail-nav" title="汇编">
+									汇编
+								</a>
+								<a href="#" target="_blank" class="gf-rightDetail-nav" title="边界地区">
+									边界地区
+								</a>
+								<a href="#" target="_blank" class="gf-rightDetail-nav" title="文献">
+									文献
+								</a>
+								<a href="#" target="_blank" class="gf-rightDetail-nav" title="中国">
+									中国
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gf-rightDetail-container" style="margin-top:17px;">
+						<div class="gf-rightDetail-title">
+							同类图书
+						</div>
+						<div class="gf-rightDetail-content">
+							<div class="q-HomeDetail-conmmonLeft-list"> 
+								<a href="#" class="q-HomeDetail-conmmonLeft-img">
+									<img src="./Images/move/1.png"/>
+								</a>
+								<div class="q-HomeDetail-conmmonLeft-con">
+									<a href="#" class="q-HomeDetail-conmmonLeft-book_title" title="物流设施与设备">
+										物流设施与设备
+									</a>
+									<div class="q-HomeDetail-conmmonLeft-book_author">
+										王雅蕾，黄莉 
+									</div> 
+								</div> 
+							</div>
+							<div class="q-HomeDetail-conmmonLeft-list"> 
+								<a href="#" class="q-HomeDetail-conmmonLeft-img">
+									<img src="./Images/move/2.png"/>
+								</a>
+								<div class="q-HomeDetail-conmmonLeft-con">
+									<a href="#" class="q-HomeDetail-conmmonLeft-book_title" title="物流设施与设备">
+										物流设施与设备
+									</a>
+									<div class="q-HomeDetail-conmmonLeft-book_author">
+										王雅蕾，黄莉 
+									</div> 
+								</div> 
+							</div>
+							<div class="q-HomeDetail-conmmonLeft-list"> 
+								<a href="#" class="q-HomeDetail-conmmonLeft-img">
+									<img src="./Images/move/3.png"/>
+								</a>
+								<div class="q-HomeDetail-conmmonLeft-con">
+									<a href="#" class="q-HomeDetail-conmmonLeft-book_title" title="物流设施与设备">
+										物流设施与设备
+									</a>
+									<div class="q-HomeDetail-conmmonLeft-book_author">
+										王雅蕾，黄莉 
+									</div> 
+								</div> 
+							</div>
+							<div class="q-HomeDetail-conmmonLeft-list"> 
+								<a href="#" class="q-HomeDetail-conmmonLeft-img">
+									<img src="./Images/move/4.png"/>
+								</a>
+								<div class="q-HomeDetail-conmmonLeft-con">
+									<a href="#" class="q-HomeDetail-conmmonLeft-book_title" title="物流设施与设备">
+										物流设施与设备
+									</a>
+									<div class="q-HomeDetail-conmmonLeft-book_author">
+										王雅蕾，黄莉 
+									</div> 
+								</div> 
+							</div>
+							<div class="q-HomeDetail-conmmonLeft-list"> 
+								<a href="#" class="q-HomeDetail-conmmonLeft-img">
+									<img src="./Images/move/5.png"/>
+								</a>
+								<div class="q-HomeDetail-conmmonLeft-con">
+									<a href="#" class="q-HomeDetail-conmmonLeft-book_title" title="物流设施与设备">
+										物流设施与设备
+									</a>
+									<div class="q-HomeDetail-conmmonLeft-book_author">
+										王雅蕾，黄莉 
+									</div> 
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<footer>	
+			<div class="gf-footer-container">
+				<div class="gf-footer-content">
+					<div class="gf-footer-cop">
+						<span class="gf-footer-copyright">
+							Copyright ©2015 北京社馆直通车科技     
+						</span>
+						<span class="gf-footer-com">
+							北京东方华数信息技术有限公司版权所有
+						</span>
+						<span class="gf-footer-beiaAn">
+							京ICP备15018290号
+						</span>
+					</div>
+					<div class="gf-footer-linkBox">
+						<span class="gf-footer-iphone">
+							联系电话：010-69674007
+						</span>
+						<span>邮箱：postmaster@dfhsbj.net</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

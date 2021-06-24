@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 仇郯郯动画版</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/animate.css">
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		scrollingSpeed:2000, //滚动速度
+		easing:'easeInQuart', //运动动画
+		loopTop:true,
+		loopBottom:true,
+		'css3': false,
+		'navigation': true,
+		'navigationPosition': 'right',
+		'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu: '#menu',
+		afterRender:function(){
+			$('.section .qiutantan').css('visibility','hidden');
+			$('.section1 .qiutantan').each(function(i,item){
+				var hideName = $(item).attr('hide-animate-effect');
+				if(hideName != undefined){
+					$(item).removeClass(hideName);
+				}
+				var showName = $(item).attr('show-animate-effect');
+				var showDuration = $(item).attr('show-animate-duration');
+				var showDelay = $(item).attr('show-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':showDuration,'-webkit-animation-duration':showDuration,'animation-delay':showDelay,'-webkit-animation-delay':showDelay});
+				$(item).addClass('animated');
+				$(item).addClass(showName);
+			});
+		},
+		afterLoad: function(anchorLink, index){
+            var className = "section" + index;
+			$('.'+className+' .qiutantan').each(function(i,item){
+				// 先删除第一个运动效果class
+				var hideName = $(item).attr('hide-animate-effect');
+				if(hideName != undefined){
+					$(item).removeClass(hideName);
+				}
+				var showName = $(item).attr('show-animate-effect');
+				var showDuration = $(item).attr('show-animate-duration');
+				var showDelay = $(item).attr('show-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':showDuration,'-webkit-animation-duration':showDuration,'animation-delay':showDelay,'-webkit-animation-delay':showDelay});
+				$(item).addClass('animated');
+				$(item).addClass(showName);
+			});
+		},
+		onLeave: function(index, direction){
+			var className = "section" + index;
+			$('.'+className+' .qiutantan').each(function(i,item){
+				// 先删除第一个运动效果class
+				var showName = $(item).attr('show-animate-effect');
+				if(showName != undefined){
+					$(item).removeClass(showName);
+				}
+				var hideName = $(item).attr('hide-animate-effect');
+				var hideDuration = $(item).attr('hide-animate-duration');
+				var hideDelay = $(item).attr('hide-animate-delay');
+				$(item).css({'visibility':'visible','animation-duration':hideDuration,'-webkit-animation-duration':hideDuration,'animation-delay':hideDelay,'-webkit-animation-delay':hideDelay});
+				$(item).addClass('animated');
+				$(item).addClass(hideName);
+			});
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
+	<li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
+	<li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
+	<li data-menuanchor="page4"><a href="#page4">第四屏</a></li>
+</ul>
+<div id="dowebok">
+	<div class="section section1">
+		<h3>fullPage.js — 仇郯郯动画版</h3>
+		<p class="qiutantan" show-animate-effect="wobble" show-animate-duration="2s" show-animate-delay="0s" hide-animate-effect="zoomOutLeft" hide-animate-duration="2s" hide-animate-delay="0s">
+			测试动画一
+		</p>
+		<p class="qiutantan" show-animate-effect="rubberBand" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="lightSpeedOut" hide-animate-duration="2s" hide-animate-delay="0s">
+			测试动画二
+		</p>
+	</div>
+	<div class="section section2">
+		<h3>fullPage.js — 仇郯郯动画版</h3>
+		<p class="qiutantan" show-animate-effect="rubberBand" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="lightSpeedOut" hide-animate-duration="2s" hide-animate-delay="0s">
+			测试动画二
+		</p>
+	</div>
+	<div class="section section3">
+		<h3>fullPage.js — 仇郯郯动画版</h3>
+		<p class="qiutantan" show-animate-effect="swing" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="fadeOutDown" hide-animate-duration="2s" hide-animate-delay="0s">
+			测试动画三
+		</p>
+	</div>
+	<div class="section section4">
+		<h3>fullPage.js — 仇郯郯动画版</h3>
+		<p class="qiutantan" show-animate-effect="tada" show-animate-duration="1s" show-animate-delay="0s" hide-animate-effect="rotateOut" hide-animate-duration="2s" hide-animate-delay="0s">
+			测试动画四
+		</p>
+	</div>
+</div>
+
+
+</body>
+</html>

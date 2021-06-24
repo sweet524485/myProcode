@@ -1,0 +1,167 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: "microsoft yahei";
+}
+.admin-main-container{
+	width: 100%;
+}
+.admin-main-container:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.admin-main-left{
+	width: 130px;
+	height: 100%;
+	float: left;
+	background: #2C3E52;
+}
+.admin-main-right{
+	height: 100%;
+	float: left;
+}
+.admin-main-top{
+	width: 100%;
+	height:70px;
+	background: #255A79;
+}
+.admin-footer-container{
+	width: 100%;
+	height: 40px;
+	background: #255A79;
+}
+.admin-main-logoBox{
+	width:100%;
+	height: 92px;
+	border-bottom: 3px solid #1A3146;
+}
+.admin-main-logo{
+	width:44px;
+	height: 44px;
+	background: url(../Images/adminLogo.png) no-repeat;
+	margin-top: 18px;
+	margin-left: 41px;
+}
+.admin-main-logoText{
+	width:100%;
+	height: 14px;
+	line-height: 14px;
+	color: #BCC8DA;
+	font-size:12px;
+	margin-top: 15px;
+	text-align: center;
+}
+.admin-main-logoText span{
+	padding-left:4px;
+}
+.admin-main-menuBox{
+	padding-top: 1px;
+}
+.admin-main-menu{
+	display: block;
+	margin-top: 16px;
+	width: 126px;
+	height: 30px;
+	line-height: 30px;
+	color:#B4C0D2;
+	background:#2C3E52;
+	border-left:4px solid #2C3E52;
+}
+.admin-main-menu.active{
+	background:#273649;
+	border-left:4px solid #00A2F9;
+}
+.admin-main-menuIcon{
+	display: block;
+	float: left;
+	width:18px;
+	height: 18px;
+	margin-left: 16px;
+	margin-right: 10px;
+	margin-top: 6px;
+}
+.admin-main-menuTxt{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color:#B4C0D2;
+}
+.admin-main-menu1 .admin-main-menuIcon{
+	background: url(../Images/acticleIcon.png) no-repeat;
+}
+.admin-main-menu2 .admin-main-menuIcon{
+	background: url(../Images/attrIcon.png) no-repeat;
+}
+.admin-main-menu3 .admin-main-menuIcon{
+	background: url(../Images/sortIcon.png) no-repeat;
+}
+.admin-main-menu4 .admin-main-menuIcon{
+	background: url(../Images/systemIcon.png) no-repeat;
+}
+.admin-main-locationBox{
+	height: 70px;
+	float:left;
+	margin-left: 25px;
+	color:#EFEFEF;
+	font-size:12px;
+}
+.admin-main-locationTxt{
+	height: 16px;
+	line-height: 16px;
+	float: left;
+	margin-top: 27px;
+}
+.admin-main-locationIcon{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../Images/homeIcon.png) no-repeat;
+	margin-top: 26px;
+	margin-left: 5px;
+	margin-right: 6px;
+}
+.admin-main-locationLine{
+	padding-left:4px;
+	padding-right: 4px;
+}
+.admin-main-iconBox{
+	float:right;
+	margin-right: 25px;
+	margin-top: 16px;
+}
+.admin-main-iconBar{
+	float: left;
+    display: block;
+    margin-left: 10px;
+    background: #0077B1;
+    width: 49px;
+    height: 37px;
+    border-radius: 3px;
+    position: relative;
+}
+.admin-main-iconBar img{
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-top: 7px;
+    margin-left: 14px;
+}
+.admin-footer-box{
+	color: #FEFEFE;
+	font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+}
+.admin-main-iframeContent{
+	width: 100%;
+	overflow: auto;
+}
+#iframe{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

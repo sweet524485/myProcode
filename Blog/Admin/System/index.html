@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>系统设置</title>
+		<link rel="stylesheet" href="../Css/bootstrap.css" />
+		<link rel="stylesheet" href="../Css/public.css" />
+		<link rel="stylesheet" href="../Css/system.css" />
+		<script type="text/javascript" src="../JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../JS/system.js"></script>
+	</head>
+	<body>
+		<div class="admin-common-titleContent">
+			<div class="admin-common-titleCon">
+				<img src="../Images/sortTitle.png"/>
+				<span class="admin-common-title">系统设置</span>
+			</div>
+		</div>
+		<div class="table-content">
+			<table class="table table-bordered">
+		        <thead style="background:#E1EBF5;">
+		          	<tr></tr>
+		        </thead>
+		        <tbody>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码长度：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_LENGTH" id="VERIFY_LENGTH" value="{$Think.config.VERIFY_LENGTH}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码图片宽度(像素)：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_WIDTH" id="VERIFY_WIDTH" value="{$Think.config.VERIFY_WIDTH}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码图片高度(像素)：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_HEIGHT" id="VERIFY_HEIGHT" value="{$Think.config.VERIFY_HEIGHT}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码背影颜色(16进制色值)：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_BGCOLOR" id="VERIFY_BGCOLOR" value="{$Think.config.VERIFY_BGCOLOR}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码种子：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_SEED" id="VERIFY_SEED" value="{$Think.config.VERIFY_SEED}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码字体文件：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_FONTFILE" id="VERIFY_FONTFILE" value="{$Think.config.VERIFY_FONTFILE}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码字体大小：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_SIZE" id="VERIFY_SIZE" value="{$Think.config.VERIFY_SIZE}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			验证码字体颜色(16进制色值)：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_COLOR" id="VERIFY_COLOR" value="{$Think.config.VERIFY_COLOR}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+		          	<tr>
+		          		<td class="tableListLeft td50">
+		          			SESSION识别名称：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_NAME" id="VERIFY_NAME" value="{$Think.config.VERIFY_NAME}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>
+					<tr>
+		          		<td class="tableListLeft td50">
+		          			存储验证码到SESSION时使用函数：
+		          		</td>
+		          		<td class="td50">
+		          			<input type="text" name="VERIFY_FUNC" id="VERIFY_FUNC" value="{$Think.config.VERIFY_FUNC}" class="inputStyle floatLeft marginL20"/>
+		          		</td>
+		          	</tr>		          
+		          	<tr>
+		          		<td colspan="2" style="height:60px;line-height: 60px;">
+		          			<input type="submit" value="保存修改" id="saveRole" class="btnStyle"/>
+		          		</td>
+		          	</tr>
+		        </tbody>
+	      	</table>
+      	</div>
+	</body>
+</html>

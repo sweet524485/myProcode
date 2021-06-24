@@ -1,0 +1,13 @@
+.pageContent{
+	width: 685px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #666;
+    margin-top: 10px;
+}
+.pageConBox{
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+}
