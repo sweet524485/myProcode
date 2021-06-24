@@ -1,0 +1,3010 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;
+padding: 0;
+text-decoration: none ;
+
+}
+
+/*<!-- body体框架  开始   -->*/
+.first{width: 1345px;
+		height: 3500px;
+		/*background: red;*/
+		/*border: 2px solid black;*/
+
+
+ }
+ /*<!-- body体框架  结束   -->*/
+
+  /*<!-- 最上部登录框  开始 -->*/
+
+.aa{width: 1345px;
+	height:36px;
+	border: 2px solid #CCCCCC;
+	margin: 0 auto;
+	background: #F7F7F7;
+	position: relative;
+
+}
+
+
+.aa1{color: #333;
+	font-family: "SimSun";
+	font-size: 12px;
+  line-height: 32px;
+  position: absolute;
+  left: 67px;
+  top:0px;}
+
+ .aa2{color: #A10000;
+font-family: "SimSun";
+font-size: 12px;
+line-height: 32px;
+position: absolute;
+left: 206px; }
+
+ .aa3{color: #333;
+font-family: "SimSun";
+font-size: 12px;
+line-height: 32px;
+position: absolute;
+left: 332px;}
+.aa3:hover{color:#A10000; }
+
+.aa4{color: #333;
+font-family: "SimSun";
+font-size: 12px;
+line-height: 32px;
+position: absolute;
+left: 394px;}
+.aa4:hover{color:#A10000; }
+
+.aa5{color: #333;
+	font-family: "SimSun";
+  font-size: 12px;
+   height: 18px;
+  line-height: 32px;
+  position: absolute;
+  left: 836px;
+
+}
+.aa5:hover{color:#A10000; }
+
+
+.aa6{color: #333;
+	font-family: "SimSun";
+  font-size: 12px;
+   height: 18px;
+  line-height: 32px;
+  position: absolute;
+  left: 911px;
+
+}
+.aa6:hover{color:#A10000; }
+
+
+.aa7{color: #333;
+	font-family: "SimSun";
+  font-size: 12px;
+   height: 18px;
+  line-height: 32px;
+  position: absolute;
+  left: 982px;
+
+}
+.aa7:hover{color:#A10000; }
+
+
+.aa8{color: #333;
+	font-family: "SimSun";
+  font-size: 12px;
+   height: 18px;
+  line-height: 32px;
+  position: absolute;
+  left: 1066px;
+
+}
+.aa8:hover{color:#A10000; }
+
+.aa9{color: #333;
+font-family: "SimSun";
+font-size: 11px;
+height: 22px;
+line-height: 32px;
+font-weight: 600;
+position: absolute;
+left: 1143px;
+
+}
+
+.aa10{position: absolute;
+left: 1192px;
+border: 0px;}
+
+.aa11{position: absolute;
+left: 1218px;
+border: 0px;}
+
+.aa12{position: absolute;
+left: 1243px;
+border: 0px;}
+
+.yy{width: 6px;
+    height: 5px;
+    position: absolute;
+    top:14px;
+    left:889px ;
+    margin: 0 auto;
+    background: url(../images/zz.png) no-repeat -6px -8px; }
+
+.yy1{width: 6px;
+    height: 5px;
+    position: absolute;
+    top:14px;
+    left:962px ;
+    margin: 0 auto;
+    background: url(../images/zz.png) no-repeat -6px -8px; }
+
+.yy2{width: 6px;
+    height: 5px;
+    position: absolute;
+    top:14px;
+    left:1034px ;
+    margin: 0 auto;
+    background: url(../images/zz.png) no-repeat -6px -8px; }
+
+.yy3{width: 6px;
+    height: 5px;
+    position: absolute;
+    top:14px;
+    left:1116px ;
+    margin: 0 auto;
+    background: url(../images/zz.png) no-repeat -6px -8px; }
+
+ 
+ 
+
+
+ 
+
+
+/*<!-- 最上部登录框  结束 -->*/
+
+
+        /*上部搜索框开始*/
+  .bb {width: 1200px;
+  		height: 100px;
+  		/*border: 1px solid red;*/
+  		margin: 0 auto;  
+  		position: relative;}
+
+  	
+  	
+
+
+  .bb1{ border: 0px; }
+
+  .tt{width: 555px;
+      height: 2px;
+      background: #E0E0E0;
+      position: absolute;
+      left: 427px;
+      top:34px; }
+
+ .tt1{width: 2px;
+       height:30px;
+       background: #E0E0E0;
+       position: absolute; 
+       left: 426px;
+       top:35px; }
+
+
+  .uu1{width: 2px;
+       height:30px;
+       background: #E0E0E0;
+       position: absolute; 
+       left: 982px;
+       top:35px; }
+
+
+
+
+  
+  
+
+
+
+ 
+
+  
+  		  
+
+  .bb2{width: 555px;
+  		height: 30px; 
+  		background: #F5F5F5;
+  		position: absolute;
+      border-top: none;
+      border-left: none;
+    
+      line-height: 30px;
+  	   color: #999999;
+  		top:35px;
+  		left: 427px;
+  		font-family: "SimSun";
+  		font-size: 12px;}
+  		
+  .bb3{position: absolute;
+  	border-color: #E0E0E0;
+  		border: 0px;
+  		top:38px;
+  		left: 941px;}
+
+  .bb4{color: white;
+  		font-family: "SimSun";
+  		/*background: #B60005;*/
+      font-size: 12px;
+      background: url(../images/b2.png);
+      height: 21px;
+      line-height: 21px;
+      position: absolute;
+      top:15px;
+      left:428px;}
+   /*.bb4:hover{background: #B60005;}*/
+
+   .bb5{color: #C0C0C0;
+  		font-family: "SimSun";
+  		font-size: 12px;
+      height: 21px;
+      line-height: 21px;
+      position: absolute;
+      top:15px;
+      left:485px;}
+   .bb5:hover{background: #B60005;}
+
+   .bb6{border: 0px;
+   		position: absolute;
+      top:31px;
+      left:1040px;}
+
+
+  
+     
+ /*............导航条..................     */
+#main{width: 1203px;
+    height: 36px;
+    background: #B60005;
+     margin: 0 auto;
+     margin-top: 3px;}
+     
+#main .aaaa,.bbbb,.cccc,.dddd,.eeee,.ffff,.gggg,.hhhh,.iiii,.jjjj,.kkkk,.llll,.mmmm,.nnnn,.oooo{ color: #FFF;
+      font-size: 13px;
+    font-family: "SimSun";
+    text-decoration: none;
+    height: 36px;
+        line-height: 36px;
+        padding-left: 12px;
+        padding-right: 14px;
+        border: 0px solid #B60005;
+        display: block;
+        float: left;
+        text-align: center;
+    margin: 0 auto;
+                }
+
+
+
+#main .aaaa{width: 210px;
+            font-family: "Microsoft YaHei",SimHei;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;} 
+
+    
+ 
+ #main .background-break:{ width: 32px;}
+ #main .eeee{ width: 32px;}
+ #main .ffff{ width: 32px;}
+ #main .jjjj{ width: 32px;}
+ #main .mmmm{ width: 32px;}
+ #main .hhhh{ width: 32px;}
+ #main .jjjj{ width: 32px;}
+#main .oooo{ width: 40px;}
+#main .llll{ width: 50px;}
+#main .nnnn{ width: 60px;}
+#main .cccc{ width: 60px;}
+#main .dddd{ width: 65px;}
+#main .iiii{ width: 70px;}
+#main .kkkk{ width: 24px;}
+
+
+
+#main .bbbb {background: #7B0000;}
+#main .bbbb:hover{background:#7B0000 ;}
+
+#main .cccc {background: #B60005;}
+#main .cccc:hover{background: #7B0000;}
+#main .dddd {background:  #B60005;}
+#main .dddd:hover{background: #7B0000;}
+
+#main .eeee {background:  #B60005;}
+#main .eeee:hover{background: #7B0000;}
+
+#main .ffff {background:  #B60005;}
+#main .ffff:hover{background: #7B0000;}
+
+#main .gggg {background:  #B60005;}
+#main .gggg:hover{background: #7B0000;}
+
+#main .hhhh {background:  #B60005;}
+#main .hhhh:hover{background: #7B0000;}
+
+#main .iiii {background:  #B60005;}
+#main .iiii:hover{background: #7B0000;}
+
+#main .jjjj {background:  #B60005;}
+#main .jjjj:hover{background: #7B0000;}
+
+#main .kkkk:hover{cursor: default;}
+
+
+/*............导航条......结束............     */
+
+/*腹左部框架  开始*/ 
+.baoguo{width: 1200px;
+        height: 495px;
+        /*background: red;*/
+        /*border: 1px red;*/
+        margin: 0 auto;}
+
+
+
+
+
+   .cc{width: 230px;
+      height: 485px;
+       border: 1px solid #CCCFC4;
+       margin: 0 auto;
+        margin-top: 3px; 
+        float: left;
+       margin-right: 10px;}
+ 
+
+  .cc1{width:228px;
+       height: 60px;
+       border-bottom: none;
+       /*border: 1px solid #CCCFC4;*/
+      position: relative; }
+.cc1:hover{background:#DC0000;}
+ 
+ .cc11{position: absolute;
+        top:6px;
+        left:10px;}
+.duanxian1{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+
+
+
+
+
+  .cc12{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+  .cc13{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+  .cc14{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:42px;}
+
+  .cc15{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:82px;}
+
+
+  .cc16{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:122px;}
+
+  .cc17{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:162px;}
+/*..................................................*/
+  .cc2{width:228px;
+       height: 60px;
+       /*border: 1px solid #CCCFC4;*/
+       position: relative; } 
+  .cc2:hover{background:#DC0000;}
+  .duanxian2{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+  .cc21{position: absolute;
+        top:8px;
+        left:10px;}
+
+  .cc22{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+  .cc23{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+  .cc24{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:42px;}
+
+  .cc25{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:82px;}
+
+
+  .cc26{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:122px;}
+
+  .cc27{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:162px;}
+
+     
+
+
+/*..............................................*/
+ 
+.cc3{width:228px;
+     height: 60px;
+     /*border: 1px solid #CCCFC4;*/
+     position: relative; }
+.cc3:hover{background:#DC0000;}
+
+.duanxian3{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+.cc31{position: absolute;
+      top:8px;
+      left:10px;}
+
+.cc32{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+.cc33{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+.cc34{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:62px;}
+
+.cc35{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:112px;}
+
+
+.cc36{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:162px;}
+
+  
+/*.......................................................*/
+
+.cc4{width:228px;
+     height: 60px;
+     /*border: 1px solid #CCCFC4;*/
+     position: relative;  } 
+.cc4:hover{background:#DC0000;}
+
+.duanxian4{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+.cc41{position: absolute;
+      top:10px;
+      left:10px;}
+
+.cc42{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+.cc43{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+.cc44{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:72px;}
+
+.cc45{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:112px;}
+
+
+.cc46{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:162px;}
+    
+/*.........................................................*/
+
+.cc5{width:228px;
+     height: 60px;
+     /*border: 1px solid #CCCFC4; */
+     position: relative; }
+
+.cc5:hover{background:#DC0000;}
+
+.duanxian5{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+.cc51{position: absolute;
+      top:8px;
+      left:10px;}
+
+.cc52{position: absolute;
+      top:10px;
+      left: 30px;
+      color: #333333;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 20px;}
+
+.cc53{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+.cc54{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:62px;}
+
+.cc55{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:112px;}
+
+
+.cc56{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:152px;}
+     
+ /*..................................................        */
+
+      
+.cc6{width:228px;
+    height: 60px;
+    /*border: 1px solid #CCCFC4; */
+    position: relative; } 
+.cc6:hover{background:#DC0000;}
+
+.duanxian6{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+  .cc61{position: absolute;
+        top:10px;
+        left:10px;}
+
+  .cc62{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+  .cc63{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+  .cc64{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:47px;}
+
+  .cc65{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:82px;}
+
+
+  .cc66{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:122px;}
+
+  .cc67{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:160px;}
+/*......................................................*/
+
+.cc7{width:228px;
+    height:60px;
+    /*border: 1px solid #CCCFC4; */
+    position: relative;} 
+.cc7:hover{background:#DC0000;}
+
+.duanxian7{width: 200px;
+           height: 1px;
+           background: #C9C9C9;
+           position: absolute;
+           top:59px;
+           left:16px;}
+ 
+
+.cc71{position: absolute;
+      top:10px;
+      left:10px;}
+
+.cc72{position: absolute;
+      top:10px;
+      left: 30px;
+      color: #333333;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 20px;}
+
+.cc73{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+.cc74{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:62px;}
+
+.cc75{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:112px;}
+
+
+.cc76{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:152px;}  
+
+
+.cc8{width:228px;
+     height: 60px;
+     /*border: 1px solid #CCCFC4;*/
+     position: relative;}
+.cc8:hover{background:#DC0000;}
+
+
+
+.cc81{position: absolute;
+      top:8px;
+      left:10px;}
+
+.cc82{position: absolute;
+        top:10px;
+        left: 30px;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;}
+
+.cc83{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:12px;}
+
+.cc84{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:82px;}
+
+.cc85{font-family: "SimSun";
+        color: #666666;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top:36px;
+        left:132px;}
+      /*腹左部框架  结束*/ 
+/*................................................... */
+    /*腹右部框架  开始*/
+   .dd{width: 956px;
+       height: 492px;
+       margin: 0 auto;
+       margin-top: 3px;
+      
+       float: left;
+       margin-bottom: 3px; }
+
+   .dd1{border: 0px;}
+  /*腹右部框架  结束*/
+
+/*胃部框架  开始*/
+
+    .ee{width: 1200px;
+       height: 341px;
+       border: 0px solid blue;
+       margin: 0 auto;
+       margin-top: 3px; 
+       clear: both;
+       margin-top: 3px;}
+    
+   .ee1{width: 408px;
+         height:341px;
+         /*border: 1px solid red; */
+         float: left;}
+   .ee11{ border: 0px; }
+
+    .ee2{width: 187px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;
+         margin-left: 11px;}
+   .ee12{ border: 0px; }
+
+      
+    .ee3{width: 187px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;
+         margin-left: 11px;}
+    .ee13{ border: 0px; }
+       
+    .ee4{width: 187px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;
+         margin-left: 11px;}
+   .ee14{ border: 0px; }
+        
+    .ee5{width: 187px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;
+         margin-left: 11px;}
+    .ee15{ border: 0px; }
+
+ /*女装区框架  开始*/
+
+    .ff{ width: 1200px;
+         height: 26px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 20px; }
+
+    .ff1{width: 215px;
+         height: 26px;
+         float: left;
+         /*border: 1px solid black;*/
+         background: #D7060E;}
+    .ff11{color: #FFFFFF;
+         font-family: "微软雅黑";
+         font-size: 14px;
+         font-weight: 700;
+         height: 22px;
+         line-height: 26px;
+         text-align: center;}  
+
+
+    .ff2{width: 981px;
+         height: 26px;
+         float: left;
+         position: relative;
+         background: #CACACA;}
+    .ff21{border: 0px;
+          position: absolute;
+          top:5px;
+          left:952px; }
+/*......................................*/
+    .gg{ width: 1200px;
+         height: 343px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 12px; }
+    .gg1{width:216px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;  } 
+
+    .gg11{width: 216px;
+          height: 85px;
+          /*border: 1px solid red;*/
+          background: #F2F2F2;
+          position: relative;} 
+
+    .gg21{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .gg31{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .gg31:hover{color:#A10000; }
+     .gg41{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:53px;}
+    .gg41:hover{color:#A10000; }
+
+     .gg51{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:84px;}
+    .gg51:hover{color:#A10000; }
+
+     .gg61{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:116px;}
+    .gg61:hover{color:#A10000; }
+
+     .gg71{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:165px;}
+    .gg71:hover{color:#A10000; }
+
+     .gg81{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .gg81:hover{color:#A10000; }
+
+     .gg91{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:37px;}
+    .gg91:hover{color:#A10000; }
+
+     .gg111{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:94px;}
+    .gg111:hover{color:#A10000; }
+
+     .gg121{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:138px;}
+    .gg121:hover{color:#A10000; }
+/*............................................*/
+    .gg12{width: 216px;
+          height: 85px;
+         margin-top: 2px;
+          background: #F2F2F2;
+          position: relative;} 
+
+     .gga{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .ggb{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .ggb:hover{color:#A10000; }
+     .ggc{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:53px;}
+    .ggc:hover{color:#A10000; }
+
+     .ggd{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:98px;}
+    .ggd:hover{color:#A10000; }
+
+     .gge{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:143px;}
+    .gge:hover{color:#A10000; }
+
+    
+
+     .ggf{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .ggf:hover{color:#A10000; }
+
+     .ggg{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:66px;}
+    .ggg:hover{color:#A10000; }
+
+     .ggh{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:111px;}
+    .ggh:hover{color:#A10000; }
+
+    .ggi{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:156px;}
+    .ggi:hover{color:#A10000; }
+
+
+
+
+/*...................................*/
+    .gg13{width: 216px;
+          height: 70px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .gg13a{border: 0px;}
+
+
+    .gg14{width: 216px;
+          height: 69px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .gg14a{border: 0px;}
+
+    .gg15{width: 216px;
+          height: 22px;
+          margin-top: 4px;
+          background: #777676;}
+    .gg15a{border: 0px;}
+
+/*.....................................*/
+    .gg2{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 10px;}
+    .gg2a{border: 0px;}
+       
+
+    .gg3{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .gg3a{border: 0px;}    
+
+    .gg4{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .gg4a{border: 0px;}
+    
+
+    .gg5{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+    .gg5a{border: 0px;}
+       
+
+      .gg6{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+
+      .gg6a{border: 0px;}
+
+        /*女装区框架  结束*/
+
+/*...............................................*/
+    /*男装区框架  开始*/
+
+    .hh{ width: 1200px;
+        height: 26px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+          margin-top: 20px; }
+
+    
+    .hh1{width: 215px;
+         height: 26px;
+         float: left;
+         /*border: 1px solid black;*/
+         background: #D7060E;}
+    .hh11{color: #FFFFFF;
+         font-family: "微软雅黑";
+         font-size: 14px;
+         font-weight: 700;
+         height: 22px;
+         line-height: 26px;
+         text-align: center;}  
+
+
+    .hh2{width: 981px;
+         height: 26px;
+         float: left;
+         position: relative;
+         background: #CACACA;}
+    .hh21{border: 0px;
+          position: absolute;
+          top:5px;
+          left:952px; }
+
+/*.................................................*/
+    .ii{ width: 1200px;
+         height: 343px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 12px; }
+    .ii1{width:216px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;  } 
+
+    .ii11{width: 216px;
+          height: 85px;
+          /*border: 1px solid red;*/
+          background: #F2F2F2;
+          position: relative;} 
+
+    .ii21{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .ii31{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .ii31:hover{color:#A10000; }
+     .ii41{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:41px;}
+    .ii41:hover{color:#A10000; }
+
+     .ii51{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:71px;}
+    .ii51:hover{color:#A10000; }
+
+     .ii61{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:116px;}
+    .ii61:hover{color:#A10000; }
+
+     .ii71{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:162px;}
+    .ii71:hover{color:#A10000; }
+
+     .ii81{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .ii81:hover{color:#A10000; }
+
+     .ii91{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:37px;}
+    .ii91:hover{color:#A10000; }
+
+     .ii111{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:84px;}
+    .ii111:hover{color:#A10000; }
+
+     .ii121{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:130px;}
+    .ii121:hover{color:#A10000; }
+/*............................................*/
+    .ii12{width: 216px;
+          height: 85px;
+         margin-top: 2px;
+          background: #F2F2F2;
+          position: relative;} 
+
+     .iia{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .iib{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .iib:hover{color:#A10000; }
+     .iic{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:53px;}
+    .iic:hover{color:#A10000; }
+
+     .iid{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:98px;}
+    .iid:hover{color:#A10000; }
+
+     .iie{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:143px;}
+    .iie:hover{color:#A10000; }
+
+    
+
+     .iif{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .iif:hover{color:#A10000; }
+
+     .iig{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:56px;}
+    .iig:hover{color:#A10000; }
+
+     .iih{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:101px;}
+    .iih:hover{color:#A10000; }
+
+    .iii{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:138px;}
+    .iii:hover{color:#A10000; }
+
+
+
+
+/*...................................*/
+    .ii13{width: 216px;
+          height: 70px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .ii13a{border: 0px;}
+
+
+    .ii14{width: 216px;
+          height: 69px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .ii14a{border: 0px;}
+
+    .ii15{width: 216px;
+          height: 22px;
+          margin-top: 4px;
+          background: #777676;}
+    .ii15a{border: 0px;}
+
+/*.....................................*/
+    .ii2{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 10px;}
+    .ii2a{border: 0px;}
+       
+
+    .ii3{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .ii3a{border: 0px;}    
+
+    .ii4{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .ii4a{border: 0px;}
+    
+
+    .ii5{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+    .ii5a{border: 0px;}
+       
+
+      .ii6{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+
+      .ii6a{border: 0px;}
+
+        /*男装区框架  结束*/
+
+        /*鞋区框架  开始*/
+
+    .jj{ width: 1200px;
+        height: 26px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+          margin-top: 20px; }
+
+    
+    .jj1{width: 215px;
+         height: 26px;
+         float: left;
+         /*border: 1px solid black;*/
+         background: #D7060E;}
+    .jj11{color: #FFFFFF;
+         font-family: "微软雅黑";
+         font-size: 14px;
+         font-weight: 700;
+         height: 22px;
+         line-height: 26px;
+         text-align: center;}  
+
+
+    .jj2{width: 981px;
+         height: 26px;
+         float: left;
+         position: relative;
+         background: #CACACA;}
+    .jj21{border: 0px;
+          position: absolute;
+          top:5px;
+          left:952px; }
+/*...........................................‘’‘’‘’‘’‘’‘’‘’‘’‘’‘*/
+.kk{ width: 1200px;
+         height: 343px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 12px; }
+    .kk1{width:216px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;  } 
+
+    .kk11{width: 216px;
+          height: 85px;
+          /*border: 1px solid red;*/
+          background: #F2F2F2;
+          position: relative;} 
+
+    .kk21{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .kk31{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .kk31:hover{color:#A10000; }
+     .kk41{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:55px;}
+    .kk41:hover{color:#A10000; }
+
+     .kk51{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:100px;}
+    .kk51:hover{color:#A10000; }
+
+     .kk61{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:145px;}
+    .kk61:hover{color:#A10000; }
+
+     .kk71{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:145px;}
+    .kk71:hover{color:#A10000; }
+
+     .kk81{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .kk81:hover{color:#A10000; }
+
+     .kk91{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:55px;}
+    .kk91:hover{color:#A10000; }
+
+     .kk111{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:100px;}
+    .kk111:hover{color:#A10000; }
+
+     .kk121{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:145px;}
+    .kk121:hover{color:#A10000; }
+/*............................................*/
+    .kk12{width: 216px;
+          height: 85px;
+         margin-top: 2px;
+          background: #F2F2F2;
+          position: relative;} 
+
+     .kka{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .kkb{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .kkb:hover{color:#A10000; }
+     .kkc{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:53px;}
+    .kkc:hover{color:#A10000; }
+
+     .kkd{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:98px;}
+    .kkd:hover{color:#A10000; }
+
+     .kke{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:143px;}
+    .kke:hover{color:#A10000; }
+
+    
+
+     .kkf{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .kkf:hover{color:#A10000; }
+
+     .kkg{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:66px;}
+    .kkg:hover{color:#A10000; }
+
+     .kkh{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:111px;}
+    .kkh:hover{color:#A10000; }
+
+    .kki{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:146px;}
+    .kki:hover{color:#A10000; }
+
+
+
+
+/*...................................*/
+    .kk13{width: 216px;
+          height: 70px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .kk13a{border: 0px;}
+
+
+    .kk14{width: 216px;
+          height: 69px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .kk14a{border: 0px;}
+
+    .kk15{width: 216px;
+          height: 22px;
+          margin-top: 4px;
+          background: #777676;}
+    .kk15a{border: 0px;}
+
+/*.....................................*/
+    .kk2{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 12px;}
+    /*.kk2a{border: 0px;}*/
+    .kk2yi{ width:187px;
+            /*border: 1px solid green;*/
+            height: 165px;}
+    .kk2q{border: 0px;}
+    .kk2er{  width:187px;   
+           /*border: 1px solid green;*/
+           height: 165px;
+           margin-top: 12px;}
+    .kk2qq{border: 0px;}
+
+
+    .kk3{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 8px; }
+    /*.kk3a{border: 0px;} */
+    .kk3yi{ width:187px;
+           /*border: 1px solid green;*/
+           height: 165px;}
+    .kk3q{border: 0px;}
+    .kk3er{width:187px;
+           /*border: 1px solid green;  */
+           height: 165px;
+           margin-top: 12px; }
+    .kk3qq{border: 0px;}
+         
+    .kk4{width:187px;
+         height: 341px;
+         /*border: 1px solid red;   */
+         float: left; 
+         margin-left: 8px;}
+    /*.kk4a{border: 0px;}*/
+    .kk4yi{width:187px;
+           /*border: 1px solid green;*/
+           height: 165px;}
+    .kk4q{border: 0px;}
+    .kk4er{  width:187px;
+           /*border: 1px solid green; */
+           height: 165px;
+           margin-top: 12px;} 
+    .kk4qq{border: 0px;}
+
+    .kk5{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 8px;}
+    /*.kk5a{border: 0px;}*/
+    .kk5yi{width:187px;
+           /*border: 1px solid green;*/
+           height: 165px;}
+    .kk5q{border: 0px;}
+    .kk5er{ width:187px;
+           /*border: 1px solid green;*/
+           height: 165px;
+           margin-top: 12px; } 
+    .kk5qq{border: 0px;}
+
+    .kk6{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 8px;}
+    .kk6a{border: 0px;}
+    .kk6q{border: 0px;}
+
+
+    
+/*.........................................................’‘’‘’‘’‘’‘*/
+        /*鞋区框架  结束*/
+
+
+        /*童装区框架  开始*/
+
+    .ll{ width: 1200px;
+         height: 26px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 20px; }
+
+    .ll1{width: 215px;
+         height: 26px;
+         float: left;
+         /*border: 1px solid black;*/
+         background: #D7060E;}
+    .ll11{color: #FFFFFF;
+         font-family: "微软雅黑";
+         font-size: 14px;
+         font-weight: 700;
+         height: 22px;
+         line-height: 26px;
+         text-align: center;}  
+
+
+    .ll2{width: 981px;
+         height: 26px;
+         float: left;
+         position: relative;
+         background: #CACACA;}
+    .ll21{border: 0px;
+          position: absolute;
+          top:5px;
+          left:952px; }
+   
+/*.................................................................*/
+ .mm{ width: 1200px;
+         height: 343px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 12px; }
+    .mm1{width:216px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;  } 
+
+    .mm11{width: 216px;
+          height: 85px;
+          /*border: 1px solid red;*/
+          background: #F2F2F2;
+          position: relative;} 
+
+    .mm21{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .mm31{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .mm31:hover{color:#A10000; }
+     .mm41{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:43px;}
+    .mm41:hover{color:#A10000; }
+
+     .mm51{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:75px;}
+    .mm51:hover{color:#A10000; }
+
+     .mm61{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:114px;}
+    .mm61:hover{color:#A10000; }
+
+     .mm71{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:160px;}
+    .mm71:hover{color:#A10000; }
+
+     .mm81{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .mm81:hover{color:#A10000; }
+
+     .mm91{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:40px;}
+    .mm91:hover{color:#A10000; }
+
+     .mm111{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:80px;}
+    .mm111:hover{color:#A10000; }
+
+     .mm121{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:138px;}
+    .mm121:hover{color:#A10000; }
+/*............................................*/
+    .mm12{width: 216px;
+          height: 85px;
+         margin-top: 2px;
+          background: #F2F2F2;
+          position: relative;} 
+
+     .mma{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .mmb{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .mmb:hover{color:#A10000; }
+     .mmc{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:65px;}
+    .mmc:hover{color:#A10000; }
+
+     .mmd{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:96px;}
+    .mmd:hover{color:#A10000; }
+
+     .mme{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:125px;}
+    .mme:hover{color:#A10000; }
+
+    .mmee{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:170px;}
+    .mmee:hover{color:#A10000; }
+
+    
+
+     .mmf{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .mmf:hover{color:#A10000; }
+
+     .mmg{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:42px;}
+    .mmg:hover{color:#A10000; }
+
+     .mmh{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:98px;}
+    .mmh:hover{color:#A10000; }
+
+    .mmi{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:129px;}
+    .mmi:hover{color:#A10000; }
+
+    .mmii{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:160px;}
+    .mmii:hover{color:#A10000; }
+
+
+
+
+/*...................................*/
+    .mm13{width: 216px;
+          height: 70px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .mm13a{border: 0px;}
+
+
+    .mm14{width: 216px;
+          height: 69px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .mm14a{border: 0px;}
+
+    .mm15{width: 216px;
+          height: 22px;
+          margin-top: 4px;
+          background: #777676;}
+    .mm15a{border: 0px;}
+
+/*.....................................*/
+    .mm2{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 10px;}
+    .mm2a{border: 0px;}
+       
+
+    .mm3{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .mm3a{border: 0px;}    
+
+    .mm4{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .mm4a{border: 0px;}
+    
+
+    .mm5{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+    .mm5a{border: 0px;}
+       
+
+      .mm6{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+
+      .mm6a{border: 0px;}
+   
+
+
+
+
+        /*童装区框架  结束*/
+
+/*................................................................*/
+
+        /*运动户外区框架  开始*/
+
+    .nn{ width: 1200px;
+         height: 26px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 20px; }
+
+    .nn1{width: 215px;
+         height: 26px;
+         float: left;
+         /*border: 1px solid black;*/
+         background: #D7060E;}
+    .nn11{color: #FFFFFF;
+         font-family: "微软雅黑";
+         font-size: 14px;
+         font-weight: 700;
+         height: 22px;
+         line-height: 26px;
+         text-align: center;}  
+
+
+    .nn2{width: 981px;
+         height: 26px;
+         float: left;
+         position: relative;
+         background: #CACACA;}
+    .nn21{border: 0px;
+          position: absolute;
+          top:5px;
+          left:952px; }
+/*........................................................*/
+     .oo{ width: 1200px;
+         height: 343px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 12px; }
+    .oo1{width:216px;
+         height:341px;
+         /*border: 1px solid red;*/
+         float: left;  } 
+
+    .oo11{width: 216px;
+          height: 85px;
+          /*border: 1px solid red;*/
+          background: #F2F2F2;
+          position: relative;} 
+
+    .oo21{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .oo31{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .oo31:hover{color:#A10000; }
+     .oo41{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:55px;}
+    .oo41:hover{color:#A10000; }
+
+     .oo51{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:105px;}
+    .oo51:hover{color:#A10000; }
+
+     .oo61{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:150px;}
+    .oo61:hover{color:#A10000; }
+
+
+     .oo81{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .oo81:hover{color:#A10000; }
+
+     .oo91{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:55px;}
+    .oo91:hover{color:#A10000; }
+
+     .oo111{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:100px;}
+    .oo111:hover{color:#A10000; }
+
+     .oo121{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:145px;}
+    .oo121:hover{color:#A10000; }
+/*............................................*/
+    .oo12{width: 216px;
+          height: 85px;
+         margin-top: 2px;
+          background: #F2F2F2;
+          position: relative;} 
+
+     .ooa{color: #D7060E;
+          font-family: "微软雅黑";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          position: absolute;
+          top:7px;
+          left: 10px;}
+    .oob{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:10px;}
+    .oob:hover{color:#A10000; }
+     .ooc{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:53px;}
+    .ooc:hover{color:#A10000; }
+
+     .ood{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:103px;}
+    .ood:hover{color:#A10000; }
+
+     .ooe{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:37px;
+          left:149px;}
+    .ooe:hover{color:#A10000; }
+
+    
+
+     .oof{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:10px;}
+    .oof:hover{color:#A10000; }
+
+     .oog{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:58px;}
+    .oog:hover{color:#A10000; }
+
+     .ooh{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:103px;}
+    .ooh:hover{color:#A10000; }
+
+    .ooi{font-family: "SimSun";
+          font-size: 12px;
+          line-height: 20px;
+          color: #211A19;
+          text-decoration: none;
+          position: absolute;
+          top:57px;
+          left:148px;}
+    .ooi:hover{color:#A10000; }
+
+
+
+
+/*...................................*/
+    .oo13{width: 216px;
+          height: 70px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .oo13a{border: 0px;}
+
+
+    .oo14{width: 216px;
+          height: 69px;
+         margin-top: 2px;
+          background: #F2F2F2;} 
+    .oo14a{border: 0px;}
+
+    .oo15{width: 216px;
+          height: 22px;
+          margin-top: 4px;
+          background: #777676;}
+    .oo15a{border: 0px;}
+
+/*.....................................*/
+    .oo2{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 10px;}
+    .oo2a{border: 0px;}
+       
+
+    .oo3{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .oo3a{border: 0px;}    
+
+    .oo4{width:187px;
+         height: 341px;
+         /*border: 1px solid red;*/
+         float: left; 
+         margin-left: 9px; }
+    .oo4a{border: 0px;}
+    
+
+    .oo5{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+    .oo5a{border: 0px;}
+       
+
+      .oo6{width:187px;
+         height: 341px;
+         /*border: 1px solid red; */
+         float: left;
+         margin-left: 9px;}
+
+      .oo6a{border: 0px;}
+
+/*..........................................................*/
+        /*运动户外区框架  结束*/
+
+
+
+        /*版权框架  开始*/
+
+    .pp{ width: 1200px;
+         height: 50px;
+         /*border: 3px solid blue;*/
+         margin: 0 auto;
+         margin-top: 20px; }
+    .ppyi{border: 0px;}
+
+
+
+       
+
+    .qq{ width: 1200px;
+         height: 700px;
+         /*border: 3px solid blue;*/
+         position: relative;
+         margin: 0 auto;
+         margin-top: 12px; }
+    .qq1{width: 1200px;
+         position:relative; 
+         height: 220px;
+         border: 1px solid #DDDDDD;}
+    .qq2{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left:52px;}
+        
+    .qq3{width: 55px;
+         height: 109px;
+         position: absolute;
+         top:10px;
+         left:59px;
+
+        }
+    .qq4{color: #333;
+         font-family: "SimSun";
+         line-height: 20px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq5{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq5:hover{color: #A10000;}
+    .qq6{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 12px;}
+    .qq6:hover{color: #A10000;}
+    .qq7{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq7:hover{color: #A10000;}
+    .qq8{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq8:hover{color: #A10000;}
+    .qq9{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq9:hover{color: #A10000;}      
+/*........................................../          */
+
+ 
+    .qq10{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left:189px;}
+         
+    .qq11{width: 55px;
+          height: 109px;
+          position: absolute;
+          top:10px;
+          left: 198px;}
+         
+    .qq12{color: #333;
+         font-family: "SimSun";
+         line-height: 25px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq13{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq13:hover{color: #A10000;}
+    .qq14{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq14:hover{color: #A10000;}
+    .qq15{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq15:hover{color: #A10000;}
+    .qq16{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq16:hover{color: #A10000;}
+    .qq17{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq17:hover{color: #A10000;}      
+  /*。。。。。。。。。。。。。。。。。。。。。。。。。。。。、        */
+
+  .qq18{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left: 333px;}
+
+          
+    .qq19{width:100px;
+          height: 54px;
+          position: absolute;
+          top:10px; 
+          left:341px;} 
+
+    .qq20{color: #333;
+         font-family: "SimSun";
+         line-height: 25px;
+         letter-spacing: 0px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq21{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq21:hover{color: #A10000;}
+    .qq22{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq22:hover{color: #A10000;}
+/*。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。、    */
+    .qq23{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left:498px;}
+        
+    .qq24{width: 100px;
+          height: 91px;
+          position: absolute;
+          top:10px;
+          left: 504px;}
+
+
+    
+    .qq25{color: #333;
+         font-family: "SimSun";
+         line-height: 25px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq26{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq26:hover{color: #A10000;}
+    .qq27{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq27:hover{color: #A10000;}
+    .qq28{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq28:hover{color: #A10000;}
+    .qq29{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq29:hover{color: #A10000;}
+ /*。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。   */
+
+  .qq30{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left: 668px;}
+          
+
+    .qq31{width: 86px;
+          height: 91px;
+          position:absolute;
+          top:10px; 
+          left: 676px;}
+
+
+
+    
+    .qq32{color: #333;
+         font-family: "SimSun";
+         line-height: 25px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq33{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq33:hover{color: #A10000;}
+    .qq34{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq34:hover{color: #A10000;}
+    .qq35{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq35:hover{color: #A10000;}
+    .qq36{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq36:hover{color: #A10000;}
+/*。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/
+    .qq37{width: 3px;
+         height: 15px;
+         background: #A10000;
+         position: absolute;
+         top:15px;
+         left: 813px;}
+    .qq38{width: 63px;
+          height: 110px;
+          position: absolute;
+          top:10px;
+          left: 823px;}
+
+
+
+    
+    .qq39{color: #333;
+         font-family: "SimSun";
+         line-height: 25px;
+         font-size: 12px;
+         font-weight: 700; }
+    .qq40{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq40:hover{color: #A10000;}
+    .qq41{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq41:hover{color: #A10000;}
+    .qq42{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq42:hover{color: #A10000;}
+    .qq43{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq43:hover{color: #A10000;}
+    .qq44{color: #666;
+         font-family: "SimSun";
+         font-size: 12px;
+         line-height: 18px;}
+    .qq44:hover{color: #A10000;}
+/*..............................................................       */
+
+    .qq45{width: 1px;
+          height: 90px;
+          background: #A10000;
+          position: absolute;
+          left:946px;
+          top:17px; }
+       
+/*......................................................................*/
+
+    .qq46{width:75px;
+          height: 75px;
+          border: 1px red;
+          position:absolute;
+          top:20px;
+          left:1039px;}
+         
+          
+    .qq47{color: #333;
+          font-family: "SimSun";
+          font-size: 12px;
+          line-height: 18px;
+          position: absolute;
+          left: 1038px;
+          top:103px;}
+    /*.............................*/
+
+
+    
+    .qq48 a{width: 288px;
+            height: 50px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -11px -16px;
+            display: block;
+            position: absolute;
+            left: 10px;
+            top:160px;}
+
+    .qq49  a{width: 288px;
+            height: 50px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -308px -16px;
+            display: block;
+            position: absolute;
+            left: 308px;
+            top:160px;}
+
+    .qq50 a{width: 288px;
+            height: 50px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -605px -16px;
+            display: block;
+            position: absolute;
+            left: 605px;
+            top:160px;}
+
+
+    .qq51 a{width: 288px;
+            height: 50px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -903px -16px;
+            display: block;
+            position: absolute;
+            left: 903px;
+            top:160px;}
+
+    .rr{width: 815px;
+        padding-top: 15px;
+        height: 15px;
+        margin: 0 auto;}
+    .rr1{color: #999;
+        font-family: "SimSun";
+        font-size: 12px;
+        text-align: center;}
+
+    .rr2 a{width: 114px;
+          height: 41px;
+          /*border: 4px solid purple;*/
+          margin: 0 auto;
+          background: url(../images/eee.png) no-repeat -338px -131px;
+          display: block;
+          position: absolute;
+          left: 338px;
+          top:270px;}
+
+    .rr3 a{width: 157px;
+           height: 41px;
+          /*border: 4px solid purple;*/
+           margin: 0 auto;
+           background: url(../images/eee.png) no-repeat -470px -131px;
+           display: block;
+           position: absolute;
+           left: 470px;
+           top:270px;}
+
+    .rr4 a{width: 96px;
+            height: 45px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -647px -131px;
+            display: block;
+            position: absolute;
+            left: 647px;
+            top:270px;}
+
+
+    .rr5 a{width: 96px;
+            height: 45px;
+            /*border: 4px solid purple;*/
+            margin: 0 auto;
+            background: url(../images/eee.png) no-repeat -762px -131px;
+            display: block;
+            position: absolute;
+            left: 762px;
+            top:270px;}
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+          
+
+
+      
+  
+
+         
+
+
+
+
+
+
+     
+
+    
+
+        
+   
+
+
+
+    
+
+        
+   
+
+   
+
+
+    
+
+
+
+
+
+
+     
+
+
+
+
+
+
+  
+
+
+
+
+  	

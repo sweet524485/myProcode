@@ -1,0 +1,321 @@
+.q-BookCheck-body{
+	min-height:100px;
+	background: #fff;
+	padding-top: 40px;
+	padding-bottom: 4px;
+}
+.q-BookCheck-center{
+	width: 850px;
+	margin: 0 auto;
+}
+.q-BookCheck-title-box{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #dedddb;
+	font-size: 12px;
+	line-height: 40px;
+	color: #009adf;
+}
+.q-BookCheck-title-box i{
+	display: block;
+	width: 32px;
+	height: 29px;
+	background: url(../images/collect-chachong.png);
+	float: left;
+	margin-top: 4px;
+	margin-left: 13px;
+	margin-right: 4px;
+}
+.q-BookCheck-title-box span{
+	display: block;
+	float: left;
+}
+.q-BookCheck-input-box{
+	width: 643px;
+	height: 30px;
+	margin: 30px auto;
+}
+.q-BookCheck-input-name{
+	font-size: 12px;
+	color: #000;
+	float: left;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.q-BookCheck-input{
+	width: 500px;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #c8c8c8;
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #646464;
+	padding-left: 5px;
+}
+.q-BookCheck-input-btn{
+	width: 67px;
+	height: 30px;
+	background: url(../images/q-BookCheck-input-btn.png) no-repeat;
+	display: block;
+	float: left;
+	margin-left: 8px;
+}
+.q-BookCheck-input-file{
+	width: 67px;
+	height: 30px;
+	float: left;
+	margin-left: -67px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.q-BookCheck-table{
+	width: 644px;
+	height: auto;
+    border-top: 1px solid #e0dfdd;
+    border-right: 1px solid #e0dfdd;
+    border-left: 1px solid #e0dfdd;
+    margin: 0px auto;
+    background: #eef3f9;
+}
+.q-BookCheck-table td{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #000;
+	font-size: 12px;
+}
+.q-BookCheck-table .td3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #fff;
+	position: relative;	
+	border-left: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	text-align: center;
+}
+.q-BookCheck-table .td3 .td3-line select{
+	margin-top: 6px;
+	border: 0;
+}
+.q-BookCheck-table .th3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #fff;
+	position: relative;	
+	border-left: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	color: #009adf;
+}
+.q-BookCheck-table .th3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #eef3f9;
+	position: relative;	
+	border-bottom: 1px solid #e0dfdd;
+	color: #009adf;
+}
+.q-BookCheck-table .td1 .td3-line{
+	border-right: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 96px;
+	color: #009adf;
+}
+.q-BookCheck-table .td2 .td3-line{
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 201px;
+	color: #000;
+}
+.q-BookCheck-table .th2 .td3-line{
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 201px;
+	color: #009adf;
+}
+.td3-line input{
+	display: block;
+	float: left;
+	margin-top: 9px;
+	margin-left: 42px
+}
+.q-BookCheck-table-icon{
+	width: 8px;
+	height: 7px;
+	background: url(../images/xialajiantou.png) no-repeat;
+	position: absolute;
+	top:12px;right:20px;
+}
+.q-BookCheck-table-name{
+	width: 310px;
+	float:left;
+	height: 30px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheck-start-box{
+	width: 644px;
+	height: 28px;
+	margin: 20px auto;
+}
+.q-BookCheck-start-btn{
+	background: url(../images/q-BookCheck-start-btn.png) no-repeat;
+	width: 108px;
+	height: 28px;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+.box{width:850px; height:17px; margin:25px auto; }
+.tbox{width:850px; height:17px; background:url(../images/bak.png) no-repeat;position: relative;}
+.tbox div{width:0px; height:15px; background:url(../images/pro.png) no-repeat; text-align:center;font-family:Tahoma; font-size:12px; line-height:17px;position: absolute;top:1px;left:1px;}
+
+.ticon{
+	display: block;
+	width: 49px;
+	height: 34px;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+	position: absolute;
+	top:-36px;left:-23px;
+	background: url(../images/jindtjtzx.png) no-repeat;
+}
+.q-BookCheck-again_box{
+	width: 850px;
+	height: 24px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+.q-BookCheck-again_num{
+	display: block;
+	float: right;
+	height: 24px;
+	line-height: 22px;
+	color: red;
+	font-size: 12px;
+    margin-right: 10px;
+}
+.q-BookCheck-again_btn{
+	display: block;
+	float: right;
+	height: 22px;
+	line-height: 20px;
+	border:1px solid #d6d4d5;
+	color: #009adf;
+	font-size: 12px;
+	width: 68px;
+	text-align: center;
+	background: #fff;
+}
+/*==============采购平台-书目查重-弹出层===========*/
+.q-BookCheckAlert-body{
+	width: 625px;
+	min-height: 30px;
+	margin-left: 25px;
+	margin-top: 25px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border-left: 1px solid #e0e4ef;
+	border-right: 1px solid #e0e4ef;
+}
+.q-BookCheckAlert-table{
+	width: 625px;
+    height: auto; 
+}
+.q-BookCheckAlert-table .thead{
+	background: #e0e4ef;
+}
+.q-BookCheckAlert-table .thead th{
+	background: #e0e4ef;
+	height: 30px;
+}
+.q-BookCheckAlert-table .thead .th1{
+	width: 47px;
+}
+.q-BookCheckAlert-table .thead .th2{
+	width: 197px;
+}
+.q-BookCheckAlert-table .thead .th3{
+	width: 161px;
+}
+.q-BookCheckAlert-table .thead .th4{
+	width: 123px;
+}
+.q-BookCheckAlert-table .tbody td{
+	height: 30px;
+	line-height: 30px;
+	border-right: 1px solid #e0e4ef;
+	border-bottom: 1px solid #e0e4ef;
+	line-height: 30px;
+	text-align: center;
+}
+.q-BookCheckAlert-table .tbody .td2 div{
+	width: 197px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-table .tbody .td3 div{
+	width: 161px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-table .tbody .td4 div{
+	width: 123px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-del{
+	font-size: 16px;
+	color: red;
+	font-weight: 700;
+	cursor: pointer;
+}
+.q-BookCheckAlert-page-box{
+	width: 627px;
+	height: 32px;
+	margin-left: 25px;
+	margin-top: 15px;
+	line-height: 32px;
+}
+.q-BookCheckAlert-page-txt{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	color: #000;
+	font-size: 12px;
+}
+.q-BookCheckAlert-page-text{
+	display: block;
+	float: left;
+}
+.q-BookCheckAlert-delAll{
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 28px;
+	border:1px solid #d6d4d5;
+	color: #009adf;
+	font-size: 12px;
+	width: 68px;
+	text-align: center;
+	background: #fff;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.q-BookCheckAlert-page-image{
+	height: 32px;
+	float: right;
+}
+

@@ -1,0 +1,601 @@
+/*头部区域*/
+.zhixi-top-container{
+	width: 1024px;
+	height: 32px;
+	border-bottom:1px solid #DEDEDE;
+	background: #F4F4F4;
+	margin: 0 auto;
+}
+.zhixi-top-left{
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+	margin-left:13px;
+}
+.zhixi-top-logined_content{
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+}
+.zhixi-top-login-status{
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+}
+.zhixi-top-login-status1{
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+}
+.zhixi-top-login-status2{
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+}
+.zhixi-top-txt{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+}
+.zhixi-top-admin{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #0081D4;
+	font-size: 12px;
+	text-decoration: underline;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.zhixi-top-login{
+	display: block;
+	float: left;
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #0081D4;
+	font-size: 12px;
+	text-decoration: underline;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.zhixi-top-register{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #0081D4;
+	font-size: 12px;
+	text-decoration: underline;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.zhixi-top-color{
+   color: #0081D4;
+}
+.zhixi-top-login{
+	padding-right: 5px;
+}
+.zhixi-top-register{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.zhixi-top-right{
+	float: right;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+	margin-right: 16px;
+}
+.zhixi-top-list{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 35px;
+	color: #B2B0B5;
+	font-size: 12px;
+	text-decoration: none;
+}
+.zhixi-top-list1{
+	margin-right:10px; 
+}
+.zhixi-top-list2{
+	margin-left:10px; 
+}
+.zhixi-top-list:hover{
+	color: #0081D4;
+	text-decoration: underline;
+}
+.zhixi-top-pcolor{
+   color: #B2B0B5;
+}
+/*搜索区域*/
+.zhixi-top-header{
+	width: 1024px;
+	height: 118px;
+	margin:0 auto;
+}
+.zhixi-top-logo{
+	float: left;
+	height: 54px;
+	width: 180px;
+	margin-top: 32px;
+	margin-left: 3px;
+}
+.zhixi-top-logo{
+	height: 54px;
+	width: 180px;
+	display: block;
+	float: left;
+}
+.zhixi-top-searchRight{
+	float: right;
+	margin-right: 8px;
+	height: 118px;
+	width: 830px;
+}
+.zhixi-top-searchContainer{
+	width: 576px;
+	height: 36px;
+	margin-top: 22px;
+	float: right;
+}
+.zhixi-top-searchText{
+	width: 454px;
+	height: 30px;
+	line-height: 30px;
+	color: #B2B0B5;
+  	font-size: 12px;
+  	text-indent: 10px;
+  	border:3px solid #0091D8;
+  	float: left;
+  	border-radius: 3px;
+  	position: relative;
+  	z-index: 1;
+}
+.zhixi-top-searchBtn{
+	display: block;
+	float: left;
+	background: url(../images/zhixi/zhixi-top-searchBtn.png) no-repeat;
+	width: 75px;
+	height: 36px;
+	margin-left: -3px;
+	position: relative;
+  	z-index: 2;
+  	cursor: pointer;
+}
+.zhixi-top-searchHelp{
+	display: block;
+	float: right;
+	width: 25px;
+	height: 36px;
+	line-height: 18px;
+	color: #B2B0B5;
+	font-size: 12px;
+	text-decoration: none;
+}
+.zhixi-top-searchHelp:hover{
+	color: #0081D4;
+  	text-decoration: underline;
+}
+.zhixi-top-navContainer{
+	margin-top:20px;
+	height: 14px;
+	line-height: 14px;
+	float: right;
+}
+.zhixi-top-nav{
+	display: block;
+	float: right;
+	text-decoration: none;
+	height: 14px;
+	line-height: 14px;
+	color:#3F3F3F;
+	font-size: 14px;
+	margin-left: 58px;
+}
+.zhixi-top-nav_cur{
+	color:#0082C7;
+}
+.zhixi-top-nav:hover{
+	color:#0082C7;
+}
+/*小导航条*/
+.zhixi-second-navContainer{
+	width: 100%;
+	height: 41px;
+	border-bottom:2px solid #DCDCDC;
+	background: #fff;
+	position:fixed;
+	top:0;left:0;
+	display: none;
+	z-index: 1000;
+}
+.zhixi-second-navContent{
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+}
+.zhixi-second-logo{
+	display: block;
+	float: left;
+	width: 119px;
+	height: 36px;
+	margin-top:3px;
+	margin-left: 10px;
+}
+.zhixi-second-logo{
+	display: block;
+	float: left;
+	width: 119px;
+	height: 36px;
+}
+.zhixi-second-navBox{
+	width: 812px;
+	height: 24px;
+	float: right;
+	margin-top: 10px;
+}
+.zhixi-second-nav{
+	display: block;
+	float: left;
+	width: 84px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color:#3F3F3F;
+	text-decoration: none;
+	font-size: 14px;
+	margin-right:42px;
+	position: relative;
+}
+.zhixi-second-nav:hover{
+	background: url(../images/zhixi/xuanzhongxf.png) no-repeat;
+	color:#fff;
+}
+.zhixi-second-nav_cur{
+	background: url(../images/zhixi/xuanzhongxf.png) no-repeat;
+	color:#fff;
+}
+.zhixi-banner-contanier{
+	width: 1024px;
+	height: 256px;
+	margin: 0 auto;
+}
+.zhixi-banner-img{
+	width: 1024px;
+	height: 256px;
+}
+.zhixi-Ejournal-container{
+	padding-top: 46px;
+	min-height: 20px;
+	margin: 0 auto;
+	width: 1024px;
+	padding-bottom: 30px;
+}
+.zhixi-Ejournal-title{
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	color:#FF6A00;
+	font-size:18px;
+	text-align: center;
+	padding-bottom: 12px;
+}
+.zhixi-Ejournal-line{
+	width: 60px;
+	height: 2px;
+	margin: 0 auto;
+	background:#D2D2D2; 
+}
+.zhixi-Ejournal-content{
+	width: 1024px;
+	padding-top: 10px;
+	min-height: 90px;
+	overflow: hidden;
+}
+.zhixi-Ejournal-box{
+	width: 1030px;
+	min-height: 90px;
+}
+.zhixi-Ejournal-list{
+	display: block;
+	float: left;
+	width: 103px;
+	height: 105px;
+	position: relative;
+}
+.zhixi-Ejournal-listImg{
+	display: block;
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	top:14px;left:16px;
+}
+.zhixi-Ejournal-listTitle{
+	width: 104px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+	color:#222222;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	position: absolute;
+	top:88px;left:-2px;
+}
+.zhixi-Ejournal-listTitle_cur{
+	color:#FF0807;
+	text-decoration: underline;
+}
+.zhixi-scientReport-container{
+	width: 1024px;
+	min-height: 30px;
+	padding-top: 46px;
+	background: #F4F4F4;
+	border-top: 2px solid #E8E8E8;
+	margin: 0 auto;
+}
+.zhixi-scientReport-title{
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	color: #FF6A00;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 12px;
+}
+.zhixi-scientReport-line{
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  background: #D2D2D2;
+}
+.zhixi-scientReport-content{
+	width: 1024px;
+  	padding-top: 20px;
+  	min-height: 90px;
+  	overflow: hidden;
+}
+.zhixi-scientReport-box{
+	width: 1030px;
+  	min-height: 90px
+}
+.zhixi-scientReport-list{
+	display: block;
+	float: left;
+	width: 255px;
+	height: 131px;
+	border-right:2px solid #E8E8E8;
+	border-bottom:2px solid #E8E8E8;
+	position: relative;
+}
+.zhixi-scientReport-list_cur{
+	background: #fff;
+}
+.zhixi-scientReport-listImg{
+	width: 105px;
+	height: 84px;
+	position: absolute;
+	top:10px;left:80px;
+}
+.zhixi-scientReport-listTitle{
+	width: 105px;
+	height: 16px;
+	line-height: 16px;
+	color: #1F191A;
+	font-size: 14px;
+	position: absolute;
+	top:97px;left:78px;
+	text-align: center;
+}
+.zhixi-scientReport-listTitle_cur{
+	color: #FF030B;
+	text-decoration: underline;
+}
+.zhixi-proceedings-container{
+	width: 1024px;
+	min-height: 30px;
+	padding-top: 46px;
+	margin: 0 auto;
+	padding-bottom: 36px;
+}
+.zhixi-proceedings-title{
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	color: #FF6A00;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 13px;
+}
+.zhixi-proceedings-line{
+	width: 60px;
+  	height: 2px;
+  	margin: 0 auto;
+  	background: #D2D2D2;
+}
+.zhixi-proceedings-content{
+	width: 1024px;
+  	padding-top: 1px;
+  	min-height: 30px;
+  	overflow: hidden;
+}
+.zhixi-proceedings-box{
+	width: 1030px;
+  	min-height: 30px
+}
+.zhixi-proceedings-list{
+	display: block;
+	float: left;
+	width: 113px;
+	height: 22px;
+	margin-top: 35px;
+	margin-right: 1px;
+	position:relative;
+}
+.zhixi-proceedings-listImg{
+	width: 34px;
+	height: 22px;
+	position: absolute;
+	top:0;
+	left:18px;
+}
+.zhixi-proceedings-listTitle{
+	height: 22px;
+	line-height: 22px;
+	color: #1E1819;
+	font-size: 14px;
+	position: absolute;
+	top:0;left:58px; 
+}
+.zhixi-proceedings-listTitle_cur{
+	color:#FF0807;
+	text-decoration: underline;
+}
+/*六楼 文摘数据库*/
+.zhixi-Article-container{
+	border-bottom: 2px solid #E8E8E8;
+	padding-bottom: 40px;
+}
+.zhixi-Article-box{
+	width: 1090px;
+}
+.zhixi-Article-list{
+	display: block;
+	float: left;
+	width: 181px;
+	height: 54px;
+	margin-top:30px;
+	margin-left: 13px;
+	margin-right: 75px;
+	border:1px solid #DFDFDF;
+	background: #fff;
+	position: relative;
+}
+.zhixi-Article-listImg{
+	position: absolute;
+	width: 63px;
+	height: 46px;
+	top:4px;left:7px;
+}
+.zhixi-Article-listTitle{
+	display: block;
+	height: 16px;
+	line-height:16px;
+	position: absolute;
+	left:72px;top:18px; 
+	color:#1C191A;
+	font-size: 12px;
+	max-width: 75px;
+	overflow:hidden;
+}
+.zhixi-Article-listTitle_cur{
+	color:#FF0102;
+	text-decoration: underline;
+}
+/*七楼 事实数据库、学位论文数据库*/
+.zhixi-degree-container{
+	width: 1024px;
+	height: 263px;
+	margin: 0 auto;
+	padding-top: 38px;
+}
+.zhixi-degree-left{
+	width: 506px;
+	height: 263px;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.zhixi-degree-right{
+	width: 506px;
+	height: 263px;
+	float: left;
+	overflow: hidden;
+}
+.zhixi-degree-title{
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	color: #FF6A00;
+	font-size: 18px;
+	padding-bottom: 12px;
+	text-indent: 18px;
+}
+.zhixi-degree-line{
+	width: 60px;
+  	height: 2px;
+  	margin-left: 18px;
+  	background: #D2D2D2;
+}
+.zhixi-degree-content{
+	width: 100%;
+	min-height: 30px;
+}
+.zhixi-degree-list{
+	display: block;
+	float: left;
+	width: 240px;
+	height: 68px;
+	margin-top: 30px;
+	position: relative;
+	margin-right: 2px;
+}
+.zhixi-degree-listImg{
+	width: 72px;
+	height: 68px;
+	position: absolute;
+	top:0;left:15px;
+}
+.zhixi-degree-listTitle{
+	width: 90px;
+	height: 18px;
+	line-height: 18px;
+	color: #2C3136;
+	font-size: 16px;
+	position: absolute;
+	top:26px;left:95px;
+	overflow: hidden;
+}
+.zhixi-degree-listTitle_cur{
+	color:#FF0102;
+	text-decoration: underline;
+}
+.zhixi-degree-listb{
+	width: 100%;
+}
+.zhixi-degree-footContainer{
+	width: 1024px;
+	height: 133px;
+	background: #28333C;
+	margin: 0 auto;
+}
+.zhixi-degree-footTxt{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	margin-top: 60px;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+}
+
+

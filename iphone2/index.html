@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta http-equiv="Content-Type">
+		<meta charset="utf-8">
+		<title></title>		
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="x5-orientation" content="portrait">
+        <meta name="full-screen" content="yes">
+        <meta name="x5-fullscreen" content="true">
+        <meta name="browsermode" content="application">
+        <meta name="x5-page-mode" content="app">
+        <meta name="renderer" content="webkit">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection"content="telephone=no, email=no" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />      
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+	</head>
+	<body>
+	<!-- //加载中... -->
+    <div id="loading">
+		<div class="sk-spinner sk-spinner-cube-grid">
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+			<div class="sk-cube"></div>
+		</div>
+	</div>
+	<!-- //滑动内容 -->
+	<div id="content" style="display:none">
+		<!-- 1 -->
+		<div class="page page-1-1 page-current">
+			<div class="wrap">
+				<img class="img_1 pt-page-moveFromTop" src="images/page-1-2.png" />
+                <img class="img_2 pt-page-moveFromRight" src="images/page-1-3.png" />
+				<img class="img_Up pt-page-moveIconUp" src="images/icon_up.png" />
+			</div>
+		</div>
+		<!-- 2 -->
+		<div class="page page-2-1 hide">
+			<div class="wrap">
+				<img class="img_1 hide pt-page-moveFromLeft" src="images/page-2-2.png" /> 
+				<img class="img_2 hide pt-page-moveFromBottom" src="images/page-2-3.png"/>
+				<img class="img_Up hide pt-page-moveIconUp" src="images/icon_up.png" /> 
+			</div>
+		</div>
+		<!-- 3 -->
+		<div class="page page-3-1 hide">
+			<div class="wrap">
+				<img class="img_1 hide pt-page-moveCircle" src="images/page-3-2.png"  />
+				<img class="img_2 hide pt-page-moveCircle" src="images/page-3-3.png" />
+				<img class="img_3 hide pt-page-moveFromLeft" src="images/page-3-4.png" />
+				<img class="img_Up hide pt-page-moveIconUp" src="images/icon_up.png" /> 
+			</div>
+		</div>
+		<!-- 4 -->
+		<div class="page page-4-1 hide">
+			<div class="wrap">
+				<img class="img_1 hide pt-page-moveCircle" src="images/page-4-2.png"/> 
+				<img class="img_2 hide pt-page-moveFromRight" src="images/page-4-3.png"/>
+                <img class="img_3 hide pt-page-moveFromLeft" src="images/page-4-4.png" /> 
+                <a href="">
+                	<img class="img_4 hide pt-page-moveFromBottom" src="images/page-4-5.png" />
+                </a>
+                <img class="img_5 hide pt-page-moveFromBottom" src="images/t10-3.png" onclick="shareDialog()"/>
+				<img class="img_Up hide pt-page-moveIconUp" src="images/icon_up.png" /> 
+			</div>
+		</div> 
+	</div>
+		
+	<!-- //音乐播放器 -->
+	<div id="audiocontainer"></div>
+	<div id="textsuper">
+		<div id="textsub">
+			<img id="fontimg" />
+		</div>
+	</div>
+	<!-- //分享指引 -->
+    <div id="share" onClick="closeDialog()">
+    	<div class="shareImg"></div>
+    </div>		
+
+    <script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/index.js"></script>
+    <script>
+		document.onreadystatechange = loading; 
+		function loading(){
+			if(document.readyState == "complete")
+			{ 
+				$("#loading").hide();
+				$("#content").show();
+				playbksound();
+			}
+		}
+		function shareDialog(){
+			$("#share").show();			
+		}
+		function closeDialog(){
+			$("#share").hide();
+		}
+
+		gSound = 'images/1.mp3'; 
+	</script>
+	</body>
+</html>

@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>MUI仇郯郯版</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--mui自带的样式文件，当做base样式文件使用-->
+		<link rel="stylesheet" href="css/mui.css">
+		<!--仇郯郯专属css，按需编辑-->
+		<link rel="stylesheet" href="css/qtt.css">
+		<!--自配高版本jquery文件-->
+		<script src="js/jquery-2.1.0.js"></script>
+		<!--仇郯郯专属js，按需编辑js-->
+		<script src="js/qtt.js"></script>
+	</head>
+
+	<body>
+		<header class="qtt-mui-header">
+			<h1 class="qtt-mui-h1">选项卡切换+下拉刷新</h1>
+		</header>
+		<div class="qtt-mui-content">
+			<div id="qtt-mui-firstPage" class="qtt-mui-position mui-slider mui-fullscreen mui-control-content mui-active">
+				<div class="qtt-reload-down"></div>
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="qtt-nav-box">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							推荐
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							热点
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							北京
+						</a>
+						<a class="mui-control-item" href="#item4mobile">
+							社会
+						</a>
+						<a class="mui-control-item" href="#item5mobile">
+							娱乐
+						</a>
+						<a class="mui-control-item" href="#item6mobile">
+							科技
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll" id="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是第一个页面：首页
+									</h4>	
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸		
+									</div>
+									<div class="qtt-mui-textList">
+										2.异步跳转，ajax实现
+									</div>
+									<div class="qtt-mui-textList">
+										3.tab切换滑动效果	
+									</div>
+									<div class="qtt-mui-textList">
+										4.上拉刷新，下拉加载更多
+									</div>
+								</div>
+								<div id="slider1" class="mui-slider" >
+									<div class="mui-slider-group mui-slider-loop">
+										<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="./images/yuantiao.jpg">
+											</a>
+										</div>
+										<!-- 第一张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="./images/shuijiao.jpg">
+											</a>
+										</div>
+										<!-- 第二张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="./images/muwu.jpg">
+											</a>
+										</div>
+										<!-- 第三张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="./images/cbd.jpg">
+											</a>
+										</div>
+										<!-- 第四张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="./images/yuantiao.jpg">
+											</a>
+										</div>
+										<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="./images/shuijiao.jpg">
+											</a>
+										</div>
+									</div>
+									<div class="mui-slider-indicator">
+										<div class="mui-indicator mui-active"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+									</div>
+								</div>
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										5.无缝循环轮播，可设置自动定时
+									</div>
+								</div>
+								<!-- 图片延迟加载 -->
+						    	<div class="jd-wntj-content" id="list">
+						    	</div>
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										6.图片的延迟加载loading
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是首页之“热点”
+									</h4>
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸							
+									</div>
+									<div class="qtt-mui-textList">
+										2.上拉刷新，下拉加载更多
+									</div>
+									<div class="qtt-mui-textList">
+										3.无缝循环轮播，可设置自动定时
+									</div>
+									<div class="qtt-mui-textList">
+										4.图片的延迟加载loading
+									</div>
+									<div class="qtt-mui-textList">
+										5.tab切换滑动效果
+									</div>
+									<div class="qtt-mui-textList">
+										6.异步跳转，ajax实现
+									</div>
+								</div>
+								<div class="jd-wntj-content">
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/11.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/12.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/13.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/15.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+				    			</div>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是首页之“北京”
+									</h4>
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸							
+									</div>
+									<div class="qtt-mui-textList">
+										2.上拉刷新，下拉加载更多
+									</div>
+									<div class="qtt-mui-textList">
+										3.无缝循环轮播，可设置自动定时
+									</div>
+									<div class="qtt-mui-textList">
+										4.图片的延迟加载loading
+									</div>
+									<div class="qtt-mui-textList">
+										5.tab切换滑动效果
+									</div>
+									<div class="qtt-mui-textList">
+										6.异步跳转，ajax实现
+									</div>
+								</div>
+								<div class="jd-wntj-content">
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/11.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/12.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/13.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/15.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+				    			</div>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是首页之“社会”
+									</h4>
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸							
+									</div>
+									<div class="qtt-mui-textList">
+										2.上拉刷新，下拉加载更多
+									</div>
+									<div class="qtt-mui-textList">
+										3.无缝循环轮播，可设置自动定时
+									</div>
+									<div class="qtt-mui-textList">
+										4.图片的延迟加载loading
+									</div>
+									<div class="qtt-mui-textList">
+										5.tab切换滑动效果
+									</div>
+									<div class="qtt-mui-textList">
+										6.异步跳转，ajax实现
+									</div>
+								</div>
+								<div class="jd-wntj-content">
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/11.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/12.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/13.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/15.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+				    			</div>
+							</div>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是首页之“娱乐”
+									</h4>
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸							
+									</div>
+									<div class="qtt-mui-textList">
+										2.上拉刷新，下拉加载更多
+									</div>
+									<div class="qtt-mui-textList">
+										3.无缝循环轮播，可设置自动定时
+									</div>
+									<div class="qtt-mui-textList">
+										4.图片的延迟加载loading
+									</div>
+									<div class="qtt-mui-textList">
+										5.tab切换滑动效果
+									</div>
+									<div class="qtt-mui-textList">
+										6.异步跳转，ajax实现
+									</div>
+								</div>
+								<div class="jd-wntj-content">
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/11.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/12.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/13.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/15.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+				    			</div>
+							</div>
+						</div>
+					</div>
+					<div id="item6mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--MUI框架仇郯郯版特色说明:-->
+								<div class="qtt-mui-textBox">	
+									<h4 class="qtt-mui-textTitle" style="color:red;">
+										这是首页之“科技”
+									</h4>
+									<h4 class="qtt-mui-textTitle">
+										MUI框架仇郯郯版特色：
+									</h4>
+									<div class="qtt-mui-textList">
+										1.与css3“rem”单位结合，做到自适应尺寸							
+									</div>
+									<div class="qtt-mui-textList">
+										2.上拉刷新，下拉加载更多
+									</div>
+									<div class="qtt-mui-textList">
+										3.无缝循环轮播，可设置自动定时
+									</div>
+									<div class="qtt-mui-textList">
+										4.图片的延迟加载loading
+									</div>
+									<div class="qtt-mui-textList">
+										5.tab切换滑动效果
+									</div>
+									<div class="qtt-mui-textList">
+										6.异步跳转，ajax实现
+									</div>
+								</div>
+								<div class="jd-wntj-content">
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/11.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/12.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/13.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/15.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/14.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+						    		<div class="jd-wntj-list1">
+						    			<a href="#" class="jd-wntj-listImg1">
+						    				<img src="./images/list/16.jpg"/>
+						    			</a>
+						    			<a href="#" class="jd-wntj-listTitle">
+						    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+						    			</a>
+						    			<div class="jd-wntj-listBTO">
+						    				<span class="jd-wntj-listPrice">
+						    					￥1555.68
+						    				</span>
+						    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+						    					<!-- 看相似 -->
+						    				</a>
+						    			</div>
+						    		</div>
+				    			</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qtt-reload-up"></div>
+			</div>
+			<div id="qtt-mui-secondPage" class="qtt-mui-position mui-control-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!--MUI框架仇郯郯版特色说明:-->
+						<div class="qtt-mui-textBox">	
+							<h4 class="qtt-mui-textTitle" style="color:red;">
+								这是第二个页面：附近
+							</h4>
+							<h4 class="qtt-mui-textTitle">
+								MUI框架仇郯郯版特色：
+							</h4>
+							<div class="qtt-mui-textList">
+								1.与css3“rem”单位结合，做到自适应尺寸							
+							</div>
+							<div class="qtt-mui-textList">
+								2.上拉刷新，下拉加载更多
+							</div>
+							<div class="qtt-mui-textList">
+								3.无缝循环轮播，可设置自动定时
+							</div>
+							<div class="qtt-mui-textList">
+								4.图片的延迟加载loading
+							</div>
+							<div class="qtt-mui-textList">
+								5.tab切换滑动效果
+							</div>
+							<div class="qtt-mui-textList">
+								6.异步跳转，ajax实现
+							</div>
+						</div>
+						<div id="slider1" class="mui-slider" >
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 第一张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+								<!-- 第二张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/muwu.jpg">
+									</a>
+								</div>
+								<!-- 第三张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/cbd.jpg">
+									</a>
+								</div>
+								<!-- 第四张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<div style="width:100%;height:0.1rem;"></div>
+						<div class="jd-wntj-content">
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/1.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/2.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/3.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/4.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/5.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/6.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+		    			</div>
+					</div>
+				</div>
+			</div>	
+			<div id="qtt-mui-thirdPage" class="qtt-mui-position mui-control-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!--MUI框架仇郯郯版特色说明:-->
+						<div class="qtt-mui-textBox">	
+							<h4 class="qtt-mui-textTitle" style="color:red;">
+								这是第三个页面：我的
+							</h4>
+							<h4 class="qtt-mui-textTitle">
+								MUI框架仇郯郯版特色：
+							</h4>
+							<div class="qtt-mui-textList">
+								1.与css3“rem”单位结合，做到自适应尺寸							
+							</div>
+							<div class="qtt-mui-textList">
+								2.上拉刷新，下拉加载更多
+							</div>
+							<div class="qtt-mui-textList">
+								3.无缝循环轮播，可设置自动定时
+							</div>
+							<div class="qtt-mui-textList">
+								4.图片的延迟加载loading
+							</div>
+							<div class="qtt-mui-textList">
+								5.tab切换滑动效果
+							</div>
+							<div class="qtt-mui-textList">
+								6.异步跳转，ajax实现
+							</div>
+						</div>
+						<div class="jd-wntj-content">
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/11.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/12.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/13.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/14.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/15.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/16.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+		    			</div>
+						<div id="slider1" class="mui-slider" >
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 第一张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+								<!-- 第二张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/muwu.jpg">
+									</a>
+								</div>
+								<!-- 第三张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/cbd.jpg">
+									</a>
+								</div>
+								<!-- 第四张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<div style="width:100%;height:0.1rem;"></div>
+					</div>
+				</div>
+			</div>
+			<div id="qtt-mui-fourthPage" class="qtt-mui-position mui-control-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!--MUI框架仇郯郯版特色说明:-->
+						<div class="qtt-mui-textBox">	
+							<h4 class="qtt-mui-textTitle" style="color:red;">
+								这是第四个页面：我的
+							</h4>
+							<h4 class="qtt-mui-textTitle">
+								MUI框架仇郯郯版特色：
+							</h4>
+							<div class="qtt-mui-textList">
+								1.与css3“rem”单位结合，做到自适应尺寸							
+							</div>
+							<div class="qtt-mui-textList">
+								2.上拉刷新，下拉加载更多
+							</div>
+							<div class="qtt-mui-textList">
+								3.无缝循环轮播，可设置自动定时
+							</div>
+							<div class="qtt-mui-textList">
+								4.图片的延迟加载loading
+							</div>
+							<div class="qtt-mui-textList">
+								5.tab切换滑动效果
+							</div>
+							<div class="qtt-mui-textList">
+								6.异步跳转，ajax实现
+							</div>
+						</div>
+						<div id="slider1" class="mui-slider" >
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 第一张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+								<!-- 第二张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/muwu.jpg">
+									</a>
+								</div>
+								<!-- 第三张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/cbd.jpg">
+									</a>
+								</div>
+								<!-- 第四张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="./images/yuantiao.jpg">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="./images/shuijiao.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<div style="width:100%;height:0.1rem;"></div>
+						<div class="jd-wntj-content">
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/6.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/7.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/8.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/9.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/15.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+				    		<div class="jd-wntj-list1">
+				    			<a href="#" class="jd-wntj-listImg1">
+				    				<img src="./images/list/10.jpg"/>
+				    			</a>
+				    			<a href="#" class="jd-wntj-listTitle">
+				    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+				    			</a>
+				    			<div class="jd-wntj-listBTO">
+				    				<span class="jd-wntj-listPrice">
+				    					￥1555.68
+				    				</span>
+				    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+				    					<!-- 看相似 -->
+				    				</a>
+				    			</div>
+				    		</div>
+		    			</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer" class="mui-bar-tab">
+				<div class="footer-innerBox">
+					<a href="#qtt-mui-firstPage" class="mui-tab-item footList m-home mui-active"></a>
+					<a href="#qtt-mui-secondPage" class="mui-tab-item footList m-fujin"></a>
+					<a href="#qtt-mui-thirdPage" class="mui-tab-item footList m-mine"></a>
+					<a href="#qtt-mui-fourthPage" class="mui-tab-item footList m-more"></a>
+				</div>
+			</div>	
+		</footer>
+		<!--mui框架js，一般不需要修改-->
+		<script src="js/mui.js"></script>
+		<!-- 图片延迟加载 -->
+		<script src="js/mui.lazyload.js"></script>
+	    <script src="js/mui.lazyload.img.js"></script> 
+		<!--mui框架自带js，下拉刷新，上拉加载更多-->
+		<script src="js/mui.pullToRefresh.js"></script>
+		<script>
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			//轮播图
+			var slider = mui("#slider1");
+			slider.slider({
+				interval: 0
+			});
+			// 滚动
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: true,
+					indicators: false, //是否显示滚动条
+					deceleration:deceleration
+				});
+			})(mui);
+			// 图片延迟加载
+			var createFragment = function(count) {
+				var fragment = '';
+				for (var i = 0; i < count; i++) {
+					fragment += '<div class="jd-wntj-list">'+
+					    			'<a href="#" class="jd-wntj-listImg">'+
+					    				'<img data-lazyload="http://www.dcloud.io/hellomui/images/' + (i % 5 + 1) + '.jpg?version=' + Math.random() * 1000 + '"/>'+
+					    			'</a>'+
+					    			'<a href="#" class="jd-wntj-listTitle">'+
+					    				'屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm'+
+					    			'</a>'+
+					    			'<div class="jd-wntj-listBTO">'+
+					    				'<span class="jd-wntj-listPrice">'+
+					    					'￥1555.68'+
+					    				'</span>'+
+					    			'</div>'+
+					    		'</div>';
+				};
+				$("#list").html(fragment);
+			};
+			(function($) {
+				createFragment(10);
+				$(document).imageLazyload({
+					placeholder: './images/loading.gif'
+				});
+			})(mui);
+						
+		</script>
+	</body>
+
+</html>

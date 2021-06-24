@@ -1,0 +1,98 @@
+.ico{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/ico-all.png) no-repeat;
+}
+.top{
+	width:100%;
+	min-width: 1200px;
+	height: 35px;
+	line-height: 35px;
+	background: #48515a;
+	position: fixed;
+	z-index: 9999;
+}
+.logo a{
+	color: #fff;
+	float: left;
+}
+.logo a.lg:after{
+	content: "|";
+	color: #fff;
+	padding: 0 12px;
+}
+.phone{
+	color: #fff;
+	margin-left: 24px;
+}
+.phone .ico{
+	width:11px;
+	height: 13px;
+	padding-right: 5px;
+	background-position:0 -321px;
+}
+.header{
+	position: fixed;
+	z-index: 9999;
+	width:100%;
+	min-width: 1200px;
+	box-shadow: 0 0px 5px #666;
+	margin-top: 35px;
+	height: 70px;
+	background: url(../images/bg-70.png) repeat;	
+}
+
+.header .logo{
+	width:200px;
+	height: 70px;
+	line-height: 70px;
+	overflow: hidden;
+}
+.header .logo img{
+	max-width: 200px;
+	max-height: 70px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.header .menu{
+	width:810px;
+	height: 70px;
+	overflow: hidden;
+}
+.header .menu li{
+	float: left;
+	line-height: 70px;
+	margin: 0 14px;
+}
+.header .menu li a{
+	font-size: 16px;
+	font-weight: bold;
+}
+.header .serach{
+	margin-top: 16px;
+}
+.header .serach .txt{
+	width:129px;
+	height: 33px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	border: 1px solid #333;
+	background: transparent;
+	text-indent: 15px;
+	color: #666;
+	font-size: 14px;
+}
+.header .serach .btn{
+	width:47px;
+	height: 35px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	background: #333 url(../images/search.png) no-repeat center center;
+	cursor: pointer;
+}
+.fxd {
+	position: fixed;
+	top: 0 !important;
+	z-index: 99999;
+	background: #f4f4e4 !important;
+}

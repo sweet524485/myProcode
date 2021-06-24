@@ -1,0 +1,1036 @@
+.q-BookPurchase-body{
+	width: 100%;
+	min-height: 10px;
+}
+.q-BookPurchase-left{
+	width: 20%;
+	min-height: 30px;
+	float: left;
+	padding-bottom: 20px;
+}
+.q-BookPurchase-right{
+	width: 79%;
+	min-height: 30px;
+	float: right;
+}
+.q-BookPurchase-left_title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background: #F7F7F7;
+	color: #585D80;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 700;
+	border-bottom: 1px solid #EAEAEA;
+}
+.q-BookPurchase-left_content{
+	width: 100%;
+	background: #fff;
+	min-height: 10px;
+}
+.q-BookPurchase-left_list{
+	width: 100%;
+	min-height: 10px;
+	margin-top: 5px;
+}
+.q-BookPurchase-sort_title{
+	width: 93%;
+	margin-left: 3.5%;
+	height: 26px;
+	border-bottom: 1px dashed #B8B8B8;
+	margin-top: 7px;
+}
+.q-BookPurchase_book-icon{
+	display: block;
+	float: left;
+	width: 11px;
+	height: 11px;
+	background: url(../images/book-more.png) no-repeat;
+	margin-top: 8px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+.q-BookPurchase_book-icon_cur{
+	background: url(../images/book-less.png) no-repeat;
+}
+.q-BookPurchase-sort_text{
+	max-width: 64%;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	margin-left: 8px;
+	color: #585D80;
+	font-size: 12px;
+	font-weight: 700;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookPurchase-sort_number{
+	float: right;
+	margin-right: 3px;
+	color: #8C8C8C;
+	font-size: 12px;
+	line-height: 26px;
+	height: 26px;
+}
+.q-BookPurchase-sort_box{
+	width: 100%;
+	min-height: 1px;
+	display: none;
+}
+.q-BookPurchase-sort_box_cur{
+	display: block;
+}
+.q-BookPurchase-sort_li{
+	width: 93%;
+	margin-left: 3.5%;
+	min-height: 12px;
+	line-height: 12px;
+	margin-top:13px;
+}
+.q-BookPurchase-sort_li_checkbox{
+	float:left;
+	display: block;
+	margin-left: 40px;
+}
+.q-BookPurchase-sort_li_text{
+	max-width: 53%;
+	max-height: 36px;
+	line-height: 12px;
+	color: #657187;
+	font-size: 12px;
+	margin-left: 7px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	line-height: 18px;
+	margin-top: -3px;
+}
+.q-BookPurchase-sort_li_number{
+	display: block;
+	float: right;
+	margin-right: 3px;
+	color: #8C8C8C;
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+}
+.q-BookPurchase-search_box{
+	width: 100%;
+	min-height: 70px;
+	background: #fff;
+}
+.q-BookPurchase-selected_box{
+	width: 97.6%;
+	margin-left: 1.2%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 6px;
+	border-bottom: 1px dashed #B8B8B8;
+}
+.q-BookPurchase-selected_name{
+   font-size: 12px;
+   color: #657187;
+   margin-left: 5px;
+   height: 32px;
+   line-height: 32px;
+   float: left;
+}
+.q-BookPurchase-selected_tag1{
+	float: left;
+	height: 32px;
+	margin-right: 25px;
+}
+/*新书筛选*/
+.q-BookPurchase-newBook_container{
+	width: 100%;
+	min-height: 20px;
+	background: #fff;
+}
+.q-BookPurchase-newBook_box{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	background: #EEF2F9;
+  	border-bottom: 1px solid #E0DFED;
+}
+.q-BookPurchase-newBook_text{
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	margin-left: 22px;
+}
+.q-BookPurchase-newBook_search{
+	width: 266px;
+	height: 31px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 1.2%;
+	position: relative;
+}
+.q-BookPurchase-select_box{
+	height: 22px;
+	float: right;
+	margin-top: 11px;
+	margin-right: 19px;
+	position: relative;
+}
+.q-BookPurchase-select_name{
+	height: 22px;
+	line-height: 22px;
+	display: block;
+	float: left;
+	color: #657187;
+	font-size: 12px;
+}
+.q-BookPurchase-select{
+	float: left;
+	color: #657187;
+	font-size: 12px;
+	height: 22px;
+}
+.q-BookPurchase-bottom-search_text{
+	position: absolute;
+	top:0;left: 0;
+	width: 229px;
+	height: 31px;
+	background: #fff;
+	color: #657187;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.q-BookPurchase-icon{
+	display: block;
+	float: left;
+	width: 22px;
+	height: 21px;
+	margin-left: 2px;
+	margin-top: 1px;
+	background: url(../images/collect-szcl.png) no-repeat;
+	cursor: pointer;
+}
+.q-BookPurchase-bottom-search_submit{
+	width: 31px;
+	height: 31px;
+	background: url(../images/q-orgManage-bottom-search_submit.png) no-repeat;
+	position: absolute;
+	top:0;left:234px;
+	cursor: pointer;
+}
+.q-BookPurchase-bottom-search_icon{
+	position: absolute;
+	right:40px;top:5px;
+	display: block;
+	width: 28px;
+	height: 21px;
+	background: url(../images/collect-tptt.png) no-repeat;
+	cursor: pointer;
+}
+.q-BookPurchase-set_box{
+	width: 100%;
+	height: 40px;
+	background: #EEF2F9;
+  	border-bottom: 1px solid #E0DFED;
+  	cursor: pointer;
+}
+.q-BookPurchase-Sales{
+	padding-left:15px;
+	padding-right:15px;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #E0DFED;
+	float: left;
+}
+.q-BookPurchase-Sales_cur{
+	background: #fff;
+}
+.q-BookPurchase-text{
+	float: left;
+	color: #657187;
+	font-size: 12px;
+}
+.q-BookPurchase-set_lower{
+	width: 9px;
+	height: 11px;
+	display: block;
+	background: url(../images/book-lower.png) no-repeat;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.q-BookPurchase-set_lower_cur{
+	background: url(../images/book-lower_cur.png) no-repeat;
+}
+.q-BookPurchase-radio-box{
+	width: 220px;
+	height: 13px;
+	background: right;
+	float: right;
+	margin-top: 14px;
+}
+input[type="radio"] {
+    margin: 3px 3px 0px 5px;
+    display: none;
+}
+label{
+    padding-left: 18px;
+    cursor: pointer;
+    background: url(../images/q-radio-bg.png) 0 1px no-repeat;
+}
+label.checked{
+    background: url(../images/q-radio-bg.png) 0 -14px no-repeat;
+}
+.q-BookPurchase-set_upper{
+	width: 9px;
+	height: 11px;
+	display: block;
+	background: url(../images/book-upper.png) no-repeat;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.q-BookPurchase-set_upper_cur{
+	background: url(../images/book-upper_cur.png) no-repeat;
+}
+.q-BookPurchase-link_container{
+	width: 100%;
+	min-height: 30px;
+	background: #fff;
+}
+.q-BookPurchase-link_search_content{
+	width: 97.6%;
+	margin-left: 1.2%;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 4px;
+	border-bottom: 1px solid #E0DFED;
+	position: relative;
+}
+.q-BookPurchase-link_search{
+	float: left;
+}
+.q-BookPurchase-link_search_name{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	color: #000;
+	font-size: 12px;
+}
+.q-BookPurchase-link_search_box{
+	width: 490px;
+	height: 32px;
+	float: left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookPurchase-link{
+	display: block;
+	float: left;
+	text-decoration: none;
+	margin-right: 9px;
+	color: #009adf;
+}
+.q-BookPurchase-link-right{
+	position: absolute;
+	top:0;right:0;
+	min-width: 250px;
+	height: 32px;
+}
+.q-BookPurchase-link-right-lis{
+	width: 58px;
+	height: 20px;
+	border:1px solid #E0DFED;
+	line-height: 20px;
+	float: right;
+	margin-top: 5px;
+	color: #8E8E8E;
+	font-size:12px;
+	background: #fff;
+	cursor: pointer;
+}
+.q-BookPurchase-link-right-web{
+	width: 58px;
+	height: 20px;
+	border:1px solid #E0DFED;
+	line-height: 20px;
+	float: right;
+	margin-top: 5px;
+	color: #8E8E8E;
+	font-size:12px;
+	background: #fff;
+	cursor: pointer;
+	margin-right: 6px;
+}
+.q-BookPurchase-link-right-lis_icon{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 11px;
+	margin-top: 5px;
+	margin-left: 4px;
+	background: url(../images/book-list.png) no-repeat;
+}
+.q-BookPurchase-link-right-web_icon{
+	display: block;
+	float: left;
+	width: 13px;
+	height: 14px;
+	margin-top: 3px;
+	margin-left: 4px;
+	background: url(../images/book-web.png) no-repeat;
+}
+.q-BookPurchase-link-right-lis_text{
+	float: left;
+	margin-left: 5px;
+}
+.q-BookPurchase-link-right-cob_cur{
+	background: #FBFBFB;
+}
+.q-BookPurchase-link-right-nub{
+	min-width: 113px;
+	float: right;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 11px;
+}
+.q-BookPurchase-link-right-nub_name{
+	float: left;
+	color: #8E8E8E;
+}
+.q-BookPurchase-link-right-nub_seclect{
+	float: left;
+	margin-top: 7px;
+}
+/*=================图书详情页的列表样式======================*/
+.q-BookPurchase-book_container{
+	width: 100%;
+	min-height: 1px;
+	background: #fff;
+}
+.q-BookPurchase-book_list{
+	width: 100%;
+	height: 190px;
+	position: relative;
+	border-bottom: 1px dashed #E0DFED;
+}
+.q-BookPurchase-book_list_left{
+	width: 580px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top:0px;left:2.2%;
+}
+.q-BookPurchase-book_list_right{
+	width: 200px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top:0px;right:2.2%;
+}
+.q-BookPurchase-link_search_text{
+	display: none;
+}
+.q-BookPurchase-book_list_bg{
+	width: 121px;
+	height: 164px;
+	background: url(../images/book-bg.png) no-repeat;
+	position: absolute;
+	top:15px;left:0;
+}
+.q-BookPurchase-book_list_logo{
+	width: 115px;
+	height: 157px;
+	position: absolute;
+	top:1px;left: 1px;
+}
+.q-BookPurchase-book_list_title{
+	width: 435px;
+	height: 14px;
+	line-height: 14px;
+	color: #000;
+	font-size: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	position:absolute;
+	top:15px;left:135px;
+	font-weight: 700;
+}
+.q-BookPurchase-book_list_price{
+	width: 435px;
+	height: 14px;
+	line-height: 14px;
+	color: #FA212D;
+	font-size: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	position:absolute;
+	top:50px;left:135px;
+	font-weight: 700;
+}
+.q-BookPurchase-book_list_price_discount{
+	line-height: 16px;
+	color: #FC2741;
+	font-size: 12px;
+	font-weight: 400;
+}
+.q-BookPurchase-book_list_price_forhead{
+	margin-left: 32px;
+	line-height: 16px;
+	color: #999999;
+	font-size: 12px;
+	font-weight: 400;
+}
+.q-BookPurchase-book_list_price_forhead span{
+	text-decoration:line-through;
+}
+.q-BookPurchase-book_list_detail{
+	width: 435px;
+	min-height: 80px;
+	position: absolute;
+	top:85px;left: 135px;
+}
+.q-BookPurchase-book_list_detail_lis{
+	width: 100%;
+	min-height: 12px;
+	line-height: 12px;
+	color: #666;
+	font-size: 12px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-bottom: 12px;
+	position: relative;
+	z-index: 10;
+}
+.q-BookPurchase-book_list_detail_lis1{
+	width: 100%;
+	min-height: 12px;
+	line-height: 12px;
+	color: #666;
+	font-size: 12px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-bottom: 12px;
+	margin-left: 20px;
+}
+.q-BookPurchase-book_list_detail_lis span{
+	display: block;
+	float: left;
+}
+.q-BookPurchase-book_list_detail_lis1 span{
+	display: block;
+	float: left;
+}
+.q-BookPurchase-book_list_detail_name{
+	width: 75px;
+	text-align: right;
+}
+.q-BookPurchase-book_list_detail_text{
+	color:#009adf;
+	margin-right: 2px;
+}
+.q-BookPurchase-book_list_detail_text1{
+	width: 120px;
+	color:#009adf;
+	margin-right: 2px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookPurchase-book_list_detail_text span{
+	float: left;
+	color:#949494;
+}
+.q-BookPurchase-book_list_detail_time{
+	color:#949494;
+	margin-right: 2px;
+}
+.q-BookPurchase-book_list_detail_ask{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 14px;
+	background: url(../images/ask.png) no-repeat;
+	margin-left: 5px;
+	cursor: pointer;
+	position: relative;
+}
+.q-BookPurchase-book_list_detail_sk{
+	display: block;
+	float: left;
+	min-width: 12px;
+	min-height: 14px;
+	background: url(../images/ask.png) no-repeat;
+	margin-left: 5px;
+	cursor: pointer;
+	position: relative;
+}
+.q-BookPurchase-book_list_detail_con{
+	padding-left: 10px;
+	padding-right: 10px;
+	border:1px solid  #E0DFED;
+	padding-top: 6px;
+	margin-bottom: 6px;
+	float: left;
+	position: relative;
+	margin-top: -8px;
+	margin-left: 15px;
+	background: #fff;
+	display: none;
+}
+.q-BookPurchase-book_list_detail_on{
+	padding-left: 10px;
+	padding-right: 10px;
+	border:1px solid  #E0DFED;
+	padding-top: 6px;
+	margin-bottom: 6px;
+	position: absolute;
+	top: -8px;left: 28px;
+	background: #fff;
+	display: none;
+	z-index: 100;
+}
+.q-BookPurchase-book_list_detail_jiantou{
+	display: block;
+	width: 11px;
+	height: 14px;
+	background:url(../images/tcdddk.png) no-repeat;
+	position: absolute;
+	top:6px;left:-11px;
+}
+.q-BookPurchase-book_list_detail_li{
+	color:#949494;
+	height: 12px;
+	line-height: 12px;
+	margin-bottom: 7px;
+}
+.q-BookPurchase-book_list_detail_il{
+	color:#949494;
+	height: 12px;
+	line-height: 12px;
+	margin-bottom: 7px;
+}
+.q-BookPurchase-book_list_detail_li i{
+	display: block;
+	float: left;
+	width: 6px;
+	height: 6px;
+	background: #CDCDCB;
+	margin-top: 4px;
+}
+.q-BookPurchase-book_list_detail_il i{
+	display: block;
+	float: left;
+	width: 6px;
+	height: 6px;
+	background: #CDCDCB;
+	margin-top: 4px;
+}
+.q-BookPurchase-book_list_detail_li_txt{
+	display: block;
+	float: left;
+	margin-left: 8px;
+}
+.q-BookPurchase-book_list_detail_li_tt{
+	display: block;
+	margin-left: 14px;
+}
+.q-BookPurchase-book_hand_icon{
+	display: block;
+	width: 18px;
+	height: 19px;
+	position: absolute;
+	top:15px;right:33px;
+	background: url(../images/hultus.png) no-repeat;
+}
+.q-BookPurchase-book_hand_checkbox{
+	position: absolute;
+	top:15px;right:10px;
+}
+.q-BookPurchase-star_box{
+	min-width: 65px;
+	height: 13px;
+	position: absolute;
+	top:113px;left:0px;
+}
+.q-BookPurchase-star_bx{
+	min-width: 65px;
+	height: 13px;
+	position: relative;
+	margin-left: 5px;
+	float: left;
+	margin-top: 5px;
+}
+.q-BookPurchase-star_x{
+	width: 194px;
+	height: 20px;
+	position: relative;
+	margin: 0px auto;
+}
+.q-BookPurchase-nostar{
+	display: block;
+	width: 65px;
+	height: 13px;
+	position: absolute;
+	top:0;left:0;
+	z-index: 1;
+	background: url(../images/nostar.jpg);
+}
+.q-BookPurchase-star{
+	display: block;
+	width: 65px;
+	height: 13px;
+	position: absolute;
+	top:0;left:0;
+	z-index: 2;
+	background: url(../images/star.jpg);
+}
+.q-BookPurchase-upper_icon{
+	display: block;
+	background: url(../images/xialajiantou.png) no-repeat;
+	width: 8px;
+	height: 7px;
+	position: absolute;
+	top:5px;left:70px; 
+}
+.q-BookPurchase-upper_scre{
+	height: 12px;
+	line-height: 12px;
+	color:#009adf;
+	font-size: 12px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+.q-BookPurchase-upper_scre1{
+	height: 12px;
+	line-height: 12px;
+	color:#009adf;
+	font-size: 12px;
+	position: absolute;
+	top:2px;left:84px; 
+}
+.q-BookPurchase-btn_content{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top:145px;left:0;
+}
+.q-BookPurchase-btn_shop{
+	width: 103px;
+	height: 28px;
+	display: block;
+	float: left;
+	line-height: 28px;
+	border:1px solid #D0D0D0;
+	border-radius: 4px;
+}
+.q-BookPurchase-shop_icon{
+	display: block;
+	width: 31px;
+	height: 26px;
+	background: url(../images/collect-goum.png) no-repeat;
+	float: left;
+	margin-top: 1px;
+	margin-left: 4px;
+}
+.q-BookPurchase-shop_text{
+	float: left;
+	font-size: 12px;
+	color:#009adf;
+}
+.q-BookPurchase-btn_read{
+	width: 83px;
+	height: 28px;
+	display: block;
+	float: left;
+	line-height: 28px;
+	border:1px solid #D0D0D0;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+.q-BookPurchase-read_icon{
+	  display: block;
+  	float: left;
+  	width: 23px;
+  	height: 14px;
+  	background: url(../images/book-read.png) no-repeat;
+  	margin-left: 9px;
+  	margin-top: 7px;
+}
+.q-BookPurchase-read_icon1{
+	display: block;
+  	float: left;
+  	width: 23px;
+  	height: 14px;
+  	background: url(../images/book-read.png) no-repeat;
+  	margin-left: 5px;
+  	margin-top: 8px;
+}
+.q-BookPurchase-read_text{
+	float: left;
+	font-size: 12px;
+	color:#009adf;
+	margin-left: 8px;
+}
+.q-BookPurchase-book_con-web{
+	background: #fff;
+	margin-left: 2.2%;
+	padding-bottom: 10px;
+	background: #fff;
+}
+.q-BookPurchase-book_con-lis{
+	padding-bottom: 10px;
+	display:none;
+}
+.q-BookPurchase-book-web-list{
+	width: 204px;
+	min-height: 279px;
+	border:1px solid #fff;
+	margin-right:12px; 
+	position: absolute;
+	top:0;left: 0;
+}
+.q-BookPurchase-book-web-list-con{
+	width: 206px;
+	height: 280px;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+	margin-right: 18px;
+	background: #fff;
+}
+.q-BookPurchase-book-web-checkbox{
+	position: absolute;
+	top:10px;left:15px;
+}
+.q-BookPurchase-webook_bg{
+	width: 121px;
+	height: 164px;
+	background: url(../images/book-bg.png) no-repeat;
+	margin-top: 10px;
+	margin-left: 47px;
+	position: relative;
+}
+.q-BookPurchase-webook_face{
+	width: 115px;
+  	height: 157px;
+  	position: absolute;
+  	top: 1px;
+  	left: 1px; 
+}
+.q-BookPurchase-webook_title{
+	width: 140px;
+	max-height: 51px;
+	line-height: 17px;
+	margin-top: 7px;
+	margin-left: 40px;
+	font-size: 12px;
+	color: #606060;
+	overflow: hidden;
+}
+.q-BookPurchase-webook_price_box{
+	width: 80%;
+	min-height: 25px;
+	line-height: 25px;
+	margin-top: 2px;
+	margin-left: 38px;
+}
+.q-BookPurchase-webook_icon_box{
+	width: 100%;
+	min-height: 35px;
+	line-height: 35px;
+	margin-top: 2px;
+	background: #fff;
+}
+.q-BookPurchase-webook_price{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: #FA212D;
+	font-size: 12px;
+	font-weight: 700;
+	float: left;
+}
+.q-BookPurchase-shop_icon{
+	display: block;
+	float: left;
+	width: 31px;
+	height: 26px;
+	background: url(../images/collect-goum.png) no-repeat;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+.q-BookPurchase-shop_icon1{
+	display: block;
+	float: left;
+	width: 31px;
+	height: 26px;
+	background: url(../images/collect-goum.png) no-repeat;
+	margin-left: 37px;
+	margin-top: 0px;
+}
+.q-BookPurchase-hand_icon{
+	display: block;
+	float: left;
+	width: 18px;
+	height: 19px;
+	background: url(../images/hultus.png) no-repeat;
+    margin-left: 7px;
+    margin-top: 3px;
+}
+.q-BookPurchase-hand_icon1{
+	display: block;
+  	float: left;
+  	width: 18px;
+  	height: 19px;
+  	background: url(../images/hultus.png) no-repeat;
+  	margin-left: 10px;
+  	margin-top: 5px;
+}
+.q-BookPurchase-webDetail_box{
+	width: 204px;
+	height: 108px;
+	border-top: 1px dashed #E0DFED;
+	padding-top: 10px;
+	display: none;
+	background: #fff;
+	position: relative;
+	z-index: 100;
+	border-left:1px solid #CECECE;
+	border-right:1px solid #CECECE;
+	border-bottom:1px solid #CECECE;
+	margin-left: -1px;
+}
+.q-BookPurchase-db_container{
+	width: 100%;
+	min-height: 10px;
+	background:#F6F6F6;
+	padding-top: 18px;
+	margin-bottom: 16px;
+}
+.q-BookPurchase-db_box{
+	width: 208px;
+	height: auto;
+	margin: 0 auto;
+}
+.q-BookPurchase-db_title{
+	width: 194px;
+  	height: 41px;
+  	line-height: 48px;
+  	color: #657187;
+  	font-size: 12px;
+  	text-indent: 5px;
+  	margin: 0 auto;
+}
+.q-BookPurchase-db-bottom{
+	width: 194px;
+	height: 4px;
+	background: url(../images/shanxuanxiahx.png) no-repeat;
+	margin: 0 auto;
+
+}
+.q-BookPurchase-db_title1{
+	width: 12px;
+	height: auto;
+	line-height: 12px;
+	color: #696C7A;
+	font-size: 12px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 4px;
+}
+.q-BookPurchase-db_title2{
+	margin-top: 2px;
+	margin-right:3px;
+}
+.q-BookPurchase-db_title1 span{
+	color:#999;
+}
+.q-BookPurchase-db-list_bg{
+	width: 184px;
+	height: 60px;
+	position: relative;
+	float: left;
+}
+.q-BookPurchase-db-list_line{
+	width: 215px;
+	background: #E1E1E1;
+	margin: 15px auto;
+	height: 1px;
+}
+.range-slider_box1{
+	position: absolute;
+  	top: 26px;left: 21px;
+}
+#pingfen{ width:190px;height:19px;}
+#pingfen li{ width:19px;float:left;height:19px; cursor:pointer;background:url(../images/collect-kongstar.png) no-repeat 0 0; list-style:none;}
+#pingfen .active{
+	background: url(../images/collect-star.png) no-repeat 0 0;
+}
+a
+{
+    text-decoration: none;    
+}
+.q-BookPurchase-left_ont{
+	background: #fff;
+	padding-bottom: 25px;
+	padding-top: 1px;
+}
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+
+.q-BookPurchase-selectAll-box
+{
+    width:50px;
+    height:12px;  
+    float:right;
+    margin-top:20px;
+    margin-left:5px;
+    margin-right:15px;
+ }
+.q-BookPurchase-selectAll_text
+{
+   float:left;
+   display:block;
+   color:#009adf;
+   font-size:12px;
+   height:12px;
+   line-height:12px;
+ }
+.q-BookPurchase-selectAll
+{
+  float:left;
+  margin-right:5px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

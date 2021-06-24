@@ -1,0 +1,197 @@
+/*最上部的跳转导航*/
+.jg-detail-naxBox{
+	width: 1000px;
+	height: 32px;
+	border-bottom: 1px solid #DEDEDE;
+	margin: 0 auto;
+	font-family: "microsoft yahei";
+}
+.jg-detail-naxInner{
+	height: 32px;
+	margin-left: 23px;
+	color:#333;
+	font-size: 14px;
+}
+.jg-detail-naxName{
+	display: block;
+	height:32px;
+	line-height: 32px;
+	float: left;
+	margin-right: 5px;
+}
+.jg-detail-naxCon{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+.jg-detail-naxCon a{
+	color:#333;
+}
+.jg-detail-naxCon span{
+	color:#0296FE;
+}
+.jg-detail-naxCon i{
+	color:#333;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: simsun;
+	font-size: 15px;
+	margin-top: 1px;
+}
+.jg-detail-naxList{
+	display: block;
+	float: left;
+}
+.jg-detail-naxList:hover{
+	color:#F39800;
+}
+.jg-detail-getsContainer{
+	width: 1000px;
+	min-height: 30px;
+	font-family: "microsoft yahei";
+	margin: 0 auto;
+	padding-top:17px;
+	padding-bottom: 25px;
+}
+.jg-detail-getsContainer:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+.jg-detail-getsLeft{
+	width: 325px;
+	min-height: 30px;
+	float: left;
+	margin-left: 23px;
+}
+.jg-detail-getsRight{
+	width: 610px;
+	min-height: 30px;
+	float: right;
+	margin-right: 20px;
+}
+.jg-detail-topTitle{
+	width: 100%;
+	height: 40px;
+	background: #ECECEC;
+	line-height: 40px;
+	color:#333;
+	font-size:14px;
+	text-indent:15px;
+}
+.jg-detail-commontitlebox{
+	width: 100%;
+	height: 40px;
+}
+.jg-detail-CommonTitleBox{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	color:#333;
+	font-size: 12px;
+}
+.jg-detail-CommonTitleTxt{
+	float: left;
+	margin-left: 15px;
+	height: 40px;
+	line-height: 40px;
+}
+.jg-detail-CommonMore{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	color:#333;
+	display: none;
+}
+.jg-detail-CommonMore span{
+	display: block;
+	float: left;
+	line-height: 40px;
+}
+.jg-detail-CommonMore i{
+	display: block;
+    float: left;
+    width: 12px;
+    height: 7px;
+    background: url(../Images/jd-down.png) no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 18px;
+}
+.jg-detail-CommonMore i.cur{
+	background: url(../Images/jd-up.png) no-repeat;
+}
+.jg-detail-ComListBox{
+	width:310px;
+	border-bottom:1px solid #CBCBCB;
+	padding-bottom: 14px;
+	margin-left: 15px;
+}
+.jg-detail-CommonList{
+	display: block;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color:#666;
+	font-size:12px;
+}
+.jg-detail-CommonList:hover{
+	color:#F39800;
+}
+.jg-detail-getsRightContent{
+	width: 570px;
+	padding:10px 20px;
+	overflow: hidden;
+	font-size: 12px;
+	color:#666;
+	line-height: 24px;
+}
+.jg-detail-getsRightContent img{
+	float: left;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+.jg-detail-getsRightBottom{
+	width:100%;
+	min-height: 30px;
+	background: #E5E5E5;
+	line-height: 30px;
+}
+.jg-detail-getsRightBottom:after{
+	display: block;
+	content:"";
+	clear:both;
+}
+.jg-detail-getsRightBottomName{
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color:#FD2121;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.jg-detail-getsRightBottomCon{
+	float: left;
+	width:500px;
+	min-height: 30px;
+}
+.jg-detail-getsLoadList{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color:#0296FE;
+	text-decoration: underline;
+	margin-right: 15px;
+	margin-left: 5px;
+	line-height: 30px;
+}
+
+
+
+
+

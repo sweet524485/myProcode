@@ -1,0 +1,184 @@
+/**********************基本信息页面**********************************/
+
+.item-2 .row{
+    margin-top: 30px;
+    text-shadow: 1px 1px 0 #2483CD, -1px -1px 0 #323333;
+}
+.item-2 .container  {
+    display: none;
+}
+.item-2 .container .icon-infomation {
+    height: 211px;
+  position: relative;
+}
+.item-2 .container .icon-infomation img {
+    /*height: 100%;*/
+}
+#welcome_btn {
+    background: url(../images/downloadId.png) no-repeat;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 8px;
+    width: 178px;
+    height: 49px;
+}
+.qiutantan.shingName{
+	animation-name:shing;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    /* Safari and Chrome: */
+    -webkit-animation-name:shing;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+}
+@keyframes shing
+{
+	0%{
+	    -webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	25%{
+	    -webkit-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	50%{
+	    -webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	75%{
+	    -webkit-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	100%{
+		-webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+}
+@-webkit-keyframes shing
+{
+	0%{
+	    -webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	25%{
+	    -webkit-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(-3deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	50%{
+	    -webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	75%{
+	    -webkit-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(3deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+	100%{
+		-webkit-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -moz-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -ms-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    -o-transform:rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	    transform: rotate(0deg) skew(0deg) scale(1.0) translate(0px,0);
+	}
+}
+.item-2 .icon-infomation p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+}
+.item-2  .icon-infomation:nth-child(1){
+    -webkit-animation: bounceIn 2s ease;
+    animation: bounceIn 2s ease;
+}
+
+.item-2  .icon-infomation:nth-child(2){
+    opacity: 0;
+    -webkit-animation: lightSpeedIn 2s ease forwards;
+    animation: lightSpeedIn 2s ease forwards;
+    -webkit-animation-delay:1s;
+    text-shadow: 1px 1px 0 #086D92, -1px -1px 0 #086D92;
+}
+.item-2  .icon-infomation:nth-child(3){
+    opacity: 0;
+    -webkit-animation: rubberBand 2s ease forwards;
+    animation: rubberBand 2s ease forwards;
+    -webkit-animation-delay:1.5s;
+    text-shadow: 1px 1px 0 #086D92, -1px -1px 0 #086D92;
+}
+
+.item-2  .icon-infomation:nth-child(4){
+    opacity: 0;
+    -webkit-animation: bounceInUp 2s ease forwards;
+    animation: bounceInUp 2s ease forwards;
+    -webkit-animation-delay:2s;
+}
+/*.item-2 .page2-title.rotateOutUpLeft {*/
+    /*-webkit-animation: rotateOutUpLeft .5s ease ;*/
+    /*animation: rotateOutUpLeft .5s ease ;*/
+/*}*/
+.item-2  .page2-title {
+	display:inline-block;
+    width: 490px;
+    margin: 0 auto;
+    -webkit-animation: zoomInDown 2s ease forwards;
+    animation: zoomInDown 2s ease forwards;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 1px 0 #bbb, 0 2px 0 #b9b9b9, 0 3px 0 #aaa, 0 4px 1px rgba(0,0,0,0.1), 0 0 3px rgba(0,0,0,0.1),0 1px 1px rgba(0,0,0,0.3),0 1px 3px rgba(0,0,0,0.2);
+}
+.page2-title-text1{
+	float: left;
+}
+.page2-title-img1{
+	float: left;
+	margin-top: 12px;
+	margin-left: 33px;
+	margin-right: 12px;
+}
+#welcome_btn{
+	float: left;
+	margin-top: 11px;
+}
+
+.item-2 .icon-infomation.zoomOutUp {
+    opacity: 1;
+    -webkit-animation: slideOutUp .5s linear ;
+    animation: slideOutUp .5s linear ;
+}
+/**********************基本信息页面end********************************/

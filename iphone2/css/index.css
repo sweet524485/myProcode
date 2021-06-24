@@ -1,0 +1,262 @@
+#loading {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	margin-top: -55px;
+	margin-left: -30px;
+	text-align: center;
+	z-index: 11
+}
+
+.sk-spinner-cube-grid.sk-spinner {
+	width: 40px;
+	height: 40px;
+	margin: 0 auto
+}
+
+.sk-spinner-cube-grid .sk-cube {
+	width: 33%;
+	height: 33%;
+	background-color: #369;
+	float: left;
+	-webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+	animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(1) {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(2) {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(3) {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(4) {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(5) {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(6) {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(7) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(8) {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+.sk-spinner-cube-grid .sk-cube:nth-child(9) {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+	0%,70%,100% {
+		-webkit-transform: scale3D(1,1,1);
+		transform: scale3D(1,1,1)
+	}
+
+	35% {
+		-webkit-transform: scale3D(0,0,1);
+		transform: scale3D(0,0,1)
+	}
+}
+
+@keyframes sk-cubeGridScaleDelay {
+	0%,70%,100% {
+		-webkit-transform: scale3D(1,1,1);
+		transform: scale3D(1,1,1)
+	}
+
+	35% {
+		-webkit-transform: scale3D(0,0,1);
+		transform: scale3D(0,0,1)
+	}
+}
+
+body {
+	width: 100%;
+	overflow: hidden
+}
+
+.hide {
+	display: none
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-size: 100px;
+	text-align: center
+}
+
+.page .wrap {
+	height: 500px
+}
+
+.page .wrap img {
+	position: absolute;
+	height: auto
+}
+
+.page .wrap .img_Up {
+	width: 25px;
+	left: 50%;
+	top: 92%;
+	margin-left: -12px
+}
+
+.page-1-1 {
+	background-color: #ededed;
+	background: url(../images/page-1-1.png) center center no-repeat;
+	background-size: cover
+}
+
+.page-2-1 {
+	background-color: #ec5f55;
+	background: url(../images/page-2-1.png) center center no-repeat;
+	background-size: cover
+}
+
+.page-3-1 {
+	background-color: #ffbb4d;
+	background: url(../images/page-3-1.png) center center no-repeat;
+	background-size: cover
+}
+
+.page-4-1 {
+	background-color: #f94848;
+	background: url(../images/page-4-1.png) center center no-repeat;
+	background-size: cover
+}
+
+.page-current {
+	z-index: 1
+}
+
+.page-1-1 .img_1 {
+	width: 200px;
+	top: 20%;
+	left: 50%;
+	margin-left: -100px
+}
+
+.page-1-1 .img_2 {
+	width: 290px;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 20px;
+	margin-right: 20px
+}
+
+.page-2-1 .img_1 {
+	width: 130px;
+	top: 10%;
+	left: 10%
+}
+
+.page-2-1 .img_2 {
+	width: 275px;
+	top: 40%;
+	left: 50%;
+	bottom: 0;
+	margin-left: -137.5px
+}
+
+.page-3-1 .img_1 {
+	width: 246px;
+	top: 17%;
+	left: 50%;
+	margin-left: -123px
+}
+
+.page-3-1 .img_2 {
+	width: 40px;
+	top: 7%;
+	left: 50%;
+	margin-left: -123px
+}
+
+.page-3-1 .img_3 {
+	width: 70px;
+	right: 50%;
+	top: 5%;
+	margin-right: -145px
+}
+
+.page-4-1 .img_1 {
+	width: 242px;
+	left: 50%;
+	top: 30%;
+	margin-left: -110px
+}
+
+.page-4-1 .img_2 {
+	width: 85px;
+	left: 5%;
+	bottom: 15%
+}
+
+.page-4-1 .img_3 {
+	width: 70px;
+	right: 4%;
+	bottom: 15%
+}
+
+.page-4-1 .img_4 {
+	width: 120px;
+	left: 50%;
+	bottom: 23%;
+	margin-left: -54px
+}
+
+.page-4-1 .img_5 {
+	width: 146px;
+	left: 50%;
+	bottom: 12%;
+	margin-left: -67px
+}
+
+#share {
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 99998
+}
+
+.shareImg {
+	background: url(../images/share.png) right top no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 165px;
+	height: 114px;
+	background-size: cover;
+	z-index: 99999
+}

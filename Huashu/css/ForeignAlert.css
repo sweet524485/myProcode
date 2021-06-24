@@ -1,0 +1,107 @@
+.q-foreignAlert-body{
+	padding-top: 15px;
+	margin: 0 auto;
+	max-width: 780px;
+}
+.q-foreignAlert-left{
+	width: 150px;
+	min-height: 30px;
+	float: left;
+	background: #E8EFFA;
+	padding-bottom: 15px;
+}
+.q-foreignAlert-right{
+	width: 620px;
+	min-height: 30px;
+	float: right;
+	background: #fff;
+}
+.q-foreignAlert-list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	display: none;
+}
+.q-foreignAlert-nav{
+	display: block;
+	height:30px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-indent: 20px;
+	width: 120px;
+	background: url(../images/q-foreignAlert-navBg.png);
+	margin-left: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	border:1px solid #D9E2ED;
+	color: #899DBE;
+}
+.q-foreignAlert-nav_cur{
+	color:red;
+	text-decoration: underline;
+	border:1px solid #339ECC;
+}
+.q-foreignAlert-nav:hover{
+	color:red;
+	text-decoration: underline;
+	border:1px solid #339ECC;
+}
+.q-foreignAlert-selectAllBox{
+	width: 600px;
+	height: 30px;
+	line-height: 33px;
+	margin-left: 10px;
+	color: #899DBE;
+	font-size: 14px;
+	border-bottom: 1px solid #B2C9E3;
+	font-weight: bold;
+	float: left;
+}
+.q-foreignAlert-selectAll{
+	float: left;
+	margin-top:10px;
+}
+.q-foreignAlert-selectAllBox span{
+	float: left;
+	margin-left: 6px;
+}
+.q-foreignAlert-container{
+	width: 620px;
+	min-height: 30px;
+	margin-left: 10px;
+	float: left;
+}
+.q-foreignAlert-label{
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 20px;
+	color: #57ADCD;
+	font-size: 12px;
+}
+.q-foreignAlert-checkbox{
+	float: left;
+	margin-right: 6px;
+	margin-top:9px;
+}
+.q-foreignAlert-labelTxt{
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>手机美团-仇郯郯版</title>
+<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/mine.css">
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/iscroll-lite.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/mine.js"></script>
+<!-- 轮播图 -->
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body onload="loaded()">
+<!-- 头部 -->
+<header>
+	<div id="header">
+		<a href="#" class="mine-text">
+			我的
+		</a>
+		<div class="mine-header-rightBox">
+			<a href="#" class="mine-header-setIcon" title="设置"></a>
+			<a href="#" class="mine-header-news" title="消息"></a>
+		</div>
+	</div>
+</header>
+<!-- 主体 -->
+<div id="wrapper">
+	<div id="scroller">
+		<!-- 个人信息 -->
+		<div class="mine-detail-box">
+			<a href="#" class="mine-faceBox">
+				<img src="./images/face.png" alt="头像">
+			</a>
+			<a href="#" class="mine-login">请点击登录</a>
+			<a href="#" class="mine-whiteArrow"></a>
+			<div class="mine-detail-bottomBox">
+				<!-- 美团劵 -->
+				<a href="javascript:void(0);" class="mine-detail-bottomList" onclick="LoginShow()">
+					<div class="mine-detail-bottomText">
+						<i class="mine-detail-bottomMTJ"></i>
+						<span>美团劵</span>
+					</div>
+				</a>
+				<!-- 评价 -->
+				<a href="javascript:void(0);" class="mine-detail-bottomList" onclick="LoginShow()">
+					<div class="mine-detail-bottomText">
+						<i class="mine-detail-bottomPJ"></i>
+						<span>评价</span>
+					</div>
+				</a>
+				<!-- 收藏 -->
+				<a href="javascript:void(0);" class="mine-detail-bottomList" onclick="LoginShow()">
+					<div class="mine-detail-bottomText">
+						<i class="mine-detail-bottomSC"></i>
+						<span>收藏</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 我的订单 -->
+		<div class="mine-myOrder-container">
+			<div class="mine-myOrder-topBox">
+				<div class="mine-myOrder-topLeft">
+					<i class="mine-myOrder-topIcon"></i>
+					<span class="mine-myOrder-topTitle">
+						我的订单
+					</span>
+				</div>
+				<a href="javascript:void(0);" class="mine-myOrder-topRight" onclick="LoginShow()">
+					<span>
+						查看全部订单
+					</span>
+					<i class="mine-myOrder-arrow"></i>
+				</a>
+			</div>
+			<!-- 订单按钮 -->
+			<div class="mine-myOrder-content">
+				<a href="javascript:void(0);" class="mine-myOrder-conList" onclick="LoginShow()">
+					<i class="mine-myOrder-conIcon order-dfk"></i>
+					<div class="mine-myOrder-conTitle">
+						待付款
+					</div>
+				</a>
+				<a href="javascript:void(0);" class="mine-myOrder-conList" onclick="LoginShow()">
+					<i class="mine-myOrder-conIcon order-dsy"></i>
+					<div class="mine-myOrder-conTitle">
+						待使用
+					</div>
+				</a>
+				<a href="javascript:void(0);" class="mine-myOrder-conList" onclick="LoginShow()">
+					<i class="mine-myOrder-conIcon order-dpj"></i>
+					<div class="mine-myOrder-conTitle">
+						待评价
+					</div>
+				</a>
+				<a href="javascript:void(0);" class="mine-myOrder-conList" onclick="LoginShow()">
+					<i class="mine-myOrder-conIcon order-thsh"></i>
+					<div class="mine-myOrder-conTitle">
+						退货/售后
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 我的钱包 -->
+		<div class="mine-myOrder-walletContent">
+			<div class="mine-myOrder-walletList">
+				<i class="mine-myOrder-walletIcon"></i>
+				<a href="javascript:void(0);" class="mine-myOrder-walletCon" onclick="LoginShow()">
+					<span class="mine-myOrder-walletTxt">
+						我的钱包
+					</span>
+					<i class="mine-myOrder-walletArrow"></i>
+				</a>
+			</div>
+			<div class="mine-myOrder-walletList">
+				<i class="mine-myOrder-diyongjuanIcon"></i>
+				<a href="javascript:void(0);" class="mine-myOrder-walletCon" style="border-bottom:0;" onclick="LoginShow()">
+					<span class="mine-myOrder-walletTxt">
+						抵用劵
+					</span>
+					<i class="mine-myOrder-walletArrow"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 类似列表 -->
+		<a href="javscript:void(0);" class="mine-list-container" onclick="LoginShow()">
+			<div class="mine-list-left">
+				<img src="./images/mine-goWhere.png" class="mine-list-logo"/>
+				<span class="mine-list-title">
+					好友去哪
+				</span>
+			</div>
+			<div class="mine-list-right">
+				<span class="mine-list-rightTxt">
+					
+				</span>
+				<i class="mine-list-rightArrow"></i>
+			</div>
+		</a>
+		<a href="javscript:void(0);" class="mine-list-container" onclick="LoginShow()">
+			<div class="mine-list-left">
+				<img src="./images/mine-jrtj.png" class="mine-list-logo"/>
+				<span class="mine-list-title">
+					今日推荐
+				</span>
+			</div>
+			<div class="mine-list-right">
+				<span class="mine-list-rightTxt">
+				</span>
+				<i class="mine-list-rightArrow"></i>
+			</div>
+		</a>
+		<a href="javscript:void(0);" class="mine-list-container" onclick="LoginShow()">
+			<div class="mine-list-left">
+				<img src="./images/mine-lxkf.png" class="mine-list-logo"/>
+				<span class="mine-list-title">
+					联系客服
+				</span>
+			</div>
+			<div class="mine-list-right">
+				<span class="mine-list-rightTxt">
+					
+				</span>
+				<i class="mine-list-rightArrow"></i>
+			</div>
+		</a>
+		<a href="javscript:void(0);" class="mine-list-container" style="margin-bottom:0.13rem;" onclick="LoginShow()">
+			<div class="mine-list-left">
+				<img src="./images/mine-wyhz.png" class="mine-list-logo"/>
+				<span class="mine-list-title">
+					我要合作
+				</span>
+			</div>
+			<div class="mine-list-right">
+				<span class="mine-list-rightTxt">
+					轻松开店，招财进宝
+				</span>
+				<i class="mine-list-rightArrow"></i>
+			</div>
+		</a>
+	</div>
+</div>
+<!-- 底部 -->
+<footer>
+	<div id="footer">
+		<a href="home.html" class="footList m-home"></a>
+		<a href="nearby.html" class="footList m-fujin"></a>
+		<a href="mine.html" class="footList m-mine active"></a>
+		<a href="more.html" class="footList m-more"></a>
+	</div>	
+</footer>
+<!-- 返回顶部 -->
+<a href="#" id="backTop"></a>
+<!-- 弹出层 -->
+<div class="alert">
+	<div class="q-alert-cover"></div>
+	<div class="q-alert_body">
+		<div class="q-alert_centerBox">
+			<img src="./images/ku.png">
+			<div class="tb-notice">抱歉此服务赞没开发！请您<span id="colse" onclick="Alertclose()">返回</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

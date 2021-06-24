@@ -1,0 +1,121 @@
+.footer{
+	width:100%;
+	min-width: 1200px;
+	background: #475059;
+	padding: 18px 0;
+	color: #fff;
+	clear: both;
+}
+.footer a{
+	color: #fff;
+}
+.help{
+	font-size: 14px;
+}
+.footer .help-box{
+	float: left;
+	width:235px;
+}
+.footer .help-box dt{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 28px 0;
+}
+.footer .help-box dd>a{
+	display: block;
+	line-height: 32px;
+}
+.footer .user-box{
+	float: left;
+	width:260px;
+}
+.footer .user-box .logo{
+	width:260px;
+	text-align: center;
+}
+.footer .user-box .logo img{
+	max-width: 260px;
+}
+.footer .user-box .rel{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 17px;
+}
+.footer .user-box .links>a{
+	float: left;
+	margin-right: 40px;
+	display: block;
+}
+.footer .user-box .links .ico{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/ico-all.png) no-repeat;
+}
+.footer .user-box .links .qq .ico{
+	width:21px;
+	height: 22px;
+	background-position: -203px -231px;
+}
+.footer .user-box .links .wechat .ico{
+	width:28px;
+	height: 22px;
+	background-position: -250px -231px;
+}
+.footer .user-box .links>a.wechat{
+	position: relative;
+}
+.footer .user-box .links>a.wechat .chat-code{
+	position: absolute;
+	top:30px;
+	left:50%;
+	margin-left: -42px;
+	width:84px;
+	height: 84px;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+}
+.footer .user-box .links>a.wechat:hover .chat-code{
+	opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.footer .user-box .links .sina .ico{
+	width:26px;
+	height: 22px;
+	background-position: -316px -232px;
+}
+.flink{
+	padding-top: 50px;
+	text-align: center;
+}
+.flink a{
+	padding: 0 10px;
+	line-height: 20px;
+}
+.copyright{
+	text-align: center;
+	padding-top: 8px;
+}
+.copyright p{
+	line-height: 20px;
+}

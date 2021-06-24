@@ -1,0 +1,11 @@
+#film-header-move-box {height: 1000px; position:relative;overflow:hidden;}
+#film-header-move-box ul { margin:0; padding-left:0; position:absolute; top:0; left:0; height:806px; z-index:1; }
+#film-header-move-box ul li { list-style:none; float:left; }
+#film-header-move-box p { line-height:30px; position:absolute; bottom:20px; left:0; width:100%; z-index:2; text-align:center; margin:0; }
+#film-header-move-box p a { display:inline-block; height:35px; width: 35px; background:#000; font-size:22px; font-family:arial; line-height:35px; color:#fff; text-decoration:none; filter:alpha(opacity:80); opacity:0.8; margin-right:5px; border-radius: 50%;}
+#film-header-move-box p .active { background:yellow; color:#000; font-weight:bold; }
+#film-header-move-box ul li a img{width: 2000px;height: 1300px;}
+
+
+
+

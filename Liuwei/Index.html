@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>六维首页</title>
+		<link rel="stylesheet" href="Styles/Base.css" />
+		<link rel="stylesheet" href="Styles/lw-siteMaster.css" />
+		<link rel="stylesheet" href="Styles/lw-index.css" />
+		<srcipt src="Script/lw-jquery-1.7.1.min.js"></srcipt>
+		<srcipt src="Script/lw-siteMaster.js"></srcipt>
+		<srcipt src="Script/lw-index.js"></srcipt>
+	</head>
+	<body>
+		<header>
+			<!--顶部状态栏-->
+			<div class="lw-headerTop-container">
+				<!--左侧-->
+				<div class="lw-headerTop-left">
+					<a href="#" class="lw-headerTop-readBox">
+						<i class="lw-headerTop-readIcon"></i>
+						<span class="lw-headerTop-readTxt">
+							本地阅读
+						</span>
+					</a>
+				</div>
+				<!--右侧-->
+				<div class="lw-headerTop-right">
+					<a href="#" class="lw-headerTop-li">
+						登录
+					</a>
+					<div class="lw-headerTop-loginedBox" style="display:none;">
+						<div class="lw-headerTop-loginedInfo">
+							欢迎您，<span id="adminTxt"></span>
+						</div>
+						<a href="#" class="lw-headerTop-liBG">
+							后台
+						</a>
+					</div>
+					<a href="#" class="lw-headerTop-li">
+						收藏本站
+					</a>
+					<a href="#" class="lw-headerTop-li" style="border:0;">
+						使用帮助
+					</a>
+				</div>
+			</div>
+			<!--搜索区-->
+			<div class="lw-headerSearch-container">
+				<a href="#" class="lw-logoBox">
+					<img src="Styles/Images/logo.png" />
+				</a>
+				<div class="lw-headerSearch-box">
+					<div class="lw-headerSearch-left">
+						<input type="text" value="书名 作者 出版社 ISBN 关键词 简介" class="lw-headerSearch-input"/>
+						<i class="lw-headerSearch-icon"></i>
+					</div>
+					<input type="button" class="lw-headerSearch-btn" value="搜&nbsp;索"/>
+				</div>
+			</div>
+		</header>
+		<!--最新文献-->
+		<div class="lw-newest-container">
+			<!--左侧-->
+			<div class="lw-newest-left">
+				<div class="lw-newest-leftTitleBox">
+					<div class="lw-common-leftTitleWrap">
+						<span class="lw-common-leftTitleFirst">最</span>
+						<span class="lw-common-leftTitleLi">新</span>
+						<span class="lw-common-leftTitleLi">文</span>
+						<span class="lw-common-leftTitleLi">献</span>
+					</div>
+					<div class="lw-newest-navBox">
+						<a href="javascript:void(0);" class="lw-newest-nav active">
+							教育学
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							综合管理
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							航空航天
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							信息技术
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							能源动力
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							软件
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							声光学
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							实验测试
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-nav">
+							导航动力
+						</a>
+					</div>
+				</div>
+				<div class="lw-newest-content">
+					<!--导航区-->
+					<div class="lw-newest-conLeft">
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							能源动力
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							信息技术
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							航空航天
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							测试工程
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							动力学
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							金融
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							经济学
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							信号
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav active">
+							天文科技
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							管理类
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							软件测试
+						</a>
+						<a href="javascript:void(0);" class="lw-newest-conNav">
+							自动化数字
+						</a>
+					</div>
+					<!--内容区-->
+					<div class="lw-newest-conRight">
+						<a href="#" target="_blank" class="lw-newest-more">
+							更多 >>
+						</a>
+						<!--有图样式-->
+						<div class="lw-newest-conWrap">
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+							<div class="lw-newest-hasImgList">
+								<a href="#" target="_blank" class="lw-newest-hasImgBox">
+									<img src="Styles/Images/lw-img.png" class="lw-newest-hasImg"/>
+								</a>
+								<a href="#" target="_blank" class="lw-newest-hasImgTitle" title="">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-hasImgAuthor" title="">
+									按斯特罗夫斯基
+								</div>
+							</div>
+						</div>
+						<!--无图样式-->
+						<div class="lw-newest-conWrap" style="display: none;">
+							<!--<div class="lw-newest-noImgList">
+								<a href="#" target="_blank" class="lw-newest-noImgTitle">
+									世界最高峰：西马拉雅山
+								</a>
+								<div class="lw-newest-noImgAthor">
+									按斯特罗夫斯基
+								</div>
+							</div>-->
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--右侧-->
+			<div class="lw-newest-right">
+				<!--通知公告-->
+				<div class="lw-notice-content">
+					<div class="lw-notice-titleBox">
+						通知公告
+					</div>
+					<div class="lw-notice-box">
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								双11买的万元商品被丈夫退货 妻子报警
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								2W网友都为这棵菜吵上了！到底叫啥？
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								越南一公司研发“假脸”解锁iPhone X 
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								他原谅杀死儿子的凶手:宽容是上天恩赐
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								明日油价迎今年最大涨幅 一箱多花10元
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								这奖项列港澳台为国家 网民:滚出中国
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								这笔资金用途被明确 这些人可享补助 
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								15000名科学家声明：世界可能这样毁灭
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								女子千万元巨款存银行 4个月后剩几百
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								小伙给网站刷浏览量 却损失了三十多万
+							</a>
+						</div>
+						<div class="lw-notice-list">
+							<i class="lw-notice-listIcon"></i>
+							<a href="#" target="_blank" class="lw-notice-listTitle" title="">
+								杭州最牛房产！360万买的如今挂牌1亿
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<!--本地阅读-->
+				<a href="#" target="_blank" class="lw-notice-li">
+					<img src="Styles/Images/bdyd.png" class="lw-notice-liImg" />
+				</a>
+				<!--军工词典-->
+				<a href="#" target="_blank" class="lw-notice-li">
+					<img src="Styles/Images/jungcd.png" class="lw-notice-liImg" />
+				</a>
+			</div>
+		</div>
+		<!--公众号-->
+		<div class="lw-banner-container">
+			<img src="Styles/Images/ggbanner.png" class="lw-banner-img" />
+		</div>
+		<!--阅读排行-->
+		<div class="lw-read-container">
+			<div class="lw-read-titleBox">
+				<div class="lw-common-leftTitleWrap">
+					<span class="lw-common-leftTitleFirst">阅</span>
+					<span class="lw-common-leftTitleLi">读</span>
+					<span class="lw-common-leftTitleLi">排</span>
+					<span class="lw-common-leftTitleLi">行</span>
+				</div>
+				<!--导航-->
+				<div class="lw-read-navRight">
+					<a href="javascript:void(0);" class="lw-read-nav active">
+						工学
+					</a>
+					<a href="javascript:void(0);" class="lw-read-nav">
+						教育学
+					</a>
+					<a href="javascript:void(0);" class="lw-read-nav">
+						历史学
+					</a>
+					<a href="javascript:void(0);" class="lw-read-nav">
+						航空航天
+					</a>
+					<a href="javascript:void(0);" class="lw-read-nav">
+						法学
+					</a>
+					<a href="javascript:void(0);" class="lw-read-nav" style="border:0;">
+						能源动力
+					</a>
+				</div>
+			</div>
+			<div class="lw-read-content">
+				<div class="lw-read-left">
+					<div class="lw-read-navBox">
+						<div class="lw-read-navWrap">
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									理学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									文学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									哲学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									经济学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									教育学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList active">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									法学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									工学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									历史学
+								</span>
+							</a>
+							<a href="#" class="lw-read-navList">
+								<i class="lw-read-navLiIcon"></i>
+								<span class="lw-read-navLiTxt">
+									军事学
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="lw-read-bottomBox">
+						<img src="Styles/Images/tt.png"/>
+					</div>
+				</div>
+				<div class="lw-read-right">
+					<div class="lw-read-contentWrap">
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+						<div class="lw-read-conList">
+							<a href="#" target="_blank" class="lw-read-conImgBox">
+								<img src="Styles/Images/lw-img.png"/>
+							</a>
+							<a href="#" target="_blank" class="lw-read-conTitle" title="">
+								计算机应用基础项目化教程(张庆丰 刘先花)
+							</a>
+							<div class="lw-read-conAuthor" title="">
+								杨奔全，左靖
+							</div>
+						</div>
+					</div>
+					<div class="lw-read-connoImgWrap" style="display: none;">
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+						<div class="lw-read-noImgList">
+							<a href="#" target="_blank" class="lw-newest-noImgTitle">
+								世界最高峰：西马拉雅山
+							</a>
+							<div class="lw-read-noImgAthor">
+								按斯特罗夫斯基
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lw-bottom-line"></div>
+		<footer>
+			<div class="lw-footer-container">
+				<div class="lw-footer-left">
+					<a href="http://www.6ddefense.com" target="_blank" class="lw-footer-logoBox">
+						<img src="Styles/Images/footerLogo.png" class="lw-footer-logo" />
+					</a>
+					<div class="lw-footer-logoRight">
+						<div class="lw-footer-logoName">
+							六维联合
+						</div>
+						<a href="http://www.6ddefense.com" target="_blank" class="lw-footer-logoHref">
+							www.6ddefense.com
+						</a>
+					</div>
+				</div>
+				<div class="lw-footer-copyright-box">
+					<div class="lw-footer-copyright-copy">
+						ICP备案号：京京B2-20150087
+					</div>
+					<div class="lw-footer-copyright-right">
+						六维联合信息科技（北京）有限公司 ©版权所有
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

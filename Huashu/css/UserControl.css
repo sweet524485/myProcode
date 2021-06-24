@@ -1,0 +1,271 @@
+.q-UserControl-body{
+	width: 1140px;
+	min-height: 100px;
+}
+.q-UserControl-left{
+	width: 520px;
+	min-height:100px;
+	float: left; 
+}
+.q-UserControl-right{
+	width: 600px;
+	min-height:100px;
+	float: left; 
+	margin-left: 15px;
+}
+.q-UserControl-Account-container{
+	width: 100%;
+	height: 390px;
+	background: #fff;
+}
+.q-UserControl-Account-title-box{
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-UserControl-Account-titleIcon{
+	width: 15px;
+	height: 18px;
+	background: url(../images/collect-yhzh.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 14px;
+	margin-left: 16px;
+}
+.q-UserControl-Account-titleIcon1{
+	width: 26px;
+	height: 22px;
+	background: url(../images/collect-yhgx.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 14px;
+	margin-left: 16px;
+}
+.q-UserControl-Account-title{
+	height: 14px;
+	line-height: 14px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 17px;
+	font-size: 14px;
+	color: #6eb6f8;
+}
+.q-UserControl-Input-container{
+	width: 100%;
+}
+.q-UserControl-InputList{
+	width: 430px;
+	height: 32px;
+	line-height: 32px;
+	color: #000;
+	font-size: 12px;
+	margin-left: 60px;
+}
+.q-UserControl-InputName{
+	width: 65px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	text-align: right;
+}
+.q-UserControl-InputTxt{
+	width: 330px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	margin-left: 5px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	color: #646464;
+}
+.q-UserControl-Radio{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.q-UserControl-RadioTxt{
+	width: 65px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.q-UserControl-Label{
+	float: left;
+	margin-right:-10px;
+}
+.q-UserControl-LabelTxt{
+	width: 330px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	color: #000;
+}
+.q-UserControl-input{
+	width: 314px;
+	border:1px solid #c8c8c8;
+	height: 30px;
+	line-height: 30px;
+	color: #646464;
+	font-size: 12px;
+	padding-left: 6px;
+	display: block;
+	float: left;
+	margin-left: 2px;
+}
+.q-Redstar{
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	color: red;
+	margin-left: 8px;
+}
+.q-UserControl-notice{
+  height: 22px;
+  font-size: 12px;
+  color: #666460;
+  line-height: 22px;
+  width: 250px;
+  margin-left: 127px;
+}
+.q-UserControl-btnBox{
+	width: 100%;
+	height: 40px;
+	margin-top: 15px;
+}
+.q-UserControl-saveBtn{
+	width: 103px;
+	height: 39px;
+	background:url(../images/q-common-save-btn.png) 0 0 no-repeat;
+	margin-left: 160px;
+	display: block;
+	float: left;
+}
+.q-UserControl-backBtn{
+	width: 103px;
+	height: 39px;
+	background:url(../images/digital-delbutton.jpg) 0 0 no-repeat;
+	margin-left: 36px;
+	display: block;
+	float: left;
+}
+.q-UserControl-right-container{
+	width: 100%;
+	background: #fff;
+}
+.q-UserControl-left-title-box{
+	width: 100%;
+	height: 44px;
+	background: #FBFBFB;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-UserControl-right-titleIcon{
+	width: 39px;
+	height: 36px;
+	background: url(../images/collect-tongjiyonghu.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-left: 7px;
+}
+.q-UserControl-lineChart{
+	width: 100%;
+	height: 240px;
+	text-align: center;
+}
+.q-UserControl-table-container{
+	width: 550px;
+	margin:0px auto;
+	min-height: 20px;
+	padding-bottom: 25px;
+}
+.q-UserControl-table-title{
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	font-size: 14px;
+	color: #008BE0;
+}
+.q-UserControl-table{
+	width: 100%;
+	height: auto;
+	border:1px solid #DADBDF;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.thead-tr td{
+	border: 1px solid #DADBDF;
+	background: #DADBDF;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+}
+.thead-tr .td2{
+	width: 125px;
+}
+.thead-tr .td3{
+	width: 125px;
+}
+.thead-tr .td4{
+	width: 125px;
+}
+.tbody-tr td{
+	border: 1px solid #DADBDF;
+	color: #646464;
+	font-size: 12px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+}
+.tbody-tr .td1 a{
+	color: #008BE0;
+	font-size: 12px;
+}
+.tbody-tr .td2 div{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.tbody-tr .td3 div{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+} 
+.q-UserControl-selectBox{
+	min-width: 43px;
+	height: 20px;
+	float: right;
+	background: yellow;
+	margin-right: 18px;
+	margin-top: 14px;
+}
+.q-UserControl-selectBox select{
+	border: 1px solid #dfdfdf;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

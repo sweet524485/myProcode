@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>手机美团-仇郯郯版</title>
+<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/more.css">
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/iscroll-lite.js"></script>
+<script type="text/javascript" src="js/more.js"></script>
+<!-- 轮播图 -->
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body onload="loaded()">
+<!-- 头部 -->
+<header>
+	<div id="header">
+		<a href="#" class="mine-text">
+			更多
+		</a>
+	</div>
+</header>
+<!-- 主体 -->
+<div id="wrapper">
+	<div id="scroller">
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" style="margin-top:0.14rem;">
+			<span class="more-list-text">
+				非wifi下使用省流量模式
+			</span>
+			<div class="more-list-btn">
+				<img src="./images/more-off.png" class="more-off"/>
+				<img src="./images/more-on.png" class="more-on"/>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				邀请好友使用美团
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				字号大小
+			</span>
+			<div class="more-list-right">
+				<span class="more-list-txt">
+					中号字（默认）
+				</span>
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" style="border-bottom:0.01rem solid #D3D3D3;" onclick="LoginShow()">
+			<span class="more-list-text">
+				清除缓存
+			</span>
+			<div class="more-list-right">
+				<span class="more-list-txt" style="margin-right:0;">
+					5,323K
+				</span>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" style="margin-top:0.14rem;" onclick="LoginShow()">
+			<span class="more-list-text">
+				扫一扫
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				问卷调查
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				支付帮助
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				检查更新
+			</span>
+			<div class="more-list-right">
+				<span class="more-list-txt">
+					新版发布，立即更新
+				</span>
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				关于美团
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				加入我们
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				诊断网络
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+		<!-- 列表 -->
+		<a href="javascript:void(0);" class="more-list" onclick="LoginShow()">
+			<span class="more-list-text">
+				版权信息
+			</span>
+			<div class="more-list-right">
+				<i class="more-list-Icon"></i>
+			</div>
+		</a>
+	</div>
+</div>
+<!-- 底部 -->
+<footer>
+	<div id="footer">
+		<a href="home.html" class="footList m-home"></a>
+		<a href="nearby.html" class="footList m-fujin"></a>
+		<a href="mine.html" class="footList m-mine"></a>
+		<a href="more.html" class="footList m-more active"></a>
+	</div>	
+</footer>
+<!-- 返回顶部 -->
+<a href="#" id="backTop"></a>
+<!-- 弹出层 -->
+<div class="alert">
+	<div class="q-alert-cover"></div>
+	<div class="q-alert_body">
+		<div class="q-alert_centerBox">
+			<img src="./images/ku.png">
+			<div class="tb-notice">抱歉此服务赞没开发！请您<span id="colse" onclick="Alertclose()">返回</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

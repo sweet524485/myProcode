@@ -1,0 +1,131 @@
+.q-CompanyProfile-body{
+	width: 1024px;
+	min-height: 36px;
+	margin: 25px auto;
+	background: #F8FBF4;
+}
+.q-CompanyProfile-title{
+	width: 1024px;
+}
+.q-CompanyProfile-bottom{
+	width: 1024px;
+}
+.q-CompanyProfile-content{
+	width: 1024px;
+	min-height: 30px;
+	background: #F8FBF4;
+	color: #000000;
+	font-size: 16px;
+	line-height: 42px;
+	padding-bottom: 45px;
+	padding-top: 30px;
+}
+.q-CompanyProfile-page1{
+	width: 760px;
+	margin-left: 133px;
+	margin-top: -81px;
+}
+.q-CompanyProfile-pageCommom{
+	width: 660px;
+	margin-left: 141px;
+	margin-top: 20px;
+	min-height: 35px;
+	line-height: 35px;
+}
+.q-CompanyProfile-bottomBox{
+	padding-bottom: 38px;
+}
+.q-CompanyProfile-titleBox{
+	width: 100%;
+	height: 72px;
+	background: #CFE5C1;
+}
+.q-CompanyProfile-title{
+	width: 1000px;
+	margin-left:12px;
+	height: 20px;
+	font-size: 20px;
+	color:#000002;
+	text-align: center;
+	padding-top:25px;
+	line-height: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-CompanyProfile-date{
+	width: 1000px;
+	margin-left:12px;
+	height: 20px;
+	font-size: 20px;
+	color:#333;
+	text-align: center;
+	padding-top:17px;
+	line-height: 20px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/*意见反馈*/
+.q-CompanyProfile-inputName{
+	height: 35px;
+	line-height: 33px;
+	width: 150px;
+	float: left;
+	text-align: right;
+}
+.q-CompanyProfile-input{
+	width: 475px;
+    height: 33px;
+    line-height: 33px;
+    color: #000;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 1px solid #C8C8C8;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.q-CompanyProfile-pageTxt{
+	width: 394px;
+	height: auto;
+	line-height: 35px;
+	margin:10px auto;
+	letter-spacing: 1px;
+}
+.q-CompanyProfile-btnBox{
+	height: 40px;
+	width: 100%;
+	margin-top: 17px;
+}
+.q-CompanyProfile-btn{
+  	width: 103px;
+  	height: 39px;
+  	background: url(../images/q-common-save-btn.png) 0 0 no-repeat;
+  	cursor: pointer;
+  	margin-left: 485px;
+}
+.q-CompanyProfile-notice{
+	width: 475px;
+	height: 33px;
+	line-height: 33px;
+	margin-left: 293px;
+	font-size: 14px;
+}
+.q-notice-text{
+	color:#999;
+}
+
+
+
+
+
+
+
+
+

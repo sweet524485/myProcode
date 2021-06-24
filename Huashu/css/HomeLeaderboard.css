@@ -1,0 +1,560 @@
+.q-HomeLeaderboard-container{
+	width: 1024px;
+	min-height: 10px;
+	margin: 15px auto;
+	padding-bottom: 15px;
+}
+.q-HomeLeaderboard-left{
+	width: 208px;
+  	min-height: 315px;
+  	background: #F6F7FB;
+  	float: left;
+  	border: 1px solid #DDDDDD;
+  	position: relative;
+}
+.q-HomeLeaderboard-right{
+	width: 800px;
+	min-height: 100px;
+	border-left:1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top:1px solid #00aed1;
+	float: right;
+	position: relative;
+}
+.q-HomeLeaderboard-left-title-box{
+    width: 100%;
+  	height: 35px;
+  	border-bottom: 1px solid #DDDDDD;
+  	line-height: 38px;
+  	font-size: 12px;
+  	color: #3F4145;
+}
+.q-HomeLeaderboard-left-title-box span{
+	margin-left: 13px;
+}
+.q-HomeLeaderboard-nav_box{
+	width: 198px;
+    min-height: 100px;
+    margin-left: 5px;
+}
+.q-HomeLeaderboard-nav-list{
+	width: 100%;
+	height: 39px;
+	border-bottom: 1px dashed #D7D7D7;
+	cursor: pointer;
+}
+.q-HomeLeaderboard-nav{
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 37px;
+	line-height: 41px;
+	float: left;
+	margin-left: 20px;
+	border-bottom: 2px solid #F6F7FB;
+	color: #3F4145;
+	font-size: 14px;
+}
+.q-HomeLeaderboard-nav_cur{
+   border-bottom: 3px solid #00AED1;
+   color: #00AED1;
+}
+.q-HomeLeaderboard-right-content{
+	width: 770px;
+	height: auto;
+	margin-left: 15px;
+}
+.q-HomeLeaderboard-right-list{
+	width: 100%;
+	height: 218px;
+	border-bottom: 1px dashed #D7D7D7;
+}
+.q-HomeLeaderboard-right-page-con{
+	width: 100%;
+	height: 33px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.q-HomeLeaderboard-right-page-box{
+	min-width: 155px;
+	height: 33px;
+	float: right;
+}
+.q-HomeLeaderboard-right-li{
+	width: 343px;
+	height: 167px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 6px;
+	background: #fff;
+}
+.q-HomeLeaderboard-picBox{
+	width: 146px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.q-HomeLeaderboard-num{
+	width: 18px;
+	height: 18px;
+	background: url(../images/bjhtot.png) no-repeat;
+	position: absolute;
+	top:0;left:0;
+	color: #fff;
+	line-height: 17px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+}
+.q-HomeLeaderboard-imgBox{
+	background: url(../images/paihangBookBg.png) no-repeat;
+	width: 121px;
+	height: 166px;
+	position: absolute;
+	top:0;left:30px;
+}
+.q-HomeLeaderboard-img{
+	width: 117px;
+	height: 161px;
+	position: absolute;
+	top:0;left:0;
+}
+.q-HomeLeaderboard-conBox{
+	width: 177px;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+.q-HomeLeaderboard-right-li-title{
+	width: 100%;
+  	height: 12px;
+  	line-height: 12px;
+  	margin-top: 5px;
+  	font-size: 12px;
+  	display: block;
+  	color: #00AED1;
+  	overflow: hidden;
+  	white-space: nowrap;
+  	text-overflow: ellipsis;
+}
+.q-HomeLeaderboard-price_box{
+	width: 121px;
+	height: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: red;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-Home-f1-tab-book-star_box{
+	width: 65px;
+	height: 12px;
+	background: url(../images/wujiaoxing.png);
+	float: left;
+	position: relative;
+}
+.q-Home-f1-tab-book-star{
+	width: 65px;
+	height: 12px;
+	background: url(../images/hswujiaoxing.png);
+	position: absolute;
+	top:0;;left: 0;
+}
+.q-Home-f1-tab-book-price{
+	max-width: 47px;
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	float: left;
+	border-left: 1px solid #939393;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+.q-HomeLeaderboard-bookCon{
+	width: 100%;
+	height: auto;
+	margin-top: 3px;
+}
+.q-HomeDetail-right-section1-BookLi{
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+	line-height: 12px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.q-HomeLeaderboard-right-section1-tagName{
+	color: #111;
+}
+.q-HomeLeaderboard-right-section1-tagTxt{
+	color:#636363;
+}
+.q-HomeLeaderboard-liBottom{
+	width: 100%;
+	height: 26px;
+	margin-top: 10px;
+	position: relative;
+}
+.q-HomeLeaderboard-car{
+	display: block;
+	float: left;
+	width: 25px;
+	height: 22px;
+	background: url(../images/jgts.png) no-repeat;
+	margin-top: 1px;
+	cursor: pointer;
+}
+.q-HomeLeaderboard-tryRead{
+	display: block;
+	float: left;
+	width: 25px;
+	height: 22px;
+	background: url(../images/sdsd.png) no-repeat;
+	margin-top: 2px;
+	margin-left: 13px;
+	cursor: pointer;
+}
+.q-HomeLeaderboard-save{
+	display: block;
+	float: left;
+	width: 13px;
+	height: 13px;
+	background: url(../images/collect-wheart.png) no-repeat;
+	margin-top: 8px;
+	margin-left: 13px;
+	cursor: pointer;
+}
+.q-HomeLeaderboard-load{
+	display: block;
+	float: left;
+	width: 23px;
+	height: 22px;
+	background: url(../images/smxz.png) no-repeat;
+	margin-top: 3px;
+	margin-left: 13px;
+	cursor: pointer;
+}
+.q-HomeLeaderboard-num_cur{
+	background: url(../images/shuzibeijg.png);
+}
+/*========================书评广场===========================*/
+.q-HomeBookReview-left{
+	width: 208px;
+  	min-height: 15px;
+  	background: #F6F7FB;
+  	float: left;
+  	border: 1px solid #DDDDDD;
+  	position: relative;
+}
+.q-HomeBookReview-left-title-box{
+    width: 198px;
+    height: 36px;
+    margin-left: 5px;
+  	border-bottom: 1px solid #DDDDDD;
+  	line-height: 39px;
+  	font-size: 12px;
+  	color: #3F4145;
+}
+.q-HomeBookReview-left-title-box span{
+	margin-left: 13px;
+}
+.q-HomeBookReview-nav_box{
+	width: 198px;
+    margin-left: 5px;
+}
+.q-HomeBookReview-lefe-list{
+	width: 100%;
+	height: 92px;
+	border-bottom: 1px dashed #D7D7D7;
+	cursor: pointer;
+}
+.q-HomeBookReview-lefe-listNum{
+	width: 27px;
+	height: 70px;
+	float: left;
+	line-height: 65px;
+	font-size: 12px;
+	color: #3F4145;
+	margin-top: 11px;
+	margin-left: 5px;
+}
+.q-HomeBookReview-lefe-pic{
+	display: block;
+	float: left;
+	width: 53px;
+	height: 70px;
+	margin-top: 11px;
+	overflow: hidden;
+	background: #fff;
+}
+.q-HomeBookReview-lefe-pic img{
+	width: 53px;
+	height: 70px;
+}
+.q-HomeBookReview-lefe-pic:hover{
+	opacity: 0.80;
+	filter:alpha(opacity=80);
+}
+.q-HomeBookReview-lefe-content{
+	width: 100px;
+	height: 70px;
+	float: right;
+	margin-top: 10px;
+}
+.q-HomeBookReview-lefe-con{
+	display: block;
+	width: 100%;
+	line-height: 17px;
+	max-height:52px;
+	color: #3F4145; 
+	font-size: 12px;
+	text-decoration: none;
+	overflow: hidden;
+	margin-top: 0px;
+}
+.q-HomeBookReview-lefe-con:hover{
+	color: #00AED1;
+}
+.q-HomeBookReview-lefe-author{
+	width: 100%;
+	height: 12px;
+	margin-top: 6px;
+	padding-bottom: 6px;
+	line-height: 12px;
+	color: #8A8A8C;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.q-HomeBookReview-right{
+	width: 802px;
+	min-height: 10px;
+	float: right;
+	position: relative;
+}
+.q-HomeBookReview-right_top{
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+  	color: #3F4145;
+}
+.q-HomeBookReview-right_topTxt{
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin-left: 5px;
+}
+.q-HomeBookReview-tab_box{
+	font-size: 12px;
+	float: right;
+	min-width: 50px;
+	position: relative;
+}
+.q-HomeBookReview-tabNav{
+	display: block;
+	float: left;
+	width: 80px;
+	height: 12px;
+	line-height: 12px;
+	color: #3F4145;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 14px;
+}
+.q-HomeBookReview-tabNav:hover{
+	color: #00AECE;
+}
+.q-HomeBookReview-tabNav1{
+	border-right: 1px solid #3F4145;
+}
+.q-HomeBookReview-tabNav_cur{
+	color: #00AECE;
+}
+.q-HomeBookReview-tab{
+	float: left;
+	width: 161px;
+}
+.q-HomeBookReview-tabMove{
+	width: 80px;
+	height: 1px;
+	background:#00AECE;
+	position: absolute;
+	top:37px;left:0; 
+}
+.q-HomeBookReview-tabIcon{
+	display: block;
+	width: 11px;
+	height: 5px;
+	background: url(../images/sanjhdlvse.png) no-repeat;
+	position: absolute;
+	top:-4px;
+	left:35px;
+}
+.q-HomeBookReview-right-mainCon{
+	width: 800px;
+	min-height: 10px;
+	border-left:1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top:1px solid #00AECE;
+}
+.q-HomeBookReview-right-main{
+	width:765px;
+	margin-left: 20px; 
+}
+.q-HomeBookReview-right-con{
+	width: 100%;
+	min-height: 10px;
+	display: none;
+}
+.q-HomeBookReview-right-list{
+	width: 100%;
+	min-height: 204px;
+	border-bottom: 1px dashed #D7D7D7;
+}
+.q-HomeBookReview-bookFace{
+	display: block;
+	float: left;
+	width: 121px;
+	height: 166px;
+	position: relative;
+	background: #fff;
+	margin-top: 20px;
+	margin-left: 27px;
+	background: url(../images/paihangBookBg.png) no-repeat;
+}
+.q-HomeBookReview-bookFace:hover{
+	opacity: 0.80;
+	filter:alpha(opacity=80);
+}
+.q-HomeBookReview-bookFace img{
+	width: 117px;
+	height: 161px;
+	position: absolute;
+	top:0;left:0;
+}
+.q-HomeBookReview-bookContent{
+	width: 595px;
+	float: right;
+	margin-top: 20px;
+}
+.q-HomeBookReview-bookTitle{
+	display: block;
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	margin-top: 3px;
+    color: #3F4145;
+    font-size: 14px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-decoration: none;
+}
+.q-HomeBookReview-bookDetail{
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.q-Home-f1-tab-book-star_box{
+	width: 65px;
+	height: 12px;
+	background: url(../images/wujiaoxing.png);
+	float: left;
+	position: relative;
+}
+.q-Home-f1-tab-book-star{
+	width: 65px;
+	height: 12px;
+	background: url(../images/hswujiaoxing.png);
+	position: absolute;
+	top:0;left: 0;
+}
+.q-HomeBookReview-bookName{
+	float: left;
+	color: #8A8A8C;
+	margin-left: 7px;
+}
+.q-HomeBookReview-bookTime{
+	float: left;
+	color: #8A8A8C;
+	margin-left: 25px;
+}
+.q-HomeBookReview-bookContxt{
+	width: 100%;
+	font-size: 12px;
+	line-height: 19px;
+	margin-top: 8px;
+	color: #3F4145;
+}
+.q-HomeBookReview-all{
+	margin-left: 10px;
+	color: #00AECE;
+	line-height: 19px;
+	position: relative;
+	width: 70px;
+	height: 19px;
+	text-decoration: none;
+	position: relative;
+}
+.q-HomeBookReview-allUpDown{
+	display: block;
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	top:5px;left:53px;
+	background: url(../images/q-down.png) no-repeat;
+}
+.q-HomeBookReview-bookThumbBox{
+	width: 100%;
+	height: 16px;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+.q-HomeBookReview-bookThumb{
+	float: right;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.q-HomeBookReview-bookThumbIcon{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/agree.png) no-repeat;
+}
+.q-HomeBookReview-bookThumbNum{
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 17px;
+	font-size: 12px;
+	color: #FF7500;
+	margin-left: 4px;
+}
+.q-HomeBookReview-loading{
+	width: 100%;
+	height: 54px;
+	line-height: 52px;
+	text-align: center;
+	font-size: 12px;
+	color: #3F4145;
+}
+
+
+
+
+
+

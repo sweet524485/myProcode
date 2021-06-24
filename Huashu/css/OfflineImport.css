@@ -1,0 +1,188 @@
+.q-OfflineImport-body{
+	width: 646px;
+	min-height: 120px;
+	margin-top: 23px;
+	margin-left: 50px;
+}
+.q-OfflineImport-input-box{
+	width: 646px;
+	height: 30px;
+}
+.q-OfflineImport-input-name{
+	font-size: 12px;
+	color: #000;
+	float: left;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.q-OfflineImport-input{
+	width: 502px;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #c8c8c8;
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #646464;
+	padding-left: 5px;
+}
+.q-OfflineImport-input-btn{
+	width: 67px;
+	height: 30px;
+	background: url(../images/q-BookCheck-input-btn.png) no-repeat;
+	display: block;
+	float: left;
+	margin-left: 8px;
+}
+.q-OfflineImport-input-file{
+	width: 67px;
+	height: 30px;
+	float: left;
+	margin-left: -67px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.box{width:646px; height:17px; margin-top:47px; }
+.tbox{width:646px; height:17px; background:url(../images/alert-bak.png) no-repeat;position: relative;}
+.tbox div{width:0px; height:15px; background:url(../images/alert-pro.png) no-repeat; text-align:center;font-family:Tahoma; font-size:12px; line-height:17px;position: absolute;top:1px;left:1px;}
+
+.ticon{
+	display: block;
+	width: 49px;
+	height: 34px;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+	position: absolute;
+	top:-36px;left:-23px;
+	background: url(../images/jindtjtzx.png) no-repeat;
+}
+.q-OfflineImport-container{
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+}
+.q-OfflineImport-box{
+	float: right;
+	color: #000;
+	font-size: 12px;
+	line-height: 12px;
+	margin-right: 3px;
+}
+.q-OfflineImport-box span{
+	color:#00AD19;
+	padding-left: 1px;
+	padding-right: 3px;
+}
+.q-OfflineImport-table-container{
+	width: 100%;
+	margin-top: 15px;
+}
+.q-OfflineImport-table-title{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+.q-OfflineImport-table-left{
+	font-size: 12px;
+	color:#000;
+	margin-left: 5px;
+	float: left;
+}
+.q-OfflineImport-table-right{
+	min-width: 10px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+}
+.q-OfflineImport-btn{
+	height: 18px;
+	line-height: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 4px;
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #008CB9;
+	margin-right: 5px;
+	text-decoration: none;
+	border: 1px solid #DBDDE1;
+	background: #fff;
+}
+.q-OfflineImport-start{
+	margin-right: 0;
+}
+.q-OfflineImport-table{
+	width: 100%;
+	height: auto;
+	border:1px solid #DADCE0;
+	margin-top: 8px;
+	padding-bottom: 10px;
+	font-size: 12px;
+	color: #646464;
+}
+.thead-tr td{
+	height: 30px;
+	border:1px solid #DADCE0;
+	background: #DFE5F0;
+	text-align: center;
+	color:#000;
+}
+.thead-tr .td1{
+	width: 38px;
+}
+.tbody-tr .td2 div{
+	width: 202px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	height: 30px;
+	text-align: center;
+}
+.thead-tr .td3{
+	width: 95px;
+}
+.thead-tr .td4{
+	width: 95px;
+}
+.thead-tr .td5{
+	width: 210px;
+}
+.tbody-tr td{
+	height: 30px;
+	border:1px solid #DADCE0;
+	line-height: 30px;
+	text-align: center;
+}
+.tbody-tr .td3{
+	color: red;
+}
+.tbody-tr .td5 a{
+	font-size: 12px;
+	color: #008CB9;
+	float: left;
+}
+.q-OfflineImport-skip{
+	margin-left: 28px;
+}
+.q-OfflineImport-cover{
+	margin-left: 29px;
+	margin-right: 29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

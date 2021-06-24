@@ -1,0 +1,592 @@
+.q-BookCheck-body{
+	min-height:100px;
+	background: #fff;
+	padding-top: 40px;
+	padding-bottom: 4px;
+}
+.q-BookCheck-center{
+	width: 850px;
+	margin: 0 auto;
+}
+.q-BookCheck-title-box{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #dedddb;
+	font-size: 12px;
+	line-height: 40px;
+	color: #009adf;
+}
+.q-BookCheck-title-box i{
+	display: block;
+  	width: 21px;
+  	height: 22px;
+  	background: url(../images/xiao-title.png);
+  	float: left;
+  	margin-top: 8px;
+  	margin-left: 13px;
+  	margin-right: 10px;
+
+}
+.q-BookCheck-title-box span{
+	display: block;
+	float: left;
+}
+.q-BookCheck-input-box{
+	width: 643px;
+	height: 30px;
+	margin: 30px auto;
+}
+.q-BookCheck-input-name{
+	font-size: 12px;
+	color: #000;
+	float: left;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.q-BookCheck-input{
+	width: 500px;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #c8c8c8;
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #646464;
+	padding-left: 5px;
+}
+.q-BookCheck-input-btn{
+	width: 67px;
+	height: 30px;
+	background: url(../images/q-BookCheck-input-btn.png) no-repeat;
+	display: block;
+	float: left;
+	margin-left: 8px;
+}
+.q-BookCheck-input-file{
+	width: 67px;
+	height: 30px;
+	float: left;
+	margin-left: -67px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.q-BookCheck-table{
+	width: 644px;
+	height: auto;
+    border-top: 1px solid #e0dfdd;
+    border-right: 1px solid #e0dfdd;
+    border-left: 1px solid #e0dfdd;
+    margin: 0px auto;
+    background: #eef3f9;
+}
+.q-BookCheck-table td{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #000;
+	font-size: 12px;
+}
+.q-BookCheck-table .td3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #fff;
+	position: relative;	
+	border-left: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	text-align: center;
+}
+.q-BookCheck-table .td3 .td3-line select{
+	margin-top: 6px;
+	border: 0;
+}
+.q-BookCheck-table .th3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #fff;
+	position: relative;	
+	border-left: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	color: #009adf;
+}
+.q-BookCheck-table .th3 .td3-line{
+	width: 344px;
+	height: 30px;
+	background: #eef3f9;
+	position: relative;	
+	border-bottom: 1px solid #e0dfdd;
+	color: #009adf;
+}
+.q-BookCheck-table .td1 .td3-line{
+	border-right: 1px solid #e0dfdd;
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 96px;
+	color: #009adf;
+}
+.q-BookCheck-table .td2 .td3-line{
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 201px;
+	color: #000;
+}
+.q-BookCheck-table .th2 .td3-line{
+	border-bottom: 1px solid #e0dfdd;
+	height: 30px;
+	width: 201px;
+	color: #009adf;
+}
+.td3-line input{
+	display: block;
+	float: left;
+	margin-top: 9px;
+	margin-left: 42px
+}
+.q-BookCheck-table-icon{
+	width: 8px;
+	height: 7px;
+	background: url(../images/xialajiantou.png) no-repeat;
+	position: absolute;
+	top:12px;right:20px;
+}
+.q-BookCheck-table-name{
+	width: 310px;
+	float:left;
+	height: 30px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheck-start-box{
+	width: 644px;
+	height: 28px;
+	margin: 20px auto;
+}
+.q-BookCheck-start-btn{
+	background: url(../images/q-BookCheck-import-btn.png) no-repeat;
+	width: 108px;
+	height: 28px;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+.q-ReadImport-select-box{
+	width: 210px;
+	height: 28px;
+	line-height: 28px;
+	float: right;
+}
+.q-ReadImport-select-name{
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	color: #747270;
+	font-size: 12px;
+	display: block;
+}
+.q-ReadImport-select-label{
+	display: block;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.q-ReadImport-select-radio{
+	display: block;
+	float: left;
+	margin-top: 8px;
+}
+.q-ReadImport-select-text{
+	height: 28px;
+	line-height: 28px;
+	color: #747270;
+	font-size: 12px;
+	margin-left: 6px;
+}
+.box{width:850px; height:17px; margin:25px auto; }
+.tbox{width:850px; height:17px; background:url(../images/bak.png) no-repeat;position: relative;}
+.tbox div{width:0px; height:15px; background:url(../images/pro.png) no-repeat; text-align:center;font-family:Tahoma; font-size:12px; line-height:17px;position: absolute;top:1px;left:1px;}
+
+.ticon{
+	display: block;
+	width: 49px;
+	height: 34px;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	font-size: 12px;
+	position: absolute;
+	top:-36px;left:-23px;
+	background: url(../images/jindtjtzx.png) no-repeat;
+}
+.q-BookCheck-again_box{
+	width: 850px;
+	height: 24px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+.q-BookCheck-again_num{
+	display: block;
+	float: right;
+	height: 24px;
+	line-height: 22px;
+	color: red;
+	font-size: 12px;
+    margin-right: 10px;
+}
+.q-BookCheck-again_btn{
+	display: block;
+	float: right;
+	height: 22px;
+	line-height: 20px;
+	border:1px solid #d6d4d5;
+	color: #009adf;
+	font-size: 12px;
+	width: 68px;
+	text-align: center;
+	background: #fff;
+}
+/*==============采购平台-书目查重-弹出层===========*/
+.q-BookCheckAlert-body{
+	width: 625px;
+	min-height: 30px;
+	margin-left: 25px;
+	margin-top: 25px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border-left: 1px solid #e0e4ef;
+	border-right: 1px solid #e0e4ef;
+}
+.q-BookCheckAlert-table{
+	width: 625px;
+    height: auto; 
+}
+.q-BookCheckAlert-table .thead{
+	background: #e0e4ef;
+}
+.q-BookCheckAlert-table .thead th{
+	background: #e0e4ef;
+	height: 30px;
+}
+.q-BookCheckAlert-table .thead .th1{
+	width: 47px;
+}
+.q-BookCheckAlert-table .thead .th2{
+	width: 197px;
+}
+.q-BookCheckAlert-table .thead .th3{
+	width: 161px;
+}
+.q-BookCheckAlert-table .thead .th4{
+	width: 123px;
+}
+.q-BookCheckAlert-table .tbody td{
+	height: 30px;
+	line-height: 30px;
+	border-right: 1px solid #e0e4ef;
+	border-bottom: 1px solid #e0e4ef;
+	line-height: 30px;
+	text-align: center;
+}
+.q-BookCheckAlert-table .tbody .td2 div{
+	width: 197px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-table .tbody .td3 div{
+	width: 161px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-table .tbody .td4 div{
+	width: 123px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-BookCheckAlert-del{
+	font-size: 16px;
+	color: red;
+	font-weight: 700;
+	cursor: pointer;
+}
+.q-BookCheckAlert-page-box{
+	width: 627px;
+	height: 32px;
+	margin-left: 25px;
+	margin-top: 15px;
+	line-height: 32px;
+}
+.q-BookCheckAlert-page-txt{
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	color: #000;
+	font-size: 12px;
+}
+.q-BookCheckAlert-page-text{
+	display: block;
+	float: left;
+}
+.q-BookCheckAlert-delAll{
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 28px;
+	border:1px solid #d6d4d5;
+	color: #009adf;
+	font-size: 12px;
+	width: 68px;
+	text-align: center;
+	background: #fff;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.q-BookCheckAlert-page-image{
+	height: 32px;
+	float: right;
+}
+/*=====================读者信息==============================*/
+.q-ReaderMange-body{
+	min-height:50px;
+	background: #fff;
+}
+.q-orgManage-bottom-title_box{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	background: #EEF2F9;
+	border-bottom: 1px solid #E0DFED;
+}
+.q-orgManage-bottom-title_txt{
+	color: #657187;
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 1.2%;
+}
+.q-orgManage-bottom-search_box{
+	width: 266px;
+	height: 31px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 1.2%;
+	position: relative;
+}
+.q-orgManage-bottom-search_text{
+	position: absolute;
+	top:0;left: 0;
+	width: 229px;
+	height: 31px;
+	background: #fff;
+	color: #657187;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.q-orgManage-bottom-search_submit{
+	width: 31px;
+	height: 31px;
+	background: url(../images/q-orgManage-bottom-search_submit.png) no-repeat;
+	position: absolute;
+	top:0;left:234px;
+	cursor: pointer;
+}
+.q-orgManage-set_container{
+	width: 100%;
+	height: 39px;
+	border-top: 1px solid #F7FAF9;
+	background: #EEF2F9;
+}
+.q-OrderInfo-on_off-box{
+	width: 243px;
+	height: 39px;
+	float: right;
+}
+.q-OrderInfo-radio-box{
+	width: 222px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: 13px;
+}
+.q-ReaderMange-Switch-box{
+	width: 112px;
+	height: 40px;
+	border-right: 1px solid #E0DFED;
+	float: left;
+	margin-top: -1px;
+	cursor: pointer;
+}
+.q-ReaderMange-start{
+	width: 12px;
+	height: 12px;
+	background: url(../images/tingyong.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 14px;
+	margin-left: 27px;
+}
+.q-ReaderMange-stop{
+	width: 12px;
+	height: 12px;
+	background: url(../images/zhanghutingyong.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 14px;
+	margin-left: 27px;
+}
+.q-ReaderMange-Switch-box span{
+	height: 12px;
+	line-height: 12px;
+	float: left;
+	margin-top: 14px;
+	font-size: 12px;
+	color: #657187;
+	margin-left: 10px;
+}
+.q-ReaderMange-table{
+	width: 100%;
+ 	height: auto;
+  	border-top: 1px solid #E0DFED;
+}
+.thead-tr td{
+  border-right: 1px solid #E0DFED;
+  border-bottom: 1px solid #E0DFED;
+  height: 49px;
+  line-height: 49px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #657187;
+  text-align: center;
+}
+.tbody-tr td{
+  border-right: 1px solid #E0DFED;
+  border-bottom: 1px solid #E0DFED;
+  height: 44px;
+  line-height: 44px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #657187;
+  text-align: center;
+}
+.thead-tr .td1{
+	width: 40px
+}
+.thead-tr .td2{
+	width: 120px
+}
+.thead-tr .td3{
+	width: 89px
+}
+.thead-tr .td4{
+	width: 100px
+}
+.thead-tr .td6{
+	width: 81px
+}
+.thead-tr .td7{
+	width: 100px
+}
+.thead-tr .td8{
+	width: 150px
+}
+.thead-tr .td9{
+	width: 120px
+}
+.thead-tr .td10{
+	width: 130px
+}
+.thead-tr .td11{
+	width: 85px
+}
+.td2 a{
+	display: block;
+	width: 100%;
+	height: 44px;
+	margin: 0 auto;
+    color: #009adf;
+}
+.td7 div{
+	width: 100%;
+	height: 44px;
+	margin: 0 auto;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis; 
+}
+.td8 div{
+	width: 100%;
+	height: 44px;
+	margin: 0 auto;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis; 
+}
+.td10 div{
+	width: 100%;
+	height: 44px;
+	margin: 0 auto;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis; 
+}
+.q-start{
+	color: #00C200;
+}
+.q-stop{
+	color: #FF0335;
+}
+.q-orgManage-selectAll-box{
+	width: 100%;
+	height:48px;
+	line-height: 48px;
+	padding-bottom: 5px;
+}
+.q-orgManage-selectAll{
+	float: left;
+  	display: block;
+ 	margin-top: 18px;
+  	margin-left: 14px;
+}
+.q-even{
+	background: #FCFDFF;
+}
+.q-odd{
+	background: #fff;
+}
+.q-ReaderMange-pageBox{
+	min-width: 20px;
+	height: 32px;
+	float: right;
+	margin-right: 16px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>手机京东框架-author仇郯郯</title>
+<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/iscroll-lite.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/PerfectLoad.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- 轮播图 -->
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body onload="loaded()">
+<!-- 头部 -->
+<header>
+	<div id="header">
+		<div class="jd-mb"></div>
+		<div class="jd-header-content">
+			<i class="jd-logo"></i>
+			<div class="jd-input">
+				<i class="jd-searchIcon"></i>	
+				<div class="jd-searchText">
+					京东全民手机节，狂撒8亿神劵！
+				</div>
+			</div>
+			<a href="#" class="jd-login">登录</a>
+		</div>
+	</div>
+</header>
+<!-- 主体 -->
+<div id="wrapper">
+	<div id="scroller">
+		<div class="homePage"><!-- home -->
+			<div id="pullDown">
+				<span class="pullDownIcon"></span>
+				<span class="pullDownLabel">Pull down to refresh...</span>
+			</div>
+			<!-- 轮播图 -->
+			<div class="swiper-container swiper1">
+		        <div class="swiper-wrapper">
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/1.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/2.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/3.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/4.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/5.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/6.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/7.jpg" alt="">
+		            </a>
+		            <a href="#" class="swiper-slide">
+		            	<img src="./images/8.jpg" alt="">
+		            </a>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination swiper-pagination1"></div>
+		        <!-- Add Arrows -->
+		       <!--  <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div> -->
+		    </div> 
+		    <!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		1、网站友好式预加载效果；
+		    	</div>
+		    	<div class="introduce-list">
+		    		2、一套css，自适应于所有移动端设备；
+		    	</div>
+		    	<div class="introduce-list">
+		    		3、下拉刷新，上拉加载更多；
+		    	</div>
+		    	<div class="introduce-list">
+		    		4、循环式轮播图，支持退拽；
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+		    <!-- 奥运会专区 -->
+		  	<div class="jd-sport_banner">
+		  		<img src="./images/sportBanner.jpg" />
+		  	</div>
+		  	<!-- 小导航区 -->
+		  	<div class="jd-navContainer">
+		  		<div class="jd-navContent">
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/jdcs.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					超市
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/qqg.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					全球购
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/fzc.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					服装城
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/jdsx.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					生鲜
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/jddj.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					到家
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/czzx.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					充值
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/ljd.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					领金豆
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/lj.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					领劵
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/jdjr.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					金融
+		  				</div>
+		  			</a>
+		  			<a href="javascript:void(0);" class="jd-navList">
+		  				<img src="./images/qb.png" class="jd-navListImg"/>
+		  				<div class="jd-navListTxt">
+		  					全部
+		  				</div>
+		  			</a>
+		  		</div>
+		  		<!-- 京东快报 -->
+		  		<div class="jd-newsBox">
+		  			<img src="./images/jdkb.png" class="jd-newsImg" />
+		  			<div class="jd-newsContent">
+		  				<div class="jd-newsWrap">
+		  					<a href="javascript:void(0);" class="jd-newsList">
+		  						<span>新</span>
+		  						<div class="jd-news">
+		  							郯式京东APP终于上线了！鼓掌O(∩_∩)O哈哈~
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void(0);" class="jd-newsList">
+		  						<span>牛</span>
+		  						<div class="jd-news">
+		  							兼容所有移动设备，哇塞，看看呢...
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void(0);" class="jd-newsList">
+		  						<span>妙</span>
+		  						<div class="jd-news">
+		  							响应式布局，rem单位与js结合，就是高！！
+		  						</div>
+		  					</a>
+		  				</div>
+		  			</div>
+		  			<a href="javascript:void(0);" class="d-news_more">
+		  				更多
+		  			</a>
+		  		</div>
+		  	</div>
+		  	<!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		5、支持文字向上滚动效果；
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+		  	<!-- 秒杀 -->
+		  	<div class="jd-ms-container">
+		  		<div class="jd-ms-djsbg">
+		  			<div class="jd-daojishi">
+		  				<span>00</span>
+		  				<span>00</span>
+		  				<span>00</span>
+		  			</div>
+		  		</div>
+		  		<!-- 京选尖货 -->
+		  		<a href="javascript:void(0);" class="jd-jingxuan"></a>
+		  	</div>
+		  	<!-- 秒杀轮播区 -->
+		  	<div id="jd-ms-content">
+			  	<div id="wrap">
+					<div id="scroll">
+						<div class="jd-hscroll-content">
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/1.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/2.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/3.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/4.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/5.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/6.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/7.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/8.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/9.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+		  					<a href="javascript:void:(0);" class="jd-hscroll-list">
+		  						<div class="jd-hscroll-listImgCon">
+		  							<img src="./images/img/10.jpg"/>
+		  						</div>
+		  						<div class="jd-hscroll-newPrice">
+		  							￥99
+		  						</div>
+		  						<div class="jd-hscroll-oldPrice">
+		  							￥899
+		  						</div>
+		  					</a>
+				  		</div>
+				  		<!-- 查看更多 -->
+				  		<a href="javascript:void(0);" class="jd-hscroll-more"></a>
+					</div>
+				</div>
+			</div>
+			<!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		6、支持倒计时效果；
+		    	</div>
+		    	<div class="introduce-list">
+		    		7、溢出隐藏的列表内容支持退拽，并且有弹性效果；
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+			<!-- 导航条轮播区 -->
+		  	<div id="jd-m-content">
+			  	<div id="wr">
+					<div id="scr">
+						<div class="scrContent">
+							<a href="javascript:void(0);" class="navSrcList active">
+								军事
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								人事
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								体育
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								娱乐
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								八卦
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								奇闻趣事
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								寻龙诀
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								天龙八部
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								娱乐
+							</a>
+							<a href="javascript:void(0);" class="navSrcList">
+								人在江湖
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		8、溢出导航支持退拽，点击智能移动；
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+			<!-- 爱生活下轮播图 -->
+			<div class="swiper-container swiper2">
+		        <div class="swiper-wrapper swiper-wrapper2">
+		            <a href="#" class="swiper-slide swiper-slide2">
+		            	<img src="./images/hanguohuiren.jpg" />
+		            </a>
+		            <a href="#" class="swiper-slide swiper-slide2">
+		            	<img src="./images/xiaominote.jpg" />
+		            </a>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination small-pagination swiper-pagination2"></div>
+		    </div>
+		    <!-- 享品质下轮播图 -->
+			<div class="swiper-container swiper3">
+		        <div class="swiper-wrapper swiper-wrapper3">
+		            <a href="#" class="swiper-slide swiper-slide3">
+		            	<img src="./images/tuodanji.jpg" />
+		            </a>
+		            <a href="#" class="swiper-slide swiper-slide3">
+		            	<img src="./images/xiaoshujihua.jpg" />
+		            </a>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination small-pagination swiper-pagination3"></div>
+		    </div>
+			 <!-- 购特色下轮播图 -->
+			<div class="swiper-container swiper4">
+		        <div class="swiper-wrapper swiper-wrapper4">
+		            <a href="#" class="swiper-slide swiper-slide4">
+		            	<img src="./images/meizu.jpg" />
+		            </a>
+		            <a href="#" class="swiper-slide swiper-slide4">
+		            	<img src="./images/jiaju.jpg" />
+		            </a>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination small-pagination swiper-pagination4"></div>
+		    </div>
+		    <!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		9、支持多个轮播图，同时轮播不冲突；
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+		    <!-- 为你推荐 -->
+		    <div class="jd-wntj-container">
+		    	<div class="jd-wntj-title">
+		    		<img src="./images/weinituijian.png" />
+		    	</div>
+		    	<div class="jd-wntj-content">
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/1.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/2.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/3.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+					<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/4.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/5.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/6.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/7.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/8.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/9.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    		<div class="jd-wntj-list">
+		    			<a href="#" class="jd-wntj-listImg">
+		    				<img src="./images/loading.gif" data-original="./images/list/10.jpg"/>
+		    			</a>
+		    			<a href="#" class="jd-wntj-listTitle">
+		    				屋尔美 植绒防滑厨 房浴室门 口地垫 门垫 脚垫 浴室门口垫 可爱脚丫屋尔美 植绒防滑厨房浴室门口地垫 门垫 脚垫 浴室门口垫 可爱脚丫 50*80cm
+		    			</a>
+		    			<div class="jd-wntj-listBTO">
+		    				<span class="jd-wntj-listPrice">
+		    					￥1555.68
+		    				</span>
+		    				<a href="javascript:void(0);" class="jd-wntj-listLike">
+		    					<!-- 看相似 -->
+		    				</a>
+		    			</div>
+		    		</div>
+		    
+		    	</div>	
+		    </div>
+		     <!-- ============================== -->
+		    <div class="introduce">
+		    	<div class="introduce-title">
+		    		↑↑↑↑仇氏APP框架使用说明：
+		    	</div>
+		    	<div class="introduce-list">
+		    		10、图片的lazy加载，滚动结束后调用；
+		    	</div>
+		    	<div class="introduce-list">
+		    		11、支持回到顶部
+		    	</div>
+		    </div>
+		    <!-- ============================== -->
+		  	<div id="pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+			</div>
+		</div><!-- home end-->
+	</div>
+</div>
+<!-- 底部 -->
+<footer>
+	<div id="footer">
+		<a href="javascript:void(0);" class="footList home"></a>
+		<a href="javascript:void(0);" class="footList fenlei" onclick="LoginShow()"></a>
+		<a href="javascript:void(0);" class="footList find" onclick="LoginShow()"></a>
+		<a href="javascript:void(0);" class="footList buyCar" onclick="LoginShow()"></a>
+		<a href="javascript:void(0);" class="footList mine" onclick="LoginShow()"></a>
+	</div>	
+</footer>
+<!-- 返回顶部 -->
+<a href="#" id="backTop"></a>
+<!-- 弹出层 -->
+<div class="alert">
+	<div class="q-alert-cover"></div>
+	<div class="q-alert_body">
+		<div class="q-alert_centerBox">
+			<img src="./images/ku.png">
+			<div class="tb-notice">抱歉此服务赞没开发！请您<span id="colse" onclick="Alertclose()">返回</span></div>
+		</div>
+	</div>
+</div>
+</body>
+	<script type="text/javascript">
+		// 首页轮播
+	    var swiper = new Swiper('.swiper1', {
+	        pagination: '.swiper-pagination1',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        centeredSlides: true,
+	        autoplay: 3000,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+	    //爱生活下轮播图
+	    var swiper2 = new Swiper('.swiper2', {
+	        pagination: '.swiper-pagination2',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        centeredSlides: true,
+	        autoplay: 2000,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+	    //享品质下轮播图
+	    var swiper3 = new Swiper('.swiper3', {
+	        pagination: '.swiper-pagination3',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        centeredSlides: true,
+	        autoplay: 2000,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+	    //享品质下轮播图
+	    var swiper4 = new Swiper('.swiper4', {
+	        pagination: '.swiper-pagination4',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        centeredSlides: true,
+	        autoplay: 2000,
+	        autoplayDisableOnInteraction: false,
+	        loop: true
+	    });
+    </script>
+</html>

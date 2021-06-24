@@ -1,0 +1,255 @@
+.q-GroupMange-body{
+	width: 100%;
+}
+.q-GroupMange-container{
+	width: 730px;
+	min-height: 10px;
+	
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.q-GroupMange-content_list{
+	width: 100%;
+}
+.q-GroupMange-title{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-GroupMange-title_logo{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.q-GroupMange-title_txt{
+	float: left;
+	margin-left: 15px;
+	color:#009adf;
+}
+.q-GroupMange-title_upper{
+	float: right;
+	margin-right: 11px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.q-GroupMange-addLabe_box{
+	width: 100%;
+	min-height: 40px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-GroupMange-addLabe_main{
+	width: 505px;
+	min-height: 33px;
+	float: left;
+	padding-top: 7px;
+}
+.q-GroupMange-addLabe_search{
+	width: 176px;
+	height: 28px;
+	float: right;
+	margin-top: 6px;
+}
+.q-GroupMange-addLabe_list{
+	line-height: 24px;
+	height: 24px;
+	margin-left: 25px;
+	margin-bottom: 9px;
+	float: left;
+}
+.q-GroupMange-addLabe_list_cur{
+	float: left;
+	margin-right: 14px;
+	color: #4b6c8b;
+	background: #f3f9fe;
+	border:1px solid #d5edf8;
+	-webkit-border-radius:4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius:4px;
+	padding-left: 10px;
+	margin-bottom: 7px;
+	height: 24px;
+	line-height: 24px;
+}
+.q-GroupMange-addLabe_name{
+	float: left;
+	max-width: 180px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-GroupMange_del{
+	display: block;
+	float: left;
+	margin-top: 6px;
+	margin-left: 8px;
+	width: 12px;
+	height: 12px;
+	background: url(../images/q-GroupMange_del.png) no-repeat;
+	cursor: pointer;
+}
+.q-GroupMange_del_cur{
+	width: 7px;
+	height: 7px;
+	margin-left: 6px;
+	margin-right: 7px;
+	margin-top: 9px;
+	font-weight: 700;
+	cursor: pointer;
+	background: url(../images/q-orgManage-top_cha.png) no-repeat;
+}
+.q-GroupMange-addLabe_search_input{
+	width: 137px;
+	height: 26px;
+	padding-left: 5px;
+	line-height: 26px;
+	border: 1px solid #00ADEB;
+	color:000;
+	font-size: 12px;
+	float: left;
+	display: block;
+}
+.q-GroupMange-addLabe_search_add{
+	width: 21px;
+	height: 21px;
+	background: url(../images/q-setStrategyAlert-search_submit_bg.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.q-GroupMange-upper_box{
+	width: 100%;
+	min-height: 40px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-GroupMange-upper_innerBox{
+	width: 780px;
+	min-height: 25px;
+	padding-top: 15px;
+	margin-left: 20px;
+}
+.q-GroupMange-upper_list{
+	margin-bottom: 12px;
+	margin-right: 45px;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	color: #000;
+	cursor: pointer;
+}
+.q-GroupMange-upper_list_icon{
+	width: 11px;
+	height: 8px;
+	background: url(../images/q-GroupMange-upper_dui.png) no-repeat;
+	margin-top: 3px;
+	float: left;
+}
+.q-GroupMange-upper_list_text{
+	max-width:180px;
+	float: left; 
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-left: 6px;
+}
+.q-GroupMange-search_container{
+	width: 100%;
+	min-height: 36px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-GroupMange-search_box{
+	width: 502px;
+	height: 28px;
+	margin: 10px auto;
+}
+.q-GroupMange-search_name{
+	height: 28px;
+	line-height: 28px;
+	color: #000;
+	font-size: 12px;
+	float: left;
+}
+.q-GroupMange-search_input{
+	width: 324px;
+	height: 26px;
+	padding-left: 5px;
+	line-height: 26px;
+	border: 1px solid #00ADEB;
+	color:000;
+	font-size: 12px;
+	float: left;
+	display: block;
+	margin-left: 1px;
+}
+.q-GroupMange-search{
+	width: 77px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	float: left;
+	margin-left: 12px;
+	background: #00ADEB;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+}
+.q-GroupMange-lower_box{
+	width: 100%;
+	min-height: 40px;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-GroupMange-lower_innerBox{
+	width: 780px;
+	min-height: 25px;
+	padding-top: 15px;
+	margin-left: 20px;
+}
+.q-GroupMange-lower_list{
+	margin-bottom: 12px;
+	margin-right: 45px;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	color: #000;
+	cursor: pointer;
+}
+.q-GroupMange-lower_list_icon{
+	width: 10px;
+	height: 10px;
+	background: url(../images/q-group-add.png) no-repeat;
+	margin-top: 2px;
+	float: left;
+}
+.q-GroupMange-lower_list_text{
+	max-width:180px;
+	float: left; 
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-left: 6px;
+}
+.q-GroupMange-content{
+	width: 100%;
+	display: none;
+}
+.q-GroupMange-content_cur{
+	display: block;
+}
+.q-GroupMange-upper_null{
+	width: 100%;
+	text-indent: 3px;
+	line-height: 12px;
+	color: red;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+
+
+
+

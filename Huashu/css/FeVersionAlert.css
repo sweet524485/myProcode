@@ -1,0 +1,425 @@
+.q-SwapUserMange-body{
+	width: 100%;
+	min-height: 50px;
+	background: #F7F8FD;
+}
+.q-SwapUserMange-titleContainer{
+	width: 100%;
+	height: 40px;
+	background: #FFFFFF;
+}
+.q-SwapUserMange-titleBox{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 36px;
+	color: #39BAFB;
+	font-size: 14px;
+}
+.q-SwapUserMange-titleIcon{
+	width: 16px;
+	height: 17px;
+	background: url(../images/q-SwapUserMange-titleIcon.png) no-repeat;
+	display: block;
+	float: left;
+	margin-top: 11px;
+}
+.q-SwapUserMange-titleBox span{
+	float: left;
+	margin-left: 10px;
+}
+.q-SwapUserMange-searchCon{
+	float: right;
+	height: 40px;
+}
+.q-SwapUserMange-searchBox{
+	width: 156px;
+	height: 40px;
+	float: left;
+	position: relative;
+}
+.q-SwapUserMange-searchText{
+	width: 144px;
+	height: 38px;
+	border-left:1px solid #EAEAEA;
+	border-top:1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	color: #828E9A;
+	font-size: 12px;
+	line-height: 38px;
+	padding-left: 10px;
+	border-radius: 0;
+}
+.q-SwapUserMange-searchIcon{
+	display: block;
+	width: 19px;
+	height: 18px;
+	position: absolute;
+	top:11px;
+	right:18px;
+	background: url(../images/q-SwapUserMange-searchIcon.png) no-repeat;
+}
+.q-SwapUserMange-add{
+	width: 61px;
+	height: 40px;
+	border-left: 1px solid #EAEAEC;
+	border-right: 1px solid #EAEAEC;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.q-SwapUserMange-add_cur{
+	background: #00A4FC;
+}
+.q-SwapUserMange-addIcon{
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/q-SwapUserMange-addIcon.png) no-repeat;
+	position: absolute;
+	top:10px;
+	left:21px;
+}
+.q-SwapUserMange-addIcon_cur{
+	background: url(../images/q-SwapUserMange-addIcon_cur.png) no-repeat;
+}
+.q-SwapUserMange-assign{
+	width: 58px;
+	height: 40px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.q-SwapUserMange-assign_cur{
+	background: #00A4FC;
+}
+.q-SwapUserMange-assignIcon{
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/q-SwapUserMange-assignIcon.png) no-repeat;
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+.q-SwapUserMange-assignIcon_cur{
+	background: url(../images/q-SwapUserMange-assignIcon_cur.png) no-repeat;
+}
+.q-SwapUserMange-textContanier{
+	width: 100%;
+	min-height: 50px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+}
+.q-SwapUserMange-textList{
+	float: left;
+	width: 202px;
+	height: 146px;
+	background: #FFFFFF;
+	margin-left: 10px;
+	margin-top: 20px;
+	border:1px solid #DEE7F3;
+	position: relative;
+	border-radius: 5px;
+}
+.q-SwapUserMange-textList_cur{
+	border:1px solid #0AADEE;
+}
+.q-SwapUserMange-textList:hover{
+	border:1px solid #0AADEE;
+}
+.q-SwapUserMange-nameBox{
+	width: 100%;
+	height: 29px;
+	line-height: 30px;
+	background: #F6F7FC;
+	position: relative;
+	border-radius: 5px;
+}
+.q-SwapUserMange-nameCon{
+	position: absolute;
+	top:0;left:13px;
+	width: 135px;
+	height: 29px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-SwapUserMange-name{
+	font-size: 12px;
+	color: #2D4561;
+	line-height: 30px;
+}
+.q-SwapUserMange-name a{
+	font-size: 12px;
+	color: #2D4561;
+	line-height: 30px;
+}
+.q-SwapUserMange-name a:hover{
+	color: #39BAFB;
+}
+.q-SwapUserMange-textDel{
+	display: block;
+	width: 13px;
+	height: 14px;
+	background: url(../images/q-SwapUserMange-textDel.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top:-5px;
+	right:-5px;
+	z-index: 10;
+	display: none;
+}
+.q-SwapUserMange-switch{
+	position: absolute;
+	left:150px;
+	top:7px;
+}
+/* 开关滑动 */
+.gather-switch-btn
+{
+    width:46px;  
+    height:16px;
+    padding:0px;
+    background:url(../images/q-collect-dakd.png) no-repeat;
+    cursor: pointer;
+    border:0;
+    z-index:-1;
+    float:left;
+    background-position:0px 0px;
+}
+.gather-switch-btn.offall
+{
+    background:url(../images/q-collect-offd.png) no-repeat;
+}
+.gather-switch-btn span{
+    
+    background:url(../images/q-collect-ondd.png) no-repeat;
+     width:13px;
+    height:13px;
+    font-size:14px;
+    margin-left:26px;
+    float:left;
+    margin-top:1px;cursor: pointer;
+    z-index:1;
+} 
+
+.gather-switch-btn span.on{
+    width:13px;
+    height:13px;
+    font-size:14px;
+    margin-left:26px;
+    float:left;
+    margin-top:1px;cursor: pointer;
+    background:url(../images/q-collect-ondd.png) no-repeat;
+    z-index:1;
+} 
+/* referencaRecommend */
+.q-SwapUserMange-detailCon{
+	width: 172px;
+	min-height: 10px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.q-SwapUserMange-detaili{
+	width: 100%;
+	height: 29px;
+	border-bottom: 1px solid #DADBDF;
+	position: relative;
+}
+.q-SwapUserMange-detailTxt{
+	width: 130px;
+	height: 29px;
+	position: absolute;
+	top:0;left:9px;
+	font-size: 12px;
+	color: #828E9A;
+	line-height: 30px;
+	text-align: right;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.q-SwapUserMange-detailTxt span{
+	margin-right: 5px;
+}
+.q-SwapUserMange-detailName{
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/q-SwapUserMange-detailName.png) no-repeat;
+	position: absolute;
+	top:6px;
+	right:4px;
+}
+.q-SwapUserMange-detailPhone{
+	display: block;
+	width: 9px;
+	height: 13px;
+	background: url(../images/q-SwapUserMange-detailPhone.png) no-repeat;
+	position: absolute;
+	top:8px;
+	right:6px;
+}
+.q-SwapUserMange-detailTel{
+	display: block;
+	width: 16px;
+	height: 11px;
+	background: url(../images/q-SwapUserMange-detailTel.png) no-repeat;
+	position: absolute;
+	top:10px;
+	right:3px;
+}
+.q-SwapUserMange-pageBox{
+	width: 100%;
+	height: 33px;
+	margin-top: 25px;
+}
+.q-SwapUserMange-page{
+	float: right;
+	margin-right: 25px;
+}
+/*===============================*/
+		.q-SwapUserMangeAlert-body{
+			width:680px;
+			min-height: 225px;
+			overflow: auto;
+		}
+		.q-SwapUserMangeAlert-topBox{
+			width: 410px;
+			min-height: 24px;
+			margin-left: 25px;
+			margin-top: 22px;
+		}
+		.q-SwapUserMangeAlert-topName{
+			width:75px;
+			height: 24px;
+			line-height: 24px;
+			color: #515151;
+			font-size: 14px;
+			float: left;
+		}
+		.q-SwapUserMangeAlert-topCon{
+			width: 328px;
+			min-height: 24px;
+			float: left;
+		}
+		.q-SwapUserMangeAlert-topList{
+			float: left;
+			padding-right: 30px;
+			margin-right: 15px;
+			height: 24px;
+			line-height: 24px;
+			color: #666666;
+			font-size: 12px;
+			margin-bottom: 10px;
+		}
+		.q-SwapUserMangeAlert-lowBox{
+			width: 410px;
+			min-height: 14px;
+			margin-left: 25px;
+			margin-top: 20px;
+		}
+		.q-SwapUserMangeAlert-lowName{
+			width:83px;
+			height: 14px;
+			line-height: 14px;
+			color: #515151;
+			font-size: 14px;
+			float: left;
+			text-align: right;
+		}
+		.q-SwapUserMangeAlert-nNotice3{
+			width:333px;
+			height: 14px;
+			line-height: 14px;
+			color: red;
+			font-size: 14px;
+			float: left;
+			text-indent: 84px;
+		}
+		.q-SwapUserMangeAlert-lowCon{
+			width: 335px;
+			min-height: 14px;
+			float: left;
+			margin-top: 1px;
+		}
+		.q-SwapUserMangeAlert-lowList{
+			display: block;
+			float: left;
+			margin-right: 40px;
+			height: 14px;
+			line-height: 14px;
+			margin-bottom: 10px;
+		}
+		.q-SwapUserMangeAlert-checkbox{
+			display: block;
+			float: left;
+		}
+		.q-SwapUserMangeAlert-lowTxt{
+			display: block;
+			float: left;
+			font-size: 12px;
+			height: 12px;
+			line-height: 12px;
+			color: #666666;
+			margin-left: 8px;
+		}
+		.q-SwapUserMangeAlert-btnBox{
+			width: 100%;
+			height: 35px;
+			margin-top: 20px;
+		}
+		.q-SwapUserMangeAlert-btn{
+			width: 89px;
+			height: 34px;
+			background: url(../images/q-SwapAddBanner-saveBtn.png) no-repeat;
+			margin-left: 320px;
+		    cursor: pointer;
+		}
+		.q-SwapUserMangeAlert-lowBox1{
+			width: 650px;
+			min-height: 24px;
+			margin-left: 25px;
+			margin-top: 20px;
+		}
+		.q-SwapUserMangeAlert-nInput{
+			width: 350px;
+			height: 22px;
+			color: #666666;
+			border:1px solid #c8c8c8;
+			line-height: 22px;
+			text-indent: 6px;
+		}
+		.q-SwapUserMangeAlert-nTextarea{
+			width: 210px;
+  			height: 110px;
+			color: #666666;
+			border:1px solid #c8c8c8;
+			line-height: 22px;
+			text-indent: 6px;
+		}
+		.q-SwapUserMangeAlert-topCon1{
+			width: 543px;
+			min-height: 24px;
+			float: left;
+			margin-top: -4px;
+			margin-left: 2px;
+		}
+		.q-SwapUserMangeAlert-nNotice{
+			padding-left: 4px;
+			height: 24px;
+			line-height: 24px;
+			font-size: 12px;
+			color: #666;
+			color: red;
+		}
+
+
+
+
+
+
+
+

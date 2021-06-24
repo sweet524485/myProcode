@@ -1,0 +1,233 @@
+.q-BatchManage-body{
+	width: 100%;
+	background: #fff;
+	padding-bottom: 15px;
+}
+.q-BatchManage-title{
+	width: 850px;
+	height: 38px;
+	line-height: 38px;
+	margin: 25px auto;
+	border-bottom: 1px solid #dfdfdf;
+}
+.q-BatchManage-icon{
+	display: block;
+	float: left;
+	width:18px;
+	height: 16px;
+	background: url(../images/pchul.png) no-repeat;
+	margin-top: 11px;
+	margin-left: 10px;
+}
+.q-BatchManage-title span{
+	display: block;
+	height: 38px;
+	color: #009adf;
+	font-size: 12px;
+	margin-left: 10px;
+	float: left;
+}
+.q-BatchManage-con{
+	width: 850px;
+	height: 14px;
+	margin: 30px auto;
+}
+.q-BatchManage-con1{
+	width: 850px;
+	height: 30px;
+	margin: 0px auto;
+}
+.q-BatchManage-label{
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	float: left;
+	color: #000;
+}
+.q-BatchManage-name{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	float: left;
+	margin-left:165px;
+	color: #000;
+	margin-right: 10px;
+}
+.q-BatchManage-radio{
+	display: block;
+	float: left;
+	margin-left: 65px;
+	margin-top:1px;
+}
+.q-BatchManage-radio1{
+	display: block;
+	float: left;
+	margin-left: 0px;
+	margin-top:1px;
+}
+.q-BatchManage-label span{
+	display: block;
+	float: left;
+	line-height: 14px;
+	color: #000;
+	margin-left: 8px;
+}
+.q-BatchManage-icon1{
+	display: block;
+	float: left;
+	width:16px;
+	height: 17px;
+	background: url(../images/q-BatchManage-icon.png) no-repeat;
+	margin-top: 11px;
+	margin-left: 10px;
+}
+.q-BatchManage-input_box{
+	width: 127px;
+	height: 30px;
+	position: relative;
+	float: left;
+}
+.q-BatchManage-input{
+	display: block;
+	float: left;
+	width: 110px;
+	height: 28px;
+	padding-left: 15px;
+	border: 1px solid #c8c8c8;
+	line-height: 28px;
+	color: #646464;
+}
+.q-BatchManage-input-icon{
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top:7px;right: 7px;
+	background:url(../images/book-clefs.png) no-repeat;
+}
+.q-BatchManage-line{
+	width: 30px;
+	height: 1px;
+	background: #65625d;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.q-BatchManage-con_btn{
+	width: 850px;
+	height: 40px;
+	margin: 50px auto;
+}
+.q-BatchManage-save{
+	width: 103px;
+	height: 39px;
+	background: url(../images/q-common-save-btn.png) 0 0 no-repeat;
+	margin-left: 220px;
+	margin-right:40px;
+	cursor: pointer;
+}
+.q-BatchManage-save:hover{
+	background: url(../images/q-common-save-btn.png) 0 -45px no-repeat;
+}
+.q-BatchManage-back{
+	width: 103px;
+	height: 39px;
+	background: url(../images/digital-delbutton.jpg) 0 0 no-repeat;
+	cursor: pointer;
+}
+.q-BatchManage-table-contaier{
+	width: 850px;
+	height: auto;
+	margin: 30px auto;
+}
+.q-BatchManage-table-title{
+	width: 848px;
+	height: 37px;
+	border: 1px solid #D5DBE6;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #EDF1F8;
+}
+.q-BatchManage-table-title span{
+	float: left;
+	margin-left: 16px;
+	line-height: 37px;
+	display: block;
+	color:#657187;
+	font-size: 12px;
+}
+.q-BatchManage-table{
+	width: 100%;
+    height: auto;
+    margin-top: -1px;
+    border-bottom-lefe-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.q-BatchManage-table .tr td{
+	height: 40px;
+	border-right: 1px solid #D5DBE6;
+	border-top: 1px solid #D5DBE6;
+	border-left:1px solid #D5DBE6;
+	border-bottom:1px solid #D5DBE6;
+	line-height: 40px;
+	text-align: center;
+}
+.q-BatchManage-table .tr .td1{
+	width: 111px;
+	color:#657187;
+	font-size: 12px;
+}
+.q-BatchManage-table .tr .td2{
+	width: 210px;
+	color:#646464;
+	font-size: 12px;
+}
+.q-BatchManage-pro-box{
+	width: 400px;
+	height: 8px;
+	float: left;
+	background: url(../images/q-line-bg.png) no-repeat;
+	margin-top: 17px;
+	margin-left: 28px;
+	position: relative;
+}
+.q-BatchManage-pro-red{
+	width: 400px;
+	height: 8px;
+	background: url(../images/q-line-red.png) no-repeat;
+	position: absolute;
+	top:0;left: 0;
+}
+.q-BatchManage-pro-text{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	color:#657187;
+	font-size: 12px;
+	margin-left: 15px;
+}
+.q-BatchManage-pro-green{
+	width: 400px;
+	height: 8px;
+	background: url(../images/q-line-green.png) no-repeat;
+	position: absolute;
+	top:0;left: 0;
+}
+.q-oddd{
+	background: #FCFDFF;
+}
+.q-evend{
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+/*最上部的跳转导航*/
+.jg-detail-naxBox{
+	width: 1000px;
+	height: 32px;
+	border-bottom: 1px solid #DEDEDE;
+	margin: 0 auto;
+	font-family: "microsoft yahei";
+}
+.jg-detail-naxInner{
+	height: 32px;
+	margin-left: 23px;
+	color:#333;
+	font-size: 14px;
+}
+.jg-detail-naxName{
+	display: block;
+	height:32px;
+	line-height: 32px;
+	float: left;
+	margin-right: 5px;
+}
+.jg-detail-naxCon{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+.jg-detail-naxCon a{
+	color:#333;
+}
+.jg-detail-naxCon span{
+	color:#0296FE;
+}
+.jg-detail-naxCon i{
+	color:#333;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: simsun;
+	font-size: 15px;
+	margin-top: 1px;
+}
+.jg-detail-naxList{
+	display: block;
+	float: left;
+}
+.jg-detail-naxList:hover{
+	color:#F39800;
+}
+/*内容区*/
+.jg-list-getsContainer{
+	width: 1000px;
+	min-height: 30px;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.jg-list-getsContent{
+	width:960px;
+	background: #F5F5F5;
+	margin-left: 20px;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.jg-list-getsContent:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+.jg-list-left{
+	width:634px;
+	min-height: 50px;
+	float: left;
+}
+.jg-list-right{
+	width: 316px;
+	min-height: 50px;
+	float: right;
+	background: green;
+}
+/*产品详情*/
+.jg-list-topBox{
+	width: 100%;
+	padding-top: 20px;
+}
+.jg-list-topBox:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.jg-list-topHref{
+	display: block;
+	float: left;
+	width: 293px;
+	height: 220px;
+	border:1px solid #E8E8E8;
+	box-shadow: 0 0 3px #E8E8E8;
+	margin-left: 20px;
+}
+.jg-list-topHref img{
+	width: 293px;
+	height: 220px;
+}
+.jg-list-topContent{
+	width: 310px;
+	float: right;
+	font-size:12px;
+	line-height: 22px;
+	color:#666;
+}
+.jg-list-topTitle{
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color:#333;
+	font-weight: 700;
+	font-size: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.jg-list-topSecondTitle{
+	color:#333;
+}
+.jg-list-topCon{
+	width: 100%;
+	height:177px;
+	overflow: hidden;
+}
+.jg-list-topList{
+	text-indent: 2em;
+}
+/*点击下拉图标*/
+.jg-show-leftBoot{
+	height: 22px;
+    width: 100%;
+}
+.jg-show-leftBootIcon {
+    display: block;
+    float: right;
+    width: 12px;
+    height: 7px;
+    background: url(../images/jd-down.png) no-repeat;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.jg-show-leftBootIcon.active {
+    background: url(../images/jd-up.png) no-repeat;
+}
+/*tab切换效果*/
+.jg-list-tabContainer{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
