@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs17</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<input type="checkbox" ng-model="name">
+	{{name}}
+	<!-- <div ng-show="name">显示我了。。仇郯郯博客</div> -->
+	<!-- <div ng-hide="name">显示我了。。仇郯郯博客</div> -->
+	<div ng-if="name">显示我了。。仇郯郯博客</div>
+	<!-- 
+		ng-show：通过css控制元素的显示与隐藏
+		ng-if：动态的移出或者创建元素
+	-->
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		
+ 	}])
+</script>
+</body>
+</html>

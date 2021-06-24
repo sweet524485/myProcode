@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/jquery.min.js"></script>
+    <style>
+        .data{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<ul class="data"></ul>
+</body>
+</html>
+<script>
+    $.post('1.php',function(res){
+        //console.log(res);
+        $.each(res,function(i){
+            //console.log(res[i].name);
+            var html = '<li>'+res[i].name+'</li>';
+            $('.data').append(html);
+        })
+    },'json')
+</script>

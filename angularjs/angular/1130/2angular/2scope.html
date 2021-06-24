@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl">
+        <!--{{name}}-->
+        <hr>
+        {{data.name}}
+        <hr>
+        {{data.func()}}
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        //$scope.name='houdun';
+        $scope.data = {
+            name:'后盾网',
+            func:function(){
+                return '快学网';
+            }
+        }
+    }]);
+</script>

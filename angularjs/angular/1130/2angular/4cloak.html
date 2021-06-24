@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <style>
+        .ng-cloak{
+            display: none;
+        }
+    </style>
+</head>
+<body ng-app="hd">
+    <!--表达式闪{{}}，指令不会闪{{}}-->
+    <!--再这里不屑ng-cloak属性也是可以得-->
+    <div ng-controller="ctrl" ng-cloak class="ng-cloak">
+        商品名称：{{goods.data.title}}<br>
+        商品价格：{{goods.data.price}}<br>
+        商品数量：{{goods.data.num}}<br>
+        <!--商品总价：{{goods.num*goods.price}}-->
+        商品总价：<span ng-bind="goods.data.num*goods.data.price"></span><br>
+        <button type="button" ng-click="goods.add()">增加</button>
+        <button type="button" ng-click="goods.reduce()">减少</button>
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+//        $scope.goods = {title:'MAC',price:9,num:2};
+//        $scope.add = function(){
+//            $scope.goods.num =  Math.min(++$scope.goods.num,10);
+//        };
+//        $scope.reduce = function(){
+//            $scope.goods.num = Math.max(--$scope.goods.num,1);
+//        };
+        $scope.goods = {
+            data:{title:'MAC',price:9,num:2},
+            add:function(){
+                $scope.goods.data.num =  Math.min(++$scope.goods.data.num,10);
+            },
+            reduce:function(){
+                $scope.goods.data.num = Math.max(--$scope.goods.data.num,1);
+            }
+        }
+    }])
+</script>

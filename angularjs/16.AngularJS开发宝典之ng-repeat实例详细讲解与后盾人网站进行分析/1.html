@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs17</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:left;">
+	<ul>
+		<!-- $first 第一个
+		     $last 最后一个 
+		     $middle 中间的
+		     $even 偶数行
+		     $odd 奇数行
+		-->
+		<li ng-repeat="(k,v) in data" style="{{$even?'color:red;':''}}">
+			网站：{{v.name}}  网址：{{v.url}}
+		</li>
+		<hr/>
+		<li ng-repeat="(k,v) in data">
+			<span ng-if="$first" style="{{$first?'color:red;':''}}">
+				网站：{{v.name}}  网址：{{v.url}}
+			</span>
+			<span ng-if="$middle">
+				网站：{{v.name}}  网址：{{v.url}}
+			</span>
+			<span ng-if="$last" style="{{$last?'color:blue;':''}}">
+				网站：{{v.name}}  网址：{{v.url}}
+			</span>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.data = [
+ 			{name:'仇郯郯 官网', url:'www.qiutantan.com'},
+ 			{name:'仇郯郯 博客', url:'www.bbsqiutantan.com'},
+ 			{name:'仇郯郯 商城', url:'www.shopqiutantan.com'},
+ 			{name:'仇郯郯 论坛', url:'www.talkqiutantan.com'},
+ 			{name:'仇郯郯 云计算', url:'www.yunqiutantan.com'}
+ 		];
+ 	}])
+</script>
+</body>
+</html>

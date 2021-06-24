@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        {{all}}
+        <table border="1" width="600">
+            <tr>
+                <td>
+                    <input type="checkbox" ng-model="all">
+                    <!--写字符串加引号-->
+                    <span ng-bind="all?'取消':'全选'"></span>
+                </td>
+                <td>商品名</td>
+                <td>商品价格</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" ng-checked="all">
+                </td>
+                <td>商品名</td>
+                <td>商品价格</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox"  ng-checked="all">
+                </td>
+                <td>商品名</td>
+                <td>商品价格</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+
+    }])
+</script>

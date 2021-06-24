@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs6</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;"><br/>
+	<label>
+		<span>游戏：</span>
+		<input type="checkbox" ng-model="data.game" ng-true-value="1" ng-false-value ="0"/>
+	</label><br/><br/>
+	<label>
+		<span>电影：</span>
+		<input type="checkbox" ng-model="data.video" ng-true-value="1" ng-false-value ="0"/>
+	</label>
+	<br/><br/>{{data}}
+	<div ng-show="data.game==1">
+		<h2>游戏</h2>
+		<textarea name="" id="" cols="30" rows="5"></textarea>
+	</div>
+	<div ng-show="data.video==1">
+		<h2>电影</h2>
+		<textarea name="" id="" cols="30" rows="5"></textarea>
+	</div>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.data = { game: 0, video: 0};
+ 	}])
+</script>
+</body>
+</html>

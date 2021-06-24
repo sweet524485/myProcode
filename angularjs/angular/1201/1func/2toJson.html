@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.data = {name:'后盾网'};
+        //本地存储
+        //angular.toJson()转json字符串
+        localStorage.setItem('data',angular.toJson($scope.data));
+    }])
+</script>

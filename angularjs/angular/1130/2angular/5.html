@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+    {{name}}yhjkl;asdfghjkasdfghjk
+    <hr>
+    <h1 ng-bind="name+'dfghjkl;asdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjkasdfghjk'"></h1>
+    <hr>
+    <input type="text" ng-model="num">
+    <hr>
+    <input type="text" ng-value="2*2">
+
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.name = '后盾网';
+        $scope.num = 2;
+    }])
+</script>

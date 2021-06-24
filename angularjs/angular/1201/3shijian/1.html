@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        <!--单击事件-->
+        <!--<button type="button" ng-click="func()">点我点我</button>-->
+        <hr>
+        <!--失去焦点-->
+        <!--<input type="text" ng-blur="func()">-->
+        <!--双击事件-->
+        <!--注意ppt在这个位置有错误，正确写法应该是ng-dblclick-->
+        <button ng-dblclick="func()">双击事件</button>
+
+
+
+
+
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.func = function(){
+            alert(1);
+        }
+    }])
+</script>

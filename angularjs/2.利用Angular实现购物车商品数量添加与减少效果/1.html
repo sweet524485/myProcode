@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs2</title>
+	<script src="angular.min.js"></script>
+	<style type="text/css">
+		.box{
+			width:500px;
+			height:600px;
+			margin:50px auto;
+		}
+	</style>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" class="box">
+	商品价格：{{goods.data.title}} <br/>
+	价格：{{goods.data.price}} <br/>
+	购买数量：{{goods.data.num}} 件 <br/>
+	总计：{{goods.data.price*goods.data.num}} 元 <br/><br/>
+	<button ng-click="goods.add()">增加</button>
+	<button ng-click="goods.reduce()">减少</button>
+	<!-- ng-click:angular点击事件指令 -->
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.goods = {
+ 			//商品的数据
+ 			data :{'title':'apple','price':20000,'num':0},
+ 			//商品添加的方法
+ 			add : function (){
+ 				$scope.goods.data.num=Math.min(++$scope.goods.data.num,6);
+ 			},
+ 			//商品减少的方法
+ 			reduce : function (){
+ 				$scope.goods.data.num=Math.max(--$scope.goods.data.num,0);
+ 			}
+ 		}
+ 	}])
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+    <input type="radio" ng-model="status" value="1">开启
+    <input type="radio" ng-model="status" value="0">关闭
+    <hr>
+    {{status}}
+    <hr>
+    <!--ng-show当表达式值为true的时候show显示-->
+    <!--ng-hide当表达式值为true的时候hide隐藏-->
+    <!--ng-if当表达式值为false的时候移出dom元素-->
+    <div ng-if="status==0">
+        <h1>网站关闭原因:</h1>
+        <textarea >回家结婚，暂停营业...</textarea>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.status = 1;
+    }])
+</script>

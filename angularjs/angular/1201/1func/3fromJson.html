@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+{{data}}
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        //angular.fromJson()将json字符串转为json对象
+            $scope.data = localStorage.getItem('data');
+            //alert($scope.data);//{"name":"后盾网"}弹出字符串
+            //alert($scope.data.name);//undefined
+            $scope.title = angular.fromJson(localStorage.getItem('data'));
+            //alert($scope.title);//弹出obj
+            alert($scope.title.name);//后盾网
+    }])
+</script>

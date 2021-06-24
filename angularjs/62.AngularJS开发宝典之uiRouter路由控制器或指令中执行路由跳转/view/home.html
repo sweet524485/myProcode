@@ -1,0 +1,14 @@
+<style type="text/css">
+	h1{
+		height:500px;
+		background: red;
+		color:yellow;
+	}
+</style>
+<h1>
+	我是首页{{name}}
+</h1>
+<li ng-repeat="v in data">
+	{{v.title}}
+</li>
+<a href="" ng-click="go('list')">跳转到列表页</a>

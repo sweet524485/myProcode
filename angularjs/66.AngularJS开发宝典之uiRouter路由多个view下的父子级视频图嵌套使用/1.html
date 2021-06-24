@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="angular-ui-router.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt">
+	<div ui-view=""></div>
+	<div ui-view="content"></div>	
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',['ui.router']);
+ 	m.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+ 		//默认路由
+ 		$urlRouterProvider.otherwise('/my');
+ 		//定义路由规则
+ 		$stateProvider
+ 			.state('my',{
+	 			url:'/my',
+	 			views:{
+	 				'@':{
+	 					templateUrl:'view/my.html'
+	 				},
+	 				'content':{
+	 					template:'欢迎来到后盾人'
+	 				}
+	 			}
+ 			})
+ 			.state('my.video',{
+	 			url:'/video',
+	 			views:{
+	 				'son@my':{
+	 					templateUrl:'view/video.html'
+	 				},
+	 				'content@':{
+	 					template:''
+	 				}
+	 			}
+ 			})
+ 	}])
+</script>
+</body>
+</html>

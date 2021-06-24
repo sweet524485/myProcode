@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+	<!--
+		ng-... angular指令非html标签属性
+		ng-app： angular模块（类似于前台或者后台模块）
+		ng-controller：angular控制器
+		ng-model：用于绑定获取文本框的值
+		ng-bind：用于给标签赋值
+		{{name}}：也可以用于当做angular的变量
+	--->
+	<div ng-app="qtt" ng-controller="ctrl">
+		<h1>{{name}}</h1>
+		<h2 ng-bind="name"></h2>
+		<input type="text" ng-model="name"/>
+	</div>
+	<script type="text/javascript">
+		//声明一个模块变量（类似于实例化一个前台模型）
+	 	var m = angular.module('qtt',[]);
+	 	//模型下的控制器，里面有个回调函数
+	 	m.controller('ctrl',['$scope',function ($scope){
+	 		//给变量赋值
+	 		$scope.name = "仇郯郯个人博客";
+	 	}])
+	</script>
+</body>
+</html>

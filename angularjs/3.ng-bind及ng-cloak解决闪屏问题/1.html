@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs2</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;">
+	{{name+'www.qiutantan.com'}}
+	<hr/>
+	{{user.username+'=>'+user.url}}
+	<hr/>
+	{{num*7}}
+	<hr>
+	<h3 ng-bind="name"></h3>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.name = '仇郯郯';
+ 		$scope.num = 2;
+ 		$scope.user = {'username':'仇郯郯','url':'www.qiutantan.com'};
+ 	}])
+</script>
+</body>
+</html>

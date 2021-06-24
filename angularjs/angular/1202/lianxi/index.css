@@ -1,0 +1,44 @@
+.row{
+    border:1px solid cyan;
+    /*height: 600px;*/
+}
+.topMenu, .subMenu{
+    position: relative;
+}
+.topMenu:hover .top,.subMenu:hover .sub{
+    display: block;
+}
+.topMenu .top,.subMenu .sub{
+    margin-bottom: 20px;
+    position: absolute;
+    top:0px;
+    right:3px;
+    display: none;
+}
+.mobile{
+    border:5px solid #1b252e;
+    height:500px;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+}
+.mobile dl{
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+.mobile dl dt{
+    text-align: center;
+    background: #cccccc;
+    border: 1px solid #f3f3f3;
+}
+.mobile dl dd{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.pc{
+    /*border:1px solid red;*/
+    /*height: 550px;*/
+    margin-top: 30px;
+}

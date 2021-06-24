@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs17</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<br/>
+	<label>
+		<input type="checkbox" ng-model="status"> 接收协议
+	</label>
+	<button ng-init="copyright=false" ng-click="copyright=!copyright">
+		查看协议
+	</button>
+	<br/>
+	<textarea ng-if="copyright" cols="30" rows="10">协议内容：XXXX</textarea>
+	<br/>
+	<button ng-disabled="!status">登录</button>
+	<!-- 
+		ng-init：初始化copyright的状态值
+		ng-click：点击来切换copyright的值
+		ng-if：根据copyright的值来创建或者移除文本框内容
+		ng-model：status的状态值
+		ng-disabled：根据status的值来控制按钮是否可用
+	-->
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		
+ 	}])
+</script>
+</body>
+</html>

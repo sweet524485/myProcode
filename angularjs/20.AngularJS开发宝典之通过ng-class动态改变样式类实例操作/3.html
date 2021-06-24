@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<style type="text/css">
+		.red{
+			background: red;
+		}
+		.green{
+			background: #7EBF3D;
+		}
+	</style>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<table style="margin:50px auto;width:500px;" border="1">
+		<thead>
+			<tr>
+				<th>
+					编号
+				</th>
+				<th>
+					姓名
+				</th>
+				<th>
+					年龄
+				</th>
+			</tr>
+			<tbody>
+				<tr ng-repeat="(k,v) in data" ng-class-odd="{green:true}" 
+				ng-class-even="{red:true}">
+					<td>
+						{{v.id}}
+					</td>
+					<td>
+						{{v.username}}
+					</td>
+					<td>
+						{{v.age}}
+					</td>
+				</tr>
+			</tbody>
+		</thead>
+	</table>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.data = [
+ 			{id:1, username:"张三", age:22, status:1},
+ 			{id:2, username:"李四", age:33, status:0},
+ 			{id:3, username:"王五", age:45, status:1},
+ 			{id:4, username:"赵六", age:27, status:0}
+ 		];
+ 	}])
+</script>
+</body>
+</html>

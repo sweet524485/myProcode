@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl">
+        <input type="text" ng-model="name">  <!--指令-->
+        <hr>
+        <span>{{name}}</span><!--表达式-->
+        <hr>
+        <h1 ng-bind="name"></h1> <!--指令-->
+    </div>
+</body>
+</html>
+<script>
+    var m = angular.module('hd',[]);
+    //采用这样写法
+    m.controller('ctrl',['$scope',function($scope){
+        $scope.name = '后盾网';
+    }]);
+    //运行没问题，不大建议采用
+//    m.controller('ctrl',['$scope',function(a){
+//        a.name = '后盾网';
+//    }]);
+    //一下这种写法，参数必须是$scope,不建议用
+//    m.controller('ctrl',function($scope){
+//        $scope.name = '后盾网';
+//    });
+</script>

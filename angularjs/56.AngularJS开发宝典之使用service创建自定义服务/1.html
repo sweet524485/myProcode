@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;">
+	<br/>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>
+					姓名
+				</th>
+				<th>
+					网址
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="v in data">
+				<td>
+					{{v.name}}
+				</td>
+				<td>
+					{{v.url}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.service('videoServer',['$http',function($http){
+ 		this.get = function (){
+ 			return $http({method:'get',url:'1.php'}).then(function(response){
+ 				return response.data;
+ 			})
+ 		}
+ 	}]);
+ 	m.controller('ctrl',['$scope','videoServer',function($scope, videoServer){
+ 		videoServer.get().then(function(data){
+ 			$scope.data = data;
+ 		})
+ 	}]);
+</script>
+</body>
+</html>

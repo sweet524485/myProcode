@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <script src="../../org/jquery.min.js"></script>
+</head>
+<body>
+<div ng-app="hd">
+    <div ng-controller="ctrl">
+        <form action="1.php" method="post">
+            用户ID：<input type="text" ng-model="title.id">
+            用户名：<input type="text" ng-model="title.name">
+            <textarea name="data"></textarea>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.title={id:2,name:'houdun'};
+        $('form').submit(function(){
+            $('[name=data]').val(angular.toJson($scope.title));
+//            return false;
+        });
+    }])
+</script>

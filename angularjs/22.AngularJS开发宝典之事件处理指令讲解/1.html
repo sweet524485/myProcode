@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<div ng-click="clickFn()">
+		点击事件
+	</div>
+	<div ng-dblclick="dblclickFn()">
+		双击事件
+	</div>
+	<input type="text" ng-blur="blur()"></br>
+	<input type="text" ng-focus="common()">{{data}}</br>
+	<input type="text" ng-keyup="common()">{{data}}</br>
+	<input type="text" ng-keydown="common()">{{data}}</br>
+	<input type="text" ng-mousedown="common()">{{data}}</br>
+	<input type="text" ng-mouseup="common()">{{data}}</br>
+	<input type="text" ng-mouseenter="common()">{{data}}</br>
+	<input type="text" ng-mouseleave="common()">{{data}}</br>
+	<input type="text" ng-mousemove="common()">{{data}}</br>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.clickFn = function (){
+ 			alert("我是点击事件！！");
+ 		},
+ 		$scope.dblclickFn = function(){
+ 			alert("我是双击事件！！");
+ 		},
+ 		$scope.blur = function(){
+ 			alert("我是失去焦点事件！！");
+ 		},
+ 		$scope.common = function(){
+ 			$scope.data += "仇郯郯";
+ 		}
+ 	}])
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<div ng-app="qtt" style="text-align:center;">
+	<br/>
+	<div ng-controller="ctrl1" style="text-align:center;">
+		<br/>
+		{{data}}
+	</div>
+	<div ng-controller="ctrl2" style="text-align:center;">
+		<br/>
+		{{data}}
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.controller('ctrl1',['$scope','$cacheFactory',function($scope, $cacheFactory){
+ 		var obj = $cacheFactory('hdphp');
+ 		obj.put('web',{name:'仇郯郯', url:'www.qiutantan.com'});
+ 		obj.put('user',{name:'仇明杰', mail:'7747544551@qq.com'});
+ 		$scope.data = obj.get('web').name;
+ 	}]);
+ 	m.controller('ctrl2',['$scope','$cacheFactory',function($scope, $cacheFactory){
+ 		var obj = $cacheFactory.get('hdphp');
+ 		$scope.data = obj.get('web').name;
+ 	}]);
+</script>
+</body>
+</html>

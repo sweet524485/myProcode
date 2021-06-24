@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        <!--ng-true-value指定选中时候的值-->
+        <input type="checkbox" ng-model="status.game" ng-true-value="1" ng-false-value="0">游戏
+        <input type="checkbox" ng-model="status.video" ng-true-value="1" ng-false-value="0">视频
+        <hr>
+        {{status}}
+        <hr>
+        <div ng-if="status.game==1">
+            <h1>游戏</h1>
+            <textarea></textarea>
+        </div>
+        <div ng-if="status.video==1">
+            <h1>视频</h1>
+            <textarea></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.status = {game:0,video:0};
+    }])
+</script>

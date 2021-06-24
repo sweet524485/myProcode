@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<br/>
+	{{data|orderBy:'click':true}}
+	<hr/>
+	{{data|filter:'明':false}}
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.data =[
+ 			{id:1,click:100,title:'仇郯郯'},
+ 			{id:2,click:200,title:'仇明杰'},
+ 			{id:3,click:300,title:'仇明论'}
+ 		];
+ 	}])
+</script>
+</body>
+</html>

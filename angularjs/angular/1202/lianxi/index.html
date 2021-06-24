@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <script src="../../org/underscore-min.js"></script>
+    <link rel="stylesheet" href="../../org/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../org/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="out" ng-app="hd" ng-controller="ctrl">
+    <form action="" method="post" class="form-horizontal" role="form">
+       <div class="container">
+            <div class="row">
+                <div class="col-xs-4" >
+                    <div class="mobile">
+                        <dl ng-repeat="(k,v) in data.button">
+                            <dt ng-bind="v.name"></dt>
+                            <dd ng-repeat="(m,n) in v.sub_button">
+                                <a href=""   ng-bind="n.name"></a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-xs-8" >
+                    <div class="pc">
+                        <div class="panel panel-info">
+                        	  <div class="panel-heading">
+                        			<h3 class="panel-title">编辑</h3>
+                        	  </div>
+                        	  <div class="panel-body">
+                        			<div class="panel panel-default">
+                                        <!--一级菜单开始-->
+                        				<div class="panel-body" ng-repeat="(k,v) in data.button">
+                                           <div class="panel panel-default topMenu">
+                                               <i class="fa fa-times-circle fa-2x top " ng-click="topDel(v)"></i>
+                                                    <div class="form-group" style="margin-top: 20px">
+                                                        <label for="" class="col-sm-2 control-label">菜单名</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" ng-model="v.name" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" ng-if="!v.sub_button || v.sub_button.length==0">
+                                                        <label for="" class="col-sm-2 control-label">类型</label>
+                                                        <div class="col-sm-9">
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" ng-model="v.type" value="view">view
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" ng-model="v.type" value="click">click
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" ng-if="v.type=='click' &&(!v.sub_button || v.sub_button.length==0 )"  >
+                                                        <label for="" class="col-sm-2 control-label">key</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" ng-model="v.key">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" ng-if="v.type=='view'  &&(!v.sub_button || v.sub_button.length==0 )">
+                                                        <label for="" class="col-sm-2 control-label">url</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" ng-model="v.url">
+                                                        </div>
+                                                    </div>
+                                                    <!--二级菜单开始-->
+                                                    <div class="panel panel-default subMenu" ng-repeat="(m,n) in v.sub_button">
+                                                        <i class="fa fa-times-circle fa-2x sub " ng-click="subDel(v,n)"></i>
+                                                        <div class="panel-body">
+                                                            <div class="form-group">
+                                                                <label for="" class="col-sm-2 control-label">菜单名</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="text" class="form-control" ng-model="n.name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="" class="col-sm-2 control-label">类型</label>
+                                                                <div class="col-sm-9">
+                                                                    <div class="radio">
+                                                                        <label>
+                                                                            <input type="radio" ng-model="n.type" value="view">view
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" ng-model="n.type" value="click">click
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group" ng-if="n.type=='click'">
+                                                                <label for="" class="col-sm-2 control-label">key</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="text" class="form-control" ng-model="n.key">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group" ng-if="n.type=='view'">
+                                                                <label for="" class="col-sm-2 control-label">url</label>
+                                                                <div class="col-sm-9" ng-if="n.type=='view'">
+                                                                    <input type="text" class="form-control" ng-model="n.url">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                               <button type="button" class="btn btn-success" ng-click="subAdd(v)" style="margin-left: 10px;margin-bottom: 10px">添加二级菜单</button>
+                                                    <!--二级菜单结束-->
+                                            </div>
+                        				</div>
+                                        <button type="button" class="btn btn-warning" ng-click="addTop()" style="margin-left: 10px;margin-bottom: 10px">添加一级菜单</button>
+                                        <!--一级菜单结束-->
+                        			</div>
+                        	  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </form>
+ </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+       $scope.name='jfhgi';
+        $scope.data= {
+            "button":[
+                {
+                    "type":"click",
+                    "name":"今日歌曲",
+                    "key":"V1001_TODAY_MUSIC"
+                },
+                {
+                    "name":"菜单",
+                    "sub_button":[
+                        {
+                            "type":"view",
+                            "name":"搜索",
+                            "url":"http://www.soso.com/"
+                        },
+                        {
+                            "type":"view",
+                            "name":"视频",
+                            "url":"http://v.qq.com/"
+                        },
+                        {
+                            "type":"click",
+                            "name":"赞一下我们",
+                            "key":"V1001_GOOD"
+                        }]
+                }]
+        }
+        $scope.subAdd=function (topMenu){
+            var html= {
+                        "type":"",
+                        "name":"",
+                        "key":""
+                    };
+            if(!topMenu.sub_button){
+                topMenu.sub_button=[];
+            }
+             if(topMenu.sub_button.length>=5){
+                 alert('二级标题不得多于五个')
+             }else{
+                 topMenu.sub_button.push(html);
+             }
+        }
+        $scope.addTop=function(){
+            var html= {
+                "type":"",
+                "name":"",
+                "key":""
+            };
+            if($scope.data.button.length>=3){
+                alert('一级标题不得多于三个');
+            }else{
+                $scope.data.button.push(html);
+            }
+        }
+        $scope.topDel=function(topMenu){
+//            alert(1);
+            $scope.data.button=_.without($scope.data.button,topMenu);
+        }
+        $scope.subDel=function(topMenu,subMenu){
+//            alert(1);
+            topMenu.sub_button=_.without(topMenu.sub_button,subMenu);
+        }
+    }])
+</script>

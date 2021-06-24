@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="angular-ui-router.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" style="text-align:center;">
+	<br/>
+	<a href="" ui-sref="home">首页</a>
+	<a href="#/list">列表页</a>
+	<div ui-view>仇郯郯提示您：您访问的页面不存在</div>
+</div>
+
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',['ui.router']);
+ 	m.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+ 		//默认路由
+ 		$urlRouterProvider.otherwise('');
+ 		//定义路由规则
+ 		$stateProvider
+ 			.state('default',{
+	 			url:'',
+	 			template:'<h1>仇郯郯</h1>'
+ 			})
+ 			.state('home',{
+	 			url:'/home',
+	 			templateUrl:'view/home.html'
+ 			})
+ 			.state('list',{
+	 			url:'/list',
+	 			template:'<h1>列表页</h1>'
+ 			})
+ 	}])
+</script>
+</body>
+</html>

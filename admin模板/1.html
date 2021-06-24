@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<title>1.html</title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin: 0;
+		}
+		html{
+			width: 100%;
+			height: 100%;
+			background: #E7E7F1;
+		}
+		body{
+			margin: 20px;
+			min-height: 100px;
+			background: #fff;
+			border-radius: 5px;
+		}
+		.top{
+			width: 100%;
+			height: 30px;
+			background: #ccc;
+		}
+		.top a{
+			display: block;
+			float: left;
+			padding-left:10px;
+			padding-right:10px;
+			height: 30px;
+			line-height: 30px;
+			background: blue;
+			color:#fff;
+			margin:0px 30px;
+			text-decoration: none;
+		}
+		.bottom{
+			display: block;
+			width: 100%;
+		}
+		iframe{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<a href="chiren1.html" target="iframe-c">
+		  	iframe chiren1
+		</a>
+		<a href="chiren2.html" target="iframe-c">
+		   iframe chiren2
+		</a>
+	</div>
+	<div class="bottom">
+		<iframe src="chiren1.html" frameborder="0" name="iframe-c" id="iframe" scrolling="no"></iframe>
+	</div>
+</body>
+</html>

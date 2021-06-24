@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs9</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;"><br/>
+	
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		//查看angular的版本号
+ 		//console.log(angular.version);
+ 		//转化小写
+ 		//console.log(angular.lowercase('www.QIUTANTAN.COM'));
+ 		//转化大写
+ 		//console.log(angular.uppercase('www.QIUTANTAN.COM'));
+
+ 		/*var obj = {name:'仇郯郯 官网'};
+ 		var obj2 = obj;
+ 		obj2.name = '仇郯郯 博客';
+ 		console.log(obj);*/
+
+ 		var obj = {name:'仇郯郯 官网'};
+ 		var obj2 = {};
+ 		angular.copy(obj,obj2);
+ 		obj2.name = '仇郯郯 博客';
+ 		console.log(obj);
+ 	}])
+</script>
+</body>
+</html>

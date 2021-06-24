@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<br/>
+	<table border="1" style="width:550px;margin:0 auto;">
+		<thead>
+			<tr>
+				<td ng-click="orderBy('id')">
+					编号
+					<span ng-if="status.id">
+						升序
+					</span>
+					<span ng-if="!status.id">
+						降序
+					</span>
+				</td>
+				<td ng-click="orderBy('click')">
+					点击数
+					<span ng-if="status.click">
+						升序
+					</span>
+					<span ng-if="!status.click">
+						降序
+					</span>
+				</td>
+				<td ng-click="orderBy('title')">
+					标题
+					<span ng-if="status.title">
+						升序
+					</span>
+					<span ng-if="!status.title">
+						降序
+					</span>
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(k,v) in data">
+				<td>
+					{{v.id}}
+				</td>
+				<td>
+					{{v.click}}
+				</td>
+				<td>
+					{{v.title}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope','$filter',function ($scope,$filter){
+ 		$scope.data =[
+ 			{id:1,click:100,title:'仇郯郯'},
+ 			{id:2,click:200,title:'仇明杰'},
+ 			{id:3,click:300,title:'仇明论'}
+ 		];
+ 		//记录排序的状态
+ 		$scope.status = {id:false, click:false, title:false};
+ 		$scope.orderBy = function(field){
+ 			$scope.status[field] = !$scope.status[field];
+ 			$scope.data = $filter('orderBy')($scope.data,field,$scope.status[field]);
+ 		}
+ 	}])
+</script>
+</body>
+</html>

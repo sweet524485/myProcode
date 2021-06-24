@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" style="text-align:center;" ng-controller="ctrl">
+	<br/>
+	<h1 qmj qmj-Color="callback()"></h1>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.directive('qmj',[function(){
+ 		return {
+ 			restrict:'AEC',
+ 			template:'<h3>{{color()}}</h3>',
+ 			scope:{color:'&qmjColor'}
+ 		}
+ 	}]);
+ 	m.controller('ctrl',['$scope',function($scope){
+ 		$scope.callback = function () {
+ 			return '后盾人';
+ 		}
+ 	}]);
+</script>
+</body>
+</html>

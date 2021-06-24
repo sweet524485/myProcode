@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        <!--<div ng-repeat="v in title">{{v}}</div>-->
+        <div ng-repeat="v in title track by $index" ng-bind="v"></div>
+        <hr>
+        <table border="1" width="600">
+            <tr>
+                <td>编号</td>
+                <td>名称</td>
+                <td></td>
+            </tr>
+            <!--ng-repeat="v in data"-->
+            <tr ng-repeat="(k,v) in data" >
+                <td>{{v.id}}</td>
+                <td>{{v.name}}</td>
+                <!--<td>{{$index}}</td>索引0开始-->
+                <!--<td>{{$first}}</td>  	第一条返回true，其余返回false-->
+                <!--<td>{{$middle}}</td>  除了第一个和最后一个，都是中间的true-->
+                <!--<td>{{$last}}</td>最后一条返回true，其余返回false-->
+                <!--<td>{{$even}}</td>   偶数下标true-->
+                <!--<td>{{$odd}}</td>   奇数下标true-->
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.data = [
+            {id:1,name:'奥特曼'},
+            {id:2,name:'怪兽'},
+            {id:3,name:'超人'},
+            {id:4,name:'蜘蛛侠'},
+            {id:4,name:'蜘蛛侠'},
+        ];
+        $scope.title = ['hdphp','hdcms','hdlt','hdcms'];
+    }])
+</script>

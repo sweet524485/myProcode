@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;">
+	<br/>
+	{{name}}
+	<hr/>
+	{{id}}
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.controller('ctrl',['$scope','$timeout','$interval',function($scope,$timeout,$interval){
+ 		$scope.name = '后盾人';
+ 		$scope.id = 1;
+ 		/*var timeId = $timeout(function(){
+ 			$scope.name = '仇郯郯';
+ 		},2000);
+ 		$timeout.cancel(timeId);*/
+ 		// 反复执行
+ 		var idInterval = $interval(function(){
+ 			$scope.id ++;
+ 			if($scope.id > 10){
+ 				$interval.cancel(idInterval);
+ 			}
+ 		},1000);
+ 	}]);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        <!--v.value 变成option的 value-->
+        <!--v.name  options标签显示文本-->
+        <select ng-options="v.value as v.name for v in data" ng-model="city">
+            <option value="">请选择</option>
+        </select>
+        <hr>
+        {{city}}
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        //默认选中效果
+        $scope.city = 'tianjin';
+        $scope.data = [
+            {name:'后盾网',value:'houdunwang'},
+            {name:'北京',value:'beijing'},
+            {name:'天津',value:'tianjin'},
+        ];
+    }])
+</script>

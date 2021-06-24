@@ -1,0 +1,42 @@
+.mobile{
+  border: 1px solid #cccccc;
+  height: 500px;
+  display: flex;
+  dl{
+    padding: 0px;margin: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    dt{
+      background: #cccccc;
+      text-align: center;
+      height: 30px;
+      line-height: 2em;
+      border: 1px solid #f3f3f3;
+    }
+    dd{
+      display: flex;
+      flex-direction: column;
+      a{
+        padding: 6px;
+        border: 1px solid #f3f3f3;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.topMenu,.subMenu{
+  position: relative;
+  .top,.sub{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: none;
+    cursor: pointer;
+  }
+}
+.topMenu:hover .top,.subMenu:hover .sub{
+  display: block;
+}
+

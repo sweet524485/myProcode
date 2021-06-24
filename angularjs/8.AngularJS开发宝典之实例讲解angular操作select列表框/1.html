@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs8</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;"><br/>
+	<select ng-options="v.value as v.name for v in data" ng-model="city">
+		<option value="">请选择城市</option>
+	</select>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.city = 'beijing';
+ 		$scope.data = [
+ 			{ name: '仇郯郯博客', value: 'qiutantan.com'},
+ 			{ name: '北京', value: 'beijing'},
+ 			{ name: '南京', value: 'nanjing'},
+ 		];
+ 	}])
+</script>
+</body>
+</html>

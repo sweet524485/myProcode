@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs17</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	性别：<select ng-model="user.sex">
+			<option value="">请选择性别</option>
+			<option ng-value="1" ng-selected="user.sex==1">男</option>
+			<option ng-value="2" ng-selected="user.sex==2">女</option>
+		  </select>
+		  <label>
+		  	<input type="radio" ng-model="user.sex" ng-value="1">男
+		  </label>
+		  <label>
+		  	<input type="radio" ng-model="user.sex" ng-value="2">女
+		  </label>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		$scope.user = { sex : 1}
+ 	}])
+</script>
+</body>
+</html>

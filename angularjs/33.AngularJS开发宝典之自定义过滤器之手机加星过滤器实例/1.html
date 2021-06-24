@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl"  style="text-align:center;">
+	<br/>
+	<table border="1" style="width:550px;margin:0 auto;">
+		<thead>
+			<tr>
+				<td ng-click="orderBy('id')">
+					编号
+				</td>
+				<td ng-click="orderBy('click')">
+					姓名
+				</td>
+				<td ng-click="orderBy('title')">
+					手机号
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(k,v) in data">
+				<td>
+					{{v.id}}
+				</td>
+				<td>
+					{{v.name}}
+				</td>
+				<td>
+					{{v.mobile|truncate:5}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.filter('truncate',function(){
+ 		return function(mobile,len){
+ 			len = len?len:3
+ 			return mobile.substr(0,3) + ('*').repeat(len)+mobile.substr(2+len,11);
+ 		}
+ 	});
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope','$filter',function ($scope,$filter){
+ 		$scope.data =[
+ 			{id:1,name:100,mobile:'12345678901'},
+ 			{id:2,name:200,mobile:'12345678902'},
+ 			{id:3,name:300,mobile:'12345678903'}
+ 		];
+ 	}])
+</script>
+</body>
+</html>

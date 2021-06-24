@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+    <form action="">
+
+        <!--复选框默认选中的时候值是true，取消选中的时候值false-->
+        <input type="checkbox" ng-model="status">
+        <button type="button" ng-init="show=false" ng-click="show=!show">查看协议</button>
+        <div ng-if="show">
+            <textarea>注册本网站需要.....</textarea>
+        </div>
+        <input type="submit" ng-disabled="!status">
+        <hr>
+        {{status}}
+    </form>
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+
+    }])
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;">
+	<br/>
+	{{name}}
+	<button ng-click="callback()">事件</button>
+	<hr/>
+	<button id="bt">jquery原生处理</button>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.controller('ctrl',['$scope',function($scope){
+ 		$scope.name = '后盾人';
+ 		$scope.callback = function(){
+ 			$scope.name = '仇郯郯';
+ 		}
+ 		$('#bt').click(function(){
+ 			// $scope.name = '仇明杰';
+ 			// $scope.apply();
+ 			//alert(2);
+ 			$scope.name = '仇明杰';
+ 			$scope.$apply();
+ 		})
+ 	}]);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <style>
+        .red{
+            color: red;
+        }
+        .font{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+        <!--{class名称：true[样式作用到元素身上]/false[样式不会作用到元素身上]}-->
+        <!--<div ng-class="{red:false,font:false}">后盾网 人人做后盾</div>-->
+        <!--奇数下标ng-class-even-->
+        <!--ng-class-odd偶数下标-->
+        <div ng-repeat="v in data" ng-bind="v.name" ng-class-even="{red:true}" ng-class-odd="{font:true}"></div>
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.data = [
+            {id:1,name:'奥特曼'},
+            {id:2,name:'怪兽'},
+            {id:3,name:'超人'},
+            {id:4,name:'蜘蛛侠'},
+            {id:4,name:'蜘蛛侠'},
+        ];
+    }])
+</script>

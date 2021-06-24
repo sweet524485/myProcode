@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <script src="../../org/jquery.min.js"></script>
+</head>
+<body ng-app="hd" >
+    <div ng-controller="ctrl">
+        {{name}}
+        <hr>
+        <form action="1.php" method="post">
+            用户id：<input type="text" ng-model="title.id"><br>
+            用户名：<input type="text" ng-model="title.name"><br>
+            <br>
+            <textarea name="data" >sfwfghfer</textarea>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    var m = angular.module('hd',[]);
+    m.controller('ctrl',['$scope',function($scope){
+        $scope.name = '后盾';
+        //angular版本号
+            //console.log(angular.version);
+        //将字符串转为小写
+            //console.log(angular.lowercase('HounDunWang'));
+        //angular.copy()
+            //var obj1 = {name:'后盾网'};
+            //var obj2 = obj1;
+            //obj2.name = 'houdunwang.com';
+            //console.log(obj1);//{name: "houdunwang.com"}
+//            var obj1 = {name:'后盾网'};
+//            var obj2={};
+//            angular.copy(obj1,obj2);
+//            obj2.name = 'houdunwang.com';
+//            console.log(obj2);//{name: "后盾网"}
+//            console.log(obj1);//{name: "后盾网"}
+        //angular.extend()
+            /*var obj1 = {name:'后盾网'};
+            angular.extend(obj1,{url:'houdunwang.com'});
+            console.log(obj1);//{name: "后盾网", url: "houdunwang.com"}
+            */
+        //angular.forEach(循环数据,function(值,下标){})
+            /*$scope.data   = [
+                {name:'后盾网',url:'houdunwang.com'},
+                {name:'后盾人',url:'houdunren.com'},
+            ];
+            angular.forEach($scope.data,function(v,k){
+                //console.log(v);
+                v.url='www.'+v.url;
+            })*/
+        $scope.title= {id:1,name:'后盾网'};
+        $('form').submit(function(){
+//            alert(1);
+            //angular.toJson()将数组转为数组字符串
+            $('[name=data]').val(angular.toJson($scope.title));
+//            return false;
+        })
+    }]);
+</script>

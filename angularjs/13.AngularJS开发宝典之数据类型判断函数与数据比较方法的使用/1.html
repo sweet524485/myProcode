@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs9</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" ng-controller="ctrl" style="text-align:center;"><br/>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	//模型下的控制器，里面有个回调函数
+ 	m.controller('ctrl',['$scope',function ($scope){
+ 		//返回是否是数组，布尔值
+ 		console.log(angular.isArray([]));
+ 		//返回是否是日期对象，布尔值
+ 		console.log(angular.isDate(new Date()));
+ 		//是否是定义的数据类型
+ 		var a;
+ 		console.log(angular.isDefined(a));
+ 		//是否是未定义的数据类型
+ 		console.log(angular.isUndefined(a));
+ 		//是否是一个函数
+ 		console.log(angular.isFunction(function (){}));
+ 		//是否是一个数字
+ 		console.log(angular.isNumber(9));
+ 		//是否是一个字符串
+ 		console.log(angular.isString('www.qiutantan.com'));
+ 		//是否是一个对象
+ 		console.log(angular.isObject({}));
+ 		//判断是否是一个标签元素
+ 		var e = document.getElementsByTagName('body').item(0);
+ 		console.log(angular.isElement(e));
+ 		//判断两个变量是否相等
+ 		var f = {name:9};
+ 		var g = {name : 9};
+ 		console.log(angular.equals(f,g));
+ 	}])
+</script>
+</body>
+</html>

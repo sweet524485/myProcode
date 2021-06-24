@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" style="text-align:center;">
+	<br/>
+	<div qtt-cms color="red">仇郯郯</div>
+	<hr>
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.directive('qttCms',[function(){
+ 		return{
+ 			restrict:'AEC', //a attr E element c class
+ 			template:function(elem,attr){
+ 				return '<span style="color:'+attr["color"]+'">'+elem.html()+'</span>'
+ 			}
+ 		}
+ 	}])
+</script>
+</body>
+</html>

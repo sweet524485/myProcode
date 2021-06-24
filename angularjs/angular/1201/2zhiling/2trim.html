@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <script src="../../org/jquery.min.js"></script>
+</head>
+<body ng-app="hd">
+<div ng-controller="ctrl" ng-cloak>
+    <form action="2.php" method="post">
+        <!--用户名：<input type="text" ng-model="title" ng-trim="true" name="title">-->
+        <!--ng-trim值为true的时候，$scope里面数据会去除掉空格，false不去出空格-->
+        <!--type='password',ng-trim值为true的时候也不去空格-->
+        密码：<input type="password" ng-model="title" ng-trim="true" name="title">
+        <hr>
+        <textarea name="data"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $('form').submit(function(){
+            $('[name=data]').val($scope.title)
+            //return false;
+        })
+    }])
+</script>

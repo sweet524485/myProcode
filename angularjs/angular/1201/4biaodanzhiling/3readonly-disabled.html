@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../org/angular.min.js"></script>
+    <style>
+        input[readonly]{
+            background: #f3f3f3;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body ng-app="hd">
+    <div ng-controller="ctrl" ng-cloak>
+
+        用户名：<input type="text" ng-model="user.name">
+        <br>
+        邮箱：<input type="text" ng-readonly="user.id" ng-model="user.email">
+        <hr>
+        <form action="3.php" method="post">
+            <input type="text" ng-model="data.name" readonly name="read"><br>
+            <!--disabled表单提交时候无法提交-->
+            <input type="text" ng-model="data.url" ng-disabled ="user.email"><br>
+            <input type="submit">
+        </form>
+
+    </div>
+</body>
+</html>
+<script>
+    angular.module('hd',[]).controller('ctrl',['$scope',function($scope){
+        $scope.data = {name:'后盾人',url:'houdunren.com'};
+        $scope.user = {id:1,name:'超人',email:'admin@qq.com'};
+    }])
+</script>

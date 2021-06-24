@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+<div ng-app="qtt" style="text-align:center;">
+	<br/>
+	<hd-cms></hd-cms>	
+</div>
+<script type="text/javascript">
+	//声明一个模块变量（类似于实例化一个前台模型）
+ 	var m = angular.module('qtt',[]);
+ 	m.directive('hdCms',[function(){
+ 		return {
+ 			restrict:'E',
+ 			templateUrl:'view/57.html',
+ 			controller:['$scope',function($scope){
+ 				$scope.name = '仇郯郯';
+ 			}]
+ 		}
+ 	}]);
+</script>
+</body>
+</html>
