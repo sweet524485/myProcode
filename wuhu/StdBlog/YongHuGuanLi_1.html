@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../Common/Style/resetCSS.css"/>
+<link rel="stylesheet" type="text/css" href="../Common/Style/common.css"/>
+<link rel="stylesheet" type="text/css" href="Style/stdBlog.css"/>
+<title>无标题文档</title>
+<style type="text/css">
+</style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="head">
+      <div class="wellcomeOpt">
+        <label class="wellcome">您好，欢迎来到芜湖市标准信息公共服务平台！</label>
+        <div class="login">
+          <a onclick="javascript:void(0);">登录</a>
+          <a style="margin-right:37px;" onclick="javascript:void(0);">注册</a>
+          <a onclick="javascript:void(0);">收藏本站</a>&nbsp;|
+          <a onclick="javascript:void(0);">网站地图</a>&nbsp;|
+          <a onclick="javascript:void(0);">官方微博</a>&nbsp;
+        </div>
+      </div>
+      <div class="banner"></div>
+      <div class="navBar">
+        <a href="../index.html">首 页</a>
+        <a href="../StdNews/stdNewsHome.html">标准动态</a>
+        <a href="../StdNav/stdNavHome.html">标准导航</a>
+        <a href="../Bookstore/bookstoreHome.html">标准书店</a>
+        <a href="../StdServices/specialServices.html">专项服务</a>
+        <a href="../StdSpecialTopic/specialTopicHome.html">专题研究</a>
+        <a href="../StdSys/stdSysHome.html">标准体系</a>
+        <a href="../SpecialTopicDB/specialTopicDB.html">专题数据库</a>
+        <a href="../Knowledge/knowledgeHome.html">知识库</a>
+        <a href="../CooOrg/cooOrgHome.html">合作机构</a>
+        <a class="current" href="stdBlogHome.html">互动论坛</a>
+        <a href="../UserCenter/userCenterHome.html">用户中心</a>
+      </div>
+    </div>
+    <div class="location">
+      当前位置：<a href="javascript:void(0);">首页</a>&nbsp;>&nbsp;<a href="javascript:void(0);">互动论坛</a>&nbsp;>&nbsp;...
+    </div>
+    <div class="main">
+      <div class="layout1">
+        <div class="box1 pTB15 topBg">
+          <img class="userPhoto ml21" src="Images/userImg.png" width="80" height="80" />
+          <div class="userInfo">
+            <p class="userName"><a>Std123456</a></p>
+            <ul class="info">
+              <li>用户类型：<span>专家</span></li>
+              <li>用户访问：<span>300</span></li>
+              <li>用户等级：<span>1</span></li>
+              <li>用户积分：<a class="red">50</a></li>
+            </ul>
+            <div class="community">
+              <a href="myBlog1.html">我的博客</a>&nbsp;|&nbsp;<a href="myImages1.html">我的图片</a>&nbsp;|&nbsp;<a href="myCircle.html">我的圈子</a>&nbsp;|&nbsp;<a href="myForums1.html">我的论坛</a>&nbsp;|&nbsp;<a href="aboutMe.html">关于我</a>
+            </div>
+          </div>
+          <a class="bigBtn btnBg4 f_r" href="forumPosting.html"></a>
+          <a class="bigBtn btnBg3 f_r" href="createCircle.html"></a>
+          <a class="bigBtn btnBg2 f_r" href="editImagesStep1.html"></a>
+          <a class="bigBtn btnBg1 f_r" href="writeBlog.html"></a>
+        </div>
+      </div>
+      
+      <div class="layout2 f_l">
+        <div class="blogBox padTLR20" style="min-height:527px;">
+          <ul class="labelBox" style="margin-bottom:0px;">
+            <li class="blueBg"><a href="YongHuGuanLi_1.html">个人消息</a></li>
+            <li><a href="YongHuGuanLi_1_1.html">图像昵称</li>
+            <em><a href="YongHuGuanLi_1_2.html">账号安全设置</a></em>
+          </ul>
+          <div id="ZiLiao" class="block15">
+            <h3 class="panelName"><b>个人资料：</b><i><a onclick="$('#ZiLiao').hide();$('#ZiLiao_1').show();">[编辑]</a>&nbsp;<span>已完成40%</span></i></h3>
+            <p>性&nbsp;&nbsp;别：<em>女</em></p>
+            <p>现居地：<em>广东&nbsp;&nbsp;深圳</em></p>
+          </div><!-- block15 End -->
+          <div id="ZiLiao_1" class="block15 hide">
+            <h3 class="panelName"><b>个人资料：</b><i><span>已完成40%</span></i></h3>
+            <div class="blogDiv pT15">
+              <span>性别：</span>  
+              <div class="radioBox">              
+                <div class="myradio sel">男</div>              
+                <div class="myradio unsel">女</div>
+              </div>
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>生日：</span>               
+              <div class="inputBox mr12">
+                <input type="text" id="target1" class="w50" value="年" />
+                <div class="btnDrop" onclick="showDropList(this, '#target1','#list1')"></div>                  
+                <ul id="list1" class="myDropList">
+                  <li>1970</li>
+                  <li>1971</li>
+                  <li>1972</li>
+                </ul>
+              </div>               
+              <div class="inputBox mr12">
+                <input type="text" id="target2" class="w30" value="月" />
+                <div class="btnDrop" onclick="showDropList(this, '#target2','#list2')"></div>                  
+                <ul id="list2" class="myDropList">
+                  <li>01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>...</li>
+                </ul>
+              </div>              
+              <div class="inputBox mr12">
+                <input type="text" id="target3" class="w30" value="日" />
+                <div class="btnDrop" onclick="showDropList(this, '#target3','#list3')"></div>                  
+                <ul id="list3" class="myDropList">
+                  <li>01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>...</li>
+                </ul>
+              </div>              
+              <div class="inputBox">
+                <input type="text" id="target4" class="w125" value="不显示我的生日" />
+                <div class="btnDrop" onclick="showDropList(this, '#target4','#list4')"></div>                  
+                <ul id="list4" class="myDropList">
+                  <li>不显示我的生日</li>
+                  <li>YYY</li>
+                  <li>XXX</li>
+                </ul>
+              </div>               
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>婚姻：</span>               
+              <div class="inputBox mr12">
+                <input type="text" id="target5" class="w50" value="" />
+                <div class="btnDrop" onclick="showDropList(this, '#target5','#list5')"></div>                  
+                <ul id="list5" class="myDropList">
+                  <li>已婚</li>
+                  <li>未婚</li>
+                </ul>
+              </div>
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>职业：</span>               
+              <div class="inputBox mr12">
+                <input type="text" id="target6" class="w_181" value="请选择" />
+                <div class="btnDrop" onclick="showDropList(this, '#target6','#list6')"></div>                  
+                <ul id="list6" class="myDropList">
+                  <li>职业1</li>
+                  <li>职业2</li>
+                </ul>
+              </div>
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>现居地：</span>               
+              <div class="inputBox mr12">
+                <input type="text" id="target7" class="w50" value="广东" />
+                <div class="btnDrop" onclick="showDropList(this, '#target7','#list7')"></div>                  
+                <ul id="list7" class="myDropList">
+                  <li>广东</li>
+                  <li>广东1</li>
+                  <li>广东2</li>
+                </ul>
+              </div>              
+              <div class="inputBox mr12">
+                <input type="text" id="target8" class="w50" value="广州" />
+                <div class="btnDrop" onclick="showDropList(this, '#target8','#list8')"></div>                  
+                <ul id="list8" class="myDropList">
+                  <li>广州1</li>
+                  <li>广州2</li>
+                  <li>广州3</li>
+                </ul>
+              </div>
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>家乡：</span>               
+              <div class="inputBox">
+                <input type="text" id="target9" class="w50" value="广东" />
+                <div class="btnDrop" onclick="showDropList(this, '#target9','#list9')"></div>                  
+                <ul id="list9" class="myDropList">
+                  <li>广东</li>
+                  <li>广东1</li>
+                  <li>广东2</li>
+                </ul>
+              </div>
+            </div><!-- blogDiv End -->
+            <div class="h32Center pB0">
+              <a class="h32w75Btn blue" onclick="$('#ZiLiao_1').hide();$('#ZiLiao').show();">保存</a>
+              <a class="h32w75Btn gray" onclick="$('#ZiLiao_1').hide();$('#ZiLiao').show();">取消</a>
+            </div>
+          </div><!-- block15 End -->
+          <div id="JinLi" class="block15">
+            <h3 class="panelName"><b>个人经历：</b><i><a onclick="$('#JinLi').hide();$('#JinLi_1').show();">[编辑]</a>&nbsp;<span>已完成0%</span></i></h3>
+            <p>暂未添加，<em><b>请添加</b></em></p>
+          </div><!-- block15 End -->
+          <div id="JinLi_1" class="block15 hide">
+            <h3 class="panelName"><b>个人经历：</b><i><span>已完成0%</span></i></h3>
+            <div class="blogDiv pT15">
+              <span>学校：</span>               
+              <div class="inputBox mr12">
+                <input type="text" id="target10" class="w50" value="学校" />
+                <div class="btnDrop" onclick="showDropList(this, '#target10','#list10')"></div>                  
+                <ul id="list10" class="myDropList">
+                  <li>大学</li>
+                  <li>大专</li>
+                  <li>高中</li>
+                </ul>
+              </div>              
+              <div class="inputBox mr12">
+                <input type="text" class="w_181" value="学校名称" />
+              </div>               
+              <div class="inputBox mr12">
+                <input type="text" class="w_150" value="学院/专业名称" />
+              </div>                 
+              <div class="inputBox mr12">
+                <input type="text" id="target11" class="w_68" value="入读时间" />
+                <div class="btnDrop" onclick="showDropList(this, '#target11','#list11')"></div>                  
+                <ul id="list11" class="myDropList">
+                  <li>2001</li>
+                  <li>2002</li>
+                  <li>2003</li>
+                  <li>...</li>
+                </ul>
+              </div>
+              <a class="colBlue">[删除]</a>            
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>&nbsp;</span>
+              <a class="colBlue">[+添加上学经历]</a>          
+            </div><!-- blogDiv End -->
+            <div class="blogDiv pT15">
+              <span>公司：</span>  
+              <div class="inputBox mr12">
+                <input type="text" class="w_181" value="公司名称" />
+              </div>               
+              <div class="inputBox mr12">
+                <input type="text" id="target12" class="w50" value="年" />
+                <div class="btnDrop" onclick="showDropList(this, '#target12','#list12')"></div>                  
+                <ul id="list12" class="myDropList">
+                  <li>2001</li>
+                  <li>2002</li>
+                  <li>2003</li>
+                  <li>...</li>
+                </ul>
+              </div>               
+              <div class="inputBox mr12">
+                <input type="text" id="target13" class="w30" value="月" />
+                <div class="btnDrop" onclick="showDropList(this, '#target13','#list13')"></div>                  
+                <ul id="list13" class="myDropList">
+                  <li>01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>...</li>
+                </ul>
+              </div>
+              <em class="mr12">至</em>                
+              <div class="inputBox mr12">
+                <input type="text" id="target14" class="w_68" value="今" />
+                <div class="btnDrop" onclick="showDropList(this, '#target14','#list14')"></div>                  
+                <ul id="list14" class="myDropList">
+                  <li>2001</li>
+                  <li>2002</li>
+                  <li>2003</li>
+                  <li>...</li>
+                </ul>
+              </div>
+              <a class="colBlue">[删除]</a>            
+            </div><!-- blogDiv End -->
+            <div class="blogDiv">
+              <span>&nbsp;</span>
+              <a class="colBlue">[+添加工作经历]</a>          
+            </div><!-- blogDiv End -->
+            <div class="h32Center pB0">
+              <a class="h32w75Btn blue" onclick="$('#JinLi_1').hide();$('#JinLi').show();">保存</a>
+              <a class="h32w75Btn gray" onclick="$('#JinLi_1').hide();$('#JinLi').show();">取消</a>
+            </div>  
+          </div><!-- block15 End -->
+          <div id="JianJie" class="block15">
+            <h3 class="panelName"><b>个人简介：</b><i><a onclick="$('#JianJie').hide();$('#JianJie_1').show();">[编辑]</a>&nbsp;<span>已完成0%</span></i></h3>
+            <p>暂未添加，<em><b>请添加</b></em></p>
+          </div><!-- block15 End -->
+          <div id="JianJie_1" class="block15 hide">
+            <h3 class="panelName"><b>个人简介：</b><i><span>已完成0%</span></i></h3>
+            <textarea style="height:132px; width:694px; padding:5px; border:solid 1px #dedede; margin:10px 0px; font-size:12px; line-height:1.5em; overflow:scroll; zoom:1;"></textarea>
+            <div class="h32Center pB0">
+              <a class="h32w75Btn blue" onclick="$('#JianJie_1').hide();$('#JianJie').show();">保存</a>
+              <a class="h32w75Btn gray" onclick="$('#JianJie_1').hide();$('#JianJie').show();">取消</a>
+            </div>  
+          </div><!-- block15 End -->
+          <div id="YinSi" class="block15">
+            <h3 class="panelName"><b>隐私设置：</b><i><a onclick="$('#YinSi').hide();$('#YinSi_1').show();">[编辑]</a>&nbsp;<span>进入找朋友搜索</span></i></h3>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div><!-- block15 End -->
+          <div id="YinSi_1" class="block15 hide">
+            <h3 class="panelName"><b>隐私设置：</b></h3>
+            <div class="block13">
+              <div class="radioBox" style="margin-top:10px;">              
+                <div class="myradio unsel">我的资料不进入找朋友搜索</div>           
+                <div class="myradio sel">别人可以通过找朋友搜索找到我</div>
+              </div>
+            </div>
+            <div class="h32Center pB0">
+              <a class="h32w75Btn blue" onclick="$('#YinSi_1').hide();$('#YinSi').show();">保存</a>
+              <a class="h32w75Btn gray" onclick="$('#YinSi_1').hide();$('#YinSi').show();">取消</a>
+            </div>
+          </div><!-- block15 End -->
+        </div><!-- box END -->
+      </div><!-- layout2 END -->
+      
+      <div class="layout3 f_r">
+        <div class="blogBox">
+          <div class="menuList">
+            <div class="menu">个人中心首页</div>
+            <div class="SG_j_line"></div>
+            <div class="menu" onclick="showMenuItem(this, '#contentUL');">内容管理<em></em></div>
+            <ul id="contentUL" class="menuOption hide">
+              <li><a href="myBlog1.html">我的博客</a></li>
+              <li><a href="myImages1.html">我的图片</a></li>
+              <li><a href="myCircle1.html">我的圈子</a></li>
+              <li><a href="myForum1.html">我的论坛</a></li>
+            </ul>
+            <div class="SG_j_line"></div>
+            <div class="menu"><a href="accessStatistics.html">访问统计</a></div>
+            <div class="SG_j_line"></div>
+            <div class="menu"><a href="HuDongXiaoXi_1.html">互动消息</a></div>
+            <div class="SG_j_line"></div>
+            <div class="menu" onclick="showMenuItem(this, '#score');">积分管理<em></em></div>
+            <ul id="score" class="menuOption hide">
+              <li><a href="JiFenGuanLi_1.html">积分记录</a></li>
+              <li><a href="JiFenGuanLi_2.html">积分兑换</a></li>
+              <li><a href="JiFenGuanLi_3.html">积分规则</a></li>
+            </ul>
+            <div class="SG_j_line"></div>
+            <div class="menu" onclick="showMenuItem(this, '#friend');">好友管理<em></em></div>
+            <ul id="friend" class="menuOption hide">
+              <li><a href="HaoYouGuanLi_1.html">我的关注</a></li>
+              <li><a href="HaoYouGuanLi_2.html">我的好友</a></li>
+              <li><a href="HaoYouGuanLi_3.html">我的访客</a></li>
+              <li><a href="HaoYouGuanLi_4.html">黑名单</a></li>
+            </ul>
+            <div class="SG_j_line"></div>
+            <div class="menu" onclick="showMenuItem(this, '#userSet');">用户设置<em class="emBgUp"></em></div>
+            <ul id="userSet" class="menuOption">
+              <li class="on"><a href="YongHuGuanLi_1.html">账户设置</a></li>
+              <li><a href="YongHuGuanLi_2.html">权限管理</a></li>
+            </ul>
+            <div class="SG_j_line"></div>
+            <div class="menu" onclick="showMenuItem(this, '#testUL');">推荐关注好友<em></em></div>
+            <ul id="testUL" class="menuItem hide">
+              <li>
+                <img src="Images/userImg.png" />
+                <p><a>肯尼迪</a><a class="btnLeft f_r"><span class="btnRight">加关注</span></a></p>
+                <p>评论家，代表作品《食用盐制取》</p>
+              </li>
+              <li>
+                <img src="Images/userImg.png" />
+                <p><a>肯尼迪</a><a class="btnLeft f_r"><span class="btnRight">加关注</span></a></p>
+                <p>评论家，代表作品《食用盐制取》</p>
+              </li>
+              <li>
+                <img src="Images/userImg.png" />
+                <p><a>肯尼迪</a><a class="btnLeft f_r"><span class="btnRight">加关注</span></a></p>
+                <p>评论家，代表作品《食用盐制取》</p>
+              </li>
+            </ul>
+          </div>        
+        </div><!-- box END -->
+      </div><!-- layout3 END -->
+    </div><!-- main -->
+    <div class="HLine"></div>
+    <div class="footer">
+            <a onclick="javascript:void(0);">联系我们</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">版权声明</a>&nbsp;|&nbsp;<a
+                onclick="javascript:void(0);">使用帮助</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">技术支持</a><br />
+            版权所有：芜湖市标准化研究所 备案号：皖ICP备 05005282号<br />
+            地址：芜湖市鸠江经济开发区万春西路20号 电话：0553-5968632 邮编： 241000<br />
+        </div>
+  </div>
+</body>
+<script type="text/javascript" src="../ThirdPart/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../Common/JS/jsCommon.js"></script>
+<script type="text/javascript" src="Javascript/jsStdBlog.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	myCheckBox();
+	myRadioBox();
+});
+</script>
+</html>

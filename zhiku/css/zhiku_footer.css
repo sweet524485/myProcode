@@ -1,0 +1,87 @@
+/*coypright*/
+.fl-copyright-container{
+	width:100%;
+	height: 205px;
+	background: #272727;
+	float: left;
+}
+.fl-copyright-content{
+	width:1300px;
+	margin: 0 auto;
+}
+.fl-copyright-logoBox{
+	float:left;
+	width:160px;
+	height: 44px;
+	margin-top: 108px;
+	margin-left: 128px;
+}
+.fl-copyright-logoBox>img{
+	width:100%;
+	height: 100%;
+}
+.fl-copyright-middleBox{
+	min-width:368px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 126px;
+}
+.fl-copyright-title{
+	width:100%;
+	height: 16px;
+	line-height: 16px;
+	color:#B6B5B5;
+	font-size:14px;
+	padding-top: 10px;
+}
+.fl-copyright-box{
+	width:100%;
+	padding-top: 1px;
+}
+.fl-copyright-list{
+	width:100%;
+	margin-top: 27px;
+}
+.fl-copyright-listIcon1{
+	display: block;
+	float: left;
+	width:15px;
+	height: 15px;
+	background: url(../Images/fl-copyright-dizhi.png) no-repeat;
+}
+.fl-copyright-listIcon2{
+	display: block;
+	float: left;
+	width:15px;
+	height: 15px;
+	background: url(../Images/fl-copyright-dianhua.png) no-repeat;
+}
+.fl-copyright-listIcon3{
+	display: block;
+	float: left;
+	width:18px;
+	height: 13px;
+	margin-top: 1px;
+	background: url(../Images/fl-copyright-youxiang.png) no-repeat;
+}
+.fl-copyright-listTxt{
+	height:16px;
+	line-height: 16px;
+	color:#B6B5B5;
+	font-size:14px;
+	margin-left: 33px;
+}
+.fl-copyright-right{
+	float: right;
+	min-height:70px;
+	min-width:260px;
+	margin-right:130px;
+	margin-top: 20px;
+}
+.fl-copyright-text{
+	width: 100%;
+    margin-top: 22px;
+    line-height: 27px;
+    color: #B6B5B5;
+    font-size: 14px;
+}

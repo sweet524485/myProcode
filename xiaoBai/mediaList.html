@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/ifocus.css">
+<link rel="stylesheet" href="css/button.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/showpic.js"></script>
+<body class="body">
+
+<!-- header -->
+<div class="x-header_wrap">
+    <div class="x-head_1">
+        <div class="x-head_top">
+            <!-- 登录前 -->
+            <div class="x-login_before hide">
+                <a href="">注册</a>
+                <span>|</span>
+                <a href="javascript:void(0)" id="x-login_btn">登录</a>
+            </div>
+            <!-- 登录后 -->
+            <div class="x-login_after">
+                <a href="javascript:" class="x-user" id="login_btn">
+                    <i class="x-icon-user"></i><span>我叫小沈阳</span>
+                </a>
+                <ul class="x-user_list hide">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="x-icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="x-head_2">
+        <div class="x-head_bottom clearfix">
+            <div class="x-head_logo grid-240 left">
+                <a href="">
+                    <img src="images/logo.jpg" alt="">
+                </a> 
+            </div>
+            <div class="x-head_nav container-540 left">
+                <a href="index.html">首页</a>
+                <a href="index.html">首页</a>
+                <a href="article.html">文集</a>
+                <a href="movie.html">视频</a>
+                <a href="media.html" class="active">媒体</a>
+                <a href="mediaBan.html">媒体平台</a>
+            </div>
+            <div class="x-head_search grid-220 left">
+                <form action="" class="block clearfix">
+                    <input type="text" class="x-search_input">
+                    <button type="submit" class="x-search_button right"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /header -->
+
+<!-- content -->
+<div class="x-contetn">
+    <!-- 头部媒体推荐 -->
+    <div class="x-media_box">
+        <div class="container-1000">
+            <ul class="x-media_t_list clearfix">
+                <li>
+                    <a href="" class="x_media_t_pic padding-large-top">
+                        <img src="images/test.jpg" alt="" class="radius-circle">
+                    </a>
+                    <div class="x-media_info text-center margin-top clearfix">
+                        <h3 class="x-name ellipsis"><a class="cr-f f20" href="">烟花易冷</a></h3>
+                        <p class="ellipsis x-info">这里是媒体作者的一些介绍再来点字，再来点。</p>
+                        <a href="javascript:void(0)" class="x-focuss">+ 关注</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="x_media_t_pic padding-large-top">
+                        <img src="images/test.jpg" alt="" class="radius-circle">
+                    </a>
+                    <div class="x-media_info text-center margin-top clearfix">
+                        <h3 class="x-name ellipsis"><a class="cr-f f20" href="">烟花易冷</a></h3>
+                        <p class="ellipsis x-info">这里是媒体作者的一些介绍再来点字，再来点。</p>
+                        <a href="javascript:void(0)" class="x-focuss">+ 关注</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="x_media_t_pic padding-large-top">
+                        <img src="images/test.jpg" alt="" class="radius-circle">
+                    </a>
+                    <div class="x-media_info text-center margin-top clearfix">
+                        <h3 class="x-name ellipsis"><a class="cr-f f20" href="">烟花易冷</a></h3>
+                        <p class="ellipsis x-info">这里是媒体作者的一些介绍再来点字，再来点。</p>
+                        <a href="javascript:void(0)" class="x-focuss">+ 关注</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><!-- 头部媒体推荐End -->
+
+    <div class="container-1000">
+        <div class="x-cont_wrap clearfix bg-f">
+            <div class="x-media_c margin clearfix">
+
+               <div class="x-media_tab_nav clearfix" style="width:1012px;">
+                    <a href="javascript:void(0)" class="active">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                    <a href="javascript:void(0)" class="">科技<span></span></a>
+                </div>
+
+                <ul class="x-media_c_list margin-big-top clearfix container-1020">
+                    <li class="">
+                        <div class="x-media_list">
+                            <div class="margin-little clearfix">
+                                <a href="" class="x-pic">
+                                    <img src="images/test.jpg" alt="">
+                                </a>
+                                <div class="x-info">
+                                    <h3 class="ellipsis">
+                                        <a href="" class="x-name">大葱大蒜</a>
+                                    </h3>
+                                    <p class="cr-6 margin-small-top margin-small-bottom">乱七八糟的一大堆，乱七八糟的一大段</p>
+                                    <p class="cr-9 margin-little-top">专辑：<span>6</span></p>
+                                    <p class="cr-9 margin-little-top">文章：<span>66</span></p>
+                                </div>
+                                <a href="javascript:" class="x-focuss">关注</a>
+                            </div>
+                        </div>
+                        <div class="x-media_list">
+                            <div class="margin-little clearfix">
+                                <a href="" class="x-pic">
+                                    <img src="images/test.jpg" alt="">
+                                </a>
+                                <div class="x-info">
+                                    <h3 class="ellipsis">
+                                        <a href="" class="x-name">大葱大蒜</a>
+                                    </h3>
+                                    <p class="cr-6 margin-small-top margin-small-bottom">乱七八糟的一大堆，乱七八糟的一大段</p>
+                                    <p class="cr-9 margin-little-top">专辑：<span>6</span></p>
+                                    <p class="cr-9 margin-little-top">文章：<span>66</span></p>
+                                </div>
+                                <a href="javascript:" class="x-focuss">关注</a>
+                            </div>
+                        </div>
+                        <div class="x-media_list">
+                            <div class="margin-little clearfix">
+                                <a href="" class="x-pic">
+                                    <img src="images/test.jpg" alt="">
+                                </a>
+                                <div class="x-info">
+                                    <h3 class="ellipsis">
+                                        <a href="" class="x-name">大葱大蒜</a>
+                                    </h3>
+                                    <p class="cr-6 margin-small-top margin-small-bottom">乱七八糟的一大堆，乱七八糟的一大段</p>
+                                    <p class="cr-9 margin-little-top">专辑：<span>6</span></p>
+                                    <p class="cr-9 margin-little-top">文章：<span>66</span></p>
+                                </div>
+                                <a href="javascript:" class="x-focuss">关注</a>
+                            </div>
+                        </div>
+                        <div class="x-media_list">
+                            <div class="margin-little clearfix">
+                                <a href="" class="x-pic">
+                                    <img src="images/test.jpg" alt="">
+                                </a>
+                                <div class="x-info">
+                                    <h3 class="ellipsis">
+                                        <a href="" class="x-name">大葱大蒜</a>
+                                    </h3>
+                                    <p class="cr-6 margin-small-top margin-small-bottom">乱七八糟的一大堆，乱七八糟的一大段</p>
+                                    <p class="cr-9 margin-little-top">专辑：<span>6</span></p>
+                                    <p class="cr-9 margin-little-top">文章：<span>66</span></p>
+                                </div>
+                                <a href="javascript:" class="x-focuss">关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...2</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...3</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...4</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...5</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...6</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...7</div>
+                    </li>
+                    <li class="hide">
+                        <div class="x-nodata">暂无数据...8</div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</div><!-- /content -->
+<script>
+//回复
+$(".x-js-reply").toggle(function  () {
+    var oindex=$(".x-js-reply").index($(this));
+    $(".x-reply-part").addClass('hide').eq(oindex).removeClass('hide')
+},function  () {
+    $(".x-reply-part").addClass('hide');
+})
+
+// 收藏
+$(function(){
+    $('.x-collect-s').click(function(){
+        $(this).toggleClass('x-plus').children().toggleClass('x-xin1')
+    })
+})
+
+// 关注
+$(function(){
+    $('.x-focus').click(function(){
+        $(this).toggleClass('x-plus')
+    })
+})
+// 登录框
+$(function(){
+    $('#x-login_btn').click(function(){
+        $.blockUI({ 
+            message: $('#x-login_btn_frame'), 
+            css: { 
+                top:        '15%',
+                left:       '50%',
+                width:      '400px',
+                textAlign:  'left',
+                marginLeft:     '-200px', 
+                marginTop:      '0', 
+                borderRadius: '0', 
+                background:  '#f4f4f4',
+            } 
+        }); 
+        $('.x-login_frame_hide').attr('title','单击关闭').click($.unblockUI); 
+    });
+});
+
+// 导航选项
+$(function(){
+    $('.x-media_tab_nav > a').hover(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        var index = $('.x-media_tab_nav a').index(this);
+        $('.x-media_c_list > li').eq(index).addClass('show').removeClass('hide').siblings().removeClass('show').addClass('hide');
+    })
+})
+
+//登录框选项
+$(function(){
+    var $longin_tab = $('.x-tab_menu a');
+    $longin_tab.click(function(){
+        $(this).addClass('btn-green').siblings().removeClass('btn-green');
+        var index = $longin_tab.index(this);
+        $('.x-login_tab').eq(index).show().siblings().hide();
+    }); 
+}); 
+
+</script>
+
+<!-- footer -->
+<div class="x-footer">
+    <div class="container-1000">
+        <div class="x-foot_copy">
+            <p>
+                <a href="">关于我们</a>
+                <a href="">诚聘英才</a>
+                <a href="">媒体入驻</a>
+                <a href="">广告服务</a>
+                <a href="">微商服务</a>
+            </p>
+            <p>© 2014 小白全攻略生活百科 京ICP备14030910号-1  </p>
+        </div>
+    </div>
+</div><!-- /footer -->
+
+</body>
+</html>

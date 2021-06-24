@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords"content=""/>
+<meta name="description" content="本篇网页的概述，一段话，对网站的进一步描述"/>
+<meta name="author"  content="网页作者的资料">
+<meta name="robots" content="" />
+<meta http-equiv="Content－Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+<style>
+ul,li{
+  margin:0;padding:0;list-style:none;
+  }
+.out{
+   width:150px;height:150px;padding:150px;border:1px solid red;
+   margin:0 auto;perspective:500px;
+ }
+.box{
+width:150px;height:150px;border:1px solid blue;position:relative;transform-style:preserve-3d;
+transform:rotateX(0deg);transform-origin:50% 50% 75px;
+}
+.box li{
+ width:150px;height:150px;position:absolute;
+ line-height:150px;text-align:center;font-size:20px;
+}
+.box li:nth-of-type(1){
+ background:red;top:0;left:0;
+ transform:rotateX(-60deg);transform-origin:50% 50% -75px;
+}
+.box li:nth-of-type(2){
+ background:pink;top:0px;
+ transform:rotateX(30deg);transform-origin:50% 50% -75px;
+}
+</style>
+</head>
+
+<body>
+<div class="out">
+	<ul class="box">
+	    <li>1</li>
+		<li>2</li>
+	   
+	</ul>
+</div>
+</body>
+</html>

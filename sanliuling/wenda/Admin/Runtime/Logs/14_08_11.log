@@ -1,0 +1,27 @@
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ route_check ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run CheckRoute Behavior [ RunTime:0.001428s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.001559s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ app_begin ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001443s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001594s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_template ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001299s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001428s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_parse ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run ParseTemplate Behavior [ RunTime:0.028134s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.028433s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_filter ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run ContentReplace Behavior [ RunTime:0.001646s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run TokenBuild Behavior [ RunTime:0.000843s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000713s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000935s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004493s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_end ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000731s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000821s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Tag[ route_check ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Run CheckRoute Behavior [ RunTime:0.001389s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Tag[ route_check ] --END-- [ RunTime:0.001556s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Tag[ app_begin ] --START--
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000865s ]
+[ 2014-08-11T23:15:01+08:00 ] /wenda/Admin.php/Login/verify | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000944s ]

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset*/
+*{margin:0;padding:0;border:none;text-decoration:none; outline:none;}
+ul,ol{list-style:none;	margin:0px; padding:0px;}
+body{font:12px/1.5 宋体; color:#3a3a3a;}
+select,input,button{vertical-align:middle;font-size:100%; outline:none;}
+fieldset,img{border:0;}
+em{font-style:normal;}
+.clear{ clear:both; font-size:0;}
+.clearfix:after {content:"."; display: block; height: 0; clear: both; visibility: hidden; font-size:0;}
+.clearfix {*zoom:1;}
+/* Hides from IE-mac \*/ 
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+html{overflow:-moz-scrollbars-vertical;}/*在Firefox浏览器下始终显示滚动条；不同浏览器的显示效果*/
+a {outline:none; color:inherit; font-size:inherit; cursor:pointer;}   
+a {star:expression(this.onFocus=this.blur()); /* for Ie*/ } 
+/*************************************************/

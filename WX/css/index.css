@@ -1,0 +1,56 @@
+.wx-doc-conList{
+	width:100%;
+}
+.wx-doc-conTitle{
+	background: #F4F4F4;
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+    font-weight: 700;
+    color: #FF282D;
+    border-bottom: 0.01rem solid #DDDDDD;
+    text-indent: 0.1rem;
+}
+.wx-doc-conList ul li{
+	background: #fff;
+    width: 100%;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    font-size: 0.13rem;
+    color: #666;
+    border-bottom: 0.01rem solid #DDDDDD;
+    text-indent: 0.1rem;
+}
+/*轮播图*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper1 .swiper-wrapper a img{
+	width:100%;
+}
+.swiper2 .swiper-wrapper a img{
+	width:100%;
+}

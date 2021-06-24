@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.topBg{background:url(../Images/topBg.gif) top right no-repeat; padding:0px 42px;}
+.sBoxPos3{margin:16px 0px 16px 0px;}/*searchBox定位*/
+.borTop{border:none; border-top:solid 1px #dedede;}
+
+.bookInfoBox{width:328px; padding-bottom:20px; background:url(../Images/bookInfoBg.png) 0px 0px no-repeat; overflow:hidden; zoom:1;}
+.bookInfoBox img{display:block; width:112px; height:152px; margin:1px 14px 4px 1px; border:0px; float:left;}
+.bookInfoBox .info{width:201px; overflow:hidden; zoom:1; float:left;}
+.info h4, .info p{font-size:13px; line-height:1em; height:1em; width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.info h4{color:#30afea;}
+.info h4 a:hover{text-decoration:underline;}
+.info p{color:#3a3a3a; padding-top:10px;}
+.info p span{width:78px; display:inline-block;}
+.btnBuy{display:inline-block; float:right; height:27px; width:77px; background:url(../Images/pic_bigBuy.png) no-repeat; cursor:pointer;}
+.info .btnBuy{margin-top:2px;}
+
+.padT10B12{padding:10px 0px 12px 0px;}
+.sortUl{display:block; margin:0px 14px; overflow:hidden; zoom:1;}
+.sortUl li{display:block; height:18px; line-height:18px; color:#323232; margin-top:4px; overflow:hidden; zoom:1;}
+.sortUl li a, .sortUl li span, .sortUl li em{display:inline-block; float:left; height:18px; line-height:18px;}
+.sortUl li em{width:18px; text-align:center; background:url(../Images/sortBg4.png) no-repeat; font-family:"微软雅黑"; margin-right:6px; color:#fff; overflow:hidden; zoom:1;}
+.sortUl li em.first{background:url(../Images/sortBg1.gif) no-repeat;}
+.sortUl li em.second{background:url(../Images/sortBg2.gif) no-repeat;}
+.sortUl li em.third{background:url(../Images/sortBg3.gif) no-repeat;}
+.sortUl li a{width:138px; white-space:nowrap;text-overflow:ellipsis; overflow:hidden;}
+.sortUl li a:hover{text-decoration:underline;}
+.sortUl li span{width:48px; text-align:right;}
+
+.makePages{display:inline-block; height:1em; line-height:1em; padding:3px; margin-right:6px;}
+.makePages.current{color:#fff; background-color:#1b7dbc;}
+.ulView{display:block; width:100%; color:#3a3a3a; overflow:hidden; zoom:1;}
+.ulView li{display:block; width:100%; height:auto; padding:15px 0px 10px 0px; border-bottom:dashed 1px #dedede; overflow:hidden; zoom:1;}
+.ulView li img{display:block; float:left; width:55px; height:70px; border:0px; margin:0px 11px 0px 2px; border:0px;}
+.ulView li h4{font-size:14px; line-height:1em; height:1em; margin-bottom:10px; color:#30afea; overflow:hidden; zoom:1;}
+.ulView li h4 a:hover{text-decoration:underline}
+.ulView li p{font-size:12px; line-height:1.5em; height:3em; margin-bottom:5px; overflow:hidden; zoom:1;}
+.buyBox{height:27px; overflow:hidden; zoom:1;}
+.price{padding:10px 0px 5px 0px; font-size:12px; height:1em; width:55%; line-height:1em; float:left; overflow:hidden; zoom:1;}
+
+.labelBox{width:100%; height:27px; background:url(../Images/label_Bg.png) repeat-x;}
+.labelDiv{min-width:14px; display:inline-block; width:auto; height:27px; line-height:27px; padding:0px 20px 0px 7px; background:url(../Images/labelText_Bg.png) repeat-x; border-right:solid 2px #fff; font-family:"微软雅黑"; font-size:14px; color:#1691d7; overflow:auto; zoom:1;}
+.detailBox{padding-top:20px; width:100%; overflow:hidden; zoom:1;}
+.detailBox img{display:block; width:112px; height:152px; padding:1px 20px 4px 20px; background:url(../Images/bookInfoBg.png) 19px 0px no-repeat; border:0px; float:left;}
+.detailInfo{width:596px; color:#666666; float:right; overflow:hidden; zoom:1;}
+.borB{border-bottom:dashed 1px #dedede;}
+.detailInfo h4{font-size:13px; line-height:1em; height:1em; overflow:hidden; zoom:1;}
+.detailInfo h2{font-size:13px; height:2em; line-height:2em; margin-top:8px;}
+.infoBox{font-size:13px; line-height:1em; height:1em; margin-top:12px; overflow:hidden; zoom:1;}
+.infoBox span{width:84px; margin-right:20px; font-weight:bold; display:inline-block; float:left;}
+.infoBox em{width:194px; display:inline-block; float:left;}
+.buyBox .price{font-weight:bold; font-size:13px; color:#666666;}
+.buyBox .price label{font-weight:normal;}

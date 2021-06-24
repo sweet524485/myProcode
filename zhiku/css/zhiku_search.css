@@ -1,0 +1,328 @@
+.fl-journalList-wrap{
+	float: left;
+	width:100%;
+	border-top:2px solid #2E84EB;
+}
+.fl-journalList-container{
+	width:1300px;
+	min-height:100px;
+	margin: 0 auto;
+}
+.fl-journalList-websideBox{
+	width:100%;
+	height: 50px;
+}
+.fl-journalList-websideWrap{
+	width:100%;
+	float: left;
+	height:18px;
+	line-height: 18px;
+	margin-top:17px;
+}
+.fl-journalList-websideIcon{
+	display: block;
+	float: left;
+	width:17px;
+	height: 18px;
+	margin-left: 3px;
+	margin-right: 10px;
+	background: url(../Images/Journal/fl-journal-homeIcon.png) no-repeat;
+}
+.fl-journalList-websideHome{
+	display:block;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color:#5C5C5C;
+	font-size:14px;
+}
+.fl-journalList-websideSanIcon{
+	display: block;
+	float: left;
+	width: 9px;
+	height: 10px;
+	margin-left: 12px;
+	margin-right: 20px;
+	margin-top:4px;
+	background: url(../Images/Journal/fl-journal-sanjiao.png) no-repeat;
+}
+.fl-journalList-websidePosition{
+	display:block;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color:#5C5C5C;
+	font-size:14px;
+}
+.fl-searcher-topBox{
+	width: 100%;
+	height: 209px;
+	background: url(../Images/Search/fl-search-topBg.png);
+}
+.fl-searcher-inputBox{
+	padding-top:40px;
+	margin-left:50px;
+	height: 28px;
+}
+.fl-searcher-input{
+	width:315px;
+	height: 26px;
+	border:1px solid #fff;
+	background: #fff;
+	float: left;
+	border-radius: 3px;
+	line-height: 26px;
+	text-indent: 12px;
+	color:#787878;
+	font-size: 14px;
+	margin-right: 15px;
+}
+.fl-searcher-inputBtn{
+	padding-left:10px;
+	padding-right:10px;
+	height: 28px;
+	line-height: 28px;
+	color:#fff;
+	font-size:14px;
+	float: left;
+	margin-left: 14px;
+	border:1px solid #D4D2D3;
+	border-radius: 3px;
+	background: #146EDC;
+	cursor: pointer;
+}
+.fl-searcher-inputBtn:hover{
+	opacity: 0.8;
+	filter:alpha(opacity:80);
+}
+.fl-searcher-filterBox{
+	padding-top:40px;
+	margin-left:50px;
+	height: 20px;
+}
+.fl-searcher-filterName{
+	display: block;
+	height: 20px;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	line-height: 20px;
+}
+.fl-searcher-filterList{
+	display: block;
+	float: left;
+	height: 20px;
+	margin-right: 45px;
+	margin-left: 10px;
+}
+.fl-searcher-filterListRadio{
+	float: left;
+	margin-top: 4px;
+	margin-right: 5px;
+}
+.fl-searcher-filterListName{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	color:#111;
+	font-size: 14px;
+	float: left;
+}
+.fl-searcher-resultBox{
+	padding-top:35px;
+	margin-left:50px;
+	height: 20px;
+	line-height: 20px;
+	color:#fff;
+	font-size: 16px;
+}
+.fl-searcher-main{
+	width:100%;
+	padding-bottom:30px;
+	overflow: hidden;
+}
+.fl-searcher-wrap{
+	width:1298px;
+	border-left:1px solid #D2D2D2;
+	border-right:1px solid #D2D2D2;
+	border-bottom:1px solid #D2D2D2;
+}
+.fl-searcher-navBox{
+	width: 100%;
+	height: 52px;
+	padding-top:3px;
+	overflow: hidden;
+}
+.fl-searcher-navInner{
+	width: 105%;
+	height: 52px;
+	float: left;
+}
+.fl-searcher-nav{
+	display: block;
+	float: left;
+	width:260px;
+	height: 52px;
+	line-height: 52px;
+	color:#2888F9;
+	font-size: 14px;
+	text-indent: 32px;
+	border-right:1px solid #D9D9D9;
+	background: url(../Images/Search/fl-search-navBg.png);
+}
+.fl-searcher-nav.active{
+	background: url(../Images/Search/fl-search-navBg_active.png);
+	color:#024795;
+}
+.fl-searcher-content{
+	width:1284px;
+	margin-left:7px;
+	padding-top: 1px;
+}
+.fl-searcher-content:after{
+	display: block;
+	clear:both;
+	content:"";
+}
+.fl-searcher-left{
+	width:100%;
+	float: left;
+}
+.fl-searcher-right{
+	width:360px;
+	border:1px solid #EBEBEB;
+	box-shadow: 0 0 5px #EBEBEB;
+	float: right;
+	margin-top: 20px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+	display: none;
+}
+.fl-searcher-secondNavBox{
+	width:100%;
+	height: 0;
+	overflow: hidden;
+}
+.fl-searcher-conList{
+	width:100%;
+	display: none;
+}
+.fl-searcher-conList.active{
+	display: block;
+}
+.fl-searcher-conTxt{
+	width:100%;
+	padding-top:1px;
+	padding-bottom: 15px;
+}
+.fl-searcher-conTxt:after{
+	display: block;
+	content:"";
+	clear:both;
+}
+.fl-searcher-secondNav{
+	display: block;
+	float:left;
+	height: 16px;
+	line-height: 16px;
+	color:#024065;
+	font-size:14px;
+	border-right:1px solid #326884;
+	margin-top: 20px;
+	padding-right:30px;
+	margin-right: 30px;
+	padding-left:5px;
+}
+.fl-searcher-secondNav.active{
+	color:#CC0017;
+}
+
+.fl-searcher-conLine{
+	width:100%;
+	height: 10px;
+	background: url(../Images/Search/fl-search-lineBg.png);
+}
+.fl-searcher-listContent{
+	width:96%;
+	margin-left: 2%;
+}
+.fl-searcher-list{
+	width:100%;
+	border-bottom:1px solid #D5D5D5;
+	padding-top:15px;
+	padding-bottom: 40px;
+}
+.fl-searcher-listTitle{
+	display: block;
+	max-width: 100%;
+	line-height: 38px;
+	color:#323232;
+	font-size:20px;
+}
+.fl-searcher-listTitle:hover{
+	color:#FF9A00;
+}
+.fl-searcher-listTimeBox{
+	width:100%;
+	line-height: 24px;
+	color:#79797B;
+	font-size: 12px;
+}
+.fl-searcher-listTimeBox span{
+	color:#333333;
+}
+.fl-searcher-listContxt{
+	padding-top:12px;
+	width:100%;
+	line-height: 30px;
+	color:#666;
+	font-size: 16px;
+}
+.fl-searcher-noticeTxt{
+	padding-top:20px;
+	padding-bottom:1px;
+	margin-left:21px;
+}
+.fl-searcher-getList{
+	width:100%;
+	padding-top:28px;
+}
+.fl-searcher-getListImg{
+	display: block;
+	width:137px;
+	height: 193px;
+	padding-bottom: 30px;
+	margin-left:114px;
+	box-shadow: 0px 0px 5px #999;
+}
+.fl-searcher-getListImg img{
+	width:100%;
+	height: 100%;
+}
+.fl-searcher-getListTitle{
+	width:100%;
+	display: block;
+	line-height: 30px;
+	color:#02418E;
+	font-size: 14px;
+}
+.fl-searcher-getListTime{
+	width:100%;
+	line-height: 30px;
+	color:#515151;
+	font-size: 14px;
+}
+.fl-searcher-getListAuthor{
+	width:100%;
+	display: block;
+	line-height: 30px;
+	color:#02418E;
+	font-size: 14px;
+}
+.fl-searcher-getListCon{
+	width:100%;
+	line-height: 30px;
+	color:#666;
+	font-size: 14px;
+}

@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/ifocus.css">
+<link rel="stylesheet" href="css/button.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/showpic.js"></script>
+<body class="body">
+
+<!-- header -->
+<div class="x-header_wrap">
+    <div class="x-head_1">
+        <div class="x-head_top">
+            <!-- 登录前 -->
+            <div class="x-login_before">
+                <a href="">注册</a>
+                <span>|</span>
+                <a href="javascript:void(0)" id="x-login_btn">登录</a>
+            </div>
+            <!-- 登录后 -->
+            <div class="x-login_after hide">
+                <a href="javascript:" class="x-user" id="login_btn">
+                    <i class="x-icon-user"></i><span>我叫小沈阳</span>
+                </a>
+                <ul class="x-user_list hide">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="x-icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="x-head_2">
+        <div class="x-head_bottom clearfix">
+            <div class="x-head_logo grid-240 left">
+                <a href="">
+                    <img src="images/logo.jpg" alt="">
+                </a> 
+            </div>
+            <div class="x-head_nav container-540 left">
+                <a href="index.html">首页</a>
+                <a href="article.html">文集</a>
+                <a href="movie.html" class="active">视频</a>
+                <a href="media.html">媒体</a>
+                <a href="mediaBan.html">媒体平台</a>
+            </div>
+            <div class="x-head_search grid-220 left">
+                <form action="" class="block clearfix">
+                    <input type="text" class="x-search_input">
+                    <button type="submit" class="x-search_button right"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /header -->
+
+<!-- content -->
+<div class="x-contetn">
+    <div class="container-1000">
+        <div class="x-cont_wrap clearfix">
+            <!-- content-left -->
+            <div class="x-cont_left container-720 left">
+                <div class="margin">
+                    <!-- 轮播图 -->
+                    <div class="x-vedio-index-move">
+                        <a href="movieDetail.html" class="x-video-index-face" style="display:block;">
+                            <img src="./images/1.jpg" alt="轮播图" title="标题1">
+                        </a>
+                        <a href="movieDetail.html" class="x-video-index-face">
+                            <img src="./images/2.jpg" alt="轮播图" title="标题2">
+                        </a>
+                        <a href="movieDetail.html" class="x-video-index-face">
+                            <img src="./images/3.jpg" alt="轮播图" title="标题3">
+                        </a>
+                        <a href="movieDetail.html" class="x-video-index-face">
+                            <img src="./images/4.jpg" alt="轮播图" title="标题4">
+                        </a>
+                        <a href="movieDetail.html" class="x-video-index-face">
+                            <img src="./images/5.jpg" alt="轮播图" title="标题5">
+                        </a>
+                        <ul class="x-video-index-move-ul">
+                            <li class="x-video-index-move-li-cur x-video-index-move-li1"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="x-video-index-move-li4"></li>
+                        </ul>
+                    </div>
+                    <!-- tab-nav -->
+                    <div class="x-tab_nav container-720 clearfix">
+                        <a href="javascript:void(0)" class="active">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                        <a href="javascript:void(0)" class="">科技<span></span></a>
+                    </div>
+
+                    <div class="x-cont_container margin-big-top">
+                        <ul class="x-cont_list">
+                            <li class="x-width-750px">
+                               <div class="x-vedio-index-box">
+                               		<div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/1.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/2.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/3.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                               </div>
+                               <div class="x-vedio-index-box">
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/4.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/5.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/6.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                               </div>
+                               <div class="x-vedio-index-box">
+                               		<div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/7.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/8.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/9.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                               </div>
+                               <div class="x-vedio-index-box">
+                               		<div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/10.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/11.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                                    <div class="x-vedio-index-list">
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-logo">
+                                       		<img src="./images/upload/12.gif" alt="">
+                                   		</a>
+                                   		<a href="movieDetail.html" class="x-vedio-index-list-name">
+                                   			后宫秘使
+                                   		</a>
+                                   		<div class="x-vedio-index-list-bottom">
+                                   			<span class="x-vedio-index-list-bottom-box">
+                                   				<span class="x-vedio-index-list-bottom-name">
+                                   					浮光百科
+                                   				</span>
+                                   				<img src="./images/search-left.gif" alt="">
+                                   				<img src="./images/search-three.gif" alt="">
+                                   			</span>
+											<div class="x-vedio-index-list-bottom-playing">
+												播放(1254)
+											</div>
+                                   		</div>
+                                    </div>
+                               </div>
+                               <br class="clear-both"/>
+                            </li>
+                            <li class="x-width-750px hide">2</li>
+                            <li class="x-width-750px hide">3</li>
+                            <li class="x-width-750px hide">4</li>
+                            <li class="x-width-750px hide">5</li>
+                            <li class="x-width-750px hide">6</li>
+                            <li class="x-width-750px hide">7</li>
+                            <li class="x-width-750px hide">8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content-right -->
+            <div class="x-cont_right grid-260 right bg-t">
+                 <!-- 文集标签 -->
+                <div class="x-r_lable margin-big-bottom bg-f">
+                    <div class="x-r_title x-video-title">
+                        <span></span>
+                    </div>
+                    <ul class="x-r_lable_list padding padding-little-bottom grid-260 clearfix x-clearfix-vedio">
+                        <li><a class="active" href="">标签</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">三啊个字</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">第四个字</a></li>
+                        <li><a href="">标签</a></li>
+                        <li><a href="">标签</a></li>
+                    </ul>
+                </div>
+                <!-- 猜你喜欢 -->
+                <div class="x-r_hot_corpus margin-big-bottom bg-f">
+                    <div class="x-r_title x-vedio-like">
+                        <span></span>
+                    </div>
+                   	<div class="x-vedio-guess-box">
+                   		<div class="x-vedio-guess-list">
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-logo">
+                   				<img src="./images/user-logo.jpg" alt="">
+                   			</a>
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-title">
+                   				专注瑜伽三十年
+                   			</a>
+                   			<p class="x-vedio-guess-list-time">2014-6-12</p>
+                   			<p class="x-vedio-guess-list-play">播放(1252)</p>
+                   		</div>
+                   		<div class="x-vedio-guess-list">
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-logo">
+                   				<img src="./images/user-logo.jpg" alt="">
+                   			</a>
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-title">
+                   				专注瑜伽三十年
+                   			</a>
+                   			<p class="x-vedio-guess-list-time">2014-6-12</p>
+                   			<p class="x-vedio-guess-list-play">播放(1252)</p>
+                   		</div>
+                   		<div class="x-vedio-guess-list">
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-logo">
+                   				<img src="./images/user-logo.jpg" alt="">
+                   			</a>
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-title">
+                   				专注瑜伽三十年
+                   			</a>
+                   			<p class="x-vedio-guess-list-time">2014-6-12</p>
+                   			<p class="x-vedio-guess-list-play">播放(1252)</p>
+                   		</div>
+                   		<div class="x-vedio-guess-list">
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-logo">
+                   				<img src="./images/user-logo.jpg" alt="">
+                   			</a>
+                   			<a href="movieDetail.html" class="x-vedio-guess-list-title">
+                   				专注瑜伽三十年
+                   			</a>
+                   			<p class="x-vedio-guess-list-time">2014-6-12</p>
+                   			<p class="x-vedio-guess-list-play">播放(1252)</p>
+                   		</div>
+                   	</div>
+                </div>
+                <!-- 合作伙伴 -->
+                <div class="x-r_partner margin-big-bottom bg-f">
+                    <div class="x-r_title x-icon-partner">
+                        <!-- <a href="" class="x-r_more"></a> -->
+                        <span></span>
+                    </div>
+                    <ul class="padding x-r_partner_list">
+                        <li>
+                            <a href="" class="x-list">
+                                <img src="images/test.jpg" alt="">
+                                <span class="font-simsun">#这是宋体还是微软雅黑#</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="x-list">
+                                <img src="images/test.jpg" alt="">
+                                <span class="font-simsun">#这是宋体还是微软雅黑#</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="x-list">
+                                <img src="images/test.jpg" alt="">
+                                <span class="font-simsun">#这是宋体还是微软雅黑#</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="x-list">
+                                <img src="images/test.jpg" alt="">
+                                <span class="font-simsun">#这是宋体还是微软雅黑#</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="x-list">
+                                <img src="images/test.jpg" alt="">
+                                <span class="font-simsun">#这是宋体还是微软雅黑#</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /content -->
+<script>
+$(function(){
+    var c = 0;
+    var autoRun = function(){
+        c++;//变量自增
+        c = (c==5)?0:c;
+        // 让c号图片显示，兄弟图片隐藏
+        $('.x-video-index-face').eq(c).fadeIn(200).siblings('.x-video-index-face').hide();
+        // 让c号添加cur这个class，移出它兄弟节点的cur class
+        $('.x-video-index-move-ul li').eq(c).addClass('x-video-index-move-li-cur').siblings('li').removeClass('x-video-index-move-li-cur');
+    }
+    var timer = setInterval(autoRun,3000);//设立定时器
+    // 给li加鼠标移入事件
+    $('.x-video-index-move-ul li').mouseover(function() {
+        // 清理定时器
+        clearInterval(timer);
+        // 获得当前鼠标移入的li的序号
+        c = $(this).index();
+        // 让c号图片显示，兄弟图片隐藏
+        $('.x-video-index-face').eq(c).fadeIn(200).siblings('.x-video-index-face').hide();
+        // 让c号添加cur这个class，移出它兄弟节点的cur class
+        $('.x-video-index-move-ul li').eq(c).addClass('x-video-index-move-li-cur').siblings('li').removeClass('x-video-index-move-li-cur');
+    });
+
+    // 给li加鼠标移出效果
+    $('.x-video-index-move-ul li').mouseout(function() {
+        timer = setInterval(autoRun,3000);//设立定时器
+    });
+})
+// 导航选项
+$(function(){
+    $('.x-tab_nav > a').hover(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        var index = $('.x-tab_nav a').index(this);
+        $('.x-cont_list > li').eq(index).addClass('show').removeClass('hide').siblings().removeClass('show').addClass('hide');
+    })
+})
+// 瀑布流JS
+$(function(){
+	$(window).scroll(function(){
+		var w_height=$(window).height();//获得可视区域的高度；
+		var s_height=$(document).scrollTop();//获得已经滚上去的高度；
+		var main_height=$('.x-width-750px').height();//区域总高度
+		//计算离底部的高度
+		//底部高度=总的高度-可视区域的高度-已经滚上去的高度
+		var bottom=main_height-s_height-w_height;
+			if(bottom<100){
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+				zhuijia();
+			}
+
+	})
+	function zhuijia(){
+		//获得最短的那一列序号
+		var min=0;
+		//获得最短的那一列序号，通过each循环
+		$('.x-vedio-index-box').each(function(i){
+			if($('.x-vedio-index-box').eq(i).height()<$('.x-vedio-index-box').eq(min).height()){
+				min=i
+			}
+
+		})
+
+		var num = Math.ceil(Math.random()*10);//取随机数
+		$('.x-vedio-index-box').eq(min).append('<div class="x-vedio-index-list"><a href="movieDetail.html" class="x-vedio-index-list-logo"><img src="./images/upload/'+num+'.gif" alt=""></a><a href="movieDetail.html" class="x-vedio-index-list-name">后宫秘使</a><div class="x-vedio-index-list-bottom"><span class="x-vedio-index-list-bottom-box"><span class="x-vedio-index-list-bottom-name">浮光百科</span><img src="./images/search-left.gif" alt=""><img src="./images/search-three.gif" alt=""></span><div class="x-vedio-index-list-bottom-playing">播放(1254)</div></div></div>');//插入新节点
+	}
+})
+
+</script>
+
+<!-- footer -->
+<div class="x-footer">
+    <div class="container-1000">
+        <div class="x-foot_copy">
+            <p>
+                <a href="">关于我们</a>
+                <a href="">诚聘英才</a>
+                <a href="">媒体入驻</a>
+                <a href="">广告服务</a>
+                <a href="">微商服务</a>
+            </p>
+            <p>© 2014 小白全攻略生活百科 京ICP备14030910号-1  </p>
+        </div>
+    </div>
+</div><!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#000;-webkit-text-size-adjust:none;/* -webkit-user-select:none;*/}
+body,button,input,select,textarea,pre{font-size:12px;font-family:'Microsoft YaHei';outline: none;}
+button,input,textarea{
+    border:0;
+}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+h3,h4,h5,h6{font-weight:normal}
+ul,ol,li{list-style:none}
+hr{border:0;background:#999;height:1px}
+i{font-style:normal}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+textarea{resize:vertical;resize:none;}
+button{cursor:pointer}
+input{border:0;outline: none;}
+a{text-decoration: none;outline: none;}
+/*年的小的展示方式*/
+.selectShortStyle
+{
+    height:28px;
+    float:left;
+    position:relative;
+}
+.selectShortStyle .select-content
+{
+    height: 26px;
+    border: 1px solid #CFCFCF;
+    float: left;
+    cursor: pointer;
+}
+.selectShortStyle .select-name
+{
+    padding-left: 10px;
+    padding-right:10px;
+    height: 26px;
+    line-height: 26px;
+    color: #888;
+    font-size: 13px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.selectShortStyle .select-icon
+{
+    display: block;
+    float: left;
+    width:7px;
+    height: 4px;
+    background: url(../Images/Journal/fl-journal-Down.png) no-repeat;
+    margin-top: 13px;
+    margin-right: 6px;
+}
+.selectShortStyle .select-hideBox
+{
+   position:absolute;
+   top:27px;
+   left:0;
+   border:1px solid #CFCFCF;   
+   display:none;
+   background:#fff;  
+}
+.selectShortStyle.active .select-hideBox
+{
+    display:block;
+}
+.selectShortStyle .select-hideList
+{
+    height:26px;
+    line-height:26px;
+    border-bottom:1px solid #CFCFCF;
+    text-align:center;
+    color:#666;
+    font-size:12px;
+    display:block;
+    padding-left:15px;
+    padding-right:15px;
+}
+.selectShortStyle .select-hideList.active
+{
+    background:#2E84EB; 
+    color:#fff;   
+}
+.selectShortStyle .select-hideList:hover
+{
+    background:#74A1DC; 
+    color:#fff;
+}
+.selectShortStyle .autoHight
+{
+    width: 75px;
+    text-align: center;
+    max-height: 242px;
+    overflow: auto;    
+}
+.selectShortStyle .autoWidth{
+	width:45px;
+	text-align: center;
+	padding-left:0;
+	padding-right:0;
+}
+.selectShortStyle .Journalw
+{
+    width: 71px;
+    text-align: center;
+    overflow: auto; 
+    padding-left:0;
+    padding-right:0;   
+}
+.selectShortStyle .hideWidth{
+	width:84px;
+	text-align: center;
+	padding-left:0;
+	padding-right:0;
+}
+/*年的大的展示方式*/
+.selectBigStyle
+{
+    height:62px;
+    float:left;
+    position:relative;
+    margin-left: -1px;
+}
+.selectBigStyle .select-content
+{
+    height: 60px;
+    border: 1px solid #fff;
+    float: left;
+    cursor: pointer;
+}
+.selectBigStyle .select-name
+{
+    padding-left: 15px;
+    padding-right:215px;
+    height: 60px;
+    line-height: 60px;
+    color: #005A83;
+    font-size: 15px;
+    display: block;
+    float: left;
+}
+.selectBigStyle .select-icon
+{
+    display: block;
+    float: left;
+    width: 12px;
+    height: 7px;
+    background: url(../Images/News/fl-new-DownIcon.png) no-repeat;
+    margin-top: 28px;
+    margin-right: 16px;
+}
+.selectBigStyle .select-hideBox
+{
+   position:absolute;
+   top:61px;
+   left:0;
+   border:1px solid #CFCFCF;   
+   display:none;
+   background:#fff;  
+}
+.selectBigStyle .select-hideBox:after{
+	display: block;
+	content:"";
+	clear:both;
+}
+.selectBigStyle.active .select-hideBox
+{
+    display:block;
+}
+.selectBigStyle .select-hideList
+{
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #CFCFCF;
+    text-align:center;
+    color:#005A83;
+    font-size:15px;
+    display:block;
+    width:148px;
+    float: left;
+}
+.selectBigStyle .select-hideList.active
+{
+    background:#2E84EB; 
+    color:#fff;   
+}
+.selectBigStyle .select-hideList:hover
+{
+    background:#DEE6F1;
+    color:#005A83; 
+}
+.selectBigStyle .autoHight
+{
+    width: 313px;
+    max-height: 245px;
+    overflow: auto;    
+}
+.selectBigStyle .autoWidth{
+	width:270px;
+	padding-left:15px;
+	padding-right:0;
+}
+.fl-page-box {
+    width: 100%;
+    height: 20px;
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+/*年的中的展示方式*/
+.selectMiddleStyle
+{
+    height:28px;
+    float:left;
+    position:relative;
+}
+.selectMiddleStyle .select-content
+{
+    height: 26px;
+    border: 1px solid #fff;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+}
+.selectMiddleStyle .select-name
+{
+    padding-left: 10px;
+    padding-right:10px;
+    height: 26px;
+    line-height: 26px;
+    color: #787878;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.selectMiddleStyle .select-icon
+{
+    display: block;
+    float: left;
+    width: 7px;
+    height: 4px;
+    background: url(../Images/Journal/fl-journal-Down.png) no-repeat;
+    margin-top: 12px;
+    margin-right: 13px;
+}
+.selectMiddleStyle .select-hideBox
+{
+   position:absolute;
+   top:27px;
+   left:0;
+   border:1px solid #CFCFCF;   
+   display:none;
+   background:#fff;  
+}
+.selectMiddleStyle.active .select-hideBox
+{
+    display:block;
+}
+.selectMiddleStyle .select-hideList
+{
+    height:28px;
+    line-height:28px;
+    border-bottom:1px solid #CFCFCF;
+    text-align:center;
+    color:#787878;
+    font-size:14px;
+    display:block;
+    padding-left:15px;
+    padding-right:15px;
+}
+.selectMiddleStyle .select-hideList.active
+{
+    background:#2E84EB; 
+    color:#fff;   
+}
+.selectMiddleStyle .select-hideList:hover
+{
+    background:#74A1DC; 
+    color:#fff;
+}
+.selectMiddleStyle .autoHight
+{
+    width: 120px;
+    text-align: center;
+    max-height: 260px;
+    overflow: auto;   
+}
+.selectMiddleStyle .autoWidth{
+	width:100px;
+	padding-left:0;
+	padding-right:0;
+	text-indent: 15px;
+}
+.loading
+{
+    width: 100%;
+    height: 100px;
+}
+.loading img
+{
+    width: 22px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;  
+}
+.loading span
+{
+    line-height: 81px;
+    float: left;
+    margin-left: 12px;
+    font-size: 16px;
+    color: #005984;  
+}
+.blod{
+	color:#111;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.topBg{background:url(../Images/topBg.gif) top right no-repeat; padding:0px 42px;}
+.sBoxPos3{margin:16px 0px 16px 0px;}/*searchBox定位*/
+.borTop{border:none; border-top:solid 1px #dedede;}
+
+.box5{width:494px; overflow:auto; zoom:1; margin-bottom:12px;}
+.turnBox{width:45px; height:113px; float:left; overflow:hidden; zoom:1;}
+.turnBox .more{padding:0px; margin:0px; background:none; float:none; display:inline-block; width:23px; height:5px; margin-top:13px; margin-left:16.5px; background:url(../../Common/Images/more.png) no-repeat;}
+.turnBox .turn_L{display:inline-block; width:12px; height:22px; margin:45.5px 16.5px; background:url(../../Common/Images/turn2_L.png) no-repeat;}
+.turnBox .turn_R{display:inline-block; width:12px; height:22px; margin:27.5px 16.5px 45.5px 16.5px; background:url(../../Common/Images/turn2_R.png) no-repeat;}
+.LOGOBox{width:908px; height:84px; padding:14.5px 0px; float:left; overflow:hidden; zoom:1;}
+.box6 .boxBody{padding:15px 20px; height:117px;}
+.boxBodyL{height:117px; width:181px; margin-right:13px; float:left; overflow:hidden; zoom:1;}
+.LogoLink{display:table-cell; height:115px; width:179px; border:solid 1px #dedede; vertical-align:middle; text-align:center; overflow:hidden; zoom:1;}
+.LogoLink img{max-width:179px; max-height:115px; border:0px;}
+.boxBodyR{height:117px; width:258px; float:left; overflow:hidden;}
+.boxBodyR p{font-size:13px; line-height:1.5em; text-indent:2em;}
+.boxBodyR h4{font-size:13px; line-height:1.5em; font-weight:normal;}
+.boxBodyR h5{font-size:13px; line-height:1.5em; font-weight:normal; margin-top:10px;}
+ul.friendList{display:block; height:112px; padding-left:85px; overflow:visible; zoom:1;}
+.friendList li{display:inline-block; height:112px; margin-right:80px; float:left; overflow:hidden; zoom:1;}
+.friendList li a{display:table-cell; height:112px; vertical-align:middle; text-align:center; overflow:hidden; zoom:1;}
+.friendList li a img{max-height:112px; border:0px;}
+
+ul.LogoList{display:inline-block; width:100%; overflow:hidden; zoom:1;}
+.LogoList li{display:inline-block; height:90px; margin:15px 41px; float:left; overflow:hidden; zoom:1;}
+.LogoList li a{display:table-cell; height:90px; vertical-align:middle; text-align:center; overflow:hidden; zoom:1;}
+.LogoList li a img{max-height:90px; border:0px;}
+
+.orgInfo{width:806px; font-size:13px; color:#666666; float:right; overflow:hidden; zoom:1;}
+.borB{border-bottom:dashed 1px #dedede;}
+.orgInfo h2{font-size:13px; height:2em; line-height:2em; margin-top:8px;}
+.orgInfo p{font-size:13px; line-height:2em; text-indent:2em; overflow:hidden; zoom:1;}
+.infoBox{font-size:13px; line-height:1em; height:1em; margin:10px 0px; overflow:hidden; zoom:1;}
+.infoBox span{font-weight:bold; display:inline-block; float:left;}
+.infoBox em{display:inline-block; float:left;}
+
+.borTop{border:none; border-top:solid 1px #dedede;}
+.dataTab{width:100%; border-collapse:collapse; border:none; font-size:14px; table-layout:auto; overflow:visible;}
+.dataTab tr th{font-weight:normal; text-align:center; height:30px; background-color:#add3e8; cursor:default; vertical-align:middle;
+ border:solid 1px #dedede; border-top:solid 1px #eff6fa; font-weight:bold;}
+.dataTab tr td{font-weight:normal; text-align:center; line-height:38px; vertical-align:middle; cursor:default;
+ border:solid 1px #dedede; white-space:nowrap;text-overflow:ellipsis; overflow:hidden;}
+.dataTab tr th:first-child{border-left:solid 1px #dedede;}
+.dataTab tr th:last-child{border-right:solid 1px #dedede;}
+.dataTab td a{cursor:pointer; margin:0px 7px;}
+.dataTab td a:hover{text-decoration:underline; color:#B70000;}
+.btnView{display:inline-block; height:16px; vertical-align:-2px; width:13px; background:url(../Images/btn4.png) no-repeat;}

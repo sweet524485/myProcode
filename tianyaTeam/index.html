@@ -1,0 +1,1941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="天涯网络建设工作室" />
+<meta name="description" content="天涯网络建设工作室" />
+<title>天涯网络建设工作室</title>
+<style>
+*{margin:0px;}
+html{overflow-y:hidden}
+#cont{width:100%;position:relative;}
+.stage{width:100%;height:580px;display:block;position: relative;overflow: hidden;}
+.stage_box{width:900px;height:580px;margin:auto;position:relative;text-align:center;overflow:hidden;}
+#stage1{background:url(./images/section1.jpg);}
+#stage2{background:url(./images/section2.jpg);}
+#stage3{background:url(./images/section3.jpg);}
+#stage4{background-color:#5c86c2;}
+#stage5{background-color:#d44267;}
+#stage6{background-color:#a2c371;}
+.fe_img1{position:absolute;margin:-196px -274px;width: 555px;height:392px;left:42%;top:50%; background:url(images/fe_img1.png) no-repeat;}
+.fe_img2{position:absolute;margin:-220px -263px;width: 527px;height:441px;left:42%;top:50%; background:url(images/fe_img2.png) no-repeat;}
+.fe_img3{position:absolute;margin:-206px -272px;width: 543px;height:412px;left:42%;top:50%; background:url(images/fe_img_plus.png) no-repeat;}
+.fe_img4{position:absolute;margin:-206px -272px;width: 543px;height:412px;left:42%;top:50%; background:url(images/fe_img3.png) no-repeat;}
+.fe_img5{position:absolute;margin:-200px -320px;width: 641px;height:401px;left:42%;top:50%; background:url(images/fe_img4.png) no-repeat;}
+.fe_flag{position:absolute;width: 140px;height:86px;right: 80px;bottom: 60px; background:url(images/fe_flag.png) no-repeat;}
+.fe_text1{position:absolute;margin:-31px -96px;width: 193px;height:68px;left:69%;top:45%; background:url(images/fe_text1.png) no-repeat;}
+.fe_text2{position:absolute;margin:-31px -96px;width: 193px;height:68px;left:69%;top:45%; background:url(images/fe_text2.png) no-repeat;}
+.fe_text3{position:absolute;margin:-31px -96px;width: 222px;height:65px;left:69%;top:45%; background:url(images/fe_text_plus.png) no-repeat;}
+.fe_text4{position:absolute;margin:-31px -128px;width: 257px;height:68px;left:69%;top:45%; background:url(images/fe_text3.png) no-repeat;}
+.fe_text5{position:absolute;margin:-31px -100px;width: 210px;height:68px;left:69%;top:45%; background:url(images/fe_text4.png) no-repeat;}
+.index_ins{position:absolute;left: 30px;top: 180px;width:222px;height:145px;background:url(images/index_ins.png) no-repeat;/*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="images/index_ins.png");+background-image: none;*/}
+.index_link{cursor:pointer;}
+.index_link1{position:absolute;width:147px;height:19px;left:673px;top:181px;background:url(images/index_link1.png) no-repeat;}
+.index_link1:hover{left:683px;}
+.index_link2{position:absolute;width:147px;height:19px;left:703px;top:232px;background:url(images/index_link2.png) no-repeat;}
+.index_link2:hover{left:713px;}
+.index_link3{position:absolute;width:147px;height:19px;left:733px;top:280px;background:url(images/index_link_plus.png) no-repeat;}
+.index_link3:hover{left:743px;}
+.index_link4{position:absolute;width:167px;height:19px;left:703px;top:328px;background:url(images/index_link3.png) no-repeat;}
+.index_link4:hover{left:713px;}
+.index_link5{position:absolute;width:147px;height:19px;left:673px;top:374px;background:url(images/index_link4.png) no-repeat;}
+.index_link5:hover{left:683px;}
+#guider .bg{z-index:0;width:100%;height:100%;background:url(images/guider_bg5.png) no-repeat center center;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="images/guider_bg5.png");_background-image: none;position:absolute;top:0px;left:0px;}
+#guider{width:60px;height:205px;position:absolute;top:380px;right:20px;}
+#guider .sina{z-index:1;position:absolute;left:0px;bottom:34px;width:100%;height:26px;display:block;}
+#guider .sina:hover{background:url(images/guider_bg.png) no-repeat center -135px;}
+#guider .tencent{z-index:1;position:absolute;left:0px;bottom:0px;width:100%;height:25px;display:block;}
+#guider .tencent:hover{background:url(images/guider_bg.png) no-repeat center -170.5px;}
+#guider_link1{z-index:1;height:31px;}
+.guider_link{position:relative;z-index:1;width:100%;height:20px;display:block;cursor:pointer;}
+#guider_link2.select{background:url(images/guider1_select.jpg) no-repeat center center;}
+#guider_link3.select{background:url(images/guider2_select.jpg) no-repeat center center;}
+#guider_link4.select{background:url(images/guider_select_plus.jpg) no-repeat center center;}
+#guider_link5.select{background:url(images/guider3_select.jpg) no-repeat center center;}
+#guider_link6.select{background:url(images/guider4_select.jpg) no-repeat center center;}
+#logo {position: absolute;top:-30px;left:0px;border-radius: 50%;width: 60px;height: 60px;}
+.swf_object{height:768px;margin-top:-94px;}
+.btn_down{width:80px;height:80px;position:absolute;bottom:-20px;margin-left: -43px;left: 50%;cursor:pointer;}
+.sign {position:absolute; width: 32px;height:12px;left:24px;}
+#sign1_1{background: url(images/sign1.png) no-repeat ;bottom: 30px;}
+#sign2_1{background: url(images/sign2.png) no-repeat ;bottom: 38px;}
+#sign3_1{background: url(images/sign3.png) no-repeat ;bottom: 46px;}
+.signImg1{background: url(images/sign_1.png) no-repeat ;bottom: 30px;}
+.signImg2{background: url(images/sign_2.png) no-repeat ;bottom: 38px;}
+.signImg3{background: url(images/sign_3.png) no-repeat ;bottom: 46px;}
+/*163邮箱*/
+/* 右侧导航 */
+#fullPage-nav { _display: none; font-size: 12px;}
+#fullPage-nav li { width: 90px; height: 21px; margin: 10px 0 0; vertical-align: middle;}
+#fullPage-nav li a { float: right; width: 21px; height: 21px; color: #8F9DA4; text-decoration: none; text-align: right; background: url(images/dot.png) 5px 5px no-repeat;}
+#fullPage-nav li .active { background-position: 0 bottom;}
+#fullPage-nav span { display: none;}
+.fullPage-tooltip { float: left; top: 0; margin-right: 5px; font: 12px "Microsoft Yahei"; color: #8F9DA4; line-height: 21px;}
+
+.section { position: relative; overflow: hidden;}
+.section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.section .bg img { display: block; width: 100%; height: 100%;}
+
+.bg11 { position: absolute; bottom: 0; width: 100%; height: 850px; background: url(images/bg11.png) 50% 0 no-repeat; transition: all 1s;}
+.bg12 { position: absolute; bottom: -392px; width: 100%; height: 392px; background: url(images/bg12.png) 50% 0 no-repeat; opacity: 0; transition: all 1.7s; bottom: 90px\0;}
+.bg13 { position: absolute; bottom: -377px; width: 100%; height: 377px; background: url(images/bg13.png) 50% 0 no-repeat; transition: all 1s;}
+.hgroup { position: absolute; width: 554px; height: 176px; left: 50%; top: 25%; margin: 0 0 0 -277px; text-indent: -9999px; background-image: url(images/slogan.png); opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.p11 { position: absolute; left: 50%; top: 50%; width: 600px; margin: 0 0 0 -280px; font-size: 14px; color: #94a7c6; opacity: 0; transition: all 0.5s;}
+.mail { position: absolute; left: 50%; top: -26px; width: 375px; height: 26px; margin-left: -187px; background-image: url(images/logo.png); transition: all 1s;}
+.mail { float: left; height: 26px; text-indent: -9999px;}
+.mail-163 { float: left; width: 107px;}
+.mail-126 { float: left;width: 108px; margin-left: 23px;}
+.mail-yeah { float: right; width: 115px;}
+
+.bg21 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 250px; margin-left: -608px; margin-bottom: 40px; background: url(images/bg21.png) 0 0 no-repeat; transition: all 1s;  opacity: 0; margin-left: -1108px;}
+.bg22 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 299px; margin-left: -280px; margin-bottom: 70px; background: url(images/bg22.png) right 0 no-repeat; transition: all 1s; opacity: 0; margin-left: 320px;}
+.bg23 { position: absolute; left: 50%; bottom: 15%; width: 819px; height: 325px; margin-left: -409px; background: url(images/bg23.png) 50% 0 no-repeat; transition: all 1s;  bottom: -40%;}
+.section strong { position: absolute; left: 50%; top: 15%; z-index: 10; width: 512px; height: 45px; margin-left: -256px; font-size: 24px; font-weight: 500; color: #748A9E; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.section h3 { position: absolute; left: 50%; top: 15%; z-index: 10; width: 512px; height: 45px; margin-left: -256px; margin-top: 60px; text-indent: -9999px; background-repeat: no-repeat; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
+.p1 { position: absolute; left: 50%; top: 15%; width: 510px; margin-left: -255px; margin-top: 130px; font-size: 16px; color: #727F8C; opacity: 0; transition: all 1s;}
+</style>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/ui/jquery.fullPage.css">
+<script type="text/javascript" src="js/jquery_1.7.2.js"></script>
+<script type="text/javascript" src="js/sucaijiayuan.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/hd_plugs.js"></script>
+<script src="js/index.js"></script>
+<!-- 四楼轮播图 -->
+<link type="text/css" rel="stylesheet" href="css/posterTvGrid.css">
+<!-- 第二屏 -->
+<link rel="stylesheet" type="text/css" href="css/home_2c89410.css" />
+<script type="text/javascript" src="js/posterTvGrid.js"></script>
+<!-- 第四屏 -->
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- 最后一屏幕 -->
+<script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+
+		$('#carousel ul').carouFredSel({
+			prev: '#prev',
+			next: '#next',
+			pagination: "#pager",
+			scroll: 1000
+		});
+	
+	});
+</script>
+</head>
+<body scroll=no style="text-align:left;">
+<div id="cont">
+	<div class="stage section" id="stage1">
+		<div class="bg"><img src="images/section1.jpg" alt=""></div>
+		<div class="nav">
+			<div id="navSelected" class="navSelected"></div>
+			<ul id="navBd" class="clearfix">
+			  <li id="navCurr" class="three-d index_link navHover" index="0" style="margin-left:190px;">
+			  	<a href="#">网站首页</a>
+			  </li>	
+				<li class="three-d index_link" index="1">
+					<a href="#">站长身份</a>
+				</li>
+				<li class="three-d index_link" index="2">
+					<a href="#">团队成员</a>
+				</li>
+				<li class="three-d index_link" index="3">
+					<a href="#">产品展示</a>
+				</li>
+				<li class="three-d index_link" index="4">
+					<a href="#">免费分享</a>
+				</li>
+				<li class="three-d index_link" index="5">
+					<a href="#">联系我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="qmj-section1-content">
+			<img src="./images/txt1.png" class="qmj-section1-content_img1" />
+			<img src="./images/txt2.png" class="qmj-section1-content_img2"/>
+			<img src="./images/txt3.png" class="qmj-section1-content_img3"/>
+			<img src="./images/txt4.png" class="qmj-section1-content_img4"/>
+			<img src="./images/txt5.png" class="qmj-section1-content_img5"/>
+			<img src="./images/txt6.png" class="qmj-section1-content_img6"/>
+			<img src="./images/txt7.png" class="qmj-section1-content_img7"/>
+			<img src="./images/txt8.png" class="qmj-section1-content_img8"/>
+			<img src="./images/txt9.png" class="qmj-section1-content_img9"/>
+		</div>
+		<div class="wrap">
+			<div id="pic_list_2" class="scroll_horizontal">
+				<div class="box">
+					<ul class="list">
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.14.qDAMWf&id=520958048435" target="_blank"><img src="images/temp_pic_1.jpg"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.2.t6TvUt&id=520996758322"><img src="images/temp_pic_2.jpg" target="_blank"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.4.t6TvUt&id=520968707687" target="_blank"><img src="images/temp_pic_3.jpg"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.38.t6TvUt&id=45036372528" target="_blank"><img src="images/temp_pic_4.jpg"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.6.t6TvUt&id=520969538003" target="_blank"><img src="images/temp_pic_5.jpg"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.28.t6TvUt&id=45821094343" target="_blank"><img src="images/temp_pic_6.jpg"></a></li>
+						<li><a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-7702122148.20.t6TvUt&id=520922228321" target="_blank"><img src="images/temp_pic_7.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.cxscroll.min.js"></script>
+		<script>
+			$("#pic_list_2").cxScroll({direction:"left",step:3});
+		</script>
+		<a class="index_link btn_down" index="1">
+			<div class='sign' id='sign1_1'></div>
+			<div class='sign' id='sign2_1'></div>
+			<div class='sign' id='sign3_1'_></div>
+		</a>
+	</div>
+	<div class="stage section" id="stage2" name ="refresh">
+		<div class="bg"><img src="images/section2.jpg" alt=""></div>
+		<div class="qmj-title-box1"></div>
+		<div class="ag-content-customer-wrap">
+		    <div class="ag-content-customer">
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>前端程序员</span>
+		            <img src="images/ag-customer-tradition_ad3bf6f.png" data-hover="77" data-normal="85" />
+		        </div>
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>淘宝店店长</span>
+		            <img src="images/ag-customer-taobao_a9d7af6.png" style="left:65px;" data-hover="57" data-normal="65" />
+		        </div>
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>天涯网络创始人</span>
+		            <img src="images/ag-customer-small_35b8744.png" style="left:96px;" data-hover="88" data-normal="96" />
+		        </div>
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>网络营销策划师</span>
+		            <img src="images/ag-customer-brand_9ca1bac.png" style="left:83px;" data-hover="75" data-normal="83" />
+		        </div>
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>网络创业者</span>
+		            <img src="images/ag-customer-search_83f9a60.png" style="left:56px;" data-hover="48" data-normal="56" />
+		        </div>
+		        <div class="ag-content-customer-ele">
+		            <div class="ag-content-customer-ele-shadow"></div>
+		            <span>网站站长</span>
+		            <img src="images/ag-customer-web_d2729dd.png" style="left:83px;" data-hover="75" data-normal="83" />
+		        </div>
+		        <div class="ag-content-customer-ele-detail">
+		            <ul>
+		                <li class="acced-li-1"></li>
+		                <li class="acced-li-2"></li>
+		                <li class="acced-li-3"></li>
+		                <li class="acced-li-4"></li>
+		                <li class="acced-li-5"></li>
+		                <li class="acced-li-6"></li>
+		            </ul>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-tradition_ad3bf6f.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:30px; right:0px;"><img src="images/ag-customer-tradition-txt_d2077c8.png" /></span>
+		                    <a href="#/products/weixin" class="agwyx" style="top:190px; left:262px;">TY微营销</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-taobao_a9d7af6.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:30px; right:0px;"><img src="images/ag-customer-taobao-txt_2d1d5db.png" /></span>
+		                    <a href="#/products/dsp" class="agwm" style="top:190px; left:262px;">TY网盟</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-small_35b8744.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:27px; left:0px; text-align:right;"><img src="images/ag-customer-small-txt-1_c935044.png" /></span>
+		                    <span class="point" style="top:88px; right:158px;">></span>
+		                    <a href="#/products/dsp" class="agwm" style="top:40px; right:0px;">TY网盟</a>
+		                    <span style="top:235px; left:50px; text-align:right;"><img src="images/ag-customer-small-txt-2_b08da8b.png" /></span>
+		                    <span class="point" style="top:262px; right:158px;">></span>
+		                 	 <a href="#/products/reporting-analytics" class="aggg" style="top:210px; right:0px;">TY广告效果分析平台</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-brand_9ca1bac.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:46px; left:10px; text-align:right;"><img src="images/ag-customer-brand-txt-1_ad914ee.png" /></span>
+		                    <span class="point" style="top:88px; right:158px;">></span>
+		                    <a href="#/products/enterprise" class="agxt" style="top:40px; right:0px;">TY广告系统旗舰版</a>
+		                    <span style="top:220px; left:-18px; text-align:right;"><img src="images/ag-customer-brand-txt-2_b3dd522.png" /></span>
+		                    <span class="point" style="top:262px; right:158px;">></span>
+		                    <a href="#/products/dsp" class="agwm" style="top:210px; right:0px;">TY网盟</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-search_83f9a60.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:30px; right:20px;"><img src="images/ag-customer-search-txt_592f82b.png" /></span>
+		                    <a href="#/products/smb" class="jjzs" style="top:190px; left:92px;">TY竞价助手</a>
+		                    <a href="http://www.jq22.com" class="tgrb" style="top:190px; left:262px;">推广日报</a>
+		                    <a href="#/products/ag360editor" class="ag360" style="top:190px; left:432px;">TY360营销助手</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-display">
+		                <div class="ag-content-customer-ele-detail-display-left">
+		                    <img src="images/ag-customer-web_d2729dd.png" />
+		                </div>
+		                <div class="ag-content-customer-ele-detail-display-right">
+		                    <span style="top:60px; right:60px;"><img src="images/ag-customer-web-txt_c205aff.png" /></span>
+		                    <a href="#/products/reporting-analytics" class="aggg" style="top:190px; left:262px;">TY广告效果分析平台</a>
+		                </div>
+		            </div>
+		            <div class="ag-content-customer-ele-detail-return"><img src="./images/tainyaid_bg.png" style="display:none\0;"></div>
+		        </div>
+		    </div>
+		</div>
+		<a class="index_link btn_down" index="2">
+			<div class='sign signImg1' id='sign1_3'></div>
+			<div class='sign signImg2' id='sign2_3'></div>
+			<div class='sign signImg3' id='sign3_3'></div>
+		</a>
+	</div>
+	<div class="stage section" id="stage3">
+		<div class="bg"><img src="images/section3.jpg" alt=""></div>
+		<a class="index_link btn_down" index="3">
+			<div class='sign signImg1' id='sign1_3'></div>
+			<div class='sign signImg2' id='sign2_3'></div>
+			<div class='sign signImg3' id='sign3_3'></div>
+		</a>
+		<div class="qmj-title-box2"></div>
+		<div class="content-first-con">
+			<div class="content-list" style="margin-left:1px;">
+				<img src="./images/f1.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：仇明杰
+				</div>
+				<a href="yihaodian/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f2.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：张馨予
+				</div>
+				<a href="tianmao/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f3.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：杨颖
+				</div>
+				<a href="taobao/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f4.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：范冰冰
+				</div>
+				<a href="jd/index.html" class="content-list-con">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list" style="margin-right:0;">
+				<img src="./images/f5.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：钟汉良
+				</div>
+				<a href="sanliuling/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f6.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：刘德华
+				</div>
+				<a href="fanke/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f7.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：周杰伦
+				</div>
+				<a href="javascript:void(0)" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f8.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：鹿晗
+				</div>
+				<a href="javascript:void(0)" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f9.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：黄晓明
+				</div>
+				<a href="jd/index.html" class="content-list-con">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list" style="margin-right:0;">
+				<img src="./images/f10.png" alt="" class="content-logo" />
+				<div class="content-logo-detail">
+					站长：李易峰
+				</div>
+				<a href="sanliuling/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仇明杰
+					</p>
+					<span class="content-click-me">
+						天涯网络工作室创始人
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<span class="clear-both"></span>
+		</div>
+		
+	</div>
+	
+	<div class="stage section" id="stage4">
+		<div class="bg"><img src="images/section4.jpg" alt=""></div>
+		<div class="qmj-title-box3"></div>
+		<div id="posterTvGrid86804" style="margin:40px auto"></div>
+		<script type="text/javascript">
+		var posterTvGrid86804 = new posterTvGrid('posterTvGrid86804',{className: "posterTvGrid"},[
+				{"img":"images/move1.jpg","title":"","url":""},
+				{"img":"images/move2.jpg","title":"","url":""},
+				{"img":"images/move3.jpg","title":"","url":""},
+				{"img":"images/move4.jpg","title":"","url":""},
+				{"img":"images/move5.jpg","title":"","url":""},
+				{"img":"images/move6.jpg","title":"","url":""},
+				{"img":"images/move7.jpg","title":"","url":""},
+				{"img":"images/move8.jpg","title":"","url":""},
+				{"img":"images/move9.jpg","title":"","url":""}
+			]
+		);
+		</script>
+		<a class="index_link btn_down" index="4">
+			<div class='sign signImg1' id='sign1_plus'></div>
+			<div class='sign signImg2' id='sign2_plus'></div>
+			<div class='sign signImg3' id='sign3_plus'></div>
+		</a>
+	</div>
+
+	<div class="stage section" id="stage5">
+		<div class="bg"><img src="images/section5.jpg" alt=""></div>
+		<div class="qmj-title-box4"></div>
+		<!-- 轮播区 -->
+		<div class="qtt-move_box">
+			<div class="qtt-move_list" style="display:block;">
+				<div id="main">
+					<div class="sponsorListHolder">
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/1.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/2.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/3.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/4.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/5.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+				        			
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/6.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/7.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/8.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/9.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/10.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/11.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/12.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/13.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/14.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/15.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/16.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/17.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section1/18.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+				    	<div class="clear"></div>
+				    </div>
+
+				</div>
+			</div>
+			<div class="qtt-move_list">
+				<div id="main">
+					<div class="sponsorListHolder">
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/1.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/2.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/3.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/4.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/5.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+				        			
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/6.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/7.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/8.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/9.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/10.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/11.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/12.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/13.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/14.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/15.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/16.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/17.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section2/18.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+				    	<div class="clear"></div>
+				    </div>
+
+				</div>
+			</div>
+			<div class="qtt-move_list">
+				<div id="main">
+					<div class="sponsorListHolder">
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/1.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/2.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/3.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/4.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/5.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+				        			
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/6.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/7.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/8.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/9.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/10.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/11.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/12.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/13.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/14.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/15.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/16.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/17.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section3/18.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+				    	<div class="clear"></div>
+				    </div>
+
+				</div>
+			</div>
+			<div class="qtt-move_list">
+				<div id="main">
+					<div class="sponsorListHolder">
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/1.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/2.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/3.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/4.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/5.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+				        			
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/6.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/7.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/8.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/9.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/10.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/11.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/12.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/13.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/14.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/15.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/16.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/17.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="sponsor" title="Click to flip">
+							<div class="sponsorFlip">
+								<img src="images/section4/18.jpg" />
+							</div>
+									
+							<div class="sponsorData">
+								<div class="sponsorDescription">
+									One of the biggest computer manufacturs
+								</div>
+								<div class="sponsorURL">
+									<a href="www.sd131.com">www.sd131.com</a>
+								</div>
+							</div>
+						</div>
+								
+				    	<div class="clear"></div>
+				    </div>
+
+				</div>
+			</div>
+			<!-- 轮播区 变换小列表 -->
+			<div class="qtt-move_ul">
+				<span class="qtt-move_li cur"></span>
+				<span class="qtt-move_li"></span>
+				<span class="qtt-move_li"></span>
+				<span class="qtt-move_li"></span>
+			</div>
+			<!-- 轮播图 左切换按钮 -->
+			<div class="qtt-move_left"></div>
+			<!-- 轮播图 右切换按钮 -->
+			<div class="qtt-move_right"></div>
+		</div>
+		<a class="index_link btn_down" index="5">
+			<div class='sign signImg1' id='sign1_4'></div>
+			<div class='sign signImg2' id='sign2_4'></div>
+			<div class='sign signImg3' id='sign3_4'></div>
+		</a>
+	</div>
+	<div class="stage section" id="stage6">
+		<div class="bg"><img src="images/section6.jpg" alt=""></div>
+		<div class="qmj-title-box5"></div>
+		<div id="wrapperr">
+			<div id="carousel">
+				<ul>
+					<li><img src="images/img/1.jpg" alt="" /><span>Image1</span></li>
+					<li><img src="images/img/2.jpg" alt="" /><span>Image2</span></li>
+					<li><img src="images/img/3.jpg" alt="" /><span>Image3</span></li>
+					<li><img src="images/img/4.jpg" alt="" /><span>Image4</span></li>
+					<li><img src="images/img/5.jpg" alt="" /><span>Image5</span></li>
+					<li><img src="images/img/6.jpg" alt="" /><span>Image6</span></li>
+					<li><img src="images/img/7.jpg" alt="" /><span>Image1</span></li>
+					<li><img src="images/img/8.jpg" alt="" /><span>Image2</span></li>
+					<li><img src="images/img/9.jpg" alt="" /><span>Image3</span></li>
+					<li><img src="images/img/10.jpg" alt="" /><span>Image4</span></li>
+					<li><img src="images/img/11.jpg" alt="" /><span>Image5</span></li>
+					<li><img src="images/img/12.jpg" alt="" /><span>Image6</span></li>	
+				</ul>
+				<div class="clearfix"></div>
+					<a id="prev" class="prev" href="#">&lt;</a>
+					<a id="next" class="next" href="#">&gt;</a>
+				<div id="pager" class="pager"></div>
+			</div>
+		</div>
+		<div class="qtt-bottom-box">
+			<div class="qtt-bottom_left">
+				<div class="qtt-bottom_img_box">
+					<img src="./images/my.png"/>
+				</div>
+				<div class="qtt-bottom_detail">
+					<p>团&nbsp;&nbsp;&nbsp;队：<a href="http://www.qiutantan.com">天涯网络建设工作室</a></p>
+					<p>联系人：仇郯郯</p>
+					<p>手&nbsp;&nbsp;&nbsp;机：13552129631</p>
+					<p>Q&nbsp;&nbsp;&nbsp;Q：774754551</p>
+					<p>邮&nbsp;&nbsp;&nbsp;箱：774754551@qq.com</p>
+					<p>官&nbsp;&nbsp;&nbsp;网：<a href="http://www.qiumingjie.com">http://www.qiumingjie.com</a></p>
+					<p>地&nbsp;&nbsp;&nbsp;址：北京市怀柔区怀柔北大街</p>
+				</div>
+			</div>
+				
+			<div class="qtt-bottom_right">
+				<img src="./images/myself.jpg"/>
+			</div>
+			<br style="clear:both;" />
+		</div>
+		<div class="fe_flag">
+			<a href="http://www.qiumingjie.com" target="_blank"><div style='height:50%;cursor:pointer'></div></a>
+			<div onclick="backToTop()" style="height:50%;cursor:pointer"></div>
+		</div>
+	</div>
+	<div id="guider" style="width:30px\0;">
+		<a class = "guider_link" id="guider_link1"><img src="images/logo.png" id="logo" style="width:30px\0;height:30px\0;margin-top:30px\0;"></a>
+		<a class="guider_link" id="guider_link2"></a>
+		<a class="guider_link" id="guider_link3"></a>
+		<a class="guider_link" id="guider_link4"></a>
+		<a class="guider_link" id="guider_link5"></a>
+		<a class="guider_link" id="guider_link6"></a>
+		<a class="sina" target="_blank" href="http://www.qiumingjie.com"></a>
+		<a class="tencent" target="_blank" href="http://user.qzone.qq.com/774754551/infocenter?ptsig=ioaGysacxvTCS0cF-sZNkC7Jp1maNs89ydbq5hbMp68_"></a>
+		<div class="bg"></div>
+		
+	</div>
+</div>
+<!-- 第二屏JS -->
+<script type="text/javascript">
+    var ctrlBar = false;
+
+    var float_timer = null;
+    var float_max_X;
+    var float_max_Y;
+    var float_ctrl_X = true;
+    var float_ctrl_Y = true;
+    $(function () {
+        float_max_X = $(window).width();
+        float_max_Y = $(window).height();
+    });
+    function showVideoImage() {
+        if ($('.vjs-poster').css('display') == 'none') {
+        $('.vjs-poster').addClass('index').show();
+        } else {
+            setTimeout('showVideoImage()', 50);
+        }
+    }
+
+    function startMove() {
+        var obj = $('#floatAdv');
+        var limit_X = float_max_X - obj.width();
+        var limit_Y = float_max_Y - obj.height();
+        float_timer = setInterval(function () {
+            var _x = parseInt(obj.css('left'));
+            var _y = parseInt(obj.css('top'));
+            if (_x >= limit_X) {
+                float_ctrl_X = false;
+            }
+            if (_x <= 0) {
+                float_ctrl_X = true;
+            }
+            if (_y >= limit_Y) {
+                float_ctrl_Y = false;
+            }
+            if (_y <= 0) {
+                float_ctrl_Y = true;
+            }
+            if (float_ctrl_X) {
+                _x += 1;
+            } else {
+                _x -= 1;
+            }
+            if (float_ctrl_Y) {
+                _y += 1;
+            } else {
+                _y -= 1;
+            }
+            obj.css({
+                'left': _x + 'px',
+                'top': _y + 'px'
+            });
+        }, 10);
+    }
+
+    function endMove() {
+        clearInterval(float_timer);
+    }
+
+    $(document).ready(function () {
+        $('.ag-header ul li:eq(0)').addClass('current-page');
+        showVideoImage();
+
+        $('#floatAdv').mouseenter(function () {
+            endMove();
+        });
+        $('#floatAdv').mouseleave(function () {
+            startMove();
+        });
+        $('#floatAdv span').click(function (e) {
+            endMove();
+            $('#floatAdv').attr('href', 'javascript:;').removeAttr('target').hide();
+        });
+
+        $(".ag-content-customer-ele").bind("mouseenter mouseleave", function (e) {
+		    var w = $(this).width();
+		    var h = $(this).height();
+		    var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+		    var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+		    var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+		    if (e.type == 'mouseenter') {
+                // 0:up - 1:right - 2:down - 3:left
+			    if(direction == 0) {
+				    $(this).find('div').css({
+					    'top' : '-470px',
+					    'left' : '0px'
+				    });
+				    $(this).find('div').animate({ 'top': 0 }, { queue: false, duration: 300 });
+			    } else if(direction == 2) {
+				    $(this).find('div').css({
+					    'top' : '470px',
+					    'left' : '0px'
+				    });
+				    $(this).find('div').animate({ 'top': 0 }, { queue: false, duration: 300 });
+			    } else if(direction == 1) {
+				    $(this).find('div').css({
+					    'top' : '0px',
+					    'left' : '200px'
+				    });
+				    $(this).find('div').animate({ 'left': 0 }, { queue: false, duration: 300 });
+			    } else if(direction == 3) {
+				    $(this).find('div').css({
+					    'top' : '0px',
+					    'left' : '-200px'
+				    });
+				    $(this).find('div').animate({ 'left': 0 }, { queue: false, duration: 300 });
+			    }
+			    $(this).find('span').css('color', '#fff');
+			    $(this).find('img').animate({ 'left': $(this).find('img').attr('data-hover') }, { queue: false, duration: 200 });
+		    }else{
+			    if(direction == 0) {
+			        $(this).find('div').animate({ 'top': -470 }, { queue: false, duration: 300 });
+			    } else if(direction == 2) {
+			        $(this).find('div').animate({ 'top': 470 }, { queue: false, duration: 300 });
+			    } else if(direction == 1) {
+			        $(this).find('div').animate({ 'left': 200 }, { queue: false, duration: 300 });
+			    } else if(direction == 3) {
+			        $(this).find('div').animate({ 'left': -200 }, { queue: false, duration: 300 });
+			    }
+			    $(this).find('span').css('color', '#262626');
+			    $(this).find('img').animate({ 'left': $(this).find('img').attr('data-normal') }, { queue: false, duration: 200 });
+		    }
+        });
+
+        $(".ag-content-customer-ele").bind('click', function (e) {
+
+            var navIndex = $(e.target).parent().index();
+            $('.ag-content-customer-ele-detail ul li').removeClass('current');
+            $('.ag-content-customer-ele-detail ul li').eq(navIndex).addClass('current');
+
+            $('.ag-content-customer-wrap').css('background-color', '#469acb');
+            $('.ag-content-customer-ele').animate({ 'width': 0 }, 500);
+
+            $('.ag-content-customer-ele-detail').animate({ 'width': 1200 }, {
+                duration: 500,
+                complete: function () {
+                    $('.ag-content-customer-ele-detail ul li').eq(navIndex).click();
+                }
+            });
+        });
+
+        $('.ag-content-customer-ele-detail-return').bind('click', function (e) {
+
+            $('.ag-content-customer-wrap').css('background-color', '#f1f1f1');
+            $('.ag-content-customer-ele-detail').css('overflow', 'hidden');
+            $('.ag-content-customer-ele').animate({ 'width': 200 }, 500);
+            $('.ag-content-customer-ele-detail').animate({ 'width': 0 }, 500);
+            $('.ag-content-customer-ele-detail-display').hide();
+        });
+
+        $('.ag-content-customer-ele-detail ul li').bind('click', function () {
+
+            $('.ag-content-customer-ele-detail ul li').removeClass('current');
+            $(this).addClass('current');
+            $('.ag-content-customer-ele-detail').css('overflow', 'visible');
+
+            var disIndex = $(this).index();
+            $('.ag-content-customer-ele-detail-display').hide();
+            $('.ag-content-customer-ele-detail-display').eq(disIndex).show();
+
+            // IE
+            if ("ActiveXObject" in window) {
+                $('.ag-content-customer-ele-detail-display-left').css({
+                    'left': '0px',
+                    'opacity':'1'
+                });
+                $('.ag-content-customer-ele-detail-display-right').css({
+                    'right': '-120px',
+                    'opacity': '1'
+                });
+                $('.ag-content-customer-ele-detail-display-left').eq(disIndex).animate({ 'left': 120 }, { duration: 1000, easing: 'easeOutQuint' });
+                $('.ag-content-customer-ele-detail-display-right').eq(disIndex).animate({ 'right': 0 }, { duration: 1000, easing: 'easeOutQuint' });
+            }
+        });
+
+        $('body').on('click', '.vjs-big-play-button', function () {
+            $(this).hide();
+            ctrlBar = true;
+            $('.vjs-control-bar').removeClass('vjs-fade-out').addClass('vjs-fade-in');
+        });
+
+        $('.ag-content-app-wytgg-right').click(function () {
+            if (!$('#ag-app-video').hasClass('vjs-playing')) {
+                $('.vjs-big-play-button').css('display', 'none');
+                ctrlBar = true;
+                $('.vjs-control-bar').removeClass('vjs-fade-out').addClass('vjs-fade-in');
+            }
+        });
+
+        // IE7
+        if (window.navigator.userAgent.indexOf('MSIE 7.0') >= 0) {
+            $('#ag-app-video').css({
+                'width': '570px',
+                'height': '380px',
+                'position': 'relative'
+            });
+            $('#ag-app-video').find('div.vjs-poster').css({
+                'width': '570px',
+                'height': '380px',
+                'position': 'absolute',
+                'top': '0px'
+            });
+            $('.vjs-big-play-button').css({
+                'width': '100px',
+                'height': '100px',
+                'position': 'absolute',
+                'top': '140px',
+                'left': '235px'
+            });
+            $('.ag-content-app-wytgg-right').css('overflow', 'hidden');
+        } else {
+            $('.ag-content-app-wytgg-right').hover(
+                function () {
+                    if (ctrlBar) {
+                        $('.vjs-control-bar').removeClass('vjs-fade-out').addClass('vjs-fade-in');
+                    }
+                },
+                function () {
+                    $('.vjs-control-bar').removeClass('vjs-fade-in').addClass('vjs-fade-out');
+                }
+            );
+        }
+    });
+</script>
+</body>
+</html>

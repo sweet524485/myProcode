@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/ifocus.css">
+<link rel="stylesheet" href="css/button.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/showpic.js"></script>
+<body class="body">
+
+<!-- header -->
+<div class="x-header_wrap">
+    <div class="x-head_1">
+        <div class="x-head_top">
+            <!-- 登录前 -->
+            <div class="x-login_before">
+                <a href="">注册</a>
+                <span>|</span>
+                <a href="javascript:void(0)" id="x-login_btn">登录</a>
+            </div>
+            <!-- 登录后 -->
+            <div class="x-login_after hide">
+                <a href="javascript:" class="x-user" id="login_btn">
+                    <i class="x-icon-user"></i><span>我叫小沈阳</span>
+                </a>
+                <ul class="x-user_list hide">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="x-icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="x-head_2">
+        <div class="x-head_bottom clearfix">
+            <div class="x-head_logo grid-240 left">
+                <a href="">
+                    <img src="images/logo.jpg" alt="">
+                </a> 
+            </div>
+            <div class="x-head_nav container-540 left">
+                <a href="" class="active">首页</a>
+                <a href="">文集</a>
+                <a href="">视频</a>
+                <a href="">媒体</a>
+                <a href="">媒体平台</a>
+            </div>
+            <div class="x-head_search grid-220 left">
+                <form action="" class="block clearfix">
+                    <input type="text" class="x-search_input">
+                    <button type="submit" class="x-search_button right"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /header -->
+
+<!-- content -->
+<div class="x-contetn">
+    <div class="container-1000">
+        <div class="x-cont_wrap clearfix">
+            <!-- content-left -->
+            <div class="x-cont_left container-720 left">
+                <div class="margin">
+                    <div class="x-small_cer_box f24 cr-9 padding-top margin-bottom">
+                        分类：<span class="cr-3">育儿</span>
+                    </div>
+                    <div class="x-cont_container margin-big-top">
+                        <div class="x-cont_list">
+                            <!-- 文章list -->
+                            <div class="x-cont_lists clearfix">
+                                <a href="" class="block x-pic_img">
+                                    <img src="images/test.jpg" alt="" width="165">
+                                </a>
+                                <div class="left container-520">
+                                    <h3 class="x-tit ellipsis">
+                                        <a href="" >阿萨德刻录机风口浪尖岁的弗雷空间</a>
+                                    </h3>
+                                    <p class="x-little font-simsun">
+                                        乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍
+                                        ...
+                                    </p>
+                                    <div class="x-info font-simsun">
+                                        <a href="" class="x-user" target="_blank">浮光百科<i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i> </a>
+                                        <span class="time">2014-12-12 <i>|</i> 13:13</span>
+                                        <a class="x-collect" href="javascript:void(0)">收藏</a>
+                                        <a class="x-read padding-big-bottom" href="javascript:void(0)">阅读(198511111)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 文章list -->
+                            <div class="x-cont_lists clearfix">
+                                <a href="" class="block x-pic_img">
+                                    <img src="images/test.jpg" alt="" width="165">
+                                </a>
+                                <div class="left container-520">
+                                    <h3 class="x-tit ellipsis">
+                                        <a href="" >阿萨德刻录机风口浪尖岁的弗雷空间</a>
+                                    </h3>
+                                    <p class="x-little font-simsun">
+                                        乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍 乱起八糟的介绍
+                                        ...
+                                    </p>
+                                    <div class="x-info font-simsun">
+                                        <a href="" class="x-user" target="_blank">浮光百科<i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i> </a>
+                                        <span class="time">2014-12-12 <i>|</i> 13:13</span>
+                                        <a class="x-collect" href="javascript:void(0)">收藏</a>
+                                        <a class="x-read padding-big-bottom" href="javascript:void(0)">阅读(198511111)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="moreData" class="x-load_more" style="margin-top:30px">
+                                <a href="javascript:void(0)" class="btn btn-block" id="addMoreDatas" onclick="addMore()">加载更多...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-right -->
+            <div class="x-cont_right grid-260 right bg-t">
+                <!-- 媒体推荐 -->
+                <div class="x-r_media margin-big-bottom bg-f">
+                    <div class="x-r_title x-icon-media">
+                        <span></span>
+                    </div>
+                    <ul class="x-r_media_list padding">
+                        <li class="">
+                            <a href="" class="left">
+                                <img src="images/test.jpg" alt="" class="radius-circle">
+                                <i class="approve"></i>
+                            </a>
+                            <div class="x-r_info">
+                                <a href="" class="user f16" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i></a>
+                                <p class="x-little font-simsun margin-little-top">
+                                        乱起八糟的介绍 乱起八糟的介绍  
+                                    </p>
+                                <div class="x-fans left font-simsun">
+                                    粉丝<span>(1511)</span>
+                                </div>
+                                <div class="x-book right font-simsun">
+                                    专辑<span>(211)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="left">
+                                <img src="images/test.jpg" alt="" class="radius-circle">
+                            </a>
+                            <div class="x-r_info">
+                                <a href="" class="x-user" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i></a>
+                                <div class="x-fans left font-simsun">
+                                    粉丝<span>(1511)</span>
+                                </div>
+                                <div class="x-book right font-simsun">
+                                    专辑<span>(211)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="left">
+                                <img src="images/test.jpg" alt="" class="radius-circle">
+                            </a>
+                            <div class="x-r_info">
+                                <a href="" class="x-user" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i></a>
+                                <div class="x-fans left font-simsun">
+                                    粉丝<span>(1511)</span>
+                                </div>
+                                <div class="x-book right font-simsun">
+                                    专辑<span>(211)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="left">
+                                <img src="images/test.jpg" alt="" class="radius-circle">
+                            </a>
+                            <div class="x-r_info">
+                                <a href="" class="x-user" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i></a>
+                                <div class="x-fans left font-simsun">
+                                    粉丝<span>(1511)</span>
+                                </div>
+                                <div class="x-book right font-simsun">
+                                    专辑<span>(211)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="left">
+                                <img src="images/test.jpg" alt="" class="radius-circle">
+                            </a>
+                            <div class="x-r_info">
+                                <a href="" class="x-user" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i><i class="x-icon-user x-icon-2"></i></a>
+                                <div class="x-fans left font-simsun">
+                                    粉丝<span>(1511)</span>
+                                </div>
+                                <div class="x-book right font-simsun">
+                                    专辑<span>(211)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 热门文集 -->
+                <div class="x-r_hot_corpus margin-big-bottom bg-f">
+                    <div class="x-r_title x-icon-corpus">
+                        <a href="" class="x-r_more"></a>
+                        <span></span>
+                    </div>
+                    <ul class="padding x-r_corpus_list padding-default-bootom grid-260 clearfix">
+                        <li>
+                            <a href="" class="">
+                                <img src="images/test.jpg" alt="">
+                                <p>微软雅黑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="images/test.jpg" alt="">
+                                <p>微软雅黑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="images/test.jpg" alt="">
+                                <p>微软雅黑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="images/test.jpg" alt="">
+                                <p>微软雅黑</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /content -->
+
+<!-- footer -->
+<div class="x-footer">
+    <div class="container-1000">
+        <div class="x-foot_copy">
+            <p>
+                <a href="">关于我们</a>
+                <a href="">诚聘英才</a>
+                <a href="">媒体入驻</a>
+                <a href="">广告服务</a>
+                <a href="">微商服务</a>
+            </p>
+            <p>© 2014 小白全攻略生活百科 京ICP备14030910号-1  </p>
+        </div>
+    </div>
+</div><!-- /footer -->
+
+</body>
+</html>

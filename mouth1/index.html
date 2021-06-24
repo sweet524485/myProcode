@@ -1,0 +1,1703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="仇郯郯个人作品展"/>
+<meta name="Description" content="仇郯郯个人作品展，为大家展示本人的项目以及个人简历，把更新更绚的网页效果通过网页展示给用户，大大提示用户体验。同时，通过本站展示自己的专业水平，谢谢！"/>
+<title>仇郯郯个人作品展</title>
+<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/hd_plugs.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script src="js/jsized.snow.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="./js/js/zzsc.js"></script>  
+<script></script>
+<!-- 轮播图 -->
+<script type="text/javascript" src="js/move/raphael-min.js"></script>
+<script type="text/javascript" src="js/move/jquery.easing.js"></script>
+<script src="js/move/iview.js"></script>
+<SCRIPT type="text/javascript" src="js/swfobject.js"></SCRIPT>
+<!-- 预加载 -->
+<script type="text/javascript" src="js/PerfectLoad.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#iview').iView({
+            pauseTime: 1000,
+            directionNav: false,
+            controlNav: true,
+            tooltipY: -25
+        });
+    });
+    //预加载
+    $(function () {
+        $.MyCommon.PageLoading({ sleep: 2000 });
+        createSnow('', 50);
+    })
+    //5秒后让body内容显示
+    $(function(){
+		var i = 2;
+		setInterval(function(){
+			i --;
+			if (i == 0) {
+				$('.body').show();
+			};
+		},1000)
+	})
+</script>
+<script>
+	function charts(statusTxt){
+		var status = statusTxt;
+		$('#Chart').highcharts({
+            chart: {
+                type: status,
+                backgroundColor: '#fff'
+            },
+            title: {
+                text: '技能战斗比'
+            },
+            xAxis: {
+            		labels: {
+	                    y: 20, //y轴刻度往下移动20px
+	                    style: {
+	                        color: '#000',//颜色
+	                        fontSize:'14px'  //字体
+	                    }
+	                },
+					categories: ['html', 'css', 'javascript', 'jquery', 'photoshop','php', 'C#','C语言','xslt','ajax']
+			},
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '我的个人技能统计表（单位：%）'
+                },
+                labels: {
+                    y: 5, //x轴刻度往下移动20px
+                    style: {
+                        color: '#000',//颜色
+                        fontSize:'14px'  //字体
+                    }
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'red'
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -5,
+                verticalAlign: 'top',
+                y: -3,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || '',
+                borderColor: '#CCC',
+                borderWidth: 0,
+                shadow: false
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                        this.series.name +': '+ this.y +'<br/>'+
+                        'Total: '+'100%';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                    }
+                }
+            },
+            plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    color: '#000000',
+	                    connectorColor: '#000000',
+	                    format: '{point.percentage:.1f} %'
+	                }
+	            }
+	        },
+            series: [{
+					    name: '百分比（%）',
+					    data: [{'color':'#F6BD0F','y':95}, 
+                            {'color':'#408373','y':90}, 
+                            {'color':'#8BBA00','y':70}, 
+                            {'color':'#FF8E46','y':80}, 
+                            {'color':'#008E8E','y':70}, 
+                            {'color':'#D64646','y':50}, 
+                            {'color':'#8E468E','y':55},
+                            {'color':'#32CD32','y':45},
+                            {'color':'#34C4B5','y':90}, 
+                            {'color':'#22B14C','y':75}], 
+					 }]
+        });
+	}
+	$(function () {
+		charts('column');
+        $('.Chart-btn').click(function(){
+        	$(this).addClass('Chart-btn_cur').siblings('.Chart-btn').removeClass('Chart-btn_cur');
+        	var stus = $(this).attr('sid');
+        	if(stus == 'line'){
+        		charts('line');
+        	}else if(stus == 'column'){
+        		charts('column');
+        	}else{
+        		charts('pie');
+        	}
+        })
+    });
+</script>
+<!-- 轮播图 -->
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!-- 轮播图 -->
+<link rel="stylesheet" href="css/move/iview.css" />
+<link rel="stylesheet" href="css/move/skin 1/style.css" />
+<!-- 轮播图 -->
+<!-- 弹出层 -->
+<style>
+</style>
+<!--[if IE 6]> 
+<script>
+function correctPNG() 
+{
+for(var i=0; i<document.images.length; i++)
+{
+var img = document.images[i];
+var imgName = img.src.toUpperCase();
+if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+{
+var imgID = (img.id) ? "id='" + img.id + "' " : "";
+var imgClass = (img.className) ? "class='" + img.className + "' " : "";
+var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";
+var imgStyle = "display:inline-block;" + img.style.cssText;
+if (img.align == "left") imgStyle = "float:left;" + imgStyle;
+if (img.align == "right") imgStyle = "float:right;" + imgStyle;
+if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle;
+var strNewHTML = "<span "+ imgID + imgClass + imgTitle + "style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" 
++ "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='scale');\"></span>";
+img.outerHTML = strNewHTML;
+i = i-1;
+}
+}
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="body" style="display:none;">
+	<!-- 网页右边栏 -->
+	<div class="index-left-box">
+		<a href="javascript:void:(0);" target="_blank">
+			<img src="./images/face.png" alt="" class="index-left-qq" />
+		</a>
+		<div class="rightNav">
+			<a href="javascript:void:(0);" style="background:#FF69B4;" class="nav_list1 index-left-nav index-left-nav-cur">主页</a>
+			<a href="javascript:void:(0);" style="background:#32CD32;" class="nav_list2 index-left-nav">项目</a>
+			<a href="javascript:void:(0);" style="background:#7B68EE;" class="nav_list3 index-left-nav">关于我</a>
+			<a href="javascript:void:(0);" style="background:#FF6347;" class="nav_list4 index-left-nav">联系我</a>
+		</div>
+	</div>
+	<!-- 头部 header-->
+	<header>
+		<div class="header-bg">
+			<div class="header-bg-box">
+				<a href="#back-top">
+					<img src="./images/header-show.png" alt="作品展图片" />
+				</a>
+				<a href="javascript:void(0);"  class="header-back-top">
+					<img src="./images/face.png" alt="头部logo图片" />
+				</a>
+				<div class="header-back-top1">
+					<span class="admin">游客，请</span>
+					<span class="login">登录</span>
+				</div>
+				<div class="header-context">
+					本demo在ie9以上的高版本浏览器观赏为宜
+				</div>
+				<div class="header-nav">
+					<a href="javascript:void:(0);" class="nav_list nav_list1 nav_list_cur">主页</a>
+					<a href="javascript:void:(0);" class="nav_list nav_list2">项目</a>
+					<a href="javascript:void:(0);" class="nav_list nav_list3">关于我</a>
+					<a href="javascript:void:(0);" class="nav_list nav_list4">联系我</a>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<!-- 个人index展示 -->
+	<div class="index-bg" style="height:467px;">
+		<div id="iview" style="height:467px;">
+			<div data-iview:image="./images/photos/jingdongapp.png" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="10000">
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+			<div data-iview:image="./images/photos/photo1.gif" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" class="iview-img" data-iview:pausetime="15000">
+				<div class="iview-caption iview-caption-add caption11" data-x="420" data-y="7" data-transition="wipeLeft">
+					<i>Ajax与百度Echart</i>
+				</div>
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+
+			<div data-iview:image="./images/photos/photo2.gif"  data-iview:pausetime="18000">
+				<div class="iview-caption iview-caption-add caption5" data-x="380" data-y="20" data-transition="wipeDown">自主开发动画</div>
+				<div class="iview-caption iview-caption-add caption6" data-x="520" data-y="80" data-transition="wipeUp">HTML5+CSS3+jquery动画</div>
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+
+			<div data-iview:image="./images/photos/video.gif" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="20000">
+				<div class="iview-caption iview-caption-add iview-caption-add caption4" data-x="5" data-y="10" data-width="312" data-transition="fade">职业技能:</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="65" data-transition="wipeLeft" data-easing="easeInOutElastic">可以独立完成京东、淘宝、天猫等大型电商网站的布局，拥有项目和实战经验</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="102" data-transition="wipeLeft" data-easing="easeInOutElastic">会使用Photoshop、firework以及flash做图等软件</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="139" data-transition="wipeLeft" data-easing="easeInOutElastic">熟悉3门web服务器端开发语言—PHP、java、C#</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="176" data-transition="wipeLeft" data-easing="easeInOutElastic">可以开发移动端静态页面（手机端）</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="213" data-transition="wipeLeft" data-easing="easeInOutElastic">熟悉Bootstrap，熟悉Git</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="250" data-transition="wipeLeft" data-easing="easeInOutElastic">熟练使用PS、Fireworks等作图软件操作</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="287" data-transition="wipeLeft" data-easing="easeInOutElastic">对用户体验、交互操作流程有一定了解。</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="324" data-transition="wipeLeft" data-easing="easeInOutElastic">能及时处理网站日常BUG；</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="5" data-y="361" data-transition="wipeLeft" data-easing="easeInOutElastic">熟练掌握Ajax技术，可自己用PS切图、自己布局网页、自己套网页</div>
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+
+			<div data-iview:image="./images/photos/photo3.gif" data-iview:pausetime="30000">
+				<div class="iview-caption iview-caption-add caption6" data-x="450" data-y="70" data-transition="wipeUp">利用C#开发的CS桌面端小游戏</div>
+				<!-- <div class="iview-caption iview-caption-add caption4" data-x="800" data-y="10" data-width="130" data-transition="fade">技能内容：</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="65" data-transition="wipeLeft" data-easing="easeInOutElastic">
+					网站页面在各个主流浏览器中的兼容性调整
+				</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="102" data-transition="wipeLeft" data-easing="easeInOutElastic">能够与交互、设计和后台开发工程师密切配合</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="139" data-transition="wipeLeft" data-easing="easeInOutElastic">跟踪研究W3C标准和最新前端技术，参与部门前端技术规范的开发指定。</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="176" data-transition="wipeLeft" data-easing="easeInOutElastic">根据产品需求完成web前端开发和优化应用，改善用户体验。</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="213" data-transition="wipeLeft" data-easing="easeInOutElastic">编写易读、易维护、高质量、高效率的代码。</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="250" data-transition="wipeLeft" data-easing="easeInOutElastic">使用JS实现JSON、XML格式的数据发送和数据解析和Web前端开发技术。</div>
+				<div class="iview-caption iview-caption-add blackcaption" data-x="800" data-y="287" data-transition="wipeLeft" data-easing="easeInOutElastic">严格遵守团队的代码格式、结构的规定</div> -->
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+
+			<div data-iview:image="./images/photos/photo4.gif" data-iview:pausetime="30000">
+				<div class="iview-caption iview-caption-add caption6" data-x="500" data-y="0" data-transition="wipeRight">利用Ajax与Echarts呈现数据</div>
+				<!-- <div class="iview-caption caption7" data-x="0" data-y="0" data-width="160" data-height="400" data-transition="wipeRight">
+				<h3>工作经历：</h3>
+				A.2014/05 -- 2014/09：学习为期四个月的编程培训，包括：HTML、CSS、HTML5、CSS3、javascript、jQuery、PHP、MySQL、Linux，成绩合格后并获得计算机软件工程师的资格证书。<br><br>
+				B.2014/09 -- 2014/11：就职北京妈妈计划文化传媒有限公司，职务：web前端工程师（php方向）。<br><br>
+				C.2014/09 -- 2015/05：就职北京微普文化传媒有限公司，职务：web前端开发（java方向、移动端）。<br><br>
+				D.2015/05 --&nbsp;至今：就职北京东方华数信息技术有限公司，职务：web前端开发（asp.net开发方面）。</div> -->
+				<div class="iview-bottom">
+					
+				</div>
+			</div>
+
+			<div data-iview:image="./images/photos/photo5.gif" data-iview:pausetime="15000">
+				<div class="iview-caption iview-caption-add caption5" data-x="5" data-y="10" data-transition="wipeLeft">C语言for循环</div>
+				<div class="iview-caption iview-caption-add caption6" data-x="5" data-y="65" data-transition="wipeRight">联系我吧</div>
+				<div class="iview-caption iview-caption-add caption6" data-x="5" data-y="115" data-transition="wipeRight">QQ：774754551</div>
+				<div class="iview-caption iview-caption-add caption6" data-x="5" data-y="165" data-transition="wipeRight">电话：13552129631</div>
+				<div class="iview-bottom">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="jd">
+		<div class="content_top">
+			<div class="wrap">
+				<div class="section_group">
+					<div class="hang">
+						<div class="show">
+							<a href="fullpage/index.html" target="_blank">
+								<img src="./images/nuomi.png" alt="">
+								<p style="top: 192.985px;" class="b">
+									fullpage动画版
+								</p>
+								<p class="a">
+								</p>
+							</a>
+						</div>
+						<div class="show">
+							<a href="iphoneSwiper/index.html" target="_blank">
+								<img src="./images/suning.png" alt="">
+								<p style="top: 192.985px;" class="b">
+									swiper微场景
+								</p>
+								<p class="a">
+								</p>
+							</a>
+						</div>
+						<div class="show">
+							<a href="http://www.591ebooks.com/lib.aspx" target="_blank">
+								<img src="./images/dangdang.png" alt="">
+								<p style="top: 192.985px;" class="b">
+									社管直通车
+								</p>
+								<p class="a">
+								</p>
+							</a>
+						</div>
+						<div class="show">
+							<a href="iphoneAgin/index.html" target="_blank">
+								<img src="./images/tianmao.png" alt="">
+								<p style="top: 192.985px;" class="b">
+									手机APP框架
+								</p>
+								<p class="a">
+								</p>
+							</a>
+						</div>
+						<div class="show">
+							<a href="iphoneMeituan/home.html" target="_blank">
+								<img src="./images/cms.png" alt="">
+								<p style="top: 192.985px;" class="b">
+									美团APP
+								</p>
+								<p class="a">
+								</p>
+							</a>
+						</div>
+					</div>
+					<br class="clear-both"/>
+				</div>
+			</div>
+		</div>
+		<div id="zzsc">
+			<canvas height="400" width="700" id="canvas">
+			</canvas>
+		</div>
+	</div>
+	<!-- 项目标题一 前端项目之“PC网页端”-->
+	<div class="title-bg" id="back-title-bg" style="background:#FF754C;margin-top:-10px;">
+		<div class="title-middle-box">
+			<i class="thank-text thank-text1">
+				欢迎来观赏站长“仇郯郯”的个人作品展，来观看我的小主人作品吧O(∩_∩)O...
+			</i>
+			<span class="title-left title-left1">
+				36期学员仇郯郯：MY PROJECTS(前端项目之“PC网页端”)
+			</span>
+			<span class="title-right title-right1">
+				<marquee  behavior=scroll scrollamount=6 vspace=5 onmouseover=this.stop() onmouseout=this.start()> 
+					感谢后盾网所有老师及同学们 ────── 
+				</marquee>
+			</span>
+		</div>
+	</div>	
+	<div class="content-first-bg">
+		<div class="content-first-con">
+			<div class="content-list">
+				<img src="./images/fullpage.jpg" alt="" class="content-logo" />
+				<a href="fullpage/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						fullpage动画版
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/jiguang.png" alt="" class="content-logo" />
+				<a href="laserLab/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						激光实验室官网
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/lvyou.png" alt="" class="content-logo" />
+				<a href="lvyou/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						某旅游网站官网
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list" style="margin-right:0;">
+				<img src="./images/zhixi.png" alt="" class="content-logo" />
+				<a href="zhixi/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						知兮外文系统-首页
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/huashu.jpg" alt="" class="content-logo" />
+				<a href="http://www.dfhsbj.net/HUASHU/Default.aspx#" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						东方华数信息技术有限公司
+					</p>
+					<span class="content-click-me" style="left:20px;">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/holp.gif" alt="" style="top:105px;" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f00.png" alt="" class="content-logo" />
+				<a href="http://www.591ebooks.com/lib.aspx" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						直通车文献系统
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f01.png" alt="" class="content-logo" />
+				<a href="xiaoBai/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						小白生活百科
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list" style="margin-right:0;">
+				<img src="./images/f02.png" alt="" class="content-logo" />
+				<a href="tianyaTeam/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						模拟滚屏团队网
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f1.png" alt="" class="content-logo" />
+				<a href="yihaodian/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仿“1号店”
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f2.png" alt="" class="content-logo" />
+				<a href="tianmao/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仿“天猫商城”
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/f3.png" alt="" class="content-logo" />
+				<a href="taobao/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仿“淘宝网”
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list" style="margin-right:0;">
+				<img src="./images/f4.png" alt="" class="content-logo"/>
+				<a href="jd/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						仿“京东商城”
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<!-- <div class="content-list">
+				<img src="./images/f5.png" alt="" class="content-logo" />
+				<a href="sanliuling/index.html" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						自己设计“天涯问答”
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" />
+				</a>
+			</div>
+			<div class="content-list">
+				<img src="./images/swap.png" alt="" class="content-logo" />
+				<a href="http://file.591ebooks.com/ecp/Default.aspx" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						社馆直通车-交换中心
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/holp.gif" alt="" style="top:105px;" />
+				</a>
+			</div> -->
+			<!-- <div class="content-list" style="margin-right:0;">
+				<img src="./images/loading2.gif" alt="" class="content-logo" />
+				<a href="javascript:void(0)" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						主人正忙着呢~~~
+					</p>
+					<span class="content-click-me">
+						还没上传哦，期待O(∩_∩)O
+					</span>
+					<img src="./images/holp.gif" alt="" style="top:105px;" />
+				</a>
+			</div> -->
+			<!-- <div class="content-list" style="margin-right:0;">
+				<img src="./images/loading.gif" alt="" class="content-logo" />
+				<a href="javascript:void(0)" class="content-list-con" target="_blank">
+					<p class="content-gaizi-title">
+						主人正忙着呢~~~
+					</p>
+					<span class="content-click-me" style="left:20px;">
+						还没上传哦，期待O(∩_∩)O
+					</span>
+					<img src="./images/holp.gif" alt="" style="top:105px;" />
+				</a>
+			</div> -->
+			<span class="clear-both"></span>
+		</div>
+	</div>
+	<!-- 项目标题二 前端项目之“移动手机端”-->
+	<div class="title-bg"  style="background:#FFA400;">
+		<div class="title-middle-box">
+			<i class="thank-text thank-text2">
+				接下来观赏主人的“移动端”，让主人带你踏入移动互联网的世界…
+			</i>
+			<span class="title-left title-left2">
+				36期学员仇郯郯：MY PROJECTS(前端项目之“移动端”)
+			</span>
+			<span class="title-right title-right2">
+				<marquee  behavior=scroll scrollamount=7 vspace=5 onmouseover=this.stop() onmouseout=this.start()> 
+					感谢后盾网所有老师及同学们 ────── 
+				</marquee>
+			</span>
+		</div>
+	</div>
+	<div class="content-php-bg">
+		<div class="content-php-con">
+			<div class="content-php-list" style="margin-left:1px;">
+				<img src="./images/iphoneAgin.gif" alt="" class="content-logo">
+				<a href="iphoneAgin/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						仇郯郯APP框架（绿色版）
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list">
+				<img src="./images/iphoneMeituan.gif" alt="" class="content-logo">
+				<a href="iphoneMeituan/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						防手机美团APP
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list">
+				<img src="./images/iphoneJd.gif" alt="" class="content-logo">
+				<a href="iphoneJd/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						手机京东APP
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list" style="margin-right:0px;">
+				<img src="./images/iphoneTaobao.gif" alt="" class="content-logo">
+				<a href="iphoneTaobao/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						手机淘宝APP
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list">
+				<img src="./images/iphoneSwiper.gif" alt="" class="content-logo">
+				<a href="iphoneSwiper/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						移动端框架之swiper
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list" style="margin-left:1px;">
+				<img src="./images/iphone2.gif" alt="" class="content-logo">
+				<a href="iphone2/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						陆金所宣传页
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list">
+				<img src="./images/iphoneCommon.gif" alt="" class="content-logo">
+				<a href="iphoneCommon/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						APP、微信移动端框架
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<div class="content-php-list" style="margin-right:0px;">
+				<img src="./images/iphoneMui.gif" alt="" class="content-logo" />
+				<a href="iphoneMui/index.html" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						郯式mui移动端框架
+					</p>
+					<span class="content-click-me">
+						点开看看哦~(*^__^*)~
+					</span>
+					<img src="./images/content-success.gif" alt="" style="top:105px;">
+				</a>
+			</div>
+			<!-- <div class="content-php-list">
+				<img src="./images/loading5.gif" alt="" class="content-logo" />
+				<a href="javascript:void(0)" class="content-php-context" target="_blank">
+					<p class="content-gaizi-title">
+						主人正忙着呢~~~
+					</p>
+					<span class="content-click-me" style="left:20px;">
+						还没上传哦，期待O(∩_∩)O
+					</span>
+					<img src="./images/holp.gif" alt="" style="top:105px;" />
+				</a>
+			</div> -->
+			<span class="clear-both"></span>
+		</div>
+	</div>
+	<!-- 项目标题三 工作中的项目展示-->
+	<div class="title-bg" style="background:#8848CC;">
+		<div class="title-middle-box">
+			<i class="thank-text thank-text3">
+				接下来主人的“PC网页端”经典案例项目，会不会让你眼前一亮呢，拭目以待^O^ ……
+			</i>
+			<span class="title-left title-left3">
+				36期学员仇郯郯：MY PROJECTS(经典案例项目之“PC网页端”)
+			</span>
+			<span class="title-right title-right3">
+				<marquee  behavior=scroll scrollamount=8 vspace=5 onmouseover=this.stop() onmouseout=this.start()> 
+					感谢后盾网所有老师及同学们 ────── 
+				</marquee>
+			</span>
+		</div>
+	</div>
+	<div class="content-work-bg">
+		<div class="content-work-con">
+			<div class="content-work-list">
+				<img src="./images/wish.jpg" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="wish/index.php" target="_blank">
+						<p class="content-gaizi-title">
+							php许愿墙
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list">
+				<img src="./images/szfw.jpg" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="http://101.201.29.206:8010/default.aspx?siteID=1" target="_blank">
+						<p class="content-gaizi-title">
+							数字文献服务平台
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list">
+				<img src="./images/zhixiseach.jpg" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="http://101.201.29.206:8081/default.aspx" target="_blank">
+						<p class="content-gaizi-title">
+							外文科技服务平台（知兮）
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<!-- 福光百科网站 -->
+			<div class="content-work-list" style="margin-right:0;">
+				<img src="./images/fg1.png" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="http://www.fgav.com/index.html" target="_blank">
+						<p class="content-gaizi-title">
+							福光百科CMS-首页
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list">
+				<img src="./images/f00.png" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="http://www.591ebooks.com/lib.aspx" target="_blank">
+						<p class="content-gaizi-title">
+							社馆直通车-文献管理系统
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list">
+				<img src="./images/index-photo.png" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="photoshop/index.html" target="_blank">
+						<p class="content-gaizi-title">
+							小白摄影网站
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list">
+				<img src="./images/mr1.png" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="huazhuang/index.html" target="_blank">
+						<p class="content-gaizi-title">
+							定制化妆品网站
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="content-work-list" style="margin-right:0px;">
+				<img src="./images/f02.png" alt="" class="content-logo" />
+				<div class="content-work-context animated">
+					<a href="tianyaTeam/index.html" target="_blank">
+						<p class="content-gaizi-title">
+							模拟滚屏团队网
+						</p>
+						<span class="content-click-me">
+							点开看看哦~(*^__^*)~
+						</span>
+						<img src="./images/content-success.gif" alt="" />
+					</a>
+				</div>
+			</div>
+			<!-- 。。。。。。。。。 -->
+			<span class="clear-both"></span>
+		</div>
+	</div>
+	<!-- 项目标题四 PHP项目展示-->
+	<div class="title-bg" style="background:#FF69B4;">
+		<div class="title-middle-box">
+			<i class="thank-text thank-text4">
+				主人接下的图表展示，让您更全面了解主人的能力~O(∩_∩)O~
+			</i>
+			<span class="title-left title-left4">
+				36期学员仇郯郯：技能战斗力（图表）
+			</span>
+			<span class="title-right title-right4">
+				<marquee  behavior=scroll scrollamount=9 vspace=5 onmouseover=this.stop() onmouseout=this.start()> 
+					感谢后盾网所有老师及同学们 ────── 
+				</marquee>
+			</span>
+		</div>
+	</div>
+	<!-- 3d轮播图 -->
+	<div id="bei">   
+    	<div class="q-UserControl-lineChart">
+    		<div class="Chart-btnBox">
+    			<div class="Chart-btn Chart-btn2 Chart-btn_cur" sid="column">
+    				查看柱状图
+    			</div>
+    			<div class="Chart-btn Chart-btn1" sid="line">
+    				查看折线图
+    			</div>
+    			<div class="Chart-btn" sid="pie" style="display:none;">
+    				查看饼状图
+    			</div>
+    		</div>
+    		<div id="Chart">
+    			
+    		</div>
+    	</div>
+	</div>
+	<!-- 项目标题五 PHP项目展示-->
+	<div class="title-bg" id="about-me" style="background:#9DB903;">
+		<div class="title-middle-box">
+			<i class="thank-text thank-text5">
+				来欣赏主人用table表格制作的个人简历吧，O(∩_∩)O哈哈~
+			</i>
+			<span class="title-left title-left5">
+				36期学员仇郯郯：我的个人简历（table表格版）
+			</span>
+			<span class="title-right title-right5">
+				<marquee  behavior=scroll scrollamount=10 vspace=5 onmouseover=this.stop() onmouseout=this.start()> 
+					感谢后盾网所有老师及同学们 ────── 
+				</marquee>
+			</span>
+		</div>
+	</div>
+	<div class="content-myself-bg">
+		<div class="content-myself-con">
+			<div class="jlbj">
+				<table border="2" width="974"  align="center" class="table" >
+					<!-- 第一行 -->
+					<tr height="80">
+						<td colspan="6"  bgcolor="#fff">
+							<center>
+								<img src="./images/gerenjianli.png" />
+							</center>
+						</td>
+					</tr>
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/jibenxinxi.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<!-- 第二行 -->	
+					<tr height="40" >
+						<td width="350">
+							<span class="twoWords">
+								姓&nbsp;名：
+							</span>
+							<span class="rightWords">
+								仇郯郯
+							</span>
+						</td>
+						<td width="420">
+							<span class="fourWords">
+								出生年月：
+							</span>
+							<span class="rightWords">
+								1989.7.6
+							</span>
+						</td>
+						<td rowspan="6">
+							<center>
+								<a href="http://user.qzone.qq.com/774754551/infocenter?ptsig=meVUHQ7xvO6EUKzkqtoP7h3rPo7xWA1hZQINUSjdcb8_" target="_black">
+									<img src="./images/index-mj.png" width="200" class="myLogo">
+								</a>
+							</center>
+						</td>
+					</tr>
+					<!-- 第三行 -->	
+					<tr height="40">
+						<td>
+							<span class="twoWords">
+								性&nbsp;别：
+							</span>
+							<span class="rightWords">
+								男
+							</span>
+						</td>
+						<td>
+							<span class="fourWords">
+								工作经验：
+							</span>
+							<span class="rightWords">
+								2.5年
+							</span>
+						</td>
+					</tr>
+					<!-- 第四行 -->	
+					<tr height="40">
+						<td>
+							<span class="twoWords">
+								学&nbsp;历：
+							</span>
+							<span class="rightWords">
+								本科
+							</span>
+						</td>
+						<td>
+							<span class="fourWords">
+								毕业院校：
+							</span>
+							<span class="rightWords">
+								北京外国语大学
+							</span>
+						</td>
+					</tr>
+					<!-- 第五行 -->	
+					<tr height="40">
+						<td>
+							<span class="twoWords">
+								专&nbsp;业：
+							</span>
+							<span class="rightWords">
+								计算机科学与技术
+							</span>
+						</td>
+						<td width="180">
+							<span class="fourWords">
+								期望薪资：
+							</span>
+							<span class="rightWords">
+								13K
+							</span>
+						</td>
+					</tr>
+					<!-- 第六行 -->	
+					<tr height="40">
+						<td>
+							<span class="twoWords">
+								职&nbsp;务：
+							</span>
+							<span class="rightWords">
+								web前端工程师
+							</span>
+						</td>
+						<td width="180">
+							<span class="fourWords">
+								联系邮箱：
+							</span>
+							<span class="rightWords">
+								77475451@qq.com
+							</span>
+						</td>
+					</tr>
+					<!-- 第七行 -->	
+					<tr height="40">
+						<td>
+							<span class="twoWords">
+								住&nbsp;址：
+							</span>
+							<span class="rightWords">
+								北京市怀柔区
+							</span>
+						</td>
+						<td>
+							<span class="fourWords">
+								联系方式：
+							</span>
+							<span class="rightWords">
+								13552129631
+							</span>
+						</td>
+					</tr>
+					<!-- 第八行 -->	
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/jiaoyujingli.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<!-- 第九行	 -->
+					<tr>
+						<td colspan="5" align="top" class="font-con">
+							<div class="font-conList">
+								<span class="font-conLeft">
+									A.2010/09 -- 2013/07：
+								</span>
+								<span class="font-conRight">
+									山东华宇工学院----机械工程系（模具设计与制造）
+								</span>
+							</div>
+							<div class="font-conList">
+								<span class="font-conLeft">
+									B.2013/11 -- 2014/05：
+								</span>
+								<span class="font-conRight">
+									北京后盾网----参加后盾网四个月的编程培训，包括：HTML、CSS、javascript、jQuery、PS、PHP、Linux，成绩合格后并获得计算机软件工程师的资格证书。
+								</span>
+							</div>
+							<div class="font-conList">
+								<span class="font-conLeft">
+									C.2016/03 -- 2018/07：
+								</span>
+								<span class="font-conRight">
+									北京外国语大学----计算机科学与技术（专转本）
+								</span>
+							</div>
+						</td>
+					</tr>
+					<!-- 第八行 -->	
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/gongzuojingli.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<!-- 第九行	 -->
+					<tr>
+						<td colspan="5" align="top" class="font-con">
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									A.2015.05 -- 至今：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										北京东方华数信息技术有限公司
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司简单描述：</span>
+										<span class="font-conRighDetailR">
+											北京东方华数信息技术有限公司成立于2014年，致力于成为行业领先的文献服务整体解决方案提供商。我们的使命是通过提供一流的软件、资源与服务，帮助客户构建专业化、全球化、知识化、个性化的文献服务体系。
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司性质：</span>
+										<span class="font-conRighDetailR">
+											私营．民营企业
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司规模：</span>
+										<span class="font-conRighDetailR">
+											200人以下
+										</span>
+									</div>
+									<div class="font-conRighSeT">
+										web前端工程师 /技术部
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">汇报对象：</span>
+										<span class="font-conRighDetailR">
+											技术部经理
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发环境：</span>
+										<span class="font-conRighDetailR">
+											C#后台语言，ASP.NET软件开发
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">工作职责和业绩：</span>
+										<span class="font-conRighDetailR">
+											①.负责参与项目研发；②.web、H5页面制作；③.使用Ajax与后台开发人员协同配合,套网页，调用后台方法；④.配合测试人员完成软件测试；⑤.写软件使用文档。
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">离职/换岗原因：</span>
+										<span class="font-conRighDetailR">
+											女朋友学完php，就职于北京市区，本人搬离北京怀柔郊区。
+										</span>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									2014.11-2015.05：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										北京微普文化传媒有限公司
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司简单描述：</span>
+										<span class="font-conRighDetailR">
+											微普成立于2014年，致力于打造国内最好的生活百科类自媒体平台。我们拥有国内最大的百科类视频媒体制作团队,经过近二十年的努力，“百科全书”已形成了内容涵盖健康、健身、舞蹈、育儿、太极拳、传统武术、理 财、职业技能、书画、儿童、休闲、纪实、时尚等各方面的30 多个大系列逾万小时的视频节目资源库，成为中国本土拥有丰厚自有版权、实力突出的音像公司，节目畅销中国，远销至世界各地。凭借大批优秀节目,获得行业多 项殊荣和奖励，并获国际音像博览会多个奖项及文化部海外出口奖励等荣誉。
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司性质：</span>
+										<span class="font-conRighDetailR">
+											私营．民营企业
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司规模：</span>
+										<span class="font-conRighDetailR">
+											200人以下
+										</span>
+									</div>
+									<div class="font-conRighSeT">
+										web前端工程师 /技术部
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">汇报对象：</span>
+										<span class="font-conRighDetailR">
+											技术部经理
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发环境：</span>
+										<span class="font-conRighDetailR">
+											java为后台语言，jsp开发
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">工作职责和业绩：</span>
+										<span class="font-conRighDetailR">
+											①.负责参与项目研发；②.PC端网页切图以及html5网页开发，移动端页面布局；③.使用Ajax与后台开发人员协同配合，套网页；④.配合测试人员完成BUG修改
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">离职/换岗原因：</span>
+										<span class="font-conRighDetailR">
+											公司线上业务关停。
+										</span>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									2014.05-2014.11：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										北京妈妈计划文化传媒有限公司
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司简单描述：</span>
+										<span class="font-conRighDetailR">
+											妈妈计划网站成立于2014年5月14日，是年轻妈妈汲取高效纯净的育儿资讯和知识最靠谱的母婴网站；是关于妈妈社交类的母婴交流网站；是一个专为妈妈宝 宝提供母婴用品免费试用平台。 妈妈计划专门服务于1～6岁宝宝妈妈的综合性互联网平台，专注于为妈妈提供更精准、贴心的信息与服务，打通传统互联网与移动互联网，web2.0+App的互联网主流模式将为新一代的妈妈们搭建一个温馨而实用的平台。
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司性质：</span>
+										<span class="font-conRighDetailR">
+											私营．民营企业
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">公司规模：</span>
+										<span class="font-conRighDetailR">
+											200人以下
+										</span>
+									</div>
+									<div class="font-conRighSeT">
+										web前端工程师 /技术部
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">汇报对象：</span>
+										<span class="font-conRighDetailR">
+											技术部经理
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发环境：</span>
+										<span class="font-conRighDetailR">
+											php为后台语言，lamp环境下的php开发
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">工作职责和业绩：</span>
+										<span class="font-conRighDetailR">
+											①.PC端网页切图以及html5网页开发；②.移动端页面布局；③.配合测试人员完成BUG修改
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">离职/换岗原因：</span>
+										<span class="font-conRighDetailR">
+											公司线上业务关停。
+										</span>
+									</div>
+								</span>
+							</div>
+
+						</td>
+					</tr>
+					<!-- 项目经验 -->	
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/xiangmujingyan.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5" align="top" class="font-con">
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									软件系统项目：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										社管直通车-文献服务系统（<a class="font-conRighHref" href="http://www.591ebooks.com/lib.aspx" target="_blank">http://www.591ebooks.com/lib.aspx</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、webstrom、Photoshop、Fireworks、visual studi0 2010
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											文献服务系统、数字图书发行平台 
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述(与asp.net软件开发人员的配合)：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.负责切图生成html页面、Bug修复及浏览器兼容的解
+										</div>
+										<div class="font-conRighDetailList">
+											2.使用photoshop切图、修图、排版
+										</div>
+										<div class="font-conRighDetailList">
+											3.负责使用JS、JQuery完成界面交互、功能模块的开发
+										</div>
+										<div class="font-conRighDetailList">
+											4.使用ajax交互，与后台人员协同配合完成项目，部分网页自己从后台取数据展现
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									H5网页项目：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										仇郯郯个人主页（<a class="font-conRighHref" href="http://www.qiutantan.com/" target="_blank">http://www.qiutantan.com</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、webstrom、Photoshop、Fireworks、Flash、FSCapture
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											html5典型网站代表、炫酷网站、动感十足 
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述（自己设计、开发与维护）：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.网页UI设计、网页切图、前台登录注册代码编写
+										</div>
+										<div class="font-conRighDetailList">
+											2.负责切图生成html页面、Bug修复以及UI设计的美化
+										</div>
+										<div class="font-conRighDetailList">
+											3.负责使用JS、JQuery完成界面交互、功能模块的开发
+										</div>
+										<div class="font-conRighDetailList">
+											4.网站的维护与更新，网站的优化与持续开发，网站数据包的上传
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									移动app项目：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										防京东手机APP（<a class="font-conRighHref" href="iphoneJd/index.html" target="_blank">http://www.qiumingjie.com/iphoneJd/index.html</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、iscroll4框架、Photoshop、Fireworks、Flash、FSCapture
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											手机APP开发的代表 、兼容所有移动端设备 
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述（自己切图、设计与开发）：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.网页切图、开发与设计，调整网页的兼容性
+										</div>
+										<div class="font-conRighDetailList">
+											2.调配各种移动设备的兼容性，完全做到兼容所有移动设备 
+										</div>
+										<div class="font-conRighDetailList">
+											3.负责使用JS、JQuery、iscroll框架完成界面交互、手机APP开发
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									移动端滚屏网站：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										理财APP宣传页（<a class="font-conRighHref" href="iphone2/index.html" target="_blank">http://www.qiutantan.com/iphone2/index.html</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、zepto.js框架、Photoshop、Fireworks、Flash、FSCapture
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											手机APP滚屏网站、zepto.js框架的典型案列
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述（自己切图、设计与开发）：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.网页切图、开发与设计，调整网页的兼容性
+										</div>
+										<div class="font-conRighDetailList">
+											2.调配各种移动设备的兼容性，做到兼容大多数移动设备 
+										</div>
+										<div class="font-conRighDetailList">
+											3.负责使用JS、JQuery、iscroll框架完成界面交互、手机APP开发
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									全屏滚动网站：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										练习团队网站（<a class="font-conRighHref" href="tianyaTeam/index.html" target="_blank">http://www.qiutantan.com/tianyaTeam/index.html</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、fullpage框架、Photoshop、Fireworks、FSCapture
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											全屏滚动网站代表、html5滚屏网站
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述（自己切图、设计与开发）：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.网页切图、开发与设计，调整网页的兼容性
+										</div>
+										<div class="font-conRighDetailList">
+											2.灵活运用fullpage框架，完成滚屏网站的开发
+										</div>
+										<div class="font-conRighDetailList">
+											3.使用JS、JQuery完成界面效果的实现
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="font-conList" style="padding-top:10px;padding-bottom:10px;">
+								<span class="font-conLeft" style="width:158px;">
+									企业官方网站：
+								</span>
+								<span class="font-conRight" style="width:756px;">
+									<div class="font-conRighTitle">
+										北京东方华数官网（<a class="font-conRighHref" href="http://www.dfhsbj.net/HUASHU/default.aspx" target="_blank">http://www.dfhsbj.net/HUASHU/default.aspx</a>）
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">开发工具：</span>
+										<span class="font-conRighDetailR">
+											sublime Text 、jquery框架、Photoshop、Fireworks、FSCapture
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL"> 项目描述：</span>
+										<span class="font-conRighDetailR">
+											 企业CMS的典型代表网站
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<span class="font-conRighDetailL">
+											责任描述：
+										</span>
+									</div>
+									<div class="font-conRighDetail">
+										<div class="font-conRighDetailList">
+											1.网页切图、开发与设计，调整网页的兼容性
+										</div>
+										<div class="font-conRighDetailList">
+											2.灵活运用jquery框架，完成网页效果的开发
+										</div>
+										<div class="font-conRighDetailList">
+											3.使用ajax调出后台数据、以及配合测试人员完成BUG的修改
+										</div>
+									</div>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<!-- 第十行	 -->
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/zhuanyejineng.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<!-- 第十一行 -->	
+					<tr>
+						<td colspan="5" class="font-con">
+							<div class="table-zyjnList">
+								1. 可以独立完成京东、淘宝、天猫等大型电商网站PC端的网站布局，丰富的项目经验，分别配合过lamp环境下的PHP开发、Java作为后台语言的jsp开发以及C#为后台语言的.NET软件开发，拥有有自己项目展示网站，项目详细展示于本网站。
+							</div>
+							<div class="table-zyjnList">
+								2.熟练掌握Ajax技术，本人可自己用PS切图、自己布局网页、根据后台返回的json类型数据自己调数据套页面。 后台开发程序猿的狂热粉丝，嘻嘻……
+							</div>
+							<div class="table-zyjnList">
+								3.热衷于移动端WEB-APP开发，这辈子开发最成功的事莫过于完善了iscroll框架，运用我完善好的这个框架，可以兼容所有的移动端设备屏幕,只需一套css,兼容所有的移动端设备，做出完美的响应式布局，测试网站：（<a class="font-conRighHref" href="http://qiumingjie.com/iphoneJd/index.html">http://qiumingjie.com/iphoneJd/index.html</a>）
+							</div>
+							<div class="table-zyjnList">
+								4.对于后台语言的掌握度，让我想想~ing…<br/>
+								首先，参加过后盾网的3个多月PHP培训，曾经还使用php的框架WordPress搞出一个化妆品网站，算是入门了吧；其次吧，为了参加升本考试，不得不学习C语言，哎，对于“指针”概念可算是一辈子忘不了；最后，在东方华数公司期间爱上了ASP.NET开发，通过研究C#，更加深刻理解了“面向对象”以及MVC模式的真理所在。<br/>
+							</div>
+							<div class="table-zyjnList">
+								5.网页动画效果的探索者，不仅研究过Flash动画，喜欢用Flash做些别出心裁的东西玩玩，而且更是HTML5和CSS3的狂热爱好者。沉浸于动画的海洋，成就感油然而生。O(∩_∩)O~<br/>
+							</div>
+							<div class="table-zyjnList">
+								6.至于前端基础嘛，还是有必要详细说道下的，毕竟干这一行的，嘿嘿 …<br/>
+								(1)、html/css要说一点，本人代码书写规范，可以兼容到IE8，IE6估计就没多少人用了吧，连淘宝都放弃了IE6，悲哀呀，不过还好，本人也会hack技术，保证兼容好IE。<br/>
+								(2)、提到JS不得不说下javascript与jquery，说我精通javascript是不现实的，但基本语法、看懂JavaScript以及手写一些小效果是没问题的。还是jquery比较常用，本人也利用jquery开发过许多小插件。比如：轮播图、进度条、五星评分、自定义下拉框…<br/>
+								(3)、对于HTML5和CSS3,自我感觉掌握度还行吧，网页上常见的动画效果，不管是H5加C3做的，还是通过JS做的，本人都想办法给您实现了。<br/>
+								(4)、前端框架有所研究，自学过bootstrap、jQuery Mobile、zepto.js以及fullpage。同时，对于传说中的“Angular JS”也有所了解。<br/>
+							</div>
+							<div class="table-zyjnList">
+								7.网页设计的跃跃欲试者，会使用photoshop以及firework等Adobe做图软件切图、修图、抠图，也可以使用flash软件做个flash动画哦…<br/>
+							</div>
+						</td>
+					</tr>
+					<!-- 第十二行	 -->
+					<tr height="50" bgcolor="#ECFBFF">
+						<td colspan="5">
+							<img src="./images/ziwopingjia.png" style="margin-left:30px;" />
+						</td>
+					</tr>
+					<!-- 第十三行	 -->
+					<tr>
+						<td colspan="5" class="font-con">
+							<div class="table-zyjnList">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先要感谢您还能不厌其烦的看到这里，鄙人倍感欣慰（^_^），多余的废话就不多说了，就说下可以录用本人的几点原因吧，嘿嘿...<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，鄙人有自我完善的一套iscroll框架，有了这个法宝，所有APP开发、微信开发、zepto.js全屏滚动网页开发，只需要写一套CSS，请记住！！！只需要写一套CSS，可以兼容所有移动端设备，即便是京东、淘宝他们的APP都做不到完全自适应的。这是我自创的新思想，用了我，也把这套思想传播到了彼公司。大大提高移动端开发效率。<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其次，鄙人有计算机编程语言基础，对MVC设计模式、工厂设计模式都有一定深刻理解，会使用Ajax调用后台数据展示前台页面，您只需要给我一个后台数据接口，告诉我传递什么值后台，我就可以自己开发的网页，自己套用，展示给前台页面显示。<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后，鄙人还是一个爱学习、爱钻研的热血青年，有点自夸了(害羞)，呵呵...十八般武艺，咱不是每样都精通，但技不压身，俺还对设计有所涉及，会使用Firework切图、会使用photoshop切图、修图、抠图、截图以及用Flash做一些小动画、修改下Flash插件。<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看了这样一份简历，鄙人贵公司需要的人才吗，渴望贵公司给鄙人一个平台，愿与贵公司同吃苦、共创辉煌佳绩。同时祝贵公司生意兴隆、年年有余。<br/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 关于我 -->
+	<div style="width:100%;height:527px;background:#1CA989;padding-bottom:50px;">
+		<div style="background:#32CD32;height:89px;width:100%;">
+			<div class="fengexian"></div>
+		</div>
+		<div class="bottom-move">
+			<div class="flashBox">
+				<div id="loader">Loading...</div>
+				<SCRIPT type=text/javascript>
+				var so = new SWFObject("flash/viewer.swf", "sotester", "990", "480", "3", "#34C4B5");
+				so.addParam("wmode", "opaque");
+				so.addParam("flashvars", "&xmlLocation=images/nifengla.xml");
+				so.write("loader");
+				</SCRIPT>
+			</div>
+			<div class="lbbj"></div>
+		</div>
+	</div>
+	<!-- 网站底部 项目收尾 联系我-->
+	<div class="bottom-bg" style="background:#408373;">
+		<div class="bottom-middle-box">
+			<!-- <div class="bottom-top-box">
+				<a style="margin-left:;" href="javascript:void(0);" class="bottom-nav nav_list1 bottom-nav1 bottom-nav-cur">我的地盘</a>
+				<a href="javascript:void(0);" class="bottom-nav nav_list2 bottom-nav2">我的项目</a>
+				<a href="javascript:void(0);" class="bottom-nav nav_list3 bottom-nav3">关于我自己</a>
+				<a href="javascript:void(0);" class="bottom-nav nav_list4 bottom-nav4">快联系我吧</a>
+				<a href="javascript:void(0);" class="nav_list1 back-top">
+					<img src="./images/backTop.png" alt="" />
+				</a>
+				<audio src="./images/know1.mp3" controls="controls" autoplay="autoplay" class="new_audio" class="audio" style="position: absolute;top:20px;left:0px;width:250px;height:35px;">
+					您的浏览器该升级了……
+				</audio>
+			</div> -->
+			<!-- 底部的联系我 -->
+			<div class="bottom-bg-box" id="back-bottom">
+				<audio src="./images/know1.mp3" controls="controls" autoplay="autoplay" class="new_audio" class="audio" style="position: absolute;top:26px;left:9px;width:600px;height:35px;">
+					您的浏览器该升级了……
+				</audio>
+				<span class="bottom-iphone">
+					手机：13552129631
+				</span>
+				<span class="bottom-view">
+					京ICP备15066967号
+				</span>
+				<a href="javascript:void(0);" class="nav_list1 back-top">
+					<img src="./images/backTop.png" alt="" />
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 弹出层 -->
+<div class="alert">
+	<div class="q-alert-cover"></div>
+	<div class="q-alert_body">
+		<div class="q-alert_centerBox">
+			<div class="q-alert-title_container">
+				<div class="q-alert-title">仇郯郯个人网站登录</div>
+				<span class="q-alert-del">
+					<span>×</span>
+				</span>
+			</div>
+			<!-- 登录 -->
+			<div class="login-body newLogin">
+				<input type="hidden" value="true" class="loginHidden" />
+				<div class="loginList">
+					<div class="loginList-name">
+						<span class="login-redStar">*</span>用户名：
+					</div>
+					<input type="text" class="loginList-input loginUserName" placeholder="默认用户名：仇郯郯"/>
+					<div class="loginList-notice loginUserError"><!-- 用户名不能为空 --></div>
+				</div>
+				<div class="loginList">
+					<div class="loginList-name">
+						<span class="login-redStar">*</span>密码：
+					</div>
+					<input type="password" class="loginList-input loginPass" placeholder="默认密码：123456"/>
+					<div class="loginList-notice loginPassError"><!-- 密码不能为空 --></div>
+				</div>
+				<div class="submitBox">
+					<input type="button" value="登录" class="alert-btn alert-login" />
+				</div>
+				<div class="loginList-insert">
+					<div class="loginList-left">
+						<a href="javascript:void(0);" class="forgetPass">忘记密码？</a>
+					</div>
+					<div class="loginList-right">
+						<a href="javascript:void(0);" class="commomText register">用户注册</a>
+					</div>
+				</div>
+			</div>
+			<!-- 注册 -->
+			<div class="login-body newRegister" style="display:none;">
+				<input type="hidden" value="true" class="registerHidden" />
+				<div class="loginList">
+					<div class="loginList-name">
+						<span class="login-redStar">*</span>用户名：
+					</div>
+					<input type="text" class="loginList-input registerUser" />
+					<div class="loginList-notice registerUserError"><!-- 用户名不能为空 --></div>
+				</div>
+				<div class="loginList">
+					<div class="loginList-name">
+						<span class="login-redStar">*</span>密码：
+					</div>
+					<input type="password" class="loginList-input registerPass" />
+					<div class="loginList-notice registerPassError"><!-- 密码不能为空 --></div>
+				</div>
+				<div class="loginList">
+					<div class="loginList-name">
+						<span class="login-redStar">*</span>确认密码：
+					</div>
+					<input type="password" class="loginList-input registerConfirmPass" />
+					<div class="loginList-notice registerConfirmNotice"><!-- 确认密码不能为空 --></div>
+				</div>
+				<div class="submitBox">
+					<input type="button" value="提交" class="alert-btn alert-register" />
+				</div>
+				<div class="loginList-insert">
+					<div class="loginList-right">
+						<span clsss="commomText">已是本站用户，返回&nbsp;</span>
+						<a href="javascript:void(0);" class="commomText backLogin">登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

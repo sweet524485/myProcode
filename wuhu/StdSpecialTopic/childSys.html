@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../Common/Style/resetCSS.css"/>
+<link rel="stylesheet" type="text/css" href="../Common/Style/common.css"/>
+<link rel="stylesheet" type="text/css" href="Style/stdSpecialTopic.css"/>
+<link rel="stylesheet" type="text/css" href="Style/zTreeStyle/zTreeStyle.css"/>
+<title>无标题文档</title>
+<style type="text/css">
+.sysTreeBox{width:273px; height:898px;}
+</style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="head">
+      <div class="wellcomeOpt">
+        <label class="wellcome">您好，欢迎来到芜湖市标准信息公共服务平台！</label>
+        <div class="login">
+          <a onclick="javascript:void(0);">登录</a>
+          <a style="margin-right:37px;" onclick="javascript:void(0);">注册</a>
+          <a onclick="javascript:void(0);">收藏本站</a>&nbsp;|
+          <a onclick="javascript:void(0);">网站地图</a>&nbsp;|
+          <a onclick="javascript:void(0);">官方微博</a>&nbsp;
+        </div>
+      </div>
+      <div class="banner"></div>
+      <div class="navBar">
+                <a href="../index.html">首 页</a> <a href="../StdSearch/stdSearchHome.html">检索中心</a>
+                <a href="../StdNews/stdNewsHome.html">信息公告</a> <!--<a  href="../StdNav/stdNavHome.html">
+                    标准导航</a> <a href="../Bookstore/bookstoreHome.html">标准书店</a>--> <a href="../StdServices/specialServices.html">
+                        专项服务</a> <a class="current" href="../StdSpecialTopic/specialTopicHome.html">标准体系</a> <!--<a href="../StdSys/stdSysHome.html">
+                            政策法规</a> <a href="../StdNews/stdNewsHome.html">WTO/TBT贸易壁垒公告</a>--> <a href="../UserCenter/userCenterHome.html">
+                                用户中心</a>
+            </div>
+    </div>
+    <div class="location">
+      当前位置：<a href="javascript:void(0);">首页</a>&nbsp;>&nbsp;<a href="javascript:void(0);">专题研究</a>&nbsp;>&nbsp;<a href="javascript:void(0);">芜湖市水务行业标准体系</a>&nbsp;>&nbsp;<a href="javascript:void(0);">基础标准子体系</a>
+    </div>
+    <div class="main">
+      <div class="sysTreeBox">
+        <div class="titleBox">芜湖市水务行业标准体系</div>
+        <div class="treeBox">
+          <ul id="treeDemo" class="ztree"></ul>
+        </div>
+      </div><!--sysTreeBox-->
+      <div class="detailInfoBox">
+        <ul class="searchLable">
+          <li class="lableSel">标准分库</li>
+          <li>专利分库</li>
+          <li>跨库查询</li>
+        </ul>
+        <div class="searchBox">
+          <div class="inputGroup">
+            <div class="inputBox f_l mr6">
+              <input type="text" id="target" class="w_68" value="全部">
+              <div class="btnDrop" onclick="showDropList(this, '#target','#targetList')"></div>                  
+              <ul id="targetList" class="myDropList">
+                <li>全部</li>
+                <li>标准号</li>
+                <li>标准名称</li>
+              </ul>
+            </div>
+            <div class="inputBox f_l mr8">
+              <input type="text" id="Keyword" class="w_473" value="请输入标准名称">
+            </div>
+            <a class="btnL btnPos1 mr8 f_l" onclick="javascript:void(0);"><span class="btnR">检  索</span></a>
+          </div>
+          <!--<div class="inputBox">
+            <input type="text" class="w_68" id="field" value="全部">
+            <div class="btnDrop" onclick="showDropList(this, '#field','#fieldList')"></div>                  
+            <ul id="fieldList" class="myDropList">
+              <li>全部</li>
+              <li>标准号</li>
+              <li>标准名称</li>
+            </ul>
+          </div>
+          <input type="text" class="keyWords" value="请输入标准名称" />
+          <div class="btnSearch"></div>-->
+        </div><!--searchBox-->
+               
+        <div class="viewBox">
+          <div class="labelBox">
+            <div class="labelDiv">相关标准</div>
+          </div>
+          <ul class="stdList">
+            <li>
+              <div class="stdNO">1.GB/T 1.1-2009</div>
+              <div class="status green">【现行有效】</div>
+              <a class="btnCss f_l" href="stdInfo.html"></a>
+              <div class="stdName"><span class="zhName">生活垃圾放大发都撒了了等你出来盾擦了顶你的了时间发了空间</span><span>ldaksfjalkjlskcda iudhiauhfiudshfoicnxznciucad ccauhdsaoc,nzczuia sciasd.,caiudsueq7kjqiu1298ddnqo87ewqiw</span></div>
+            </li>             
+          </ul>
+        </div><!--viewBox End--> 
+        <div class="pageNavBox">
+          <a class="pageNav" onclick="javascript:void(0);">首页</a>
+          <a class="pageNav current" onclick="javascript:void(0);">1</a>
+          <a class="pageNav" onclick="javascript:void(0);">2</a>
+          <a class="pageNav" onclick="javascript:void(0);">3</a>
+          <a class="pageNav" onclick="javascript:void(0);">末页</a>
+          <input type="text" class="inputPage" />
+          <input type="image" src="Images/btnGo.png" class="btnGo" value=" " />
+        </div> 
+      </div><!--detailInfoBox END-->
+    </div>
+    <div class="HLine"></div>
+   <div class="footer">
+            <a onclick="javascript:void(0);">联系我们</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">版权声明</a>&nbsp;|&nbsp;<a
+                onclick="javascript:void(0);">使用帮助</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">技术支持</a><br />
+            版权所有：芜湖市标准化研究所 备案号：皖ICP备 05005282号<br />
+            地址：芜湖市鸠江经济开发区万春西路20号 电话：0553-5968632 邮编： 241000<br />
+        </div>
+  </div>
+</body>
+<script type="text/javascript" src="../ThirdPart/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="Javascript/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="Javascript/jsStdTopic.js"></script>
+<script type="text/javascript">
+function zTreeOnClick(event, treeId, treeNode) {
+    alert(treeNode.tId + ", " + treeNode.name);
+};
+var zTreeObj;
+var setting = {view:{showIcon:false}, callback:{onClick: zTreeOnClick}};//不显示节点图标。绑定节点的onClick事件
+var zNodes = [
+{name:"test1", open:true, children:[
+  {name:"test1_1"}, {name:"test1_2", open:false, children:[{name:"file1", url:"childSys.html"},{name:"file2"}]}]},
+{name:"test2", open:false, children:[
+  {name:"test2_1"}, {name:"test2_2"}]}
+];
+$(document).ready(function(e) {
+	matchHeight();
+	zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+	
+	keyWordsChange('#Keyword', '请输入标准名称');	
+	switchCss('.searchLable li', 'lableSel');
+});
+</script>
+</html>

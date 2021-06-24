@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+/** search result **/
+.textBtn{color:#00F; text-decoration:underline; cursor:pointer; vertical-align: -5px;}
+.boxBodyGray{border:solid 1px #dedede; padding:14px 0px 12px 0px; background-color:#f2f2f2; overflow:hidden; zoom:1;}
+.grayBoxTitle{width:88px; height:100%; text-align:right; font-size:14px; height:1em; line-height:1em; font-weight:bold; color:#3a3a3a;}
+.relateSearch{display:block; width:650px; overflow:hidden; zoom:1; margin-top:-9px;}
+.relateSearch li{display:block; width:120px; padding-right:10px; font-size:14px; height:1em; line-height:1em; padding-top:9px; overflow:hidden; zoom:1; float:left;}
+.relateSearch li a:hover{text-decoration:underline; color:#B70000;}
+.setDisplay{color:#00F; margin-right:10px;}
+.makePages{display:inline-block; height:1em; line-height:1em; padding:3px; margin-right:6px;}
+.makePages.current{color:#fff; background-color:#1b7dbc;}
+.tableView{width:100%; table-layout:fixed; color:#3a3a3a; overflow:hidden; zoom:1;}
+.tableView th{border-top:solid 1px #eff6fa; background-color:#add3e8; height:30px; line-height:30px; font-size:13px; font-weight:bold;}
+.tableView td{padding:10px 0px; vertical-align:top; text-align:center;}
+.tableView .evenTr{background-color:#edf6fc;}
+.tableView .oddTr{background-color:#fff;}
+.tableView span{text-indent:7px; text-align:left; float:left;}
+.tableView p{padding:0px 7px; text-align:left; font-size:13px;}
+.tableView a:hover{text-decoration:underline; color:#B70000;}
+.tableView .btnBuy, .btn0{display:inline-block; height:17px; width:17px; background:url(../Images/pic_buy.png) no-repeat; cursor:pointer;}
+.ulView{width:100%; color:#3a3a3a; overflow:hidden; zoom:1;}
+.ulView li{display:block; width:100%; padding:10px 0px 15px 0px; border-bottom:dashed 1px #dedede; overflow:hidden; zoom:1;}
+.ulView li p{padding-left:21px; font-size:14px;}
+.ulView li a:hover{text-decoration:underline; color:#B70000;}
+.stdNO{font-size:14px; height:1em; line-height:1em; font-weight:bold; color:#30afea; overflow:hidden; zoom:1;}
+.stdNO em{color:#3a3a3a; margin-right:13px;}
+.stdName{padding-left:21px; font-size:14px; line-height:1.5em; font-weight:bold; color:#30afea; overflow:hidden; zoom:1;}
+.stdInfo{padding:10px 0px 5px 21px; font-size:12px; height:1em; width:55%; line-height:1em; overflow:hidden; zoom:1;}
+.stdInfo label{margin-right:20px;}
+.buyBox{height:27px; overflow:hidden; zoom:1;}
+.ulView .btnBuy,.btn5{display:inline-block; height:27px; width:97px; background:url(../Images/pic_bigBuy.png) no-repeat; cursor:pointer;}
+/** std detail **/
+.viewBox{width:100%; padding-bottom:12px; overflow:hidden; zoom:1;}
+.labelBox{width:100%; height:27px; background:url(../Images/label_Bg.png) repeat-x;}
+.labelDiv{min-width:14px; display:inline-block; width:auto; height:27px; line-height:27px; padding:0px 20px 0px 7px; background:url(../Images/labelText_Bg.png) repeat-x; border-right:solid 2px #fff; font-family:"微软雅黑"; font-size:14px; color:#1691d7; overflow:auto; zoom:1;}
+ul.detailInfoList{display:block; width:100%;}
+ul.detailInfoList li{display:block; line-height:1em; padding:0px 3px 0px 18px; border-bottom:dashed 1px #CCC; overflow:hidden; zoom:1;}
+table.stdDetail, table.relate{width:100%; margin:7px 0px; color:#666; font-size:13px; table-layout:fixed;}
+.stdDetail td{height:27px; line-height:27px; text-align:left;}
+.stdDetail em{font-weight:bold; margin-right:0.75em;}
+.stdDetail td p{text-indent:2em;}
+.btn1{display:inline-block; height:24px; width:21px; background:url(../Images/pic_btn1.png) no-repeat; cursor:pointer;}
+.btn2{display:inline-block; height:24px; width:21px; background:url(../Images/pic_btn2.png) no-repeat; cursor:pointer;}
+.btn3{display:inline-block; height:24px; width:21px; background:url(../Images/pic_btn3.png) no-repeat; cursor:pointer;}
+.btn4{display:inline-block; height:24px; width:21px; background:url(../Images/pic_btn4.png) no-repeat; cursor:pointer;}
+.mr_10{margin-right:10px;}
+.ml_10{margin-left:10px;}
+/*** relate ***/
+.relate td{text-align:left; vertical-align:top; line-height:27px;}
+.relate em{font-weight:bold; margin-right:0.75em; display:inline-block; float:left;}
+.relate td a{text-decoration:underline; color:#00F;}
+.relate div{display:inline-block; overflow:hidden; zoom:1; float:left;}
+.sameClassBox{margin:0px 20px;}
+ul.sameClass{display:block; width:100%; overflow:hidden; zoom:1;}
+.sameClass li{display:block; font-size:12px; height:1em; margin-top:11px; line-height:1em; background:url(../Images/pic_sameClass.png) no-repeat; text-indent:19px;}
+.sameClass li a{color:#00F; cursor:pointer;}
+.sameClass li a:hover{text-decoration:underline;}
+.btnAskPrice{display:inline-block; height:27px; width:77px; background:url(../Images/pic_askPrice.png) no-repeat; cursor:pointer;}
+/***/
+.dataTable{width:100%; table-layout:fixed;}
+.dataTable th{height:22px; line-height:22px; text-indent:7px; background-color:#add3e8; color:#666666; text-align:left; font-weight:bold;}
+.dataTable th:first-child{text-indent:7px;}
+/*.dataTable th:last-child{text-align:center;}*/
+.dataTable td{/*padding-right:10px;*/ line-height:2em; text-indent:7px; white-space:nowrap;text-overflow:ellipsis; overflow:hidden;}
+.dataTable td:first-child{text-indent:7px; padding:0px;}
+/*.dataTable td:last-child{text-align:center; padding:0px;}*/
+.dataTable .odd td{height:4em;}
+.dataTable .even td{height:2em; background-color:#edf6fc;}
+.dataTable a:hover{text-decoration:underline; color:#B70000;}
+/*askPrice.html*/
+.formHead{height:12px; line-height:12px; padding:20px 0px;}
+.formHead a{color:#00F; cursor:pointer; float:right;}
+.btnArea{height:32px; padding:12px 0px; text-align:center; overflow:hidden; zoom:1;}
+.btnBg{display:inline-block; height:32px; line-height:32px; font-size:16px; width:114px; background:url(../Images/pic_btnBg.png) no-repeat; text-align:center;}
+.topBg{background:url(../Images/topBg.gif) top right no-repeat; padding:0px 42px;}
+.inputDiv{margin-top:10px; overflow:hidden; padding-left:17px; zoom:1;}
+.viewBox .inputDiv{padding:0px 17px;}
+.inputRow{/*height:28px;*/ line-height:28px; width:auto; padding:5px 0px; font-size:14px; overflow:hidden; zoom:1;}
+.inputRow em{width:70px; text-align:right; display:inline-block; float:left;}
+.inputRow span{width:143px; height:27px; line-height:27px; text-align:right; display:inline-block; float:left;}
+/*.inputBox input{color:#3a3a3a;}*/
+.fieldValue{height:28px; display:inline-block; float:left; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.w514{width:514px;}
+.w182{width:182px;}
+.w162{width:162px}
+.dataTab{width:100%; border-collapse:collapse; border:none; table-layout:fixed; margin-top:1px; overflow:visible;}
+.dataTab tr th{font-weight:normal; text-align:center; height:30px; background-color:#add3e8; cursor:default; vertical-align:middle;
+ border:solid 1px #dedede; border-top:solid 1px #eff6fa; font-weight:bold;}
+.dataTab tr td{font-weight:normal; text-align:center; padding:10px 0px; vertical-align:top; overflow:visible; cursor:default;
+ border:solid 1px #dedede;}
+.dataTab tr th:first-child{border-left:solid 1px #dedede;}
+.dataTab tr th:last-child{border-right:solid 1px #dedede;}
+.dataTab td p{margin:0px 0.5em; text-align:left;}
+.dataTab td p a{text-decoration:underline; color:#00F; cursor:pointer;}
+.dataTab td a:hover{color:#B70000;}
+.dataTab td span{text-align:left; float:right; margin-right:22px; *margin-right:11px;}
+.btn6{display:inline-block; height:16px; width:14px; background:url(../Images/pic_del.png) no-repeat; cursor:pointer;}
+/****/
+.sBoxPos2{margin:12px 25px;}
+.sBoxPos2 .inputDiv em{width:84px;}
+.sBoxPos2 .inputDiv span{width:70px; margin-left:70px; *margin-left:35px;}
+.sBoxPos2 .inputDiv a{text-decoration:underline;}
+.searchItem{display:inline-block; float:left; height:28px; line-height:28px; cursor:pointer; text-indent:28px; width:189px;}
+.searchItem.check{background:url(../Images/pic_checkIco.png) 0px 0px no-repeat;}
+.searchItem.uncheck{background:url(../Images/pic_uncheckIco.png) 0px 0px no-repeat;}
+.btn7{display:inline-block; height:16px; width:16px; background:url(../Images/pic_review.png) no-repeat; cursor:pointer;}
+.btn8{display:inline-block; height:16px; width:16px; background:url(../Images/pic_read.png) no-repeat; cursor:pointer;}
+.btn9{display:inline-block; height:27px; width:77px; background:url(../Images/pic_bigReview.png) no-repeat; cursor:pointer;}
+.btn10{display:inline-block; height:27px; width:97px; background:url(../Images/pic_bigRead.png) no-repeat; cursor:pointer;}
+.ml_8{margin-left:8px;}
+.successInfoBox{padding:5px 0px; font-size:14px; margin:10px 0px; padding-left:17px; overflow:hidden; zoom:1;}
+.successInfoBox p{line-height:28px;}
+.orderNO{font-family:'微软雅黑'; font-size:20px}

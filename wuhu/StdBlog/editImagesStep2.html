@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../Common/Style/resetCSS.css"/>
+<link rel="stylesheet" type="text/css" href="../Common/Style/common.css"/>
+<link rel="stylesheet" type="text/css" href="Style/stdBlog.css"/>
+<title>无标题文档</title>
+<style type="text/css">
+.inputBox input{color:#3a3a3a;}
+</style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="head">
+      <div class="wellcomeOpt">
+        <label class="wellcome">您好，欢迎来到芜湖市标准信息公共服务平台！</label>
+        <div class="login">
+          <a onclick="javascript:void(0);">登录</a>
+          <a style="margin-right:37px;" onclick="javascript:void(0);">注册</a>
+          <a onclick="javascript:void(0);">收藏本站</a>&nbsp;|
+          <a onclick="javascript:void(0);">网站地图</a>&nbsp;|
+          <a onclick="javascript:void(0);">官方微博</a>&nbsp;
+        </div>
+      </div>
+      <div class="banner"></div>
+      <div class="navBar">
+        <a href="../index.html">首 页</a>
+        <a href="../StdNews/stdNewsHome.html">标准动态</a>
+        <a href="../StdNav/stdNavHome.html">标准导航</a>
+        <a href="../Bookstore/bookstoreHome.html">标准书店</a>
+        <a href="../StdServices/specialServices.html">专项服务</a>
+        <a href="../StdSpecialTopic/specialTopicHome.html">专题研究</a>
+        <a href="../StdSys/stdSysHome.html">标准体系</a>
+        <a href="../SpecialTopicDB/specialTopicDB.html">专题数据库</a>
+        <a href="../Knowledge/knowledgeHome.html">知识库</a>
+        <a href="../CooOrg/cooOrgHome.html">合作机构</a>
+        <a class="current" href="stdBlogHome.html">互动论坛</a>
+        <a href="../UserCenter/userCenterHome.html">用户中心</a>
+      </div>
+    </div>
+    <div class="location">
+      当前位置：<a href="javascript:void(0);">首页</a>&nbsp;>&nbsp;<a href="javascript:void(0);">互动论坛</a>&nbsp;>...
+    </div>
+    <div class="main"> 
+      <div class="layout1">
+        <div class="box1 boxBorder topBg padLR42">
+          <div style="margin-top:18px;">
+            <div class="labelBox">
+              <div class="labelDiv">发图片</div>
+            </div>
+            <div class="stepBox">
+              <div class="blogDiv">
+                <span style="float:left;">选择专辑：</span>
+                <div class="inputBox">
+                  <input type="text" id="class" class="w162" value="选择分类">
+                  <div class="btnDrop" onclick="showDropList(this, '#class','#classList')"></div>                  
+                  <ul id="classList" class="myDropList">
+                    <li>博文</li>
+                    <li>图片</li>
+                    <li>XXX</li>
+                  </ul>
+                </div>&nbsp;&nbsp;
+                <a class="creatClass">新建专辑</a>
+              </div>
+              <div class="blogDiv">
+                <span style="float:left;">添加标签：</span>
+                <div class="inputBox">
+                  <input type="text" id="class" class="w626" value="">
+                </div>
+              </div> 
+              <div class="step step2able marginTB30">
+                <p><span class="f_l">步骤&nbsp;2</span></p>
+                <h2><a class="f_l">开始上传</a></h2>
+              </div>
+              <div class="addData">
+                <span class="f_l">还可以上传&nbsp;<label>49</label>&nbsp;张照片</span>
+                <a class="f_r">+&nbsp;继续添加照片</a>
+              </div>
+              <div class="box1 borTop">
+                <table class="dataTab" border="0" cellpadding="0" cellspacing="0">
+                  <tr>      
+                    <th style="width:65px;">序号</th>
+                    <th style="width:380px;">照片</th>
+                    <th style="width:230px;">大小</th>
+                    <th style="width:170px;">删除</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>IMG_0301.jpg</td>
+                    <td>2.1MB</td>
+                    <td><a class="btn0" onclick="javascript:;"></a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>IMG_0301.jpg</td>
+                    <td>2.1MB</td>
+                    <td><a class="btn0" onclick="javascript:;"></a></td>
+                  </tr>
+                </table>
+                <div class="delData">
+                  <a class="f_l">+&nbsp;继续添加照片</a>
+                  <a class="f_r" style="margin-left:162px;">全部删除</a>
+                  <span class="f_r">共4.2MB</span>
+                </div>
+              </div><!-- box1 END -->
+              <div class="btnArea">
+                <a class="btnBg" onclick="javascript:;">开始上传</a>
+              </div>
+              <!--<div class="step step3unable">
+                <p><span class="f_l">步骤&nbsp;3</span><span class="f_r">yyoomm</span></p>
+                <h2><a class="f_l">选择照片</a><a class="f_r">XXX</a></h2>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Main End -->
+    <div class="HLine"></div>
+   <div class="footer">
+            <a onclick="javascript:void(0);">联系我们</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">版权声明</a>&nbsp;|&nbsp;<a
+                onclick="javascript:void(0);">使用帮助</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">技术支持</a><br />
+            版权所有：芜湖市标准化研究所 备案号：皖ICP备 05005282号<br />
+            地址：芜湖市鸠江经济开发区万春西路20号 电话：0553-5968632 邮编： 241000<br />
+        </div>
+  </div>
+</body>
+<script type="text/javascript" src="../ThirdPart/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../Common/JS/jsCommon.js"></script>
+<script type="text/javascript">
+</script>
+</html>

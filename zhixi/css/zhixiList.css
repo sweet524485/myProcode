@@ -1,0 +1,432 @@
+/*列表页的CSS*/
+.zhixi-list-Container{
+	width: 1024px;
+	min-height:40px;
+	border-left:2px solid #E8EAEA; 
+	border-right:2px solid #E8EAEA;
+	border-top:2px solid #E8EAEA;
+	border-bottom:2px solid #FF9300;
+	margin: 0 auto;
+	border-radius: 5px;
+	background: #FDFDFD;
+}
+.zhixi-list-titleContent{
+	width: 965px;
+	height: 30px;
+	border-bottom: 1px solid #E8EAEA;
+	margin-top: 15px;
+	margin-left: 28px;
+	position: relative;
+}
+.zhixi-list-titleIcon{
+	display: block;
+	width: 23px;
+	height: 23px;
+	background: url(../images/zhixi/zhixi-list-titleIcon.png) no-repeat;
+	position: absolute;
+	top:0;left:2px;
+}
+.zhixi-list-titleTxt{
+	height: 12px;
+	line-height: 12px;
+	position: absolute;
+	top:6px;left:36px;
+	color: #FF6A00;
+	font-size: 12px;
+}
+.zhixi-list-content{
+	width: 960px;
+	margin-left: 28px;
+	position: relative;
+	padding-left: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 12px;
+	color: #7C7C7C;
+	line-height: 23px;
+}
+/*列表页 检索部分*/
+.zhixi-select-Container{
+	width: 1024px;
+	min-height: 30px;
+	margin: 25px auto;
+}
+.zhixi-select-left{
+	width: 795px;
+	min-height: 50px;
+	float: left;
+	border:2px solid #E8EAEA;
+	border-radius: 5px;
+}
+.zhixi-select-right{
+	width: 199px;
+	min-height: 50px;
+	float: right;
+}
+.zhixi-select-Rtop{
+	width: 195px;
+	min-height: 50px;
+	float: right;
+	border:2px solid #E8EAEA;
+	border-radius: 5px;
+}
+.zhixi-select-content{
+	width: 765px;
+	min-height: 30px;
+	padding-top: 5px;
+	margin-left: 26px;
+}
+.zhixi-select-list{
+	width: 100%;
+	height: 30px;
+	margin-top: 15px;
+}
+.zhixi-select-listInput{
+	width: 265px;
+	height: 28px;
+	border:1px solid #E7EAEC;
+	color: #646464;
+	font-size: 12px;
+	line-height: 28px;
+	text-indent: 7px;
+	float: left;
+	background: #FDFDFD;
+}
+/*下拉框样式*/
+.drop{
+	float: left;
+	margin-left: 10px;
+}
+.drop .divselect{
+	position:relative; 
+	z-index:100;
+}
+.drop .divselect cite{
+	height:28px;
+	line-height:28px;
+	display:block; 
+	/*border-radius:3px; */
+	cursor:pointer; 
+	font-weight:normal;
+	font-style:normal; 
+	padding-left:4px;
+ 	border:1px solid #E7EAEC;
+ 	background:url(../images/zhixi/q-collect-yhxl.png) no-repeat right;
+ 	padding-right: 15px;
+ }
+.drop .divselect ul{
+	border:1px solid #F4F4F4; 
+	background-color:#ffffff; 
+	position:absolute; 
+	z-index:20000; 
+	margin-top:-1px; 
+	display:none;  
+	margin: 0px;
+  	padding: 0px;
+  	list-style: none;
+  	text-align: center;
+    border:1px solid #E7EAEC;
+    background: #fff;
+}
+.drop .divselect ul li{
+	height:20px; 
+	line-height:20px;
+}
+.drop .divselect ul li a{
+	display:block;  
+	height:20px; 
+	line-height: 20px;
+	color:#646464; 
+	text-decoration:none; 
+}
+.drop .divselect .divcite_ul1 li a{
+	min-width: 31px;
+}
+.drop .divselect .divcite_ul2 li a{
+	min-width: 43px;
+}
+.drop .divselect .divcite_ul7 li a{
+	min-width: 55px;
+}
+.drop .divselect ul li a:hover{
+	background-color:#0091D8;
+	color:#fff;
+}
+.drop .divselect .divcite_ul7{
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  text-indent: 5px;
+}
+/*。。。。。。。。。。。。*/
+.zhixi-select-listInput2{
+	margin-left: 10px;
+}
+.zhixi-select-listInput4{
+	margin-left: 10px;
+	width: 363px;
+}
+.zhixi-select-searchBox{
+	width: 100%;
+	height: 27px;
+	margin-top: 18px;
+}
+.zhixi-select-searchBtn{
+	width: 96px;
+	height: 27px;
+	background: url(../images/zhixi/zhixi-select-searchBtn.png) no-repeat;
+	margin-left: 275px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	line-height: 27px;
+	cursor: pointer;
+}
+/*检索条件框*/
+.zhixi-select-ifContainer{
+	width: 758px;
+	min-height:30px;
+	margin-top: 14px;
+	margin-left: 15px; 
+}
+.zhixi-select-ifContent{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	color: #7E7E7E;
+	font-size: 12px;
+	border-bottom: 1px solid #E8EAEA;
+}
+.zhixi-select-ifLeft{
+	height: 28px;
+	line-height: 28px;
+	float: left;
+}
+.zhixi-select-ifRight{
+	height: 28px;
+	line-height: 28px;
+	float: right;
+}
+.zhixi-select-ifLeft span{
+	color:#0E95E3;
+}
+.zhixi-select-ifTxt{
+	float: left;
+}
+.zhixi-select-ifList{
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.zhixi-select-ifListTxt{
+	display: block;
+	float: left;
+	padding-left: 8px;
+	padding-right:8px;
+	height: 20px;
+	border:1px solid #DADADA;
+	background: #fff;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 4px;
+	color: #7E8096;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+.zhixi-select-ifListTxt_cur{
+	background: #0091D8;
+	border:1px solid #0091D8;
+	color:#fff;
+}
+.zhixi-select-ifSort{
+	float: left;
+}
+.zhixi-select-ifLine{
+	display: block;
+	float: left;
+	width: 28px;
+	height: 1px;
+	margin-top: 15px;
+	margin-left: 3px;
+	background: #7E7E7E;
+	margin-right: 3px;
+}
+/*搜索结果*/
+.zhixi-select-box{
+	width: 100%;
+	min-height: 35px;
+	padding-top: 10px;
+}
+.zhixi-select-boxList{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px dashed #8B8B8B;
+}
+.zhixi-select-boxNum{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	color:#101010;
+	margin-left: 5px;
+}
+.zhixi-select-boxCon{
+	display: block;
+	float: left;
+	max-width: 665px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	color:#101010;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-left: 18px;
+	text-decoration: none;
+}
+.zhixi-select-boxLoad{
+	display: block;
+	float: right;
+	width: 18px;
+	height: 19px;
+	background: url(../images/zhixi/zhixi-select-boxLoad.png) no-repeat;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.zhixi-select-pageContainer{
+	width: 100%;
+	height: 60px;
+}
+.zhixi-select-page{
+	float: right;
+	margin-top: 18px;
+}
+.zhixi-select-boxList_color{
+	color:#FF030A;
+}
+/*网页右侧*/
+.zhixi-select-rightInnerBox{
+	width: 169px;
+	min-height: 30px;
+	padding-top: 8px;
+	padding-bottom: 25px;
+	margin-left: 15px;
+}
+.zhixi-select-rightTopBox{
+	width: 100%;
+	height: 36px;
+	border-bottom: 2px solid #E9EAEA;
+}
+.zhixi-select-rightTopIcon{
+	display: block;
+	float: left;
+	width: 23px;
+	height: 23px;
+	background: url(../images/zhixi/zhixi-select-rightTopIcon.png) no-repeat;
+	margin-top: 7px;
+	margin-left: 0;
+}
+.zhixi-select-rightTopTxt{
+	display: block;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 8px;
+	font-size: 12px;
+	color:#212121;
+}
+.zhixi-select-rightListBox{
+	width: 100%;
+	padding-top: 2px;
+}
+.zhixi-select-rightList{
+	width: 100%;
+	height: 35px;
+	border-bottom:1px solid #EFF0F1;
+}
+.zhixi-select-rightListIcon{
+	display: block;
+	float: left;
+	width: 10px;
+	height: 6px;
+	background: url(../images/zhixi/zhixi-select-rightListIcon.png) no-repeat;
+	margin-top: 17px;
+	margin-left: 6px;
+}
+.zhixi-select-RbootIcon{
+	display: block;
+	float: left;
+	width: 23px;
+	height: 23px;
+	background: url(../images/zhixi/zhixi-select-RbootIcon.png) no-repeat;
+	margin-top: 7px;
+	margin-left: 0;
+}
+.zhixi-select-rightListCon{
+	height: 35px;
+	line-height: 39px;
+	float: left;
+	margin-left: 18px;
+	color:#9A9A9A;
+	font-size: 12px;
+}
+.zhixi-select-rightListCon span{
+	color:#FF9A00;
+}
+.zhixi-select-RbootCon{
+	width: 100%;
+	min-height:10px;
+	padding-top: 15px;
+	overflow: hidden; 
+}
+.zhixi-select-RbootBox{
+	width: 170px;
+	min-height: 10px;
+}
+.zhixi-select-RbootList{
+	display: block;
+	float: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	height: 23px;
+	line-height: 23px;
+	border:1px solid #D7D7D7;
+	background: #FDFDFD;
+	color:#999;
+	font-size: 12px;
+	margin-right: 1px;
+	margin-top: 2px;
+	border-radius: 3px;
+	text-decoration: none;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-ms-transform: all .3s ease-in-out;
+	-o-transform: all .3s ease-in-out;
+	transform: all .3s ease-in-out;
+}
+.zhixi-select-RbootList_cur{
+	color: #FF9A00;
+	border:1px solid #FF9A00;
+}
+.zhixi-select-RbootList:hover{
+	color: #FF9A00;
+	border:1px solid #FF9A00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

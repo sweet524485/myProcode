@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/qmj.css">
+<link rel="stylesheet" href="css/ifocus.css">
+<link rel="stylesheet" href="css/button.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/showpic.js"></script>
+<script src="js/qmj.js"></script>
+<body class="body">
+
+<!-- header -->
+<div class="x-header_wrap">
+    <div class="x-head_1">
+        <div class="x-head_top">
+            <!-- 登录前 -->
+            <div class="x-login_before">
+                <a href="">注册</a>
+                <span>|</span>
+                <a href="javascript:void(0)" id="x-login_btn">登录</a>
+            </div>
+            <!-- 登录后 -->
+            <div class="x-login_after hide">
+                <a href="javascript:" class="x-user" id="login_btn">
+                    <i class="x-icon-user"></i><span>我叫小沈阳</span>
+                </a>
+                <ul class="x-user_list hide">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="x-icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="x-head_2">
+        <div class="x-head_bottom clearfix">
+            <div class="x-head_logo grid-240 left">
+                <a href="">
+                    <img src="images/logo.jpg" alt="">
+                </a> 
+            </div>
+            <div class="x-head_nav container-540 left">
+                <a href="index.html">首页</a>
+                <a href="article.html">文集</a>
+                <a href="movie.html">视频</a>
+                <a href="media.html" class="active">媒体</a>
+                <a href="mediaBan.html">媒体平台</a>
+            </div>
+            <div class="x-head_search grid-220 left">
+                <form action="" class="block clearfix">
+                    <input type="text" class="x-search_input">
+                    <button type="submit" class="x-search_button right"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /header -->
+
+<!-- content -->
+<div class="x-media-container"> 
+	<div class="x-media-container-top">
+		<div class="x-media-container-top-common x-media-container-top-left">
+			<a href="mediaList.html" class="x-media-container-top-face">
+				<img src="./images/user-logo.jpg" alt="头像" class="x-_img1">
+				<img src="./images/gir.png" alt="头像" class="x-_img2">
+			</a>
+			<div class="x-media-container-top-int">
+				<span class="x-media-container-top-special">
+					专辑&nbsp;<span>8</span>
+				</span>
+				<span class="x-media-container-top-arcticle">
+					文章&nbsp;<span>208</span>
+				</span>
+			</div>
+			<div class="x-media-container-top-care-box1">
+				<a href="mediaList.html" class="x-media-container-top-care-add">
+					+&nbsp;&nbsp;关&nbsp;注
+				</a>
+			</div>
+			<div class="x-media-container-top-care-box2 hide">
+				<a href="mediaList.html" class="x-media-container-top-care-end">
+					√&nbsp;&nbsp;已&nbsp;关&nbsp;注
+				</a>
+			</div>
+			<div class="x-media-container-top-care-join">
+				加入小白：2015-1-30
+			</div>
+			<p class="x-media-container-top-care-level">
+				等级信息
+			</p>
+			<meter max=100 min=0 value=54 class="x-media-container-top-care-level-meter">
+				你的浏览器已经OUT了，请升级浏览器。
+			</meter>
+			<div class="x-media-container-top-care-level-now">
+				<span class="x-media-container-top-care-now-level">
+					当前等级：LV3
+				</span>
+				<span class="x-media-container-top-care-level-experience">
+					当前经验：54
+				</span>
+			</div>	
+		</div>
+		<div class="x-media-container-top-common x-media-container-top-mid">
+			<div class="x-media-container-mid-top">
+				<p class="x-media-container-top-mid-name x-float-left">
+					<span>福光百科</span>
+					<img src="./images/search-left.gif" alt="">
+					<img src="./images/search-three.gif" alt="">
+				</p>
+				<p class="x-media-container-top-mid-common x-float-left">
+					地区：北京市海淀区学清路汇智大厦
+				</p>
+				<p class="x-media-container-top-mid-common x-float-left">
+					行业：生活
+				</p>
+				<div class="x-media-container-top-mid-introduce x-float-left">
+					介绍：北京市海淀区学清路汇智大厦北京市海淀区学清路汇智大厦北京市海淀区学清路汇智大厦北京市海淀区学清路汇智大厦北京市海淀区学清路汇智大厦北京市海淀区学清路汇智北京市海淀区学清路汇智大厦北京市海淀区学清路汇智大厦
+				</div>
+				<div class="x-media-container-top-mid-goodat x-float-left">
+					擅长：
+					<span>百科</span>
+					<span>健康</span>
+					<span>生活</span>
+					<span>教育</span>
+					<span>母婴</span>
+				</div>
+			</div>
+			<div class="x-media-container-mid-bottom">
+				<p class="x-media-container-mid-bottom-tel-box x-float-left">
+					<span class="x-media-container-mid-bottom-tel">
+						电话：010-82432611
+					</span>
+					<a href="mediaList.html" class="x-media-container-mid-bottom-edit">
+						修改资料>
+					</a>
+				</p>
+				<p class="x-media-container-mid-bottom-commom x-float-left">
+					微信：xiaobai_bk
+				</p>
+				<p class="x-media-container-mid-bottom-commom x-float-left">
+					邮箱：xiaobai@pezy.cn
+				</p>
+				<div class="x-media-container-mid-bottom-weixin-box x-float-left">
+					<a href="mediaList.html">邮箱</a>
+					<a href="mediaList.html">私信</a>
+					<a href="mediaList.html">微信</a>
+					<a href="mediaList.html">微信公众号</a>
+				</div>
+				<a href="mediaList.html" class="x-media-container-mid-bottom-two_code">
+					<img src="./images/xiaobai-second.gif" alt="二维码">
+				</a>
+				<img src="./images/cord-left.gif" class="x-media-container-mid-bottom-cord-left">
+			</div>
+		</div>
+		<div class="x-media-container-top-common x-media-container-top-right">
+			<img src="./images/rz.png" alt="">
+			<p class="x-media-container-top-right-txt">
+				小白认证作者
+			</p>
+		</div>
+	</div>
+	<br class="clear-both"/>
+	<div class="x-media-container-middle-box">
+		<div class="x-media-container-middle-list x-media-container-middle-list1">
+			<img src="./images/_bg.png" alt="曝光量">
+			<span class="x-media-container-middle-list-name">
+				曝光量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				1亿5千万
+			</p>
+		</div>
+		<div class="x-media-container-middle-list x-media-container-middle-list2">
+			<img src="./images/_yd.png" alt="阅读量">
+			<span class="x-media-container-middle-list-name">
+				阅读量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				&nbsp;5千万
+			</p>
+		</div>
+		<div class="x-media-container-middle-list x-media-container-middle-list3">
+			<img src="./images/_pl.png" alt="评论量">
+			<span class="x-media-container-middle-list-name">
+				评论量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				&nbsp;16万
+			</p>
+		</div>
+		<div class="x-media-container-middle-list x-media-container-middle-list4">
+			<img src="./images/_zt.png" alt="赞同量">
+			<span class="x-media-container-middle-list-name">
+				赞同量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				&nbsp;9万
+			</p>
+		</div>
+		<div class="x-media-container-middle-list x-media-container-middle-list5">
+			<img src="./images/_sc.png" alt="收藏量">
+			<span class="x-media-container-middle-list-name">
+				收藏量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				&nbsp;50万
+			</p>
+		</div>
+		<div class="x-media-container-middle-list x-media-container-middle-list6">
+			<img src="./images/_zf.png" alt="转发量">
+			<span class="x-media-container-middle-list-name">
+				转发量
+			</span>
+			<p class="x-media-container-middle-list-num">
+				&nbsp;10万
+			</p>
+		</div>
+	</div>
+	<!-- Ta的文章 -->
+	<div class="x-media-his_acticle-box">
+		<div class="x-media-his_acticle-left-box">
+			<div class="x-media-his_acticle-left-title">
+				Ta的文章
+			</div>
+			<div class="x-media-his_acticle-left-list">
+				<a href="mediaList.html" class="x-media-his_acticle-left-face">
+					<img src="./images/x-media-his_acticle-left-face.png" alt="">
+				</a>
+				<a href="mediaList.html" class="x-media-his_acticle-left-face-title">
+					哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿
+				</a>
+				<span class="x-media-his_acticle-left-face-content">
+					为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物
+				</span>
+				<div class="x-search-content-bottom-box x-media-his_acticle-left-face-bottom" style="position:relative;">
+                    <div class="x-info font-simsun">
+                       	<span>09-22 13:51</span>
+                        <a class="x-read padding-big-bottom x-x-read" href="javascript:void(0)" style="position:absolute;left:470px;top:0;">阅读(198588888)
+                            <ul class="x-channel hide x-search-content-bottom-channel">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-sohu.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                    <img src="images/i-toutiao.png" alt="">
+                                    <span class="vertical-middle">(19999)</span>
+                                    </a>   
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-weibo.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="x-collect x-search-content-bottom-collect" href="javascript:void(0)" style="position:absolute;left:420px;top:0;">收藏</a>
+                    </div>
+                </div>
+			</div>
+			<div class="x-media-his_acticle-left-list">
+				<a href="mediaList.html" class="x-media-his_acticle-left-face">
+					<img src="./images/x-media-his_acticle-left-face1.jpg" alt="">
+				</a>
+				<a href="mediaList.html" class="x-media-his_acticle-left-face-title">
+					哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿
+				</a>
+				<span class="x-media-his_acticle-left-face-content">
+					为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物
+				</span>
+				<div class="x-search-content-bottom-box x-media-his_acticle-left-face-bottom">
+                    <div class="x-info font-simsun">
+                       	<span>09-22 13:51</span>
+                        <a class="x-read padding-big-bottom x-x-read" href="javascript:void(0)">阅读(198511111)
+                            <ul class="x-channel hide x-search-content-bottom-channel">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-sohu.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                    <img src="images/i-toutiao.png" alt="">
+                                    <span class="vertical-middle">(19999)</span>
+                                    </a>   
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-weibo.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="x-collect x-search-content-bottom-collect" href="javascript:void(0)">收藏</a>
+                    </div>
+                </div>
+			</div>
+			<div class="x-media-his_acticle-left-list">
+				<a href="mediaList.html" class="x-media-his_acticle-left-face">
+					<img src="./images/x-media-his_acticle-left-face.png" alt="">
+				</a>
+				<a href="mediaList.html" class="x-media-his_acticle-left-face-title">
+					哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿
+				</a>
+				<span class="x-media-his_acticle-left-face-content">
+					为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物
+				</span>
+				<div class="x-search-content-bottom-box x-media-his_acticle-left-face-bottom">
+                    <div class="x-info font-simsun">
+                       	<span>09-22 13:51</span>
+                        <a class="x-read padding-big-bottom x-x-read" href="javascript:void(0)">阅读(198511111)
+                            <ul class="x-channel hide x-search-content-bottom-channel">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-sohu.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                    <img src="images/i-toutiao.png" alt="">
+                                    <span class="vertical-middle">(19999)</span>
+                                    </a>   
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-weibo.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="x-collect x-search-content-bottom-collect" href="javascript:void(0)">收藏</a>
+                    </div>
+                </div>
+			</div>
+			<div class="x-media-his_acticle-left-list">
+				<a href="mediaList.html" class="x-media-his_acticle-left-face">
+					<img src="./images/x-media-his_acticle-left-face1.jpg" alt="">
+				</a>
+				<a href="mediaList.html" class="x-media-his_acticle-left-face-title">
+					哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿哪些食物有助于保健牙齿
+				</a>
+				<span class="x-media-his_acticle-left-face-content">
+					为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物为了预防牙齿疾病，洁净牙齿，日常生活中可以多吃常生活中可以多吃以下食物
+				</span>
+				<div class="x-search-content-bottom-box x-media-his_acticle-left-face-bottom">
+                    <div class="x-info font-simsun">
+                       	<span>09-22 13:51</span>
+                        <a class="x-read padding-big-bottom x-x-read" href="javascript:void(0)">阅读(198511111)
+                            <ul class="x-channel hide x-search-content-bottom-channel">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-sohu.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                    <img src="images/i-toutiao.png" alt="">
+                                    <span class="vertical-middle">(19999)</span>
+                                    </a>   
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="images/i-weibo.png" alt="">
+                                        <span class="vertical-middle">(19999)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                        <a class="x-collect x-search-content-bottom-collect" href="javascript:void(0)">收藏</a>
+                    </div>
+                </div>
+			</div>
+			<div class="x-loading-box" style="height:65px;">
+				<a href="javascript:void(0);" class="x-loading-more">
+				加载更多...
+				</a>
+			</div>
+		</div>
+		<div class="x-media-his_acticle-right-box">
+			<div class="x-media-his_acticle-right-nav">
+				<a href="javascript:void(0);" class="x-media-his_acticle-right-nav-cur">
+					<img src="./images/media-key.png" alt="">
+					<span>主页</span>
+				</a>
+				<a href="javascript:void(0);">
+					<img src="./images/media-key.png" alt="">
+					<span>主章</span>
+				</a>
+				<a href="javascript:void(0);">
+					<img src="./images/media-key.png" alt="">
+					<span>互动</span>
+				</a>
+				<a href="javascript:void(0);" class="x-media-alert">
+					<img src="./images/media-key.png" alt="">
+					<span>评论</span>
+				</a>
+				<a href="javascript:void(0);" class="x-media-alert">
+					<img src="./images/media-key.png" alt="">
+					<span>提问</span>
+				</a>
+				<a href="javascript:void(0);" class="x-media-alert">
+					<img src="./images/media-key.png" alt="">
+					<span>订阅</span>
+				</a>
+			</div>
+		</div>
+		<br class="clear-both" />
+	</div>
+</div><!-- /content -->
+<!-- 评论、提问、订阅的弹出框 -->
+<div class="x-media-cover"></div>
+<div class="x-media-body">
+	<div class="x-media-center_box">
+		<span class="x-media-alert-title">
+			温馨提示
+		</span>
+		<img src="./images/alert_t.png" class="x-media-alert-logo">
+		<span class="x-media-alert-txt">
+			此功能还没有开放。敬请期待！
+		</span>
+		<div class="x-media-alert-bottom">
+			<a href="javascript:void(0);" class="x-media-alert-confirm">
+				确定
+			</a>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<div class="x-footer">
+    <div class="container-1000">
+        <div class="x-foot_copy">
+            <p>
+                <a href="">关于我们</a>
+                <a href="">诚聘英才</a>
+                <a href="">媒体入驻</a>
+                <a href="">广告服务</a>
+                <a href="">微商服务</a>
+            </p>
+            <p>© 2014 小白全攻略生活百科 京ICP备14030910号-1  </p>
+        </div>
+    </div>
+</div><!-- /footer -->
+<script>
+// 关注JS
+$(function(){
+    $('.x-media-container-top-care-box1').click(function(){
+        $(this).hide();
+        $('.x-media-container-top-care-box2').show();
+    })
+    $('.x-media-container-top-care-box2').click(function(){
+      $(this).hide();
+      $('.x-media-container-top-care-box1').show();
+    })
+});
+// 右侧导航条
+$(function(){
+    $('.x-media-his_acticle-right-nav a').click(function(){
+        $(this).addClass('x-media-his_acticle-right-nav-cur').siblings('.x-media-his_acticle-right-nav a').removeClass('x-media-his_acticle-right-nav-cur');
+    })
+});
+// 评论、提问、订阅的弹窗JS
+$(function(){
+    $('.x-media-alert').click(function(){
+        $('.x-media-cover').fadeIn(200);
+      	$('.x-media-body').fadeIn(200);
+      	$('.x-media-center_box').stop().animate({'left':'45%'},100,function(){
+		$('.x-media-center_box').stop().animate({'left':'55%'},100,function(){
+			$('.x-media-center_box').stop().animate({'left':'48%'},100,function(){
+				$('.x-media-center_box').stop().animate({'left':'50%'},100)
+				})
+			})
+		})
+    })
+    $('.x-media-alert-confirm').click(function(){
+      $('.x-media-cover').fadeOut(200);
+      $('.x-media-body').fadeOut(200);
+    })
+});
+</script>
+</body>
+</html>

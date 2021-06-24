@@ -1,0 +1,1129 @@
+@charset "utf-8";
+/* ========================================================================
+	@大葱大蒜sir
+	qq315555699
+	2014-10-23
+ ========================================================================== */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+	margin: 0;
+	padding: 0
+}
+
+html {
+	color: #333;
+	font-family: sans-serif;
+}
+
+body,button,input,select,textarea,pre {
+	font-size: 14px;
+	font-family: "Microsoft Yahei","Hiragino Sans GB","STXihei","SimSun","Heiti",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+
+h3,h4,h5,h6 {
+	font-weight: normal
+}
+
+b,strong {
+	font-weight: normal
+}
+
+ul,ol {
+	list-style: none
+}
+
+img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+hr {
+	border: 0;
+	background: #999;
+	height: 1px;
+	margin: 5px 0px;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+i {
+	font-style: normal
+}
+
+a:hover {
+	cursor: pointer
+}
+
+a:focus,
+*:focus {
+	outline: none;
+}
+
+fieldset,img {
+	border: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+textarea {
+	resize: none
+}
+
+button {
+	cursor: pointer
+}
+
+button,input[type="button"],input[type="reset"],input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button
+}
+
+.block,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
+	display: block
+}
+
+.relative {
+	position: relative
+}
+
+.absolute {
+	position: absolute
+}
+
+.fixed {
+	position: fixed
+}
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.clear {
+	clear: both
+}
+
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center {
+	text-align: center
+}
+
+.vertical-top {
+	vertical-align: top
+}
+
+.vertical-middle {
+	vertical-align: middle
+}
+
+.vertical-bottom {
+	vertical-align: bottom
+}
+
+.vertical-text-top {
+	vertical-align: text-top
+}
+
+.vertical-text-bottom {
+	vertical-align: text-bottom
+}
+
+.hide {
+	display: none
+}
+
+.show {
+	display: block
+}
+
+.inline {
+	display: inline
+}
+
+.inlineBlock {
+	display: inline-block;
+	zoom: 1
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.wordwrap {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+/*    容器
+--------------------------------------------------*/
+.container-1220 {
+	width: 1220px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1200 {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1180 {
+	width: 1180px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1160 {
+	width: 1160px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1140 {
+	width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1120 {
+	width: 1120px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1100 {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1080 {
+	width: 1080px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1060 {
+	width: 1060px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1040 {
+	width: 1040px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1020 {
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-1000 {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-980 {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-960 {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-940 {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-920 {
+	width: 920px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-900 {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-880 {
+	width: 880px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-860 {
+	width: 860px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-840 {
+	width: 840px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-820 {
+	width: 820px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-800 {
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-780 {
+	width: 780px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-760 {
+	width: 760px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-740 {
+	width: 740px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-720 {
+	width: 720px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-700 {
+	width: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-680 {
+	width: 680px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-660 {
+	width: 660px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-640 {
+	width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-620 {
+	width: 620px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-600 {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-580 {
+	width: 580px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-560 {
+	width: 560px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-540 {
+	width: 540px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-520 {
+	width: 520px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container-500 {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+/*    格子
+--------------------------------------------------*/
+.grid-480 {
+	width: 480px;
+}
+
+.grid-460 {
+	width: 460px
+}
+
+.grid-440 {
+	width: 440px
+}
+
+.grid-420 {
+	width: 420px
+}
+
+.grid-400 {
+	width: 400px
+}
+
+.grid-380 {
+	width: 380px
+}
+
+.grid-360 {
+	width: 360px
+}
+
+.grid-340 {
+	width: 340px
+}
+
+.grid-320 {
+	width: 320px
+}
+
+.grid-300 {
+	width: 300px
+}
+
+.grid-280 {
+	width: 280px
+}
+
+.grid-260 {
+	width: 260px
+}
+
+.grid-240 {
+	width: 240px
+}
+
+.grid-220 {
+	width: 220px
+}
+
+.grid-200 {
+	width: 200px
+}
+
+.grid-180 {
+	width: 180px
+}
+
+.grid-160 {
+	width: 160px
+}
+
+.grid-140 {
+	width: 140px
+}
+
+.grid-120 {
+	width: 120px
+}
+
+.grid-100 {
+	width: 100px
+}
+
+.grid-80 {
+	width: 80px
+}
+
+.grid-60 {
+	width: 60px
+}
+
+.grid-40 {
+	width: 40px
+}
+
+.grid-20 {
+	width: 20px
+}
+/*    S & H 格子
+--------------------------------------------------*/
+.Lileft > li {
+	float: left;
+}
+
+.Liright > li {
+	float: right;
+}
+
+.box-10,
+.grid-10 > li {
+	width: 10%;
+}
+
+.box-9,
+.grid-9 > li {
+	width: 11.111111%;
+}
+
+.box-8,
+.grid-8 > li {
+	width: 12.5%;
+}
+
+.box-7,
+.grid-7 > li {
+	width: 14.285714%;
+}
+
+.box-6,
+.grid-6 > li {
+	width: 16.666667%;
+}
+
+.box-5,
+.grid-5 > li {
+	width: 20%;
+}
+
+.box-4,
+.grid-4 > li {
+	width: 25%;
+}
+
+.box-3,
+.grid-3 > li {
+	width: 33.333333%;
+}
+
+.box-2,
+.grid-2 > li {
+	width: 50%;
+}
+
+/*    字体颜色
+--------------------------------------------------*/
+.cr-0 {
+	color: #000000;
+}
+
+.cr-3 {
+	color: #333333
+}
+
+.cr-6 {
+	color: #666666
+}
+
+.cr-9 {
+	color: #999999
+}
+
+.cr-f {
+	color: #FFFFFF
+}
+
+.cr-e {
+	color: #EEEEEE
+}
+
+.cr-c {
+	color: #CCCCCC
+}
+
+.cr-d {
+	color: #DDDDDD
+}
+
+.cr-r {
+	color: #FF0000
+}
+
+.cr-g {
+	color: #00FF00
+}
+/*    背景颜色
+--------------------------------------------------*/
+.bg-0 {
+	background: #000000
+}
+
+.bg-3 {
+	background: #333333
+}
+
+.bg-6 {
+	background: #666666
+}
+
+.bg-9 {
+	background: #999999
+}
+
+.bg-f {
+	background: #FFFFFF
+}
+
+.bg-e {
+	background: #EEEEEE
+}
+
+.bg-c {
+	background: #CCCCCC
+}
+
+.bg-d {
+	background: #DDDDDD
+}
+
+.bg-r {
+	background: #FF0000
+}
+
+.bg-g {
+	background: #00FF00
+}
+
+.bg-t {
+	background: transparent !important
+}
+/*   边框
+--------------------------------------------------*/
+.bd {
+	border: 1px solid #666
+}
+
+.bd-0 {
+	border-color: #000000
+}
+
+.bd-3 {
+	border-color: #333333
+}
+
+.bd-6 {
+	border-color: #666666
+}
+
+.bd-9 {
+	border-color: #999999
+}
+
+.bd-g {
+	border-color: #00FF00
+}
+
+.bd-t {
+	border-top: 1px solid #666
+}
+
+.bd-l {
+	border-left: 1px solid #666
+}
+
+.bd-r {
+	border-right: 1px solid #666
+}
+
+.bd-b {
+	border-bottom: 1px solid #666
+}
+
+.bd-width1 {
+	border-width: 1px;
+}
+
+.bd-width2 {
+	border-width: 2px;
+}
+
+.bd-width3 {
+	border-width: 3px;
+}
+
+.bd-width4 {
+	border-width: 4px;
+}
+
+.bd-width5 {
+	border-width: 5px;
+}
+
+.bd-solid {
+	border-style: solid
+}
+
+.bd-dashed {
+	border-style: dashed
+}
+
+.bd-dotted {
+	border-style: dotted
+}
+.bd-none{
+	border: 0 !important
+}
+
+/*    字号
+--------------------------------------------------*/
+.f10 {
+	font-size: 10px
+}
+
+.f12 {
+	font-size: 12px
+}
+
+.f14 {
+	font-size: 14px
+}
+
+.f16 {
+	font-size: 16px
+}
+
+.f18 {
+	font-size: 18px
+}
+
+.f20 {
+	font-size: 20px
+}
+
+.f22 {
+	font-size: 22px
+}
+
+.f24 {
+	font-size: 24px
+}
+
+.f26 {
+	font-size: 26px
+}
+
+.f28 {
+	font-size: 28px
+}
+
+.f30 {
+	font-size: 30px
+}
+
+.f32 {
+	font-size: 32px
+}
+
+.f34 {
+	font-size: 34px
+}
+
+.f36 {
+	font-size: 36px
+}
+
+.f38 {
+	font-size: 38px
+}
+
+.fb {
+	font-weight: bold !important
+}
+
+.fn {
+	font-weight: normal !important
+}
+
+/*    行高
+--------------------------------------------------*/
+
+.line-little {
+	line-height: 20px
+}
+
+.line-small {
+	line-height: 22px
+}
+
+.line {
+	line-height: 24px
+}
+
+.line-big {
+	line-height: 26px
+}
+
+.line-large {
+	line-height: 28px
+}
+/*    外边距
+--------------------------------------------------*/
+.auto {
+	margin: 0 auto !important
+}
+
+.auto5 {
+	margin: 5px auto !important
+}
+
+.auto10 {
+	margin: 10px auto !important
+}
+
+.auto15 {
+	margin: 15px auto !important
+}
+
+.auto20 {
+	margin: 20px auto !important
+}
+
+.auto30 {
+	margin: 30px auto !important
+}
+
+.margin-large {
+	margin: 30px
+}
+
+.margin-large-top {
+	margin-top: 30px
+}
+
+.margin-large-right {
+	margin-right: 30px
+}
+
+.margin-large-bottom {
+	margin-bottom: 30px
+}
+
+.margin-large-left {
+	margin-left: 30px
+}
+
+.margin-big {
+	margin: 20px
+}
+
+.margin-big-top {
+	margin-top: 20px
+}
+
+.margin-big-right {
+	margin-right: 20px
+}
+
+.margin-big-bottom {
+	margin-bottom: 20px
+}
+
+.margin-big-left {
+	margin-left: 20px
+}
+
+.margin {
+	clear: both;
+	margin: 10px!important
+}
+
+.margin-top {
+	margin-top: 10px
+}
+
+.margin-right {
+	margin-right: 10px
+}
+
+.margin-bottom {
+	margin-bottom: 10px
+}
+
+.margin-left {
+	margin-left: 10px
+}
+
+.margin-small {
+	margin: 5px
+}
+
+.margin-small-top {
+	margin-top: 5px
+}
+
+.margin-small-right {
+	margin-right: 5px
+}
+
+.margin-small-bottom {
+	margin-bottom: 5px
+}
+
+.margin-small-left {
+	margin-left: 5px
+}
+
+.margin-little {
+	margin: 2px
+}
+
+.margin-default {
+	margin: 0px
+}
+
+.margin-little-top {
+	margin-top: 2px
+}
+
+.margin-default-top {
+	margin-top: 0px
+}
+
+.margin-little-right {
+	margin-right: 2px
+}
+
+.margin-default-right {
+	margin-right: 0px
+}
+
+.margin-little-bottom {
+	margin-bottom: 2px
+}
+
+.margin-default-bottom {
+	margin-bottom: 0px
+}
+
+.margin-little-left {
+	margin-left: 2px
+}
+
+.margin-default-left {
+	margin-left: 0px
+}
+/*    内边距
+--------------------------------------------------*/
+.padding-large {
+	padding: 30px
+}
+
+.padding-large-top {
+	padding-top: 30px
+}
+
+.padding-large-right {
+	padding-right: 30px
+}
+
+.padding-large-bottom {
+	padding-bottom: 30px
+}
+
+.padding-large-left {
+	padding-left: 30px
+}
+
+.padding-big {
+	padding: 20px
+}
+
+.padding-big-top {
+	padding-top: 20px
+}
+
+.padding-big-right {
+	padding-right: 20px
+}
+
+.padding-big-bottom {
+	padding-bottom: 20px
+}
+
+.padding-big-left {
+	padding-left: 20px
+}
+
+.padding {
+	padding: 10px
+}
+
+.padding-top {
+	padding-top: 10px
+}
+
+.padding-right {
+	padding-right: 10px
+}
+
+.padding-bottom {
+	padding-bottom: 10px
+}
+
+.padding-left {
+	padding-left: 10px
+}
+
+.padding-small {
+	padding: 5px
+}
+
+.padding-small-top {
+	padding-top: 5px
+}
+
+.padding-small-right {
+	padding-right: 5px
+}
+
+.padding-small-bottom {
+	padding-bottom: 5px
+}
+
+.padding-small-left {
+	padding-left: 5px
+}
+
+.padding-little {
+	padding: 2px
+}
+
+.padding-default {
+	padding: 0px
+}
+
+.padding-little-top {
+	padding-top: 2px
+}
+
+.padding-default-top {
+	padding-top: 0px
+}
+
+.padding-little-right {
+	padding-right: 2px
+}
+
+.padding-default-right {
+	padding-right: 0px
+}
+
+.padding-little-bottom {
+	padding-bottom: 2px
+}
+
+.padding-default-bottom {
+	padding-bottom: 0px
+}
+
+.padding-little-left {
+	padding-left: 2px
+}
+
+.padding-default-left {
+	padding-left: 0px
+}
+/*    圆角
+--------------------------------------------------*/
+.radius-none {
+	border-radius: 0
+}
+
+.radius-small {
+	border-radius: 2px
+}
+
+.radius {
+	border-radius: 4px
+}
+
+.radius-big {
+	border-radius: 6px
+}
+
+.radius-rounded {
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 2em
+}
+
+.radius-circle {
+	border-radius: 50%
+}
+
+.radius-ellipse {
+	border-radius: 1000px
+}

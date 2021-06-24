@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>微信公众号-首页框架</title>
+<!--基本样式-消除浏览器默认样式-->
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<!--公共样式-以备公用之需-->
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<!--本网页样式-设置本页面样式-->
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<!--swiper插件的基础样式-->
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<!--jquery-方便函数封装-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--iscoll框架的核心js-->
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/demoUtils.js"></script>
+<!--swiper轮播图核心js-->
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<!--公共js-->
+<script type="text/javascript" src="js/common.js"></script>
+<!--本网页核心js-->
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body onload="loaded()">
+	<div class="wx-container" id="main">
+		<header>
+			<div id="header">
+				iScroll-微信开发首页版
+			</div>
+		</header>
+		<div id="wrapper">
+			<div id="scroller">
+				<div class="wx-doc-conList">
+					<div class="wx-doc-conTitle">
+						仇郯郯移动端框架之微信版文档说明
+					</div>
+					<ul>
+						<li>
+							1. 嵌入iscroll框架，更加符合移动端滚动习惯
+						</li>
+						<li>
+							2. 根据个人喜好，自定义滚动条样式
+						</li>
+						<li>
+							3. 使用rem单位，灵活兼容所有移动端设备
+						</li>
+					</ul>
+				</div>
+				<!-- 轮播图 -->
+				<div class="swiper-container swiper1">
+			        <div class="swiper-wrapper">
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/1.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/2.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/3.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/4.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/5.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/6.jpg" alt="">
+			            </a>
+			            <a href="#" class="swiper-slide">
+			            	<img src="./images/7.jpg" alt="">
+			            </a>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination swiper-pagination1"></div>
+			    </div>
+			    <div class="wx-doc-conList">
+					<div class="wx-doc-conTitle">
+						仇郯郯移动端框架之微信版文档说明
+					</div>
+					<ul>
+						<li>
+							4. 嵌入swiper框架，无论多少组轮播图，来者不拒
+						</li>
+					</ul>
+				</div>
+			    <div class="swiper-container swiper2">
+			        <div class="swiper-wrapper swiper-wrapper2">
+			            <a href="#" class="swiper-slide swiper-slide2">
+			            	<img src="./images/hanguohuiren.jpg" />
+			            </a>
+			            <a href="#" class="swiper-slide swiper-slide2">
+			            	<img src="./images/xiaominote.jpg" />
+			            </a>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination small-pagination swiper-pagination2"></div>
+			    </div>
+								
+			</div>
+		</div>
+		<footer>	
+			<div id="footer">
+				本框架由仇郯郯整理，为仇郯郯所有
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+

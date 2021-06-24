@@ -1,0 +1,4 @@
+主要修改了childSys.html文件：
+1、使class="stdList"列表的 li 高度自适应；
+2、在searchBox上面增加标签；
+需要替换StdSpecialTopic\Style\common.css和StdSpecialTopic\childSys.html两个文件

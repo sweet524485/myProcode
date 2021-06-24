@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/ifocus.css">
+<link rel="stylesheet" href="css/button.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/showpic.js"></script>
+<body class="body">
+
+<!-- header -->
+<div class="x-header_wrap">
+    <div class="x-head_1">
+        <div class="x-head_top">
+            <!-- 登录前 -->
+            <div class="x-login_before">
+                <a href="">注册</a>
+                <span>|</span>
+                <a href="javascript:void(0)" id="x-login_btn">登录</a>
+            </div>
+            <!-- 登录后 -->
+            <div class="x-login_after hide">
+                <a href="javascript:" class="x-user" id="login_btn">
+                    <i class="x-icon-user"></i><span>我叫小沈阳</span>
+                </a>
+                <ul class="x-user_list hide">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="x-icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="x-head_2">
+        <div class="x-head_bottom clearfix">
+            <div class="x-head_logo grid-240 left">
+                <a href="">
+                    <img src="images/logo.jpg" alt="">
+                </a> 
+            </div>
+            <div class="x-head_nav container-540 left">
+                <a href="index.html">首页</a>
+                <a href="article.html">文集</a>
+                <a href="movie.html" class="active">视频</a>
+                <a href="media.html">媒体</a>
+                <a href="mediaBan.html">媒体平台</a>
+            </div>
+            <div class="x-head_search grid-220 left">
+                <form action="" class="block clearfix">
+                    <input type="text" class="x-search_input">
+                    <button type="submit" class="x-search_button right"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /header -->
+
+
+<!-- content -->
+<div class="x-contetn">
+    <div class="container-1000">
+        <div class="x-cont_wrap clearfix">
+            <!-- content-left -->
+            <div class="x-cont_left container-720 left">
+                <div class="margin">
+                    <div class="x-video-top-box">
+                    	<a href="movePlay.html" class="x-video-top-face">
+                    		<img src="./images/video-top-face.gif" alt="logo图片" title="大众健身操">
+                    	</a>
+                    	<a href="movePlay.html" class="x-video-top-title">
+                    		大众健身操集锦(1-5)
+                    	</a>
+                    	<span class="x-video-top-time">
+                    		2014-9-25 13:33&nbsp;|&nbsp;小白
+                    	</span>
+                    	<span class="x-video-top-name">
+                    		主讲：彭永春Kitty
+                    	</span>
+                    	<span class="x-video-top-name x-video-top-play">
+                    		表演：Kitty健身操表演队
+                    	</span>
+                    </div>
+                    <div class="x-video-content-box">
+                    	<span class="x-video-content-inctr">介绍：</span>Kitty减肥轻盈操，特别针对亚洲人的体质和体型特点，经过专业教练编排设计而成。它全面融合了有氧运动的基本规律，通过优美有效的健美操动作，演绎的是一种新颖时尚的健身操。只要您加入Kitty有氧健身行列您将会在优美动感的音乐声中，取得明显的健身效果！<br/>
+						Kitty减肥轻盈操，特别针对亚洲人的体质和体型特点，经过专业教练编排设计而成。它全面融合了有氧运动的基本规律，通过优美有效的健美操动作，演绎的是一种新颖时尚的健身操。只要您加入Kitty有氧健身行列您将会在优美动感的音乐声中，取得明显的健身效果！
+						Kitty减肥轻盈操，特别针对亚洲人的体质和体型特点，经过专业教练编排设计而成。它全面融合了有氧运动的基本规律，通过优美有效的健美操动作，演绎的是一种新颖时尚的健身操。只要您加入Kitty有氧健身行列您将会在优美动感的音乐声中，取得明显的健身效果！
+						Kitty减肥轻盈操，特别针对亚洲人的体质和体型特点，经过专业教练编排设计而成。它全面融合了有氧运动的基本规律，通过优美有效的健美操动作，演绎的是一种新颖时尚的健身操。只要您加入Kitty有氧健身行列您将会在优美动感的音乐声中，取得明显的健身效果！
+						Kitty减肥轻盈操，特别针对亚洲人的体质和体型特点，经过专业教练编排设计而成。它全面融合了有氧运动的基本规律，通过优美有效的健美操动作，演绎的是一种新颖时尚的健身操。只要您加入Kitty有氧健身行列您将会在优美动感的音乐声中，取得明显的健身效果！
+						<!-- 视频点击上小三角形 -->
+						<div class="x-video-rect-box">
+							<div class="x-video-rect-more x-video-audio-rect">
+								<img src="./images/audio-more.jpg" alt="">
+							</div>
+						</div>
+                    </div>
+                    <!-- 视频点击下小三角形 -->
+					<div class="x-video-rect-box x-video-rect-box-less">
+						<div class="x-video-rect-less x-video-audio-rect">
+							<img src="./images/audio-less.gif" alt="">
+						</div>
+					</div>
+					<!-- 分享 -->
+	                <div class="x-share x-video-share">
+	                    <div class="padding-small clearfix">
+	                      	<span class="x-video-xj">
+	                      		视频选集
+	                      	</span>
+	                        <!-- 分享 -->
+	                        <div class="x-share_box right">
+	                            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+	                            <div class="jiathis_style_24x24">
+	                                <a class="x-share_code"></a>
+	                                <div class="x-qr_code hide">
+	                                    <img src="images/small-second1.gif" alt="">
+	                                </div>
+	                                <a class="jiathis_button_qzone"></a>
+	                                <a class="jiathis_button_tsina"></a>
+	                                <a class="jiathis_button_tqq"></a>
+	                                <a class="jiathis_button_weixin"></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+					<!-- 视频选集内容 -->
+					<div class="x-video-detail-box clearfix">
+						<div class="x-video-datail-list">
+							<a href="movePlay.html" class="x-video-datail-face">
+								<img src="./images/audio-video.jpg" alt="">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-list-title">
+								课时-1课时-1课时-1课时-1课时-1课时-1课时-1课时-1课时-1
+							</a>
+							<span class="x-video-datail-list-content">
+								如何减下小蛮腰如何减下小蛮腰如何减下小蛮腰
+							</span>
+						</div>
+						<div class="x-video-datail-list">
+							<a href="movePlay.html" class="x-video-datail-face">
+								<img src="./images/audio-video.jpg" alt="">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-list-title">
+								课时-2课时-2课时-2课时-2课时-2课时-2课时-2时-2课时-2
+							</a>
+							<span class="x-video-datail-list-content">
+								如何减下小蛮腰如何减下小蛮腰如何减下小蛮腰
+							</span>
+						</div>
+						<div class="x-video-datail-list">
+							<a href="movePlay.html" class="x-video-datail-face">
+								<img src="./images/audio-video.jpg" alt="">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-list-title">
+								课时-3课时-3课时-3课时-3课时-3课时-3课时-3课时-3课时-3
+							</a>
+							<span class="x-video-datail-list-content">
+								如何减下小蛮腰如何减下小蛮腰如何减下小蛮腰
+							</span>
+						</div>
+						<div class="x-video-datail-list">
+							<a href="movePlay.html" class="x-video-datail-face">
+								<img src="./images/audio-video.jpg" alt="">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-list-title">
+								课时-4课时-4课时-4课时-4课时-4课时-4课时-4课时-4课时-4
+							</a>
+							<span class="x-video-datail-list-content">
+								如何减下小蛮腰如何减下小蛮腰如何减下小蛮腰1
+							</span>
+						</div>
+					</div>
+					<!-- 相关视频 -->
+					<div class="x-video-datail-relation">
+						相关视频
+					</div>
+					<!-- 相关视频 列表 -->
+					<div class="x-video-datail-relation-box clearfix">
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+						<div class="x-video-datail-relation-list">
+							<a href="movePlay.html" class="x-video-datail-relation-list-face">
+								<img src="./images/audio-botton-img.gif" alt="播放图片" title="初级瑜伽视频">
+							</a>
+							<a href="movePlay.html" class="x-video-datail-relation-list-title">
+								初级瑜伽视频初级瑜伽视频初级瑜伽视频
+							</a>
+							<div class="x-video-datail-relation-list-num">
+								<img src="./images/audio-play.jpg" alt="">
+								<span>258</span>
+							</div>
+						</div>
+					</div>
+                </div>  
+            </div>
+            <!-- content-right -->
+            <div class="x-cont_right grid-260 right bg-t">
+                <!-- 媒体推荐 -->
+                <div class="x-r_author margin-big-bottom bg-f">
+                    <div class="x-r_author_info padding clearfix">
+                        <a href="" class="x-pic_img">
+                            <img src="images/test.jpg" alt="" class="radius-circle">
+                            <i class="approve"></i>
+                        </a>
+                        <div class="x-r_info clearfix">
+                            <a href="" class="x-user font-simsun f14" target="_blank">浮光百科 <i class="x-icon-user x-icon-1"></i></a>
+                            <p class="x-job font-simsun line-large margin-little-bottom">健康咨询师</p>
+                            <div class="x-fans left font-simsun">
+                                粉丝<span>(1511)</span>
+                            </div>
+                            <div class="x-book right font-simsun">
+                                专辑<span>(211)</span>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="x-focus">+ 关注</a>
+                    </div>
+                    <ul class="x-r_author_act padding padding-little-top">
+                        <li>
+                            <a href="" class="ellipsis">
+                                <i class="x-icon-rit"></i>
+                                <span>袁隆平:要号召愿意为科学献身的年轻人...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ellipsis">
+                                <i class="x-icon-rit"></i>
+                                <span>袁隆平:要号召愿意为科学献身的年轻人...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ellipsis">
+                                <i class="x-icon-rit"></i>
+                                <span>袁隆平:要号召愿意为科学献身的年轻人...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="ellipsis">
+                                <i class="x-icon-rit"></i>
+                                <span>袁隆平:要号召愿意为科学献身的年轻人...</span>
+                            </a>
+                        </li>
+                        <li class="text-right bd-none">
+                            <a href="" class="font-simsun f12 cr-main" style="margin-bottom:0;padding-bottom:0;">
+                                更多文章>>
+                            </a>
+                        </li>
+                    </ul>     
+                </div><!-- 媒体推荐结束 -->
+                <!-- 热门视频 -->
+                <div class="x-r_title x-icon-corpus x-vide0o-hot-video">
+                    <span></span>
+                </div>
+				<div class="x-vide0o-hot-video-box">
+					<div class="x-vide0o-hot-video-list">
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-face">
+							<img src="./images/video-right-detail-face-img.gif" alt="">
+						</a>
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-title">
+							收腰第5课：大众瑜伽瘦腰入门课程
+						</a>
+						<div class="x-vide0o-hot-video-list-bottom">
+							<span class="x-vide0o-hot-video-list-time">
+								2014-2-12
+							</span>
+							<span class="x-vide0o-hot-video-list-play">
+								播放(1)
+							</span>
+						</div>
+					</div>
+					<div class="x-vide0o-hot-video-list">
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-face">
+							<img src="./images/video-right-detail-face-img.gif" alt="">
+						</a>
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-title">
+							收腰第5课：大众瑜伽瘦腰入门课程
+						</a>
+						<div class="x-vide0o-hot-video-list-bottom">
+							<span class="x-vide0o-hot-video-list-time">
+								2014-2-12
+							</span>
+							<span class="x-vide0o-hot-video-list-play">
+								播放(1)
+							</span>
+						</div>
+					</div>
+					<div class="x-vide0o-hot-video-list">
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-face">
+							<img src="./images/video-right-detail-face-img.gif" alt="">
+						</a>
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-title">
+							收腰第5课：大众瑜伽瘦腰入门课程
+						</a>
+						<div class="x-vide0o-hot-video-list-bottom">
+							<span class="x-vide0o-hot-video-list-time">
+								2014-2-12
+							</span>
+							<span class="x-vide0o-hot-video-list-play">
+								播放(1)
+							</span>
+						</div>
+					</div>
+					<div class="x-vide0o-hot-video-list">
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-face">
+							<img src="./images/video-right-detail-face-img.gif" alt="">
+						</a>
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-title">
+							收腰第5课：大众瑜伽瘦腰入门课程
+						</a>
+						<div class="x-vide0o-hot-video-list-bottom">
+							<span class="x-vide0o-hot-video-list-time">
+								2014-2-12
+							</span>
+							<span class="x-vide0o-hot-video-list-play">
+								播放(1)
+							</span>
+						</div>
+					</div>
+					<div class="x-vide0o-hot-video-list">
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-face">
+							<img src="./images/video-right-detail-face-img.gif" alt="">
+						</a>
+						<a href="movePlay.html" class="x-vide0o-hot-video-list-title">
+							收腰第5课：大众瑜伽瘦腰入门课程
+						</a>
+						<div class="x-vide0o-hot-video-list-bottom">
+							<span class="x-vide0o-hot-video-list-time">
+								2014-2-12
+							</span>
+							<span class="x-vide0o-hot-video-list-play">
+								播放(1)
+							</span>
+						</div>
+					</div>
+					<br class="clear-both"/>
+				</div>
+            </div>
+
+        </div>
+    </div>
+</div><!-- /content -->
+
+<!-- footer -->
+<div class="x-footer">
+    <div class="container-1000">
+        <div class="x-foot_copy">
+            <p>
+                <a href="">关于我们</a>
+                <a href="">诚聘英才</a>
+                <a href="">媒体入驻</a>
+                <a href="">广告服务</a>
+                <a href="">微商服务</a>
+            </p>
+            <p>© 2014 小白全攻略生活百科 京ICP备14030910号-1  </p>
+        </div>
+    </div>
+</div><!-- /footer -->
+<script>
+// 视频页JS
+$(function(){
+    $('.x-video-rect-less').click(function(){
+        $('.x-video-rect-more').show(100);
+        $('.x-video-rect-less').hide(100);
+        $('.x-video-content-box').css({'height':'auto','border':'1px solid #CDCDCD','box-shadow': '0 0 5px #CDCDCD'});
+    })
+    $('.x-video-rect-more').click(function(){
+        $('.x-video-rect-more').hide(100);
+        $('.x-video-rect-box-less').show(100);
+        $('.x-video-rect-less').show(100);
+        $('.x-video-content-box').css({'height':'70px','border':'1px solid white','box-shadow': '0 0 5px #FFFFFF'});
+    })
+});
+// 点击关注
+$(function(){
+    $('.x-focus').click(function(){
+        $(this).toggleClass('x-plus')
+    })
+})
+// 视频播放页的右侧列表鼠标放上效果
+$(function(){
+    $('.x-video-play-right-con-list').mouseenter(function(){
+        $(this).find('.x-video-play-right-con-list-play').css({'margin-left':'3px'});
+        $(this).find('.x-video-play-right-con-list-num').css({'margin-left':'-3000px'});
+        $(this).css({'background':'#2D2D2D'});
+    })
+    $('.x-video-play-right-con-list').mouseleave(function(){
+        $(this).find('.x-video-play-right-con-list-play').css({'margin-left':'-3000px'});
+        $(this).find('.x-video-play-right-con-list-num').css({'margin-left':'3px'});
+        $(this).css({'background':'#3F3F3F'});
+    })
+});
+// 视频播放页的左侧点击小三角翻转效果
+$(function(){
+    $('.x-share-low').click(function(){
+        $('.x-share-up').show();
+        $('.x-share-low').hide();
+        $(this).parents('.x-video-share').css({'border-bottom':'1px solid #FFFFFF'});
+        $('.x-video-paly-textarea').show();
+    })
+    $('.x-share-up').click(function(){
+        $('.x-share-low').show();
+        $('.x-share-up').hide();
+        $(this).parents('.x-video-share').css({'border-bottom':'1px solid #B2B2B2'});
+        $('.x-video-paly-textarea').hide();
+    })
+});
+// 视频评论
+$(function(){
+    $(".x-js-reply").toggle(function  () {
+     var oindex=$(".x-js-reply").index($(this));
+        $(".x-reply-part").addClass('hide').eq(oindex).removeClass('hide')
+    },function  () {
+        $(".x-reply-part").addClass('hide');
+    })
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,787 @@
+img{border: 0;} li { list-style:none;}
+*{padding: 0;margin:0;text-decoration: none;border: 0;}
+ul{list-style-type:none; margin-left:0;padding-left:0;}
+/*最上部——登录、注册框*/
+#top{width:100%;
+	 background:#62880F;	
+	 margin:0 auto;
+	 height: 150px;}
+
+#top a{display: block;
+	   height: 150px;
+	   width:1200px;
+	   background: white;
+	   margin: 0 auto;
+ 	   overflow: hidden;
+	   position: relative;}
+
+#top a img{width: 1200px;
+	      height: 160px;
+	     position: absolute;
+	     opacity: 0.99;filter:alpha(opacity=99);
+	     left:0;top:0;}
+
+#top a img:hover{opacity: 0.80;filter:alpha(opacity=80);}
+
+/*导航条*/
+#nav{height: 65px;
+	 width:1200px;
+	 background: #30B95D;
+	 position: relative;
+	 margin: 0 auto;}
+
+#nav a{display: block;
+	   margin-top: 25px;
+	   margin-right: 5px;
+	   overflow: hidden;
+	   color: #AE2F02;
+	   font-size: 18px;
+	   font-weight: 700;
+	   font-family: 微软雅黑;
+	   height: 30px;
+	   letter-spacing: 10px;
+	   text-indent: 10px;
+	   padding-top: 10px;
+	   padding-left: 20px;
+	   width: 82px;
+	   float: left;
+	   background: url(../images/menu2.gif);}
+
+#nav a:hover{color:white;}	   
+
+#nav .cur{display: block;
+	   margin-top: 25px;
+	   margin-right: 5px;
+	   letter-spacing: 10px;
+	   text-indent: 10px;
+	   padding-top: 10px;
+	   padding-left: 20px;
+	   height: 30px;
+	   color: #5223EB;
+	   width: 82px;
+	   float: left;
+	   background: url(../images/menu1.gif);}
+
+#form{position:absolute;
+	  margin-top:15px;
+	  height:40px;
+	  width: 480px;
+	  margin-left:640px;}
+
+#form .text{height: 32px;
+			width:448px;
+			position: absolute;top:0;left:0;
+			color:black;text-indent: 20px;
+			font-family: tahoma,arial,"宋体";
+			font-size: 12px;
+			line-height: 32px;
+			border: 3px solid #C40000;}
+
+#form .submit{height: 38px;
+	          width: 88px;
+	          position: absolute;
+	          left:450px;top:0;
+	          background: url(../images/search.png);}
+
+/*//轮播图*/
+
+#jd{width: 1200px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;}
+
+#jd a{position: absolute;
+		width: 1200px;
+		height: 450px;
+		background: white;
+		top:15px;left: 0;}
+
+#jd a img{position: absolute;
+		width: 1200px;
+		height: 450px;
+		top:0px;left: 0;}
+
+#jd ul{position: absolute;
+		top: 420px;
+		left:875px;}
+
+#jd ul li{float: left;
+		list-style: none;
+		position: relative;
+		z-index: 20;
+		width: 30px;
+		height: 30px;
+		background:red;
+		margin-right: 5px;
+		font-family: Arial,Verdana,"宋体";
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: white;
+		border-radius: 50%;}
+
+#jd ul li.cur{background:green; font-size: 27px;font-weight: 700;}
+
+/*<!-- 主体内容部分 -->*/
+#main{width: 1200px;
+	  height: 1360px;
+	  /*background:green;*/
+	  margin: 0 auto;
+	  position: relative;
+	  margin-top: 40px;}
+
+#main .main_left{width: 270px;
+				 height: 1360px;
+				 position: absolute;
+				 left:0;top:0;
+				 background: pink;}
+
+#main .main_left .list{height: 90px;
+	                  width: 270px;}
+
+#main .main_left .list1{height: 90px;
+	                   width: 270px;}
+
+#main .main_left .list2{height: 350px;
+	                   width: 270px;}	                   	                  
+
+#main .main_left .list a{
+			  height: 90px;
+	          width: 270px;
+	          text-align: center;
+	          line-height: 130px;
+	          display: block;
+	          position: relative;
+	          font-size: 20px;
+	          font-family: '微软雅黑';
+	          color:#AE2F02;
+	          text-decoration:underline;
+	          letter-spacing: 5px;
+	          font-weight: 700;
+	          background: url(../images/list.jpg) no-repeat 0 0;}
+
+#main .main_left .list1 a{
+			  height: 90px;
+	          width: 270px;
+	          text-align: center;
+	          line-height: 130px;
+	          display: block;
+	          font-size: 20px;
+	          font-family: '微软雅黑';
+	          color:#AE2F02;
+	          position: relative;
+	          text-decoration:underline;
+	          letter-spacing: 5px;
+	          font-weight: 700;
+	          background: url(../images/list.jpg) no-repeat 0 0;}
+
+#main .main_left .list2 a{
+			  height: 350px;
+	          width: 270px;
+	          position:relative;
+	          display: block;
+	          background: url(../images/ban.jpg) no-repeat 0 0;}
+
+#main .main_left .list2 p{ 
+			  font-size: 16px;
+	          font-family: '微软雅黑';
+	          color:black;}
+
+#main .main_left .list2 .p1{position: absolute;left:35px;top:180px;}
+
+#main .main_left .list2 .p2{position: absolute;left:35px;top:220px;}
+
+#main .main_left .list2 .p3{position: absolute;left:35px;top:260px;}
+
+#main .main_left .list2 .p4{position: absolute;left:35px;top:300px;}
+
+
+#main .main_left .list a:hover
+{color:purple;text-decoration:underline;}
+
+#main .main_left .list1 a:hover
+{color:purple;text-decoration:underline;}
+
+#main .main_left .ul{width: 270px; overflow: auto;}
+
+#main .main_left .ul li{display: block;float: left;height:75px;}
+
+#main .main_left .ul li a{
+	display: block;
+	float: left;
+	width: 270px;
+	height: 75px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: Arial,Verdana,"宋体";
+	color:black;
+	overflow: hidden;
+	letter-spacing: 5px;
+	text-indent: 70px;
+	line-height: 105px;
+	background: url(../images/li.jpg) no-repeat 0 0;}
+
+#main .main_left .ul li a:hover
+{color: white;text-decoration:underline;}
+
+#main .main_mid{width:700px;
+				height:1360px;
+				position: absolute;
+				left:285px;top:0;
+				background: pink; }
+
+#main .main_right{width: 200px;
+	              height: 1360px;
+	              position: absolute;
+	              left:1000px;top:0;
+	              background:pink;}
+
+#main .main_left .ul .li{
+			  height: 90px;
+	          width: 270px;
+	          text-align: center;
+	          line-height: 130px;
+	          display: block;
+	          font-size: 20px;
+	          font-family: '微软雅黑';
+	          color:#AE2F02;
+	          text-decoration:underline;
+	          letter-spacing: 5px;
+	          font-weight: 700;
+	          position: absolute;
+				left:0px;top:0;
+	          background: url(../images/list.jpg) no-repeat 0 0;}
+
+/*//////////////////主体中间部分///////////////////////////////*/
+
+#main .main_mid .main_mid_list1{height: 90px;
+	                   			width: 700px;}
+
+#main .main_mid .main_mid_list2{height: 90px;
+								margin-top: 30px;
+	                   			width: 700px;}
+
+#main .main_mid .main_mid_list1 a{
+			  height: 90px;
+	          width: 700px;
+	          text-indent:160px;
+	          line-height: 70px;
+	          display: block;
+	          font-size: 25px;
+	          font-family: '微软雅黑';
+	          color:black;
+	          position: relative;
+	          letter-spacing: 5px;
+	          font-weight: 700;
+	          background: url(../images/cop.jpg) no-repeat 0 0;}
+
+#main .main_mid .main_mid_list2 a{
+			  height: 90px;
+	          width: 700px;
+	          text-indent:160px;
+	          line-height: 70px;
+	          display: block;
+	          font-size: 25px;
+	          font-family: '微软雅黑';
+	          color:black;
+	          position: relative;
+	          letter-spacing: 5px;
+	          font-weight: 700;
+	          background: url(../images/cop1.jpg) no-repeat 0 0;}
+
+
+
+#main .main_mid .bg1 .bg1{
+			  height:350px;
+	          width: 700px;
+	          top:15px;left:0;
+	          position:relative;
+	          display: block;
+	          background: url(../images/bg1.jpg) no-repeat 0 0;}
+
+#main .main_mid .bg2 .bg2{
+			  height:780px;
+	          width: 700px;
+	          top:15px;left:0;
+	          position:relative;
+	          display: block;
+	          background: url(../images/bg2.jpg) no-repeat 0 0;}
+
+
+#main .main_mid .bg1 .bg1 .content{
+		color: black;
+		font-family: "宋体",sans-serif;
+		font-size: 17px;
+		line-height: 28px;
+		display: block;
+		font-weight: 700;
+		text-indent: 2em;
+		padding-top: 20px;
+		width: 660px;
+		margin: 0 auto;
+		height: 250px;}	 
+
+#main .main_mid .bg2 .bg2 div{
+	width: 160px;
+	height: 215px;
+	position: relative;
+	background: #4F9C02;
+	margin-top: 35px;
+	margin-left: 11px;
+	float: left;}
+
+#main .main_mid .bg2 .bg2 div a{
+	display: block;
+	width: 120px;
+	height: 155px;
+	background: #BAD65F;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: absolute;
+	left:20px;top:0;}
+
+#main .main_mid .bg2 .bg2 div a img{
+	width: 130px;
+	opacity: 0.99;filter:alpha(opacity=99);
+	position: absolute;
+	top:0;left:0;}
+
+#main .main_mid .bg2 .bg2 div a img:hover
+{opacity: 0.70;filter:alpha(opacity=70);}
+
+#main .main_mid .bg2 .bg2 div .txt{
+	display: block;
+	height: 40px;
+	width:140px;
+	border: 1px solid white;
+	font-family: "宋体",sans-serif;
+	font-size: 16px;
+	color: black;
+	font-weight: 700;
+	line-height: 40px;
+	position: absolute;
+	left:10px;top:160px;
+	overflow: hidden;}
+
+#main .main_mid .bg2 .bg2 div .txt:hover
+{border: 1px solid red;color: red;text-decoration:underline;background:#94CD1E;}
+
+/*/////////////////右侧栏 right/////////////////////////////////////*/
+
+#main .main_right .main_right_list{height: 90px;
+	                  			  width: 200px;}
+
+#main .main_right .main_right_list a{
+			  height: 90px;
+	          width: 200px;
+	          text-align: center;
+	          line-height: 120px;
+	          display: block;
+	          position: relative;
+	          font-size: 20px;
+	          font-family: '微软雅黑';
+	          color:#AE2F02;
+	          text-decoration:underline;
+	          letter-spacing: 8px;
+	          font-weight: 700;
+	          background: url(../images/right.jpg) no-repeat 0 0;}
+
+#main .main_right .main_right_list a:hover
+{color:purple;text-decoration:underline;}
+
+#main .main_right .bg3 .bg3{
+			  height:550px;
+	          width: 200px;
+	          top:15px;left:0;
+	          position:relative;
+	          display: block;
+	          background: url(../images/bg3.png) no-repeat 0 0;}
+
+#main .main_right .bg3 .bg3 .content{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top:80px;left:0;
+		width: 200px;
+		margin: 0 auto;
+		height: 360px;}	 
+
+#main .main_right .bg3 .bg3 .content a{
+	display: block;float: left;
+	height:40px;width: 180px;
+	border: 2px solid white;
+	border-radius:5%;padding-left:5px;
+	background:#72C400;font-size: 14px;
+	font-family: "宋体",sans-serif;
+	line-height: 40px;font-weight: 700;
+	margin-top: 1px;margin-left: 6px;
+	overflow: hidden;color: black;}
+
+#main .main_right .bg3 .bg3 .content a:hover
+{border: 2px solid red;color: red;text-decoration:underline;background:#94CD1E;}
+
+
+
+#main .main_right .bg4 .bg4{
+			  height:590px;
+	          width: 200px;
+	          top:25px;left:0;
+	          position:relative;
+	          display: block;
+	          background: url(../images/bg4.png) no-repeat 0 0;}
+
+#main .main_right .bg4 .bg4 .content{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top:100px;left:0;
+		width: 200px;
+		margin: 0 auto;
+		height: 360px;}	
+
+#main .main_right .bg4 .bg4 .content a{
+	display: block;float: left;
+	height:40px;width: 180px;
+	border: 2px solid white;
+	border-radius:5%;padding-left:5px;
+	background:#72C400;font-size: 14px;
+	font-family: "宋体",sans-serif;
+	line-height: 40px;font-weight: 700;
+	margin-top: 1px;margin-left: 6px;
+	overflow: hidden;color: black;}
+
+#main .main_right .bg4 .bg4 .content a:hover
+{border: 2px solid red;color: red;text-decoration:underline;background:#94CD1E;}
+
+/*//////////////底部部分///////////////////////////////////////*/
+
+#bottom{width: 1200px;
+	    height: 122px;
+	    position: relative;
+	    background: #069052;
+	    margin: 0 auto;}
+
+#bottom .bottom{height:122px;
+	          width: 1200px;
+	          top:0px;left:0;
+	          position:absolute;
+	          top:17px;left:0;
+	          display: block;
+	          background: url(../images/footbg.png) no-repeat 0 0;}
+
+/*、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、*/
+/*、、、、、、、、列表模板 CSS设计、、、、、、、、、、、、、、、、、、*/
+/*、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、*/
+
+#main .main_left .addlist2{
+		width: 270px;
+		height: 350px;
+		margin-top: 15px;
+	    background: url(../images/list_left.jpg) no-repeat 0 0;
+		position: relative;}
+
+#main .main_left .addlist2 span{height:235px;
+	          width: 270px;
+	          top:0px;left:0;
+	          position:absolute;
+	          top:38px;left:0;
+	          /*background: yellow;*/
+	          overflow: hidden;
+	          display: block;}
+
+#main .main_left .addlist2 span a{
+	display: block;float: left;
+	height:42px;width: 210px;
+	border: 2px solid white;
+	border-radius:5%;padding-left:10px;
+	background:#72C400;font-size: 14px;
+	font-family: "宋体",sans-serif;
+	line-height: 42px;font-weight: 700;
+	margin-top: 1px;margin-left:23px;
+	overflow: hidden;color: black;}
+
+#main .main_left .addlist2 span a:hover{color:red;text-decoration:underline;}	
+
+#main .addmid{width:915px;
+			  height:1300px;
+			  background:#069052;
+			  position: relative;
+			  left:285px;top:0px;}
+
+#main .addmid .span{
+		width: 915px;
+		height: 160px;
+		overflow: hidden;
+	    background: url(../images/list_top.png) no-repeat 0 0;
+		position: absolute;
+		top:0;left:0;}
+
+#main .addmain{width: 915px;
+			   height: 1300px;
+			   position: absolute;
+			   overflow: hidden;
+			   left:0;top:90px;
+			   background: url(../images/list_main.png) no-repeat 0 0;}
+
+#main .addmain .bg{width: 915px;
+			   height: 90px;
+			   display: block;
+			   background: url(../images/list_mid.png) no-repeat 0 0;}
+
+#main .addmain .bg .p1{
+		font-size: 25px;
+		font-family: "微软雅黑";
+		line-height: 42px;
+		text-indent: 50px;
+		display: block;
+			float: left;
+		letter-spacing: 10px;
+		font-weight: 700;
+		color:#2E5F10;}
+
+#main .addmain .bg .p2{
+		font-size: 25px;
+		font-family: "微软雅黑";
+		line-height: 42px;
+		display: block;
+		float: left;
+		text-indent: 450px;
+		letter-spacing: 10px;
+		font-weight: 700;
+		color:#2E5F10;}
+
+#main .addmain .list_box{
+		width: 950px;
+		height: 1000px;
+		overflow: auto;
+		background: #C9E69B;
+		margin-top:0px;}
+
+
+#main .addmain .list_box .list_li{
+					width: 915px;
+			   		height: 100px;
+			   		background: url(../images/list_li.png) no-repeat 0 0;}
+
+#main .addmain .list_box .list_li .li1{
+					display: block;
+					float: left;
+					width: 560px;
+					font-size: 30px;
+					color: black;
+					font-weight: 700;
+					overflow: hidden;
+					/*background: yellow;*/
+					line-height: 120px;
+					margin-left: 45px;
+			   		height: 100px;}
+
+#main .addmain .list_box .list_li .li1:hover{color:red;text-decoration:underline;}			   		
+
+#main .addmain .list_box .list_li .time{
+					display: block;
+					float: left;
+					width: 200px;
+					font-size: 30px;
+					color: black;
+					padding-left: 20px;
+					margin-left: 40px;
+					overflow: hidden;
+					/*background:pink;*/
+					line-height: 120px;
+			   		height: 100px;}
+
+#main .addmain .list_box .page{
+					width: 915px;
+			   		height: 100px;
+			   		background: url(../images/page.png) no-repeat 0 0;}
+
+
+#main .addmain .list_box .page span{
+					display: block;
+					float: left;
+					width: 100px;
+					font-size: 30px;
+					color:#0E3509;
+					text-align: center;
+					margin-left: 30px;
+					cursor: pointer;
+					overflow: hidden;
+					background:#CFE89D;
+					line-height: 45px;
+			   		height: 50px;}
+
+#main .addmain .list_box .page span:hover{background:#89D036;color:red;}
+
+
+
+#main .addmain .list_box .page .num{
+					display: block;
+					float: left;
+					width: 50px;
+					font-size: 30px;
+					color:white;
+					cursor: pointer;
+					text-align: center;
+					margin-left: 30px;
+					overflow: hidden;
+					background:#069052;
+					line-height: 45px;
+			   		height: 50px;}
+
+#main .addmain .list_box .page .num:hover{background:#89D036;color:#003A00;}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/*////////////////////文章展示内容页////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、*/
+
+#main .addmid1{width:915px;
+			  height:1300px;
+			  background:#069052;
+			  position: relative;
+			  left:285px;top:0px;}
+
+#main .addmid1 .span1{
+		width: 915px;
+		height: 160px;
+		font-family: "宋体",sans-serif;
+		text-align: center;
+		line-height: 50px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		font-size: 27px;
+		color: black;
+		overflow: hidden;
+	    background: url(../images/txt_top.png) no-repeat 0 0;
+		position: absolute;
+		top:0;left:0;}
+
+#main .addmain1{width: 915px;
+			   height: 1300px;
+			   position: absolute;
+			   overflow: hidden;
+			   left:0;top:90px;
+			   background: url(../images/bg.jpg) no-repeat 0 0;}
+
+#main .addmain1 .bg1{width: 915px;
+			   height: 90px;
+			   position: relative;
+			   display: block;
+			   background: url(../images/title.png) no-repeat 0 0;}
+
+#main .addmain1 .bg1 .congorey{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:50px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		color:black;}
+
+#main .addmain1 .bg1 .congorey_tx{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:105px;
+		letter-spacing: 3px;
+		color:red;}
+
+#main .addmain1 .bg1 .author{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:230px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		color:black;}
+
+#main .addmain1 .bg1 .qiumingjie{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:285px;
+		letter-spacing: 3px;
+		color:red;}
+
+#main .addmain1 .bg1 .addtime{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:390px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		color:black;}
+
+#main .addmain1 .bg1 .addtime_int{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:495px;
+		letter-spacing: 3px;
+		color:red;}
+
+
+#main .addmain1 .bg1 .click{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:645px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		color:black;}
+
+#main .addmain1 .bg1 .point{
+		font-size: 20px;
+		font-family: "微软雅黑";
+		position: absolute;
+		top:50px;left:748px;
+		letter-spacing: 3px;
+		color:red;}
+
+#main .addmid1 .addmid1_content{
+		background: #72C400;
+		position: absolute;
+		overflow: hidden;
+		left:138px;top:180px;
+		width: 610px;
+		height: 1250px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

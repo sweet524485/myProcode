@@ -1,0 +1,153 @@
+body{
+	width:100%;
+}
+.fl-top-container{
+	width: 100%;
+	height: 38px;
+	background:#2E84EB;
+}
+.fl-top-content{
+	width:1300px;
+	height: 38px;
+	margin: 0 auto;
+}
+.fl-top-right{
+	float: right;
+	height: 38px;
+}
+.fl-top-srBox{
+	float: left;
+	height: 38px;
+	margin-right: 32px;
+}
+.fl-top-tag{
+	display:block;
+	float: left;
+	height: 14px;
+	line-height: 14px;
+	color:#fff;
+	font-size: 14px;
+	margin-top: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-right:1px solid #fff;
+}
+.fl-top-delBorder{
+	border:0;
+}
+.fl-top-help{
+	float: left;
+	margin-top:11px;
+	margin-right: 17px;
+}
+.fl-top-helpIcon{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 17px;
+	background: url(../Images/fl-help-icon.png) no-repeat;
+}
+.fl-top-helpTxt{
+	float: left;
+	height: 18px;
+	line-height: 16px;
+	color:#fff;
+	font-size: 14px;
+	margin-left: 8px;
+}
+.fl-lsn-container{
+	width:100%;
+	height: 144px;
+	position: relative;
+	z-index: 100;
+}
+.fl-lsn-content{
+	width: 1300px;
+	height: 100%;
+	margin: 0 auto;
+}
+.fl-lsn-logoBox{
+	float: left;
+	margin-top: 26px;
+}
+.fl-lsn-right{
+	float: right;
+	margin-right: 15px;
+	margin-top: 35px;
+}
+.fl-lsn-searchBox{
+	width:698px;
+	height: 34px;
+}
+.fl-lsn-searchInput{
+	width:627px;
+	height: 30px;
+	float:left;
+	border:2px solid #BFBEBE;
+	border-left-top-radius:3px;
+	border-left-bottom-radius:3px;
+	color:#E9B669;
+	font-size: 14px;
+	text-indent: 11px;
+}
+.fl-lsn-searchBtn{
+	width:67px;
+	height: 34px;
+	background: #BFBEBE;
+	line-height: 34px;
+	float: left;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+.fl-lsn-navBox{
+	padding-top: 18px;
+    height: 30px;
+    margin-left: -26px;
+}
+.fl-lsn-navBox:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.fl-lsn-navList{
+	display: block;
+    float: left;
+    height: 30px;
+    position: relative;
+    padding-left: 26px;
+    padding-right: 26px;
+    line-height: 30px;
+    color: #696969;
+    font-size: 16px;
+}
+.fl-lsn-nav{
+	display: block;
+	float: left;
+	padding-right:8px;
+}
+.fl-lsn-navIcon{
+	display: none;
+	float: left;
+	width:6px;
+	height: 5px;
+	background:url(../Images/fl-downIcon.png) no-repeat;
+	margin-top: 14px; 
+}
+.fl-lsn-navIcon.active{
+	display: block;
+}
+.fl-lsn-navHide{
+	width: 120px;
+    height: 200px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    position: absolute;
+    top: 30px;
+    left: 26px;
+    display: none;
+}
+.fl-lsn-navHide.active{
+	display: block;
+}

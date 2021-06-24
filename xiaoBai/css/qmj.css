@@ -1,0 +1,82 @@
+.x-vedio-index-move{
+	width: 700px;
+	height: 292px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.x-video-index-face{
+	width: 700px;
+	height: 292px;
+	position: absolute;
+	top:0;left:0;
+	display: none;
+}
+.x-video-index-move-ul{
+	position: absolute;
+	top: 225px;left:475px;
+}
+.x-video-index-move-ul li{
+	float: left;
+	list-style: none;
+	width: 14px;
+	height: 14px;
+	background: #999999;
+	margin-right: 5px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+}
+.x-video-index-move-ul li.x-video-index-move-li-cur{
+	background: #E4393C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

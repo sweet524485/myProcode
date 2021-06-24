@@ -1,0 +1,1108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天涯问答系统</title>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body>
+<!-- 最上部注册登录框 背景色 -->
+<div id="login">
+	<div id="login_box">
+		<a href="" class="login_box_bar">天涯网络</a>
+		<a href="" class="login_box_bar">天涯论坛</a>
+		<a href="" class="login_box_bar">天涯学习社区</a>
+
+		<a href="" class="logining">登录</a>
+		<a href="" class="sign">注册</a>
+	</div>
+</div>
+<!-- //搜索框  -->
+<div id="search">
+	<a href="" class="logo"><img src="images/logo.png"></a>
+	<form action="" id="form">
+		<input type="text" class="text" />
+		<input type="submit" class="sub1" value="搜索答案" />
+		<input type="submit" class="sub2" value="我要提问" />
+	</form>
+</div>
+<!-- //导航条 -->
+<div id="daohangtiao">
+	<div id="nav">
+		<ul>
+			<li class="current" >
+				<a href="">
+					<strong>
+						<span>首页</span>
+						<span class="active">首页</span>
+					</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<strong >
+						<span>问题库</span>
+						<span class="active">问题库</span>
+					</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<strong >
+						<span>乐帮</span>
+						<span class="active">乐帮</span>
+					</strong>
+				</a>
+			</li>
+			<li >
+				<a href="">
+					<strong>
+						<span>电器</span>
+						<span class="active">电器</span>
+					</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<strong>
+						<span>管理团</span>
+						<span class="active">管理团</span>
+					</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<strong>
+						<span>积分商城</span>
+						<span class="active">积分商城</span>
+					</strong>
+				</a>
+			</li>
+			<li >
+				<a href="">
+					<strong>
+						<span>维权平台</span>
+						<span class="active">维权平台</span>
+					</strong>
+				</a>
+			</li>
+			<li >
+				<a href="">
+					<strong>
+						<span>天涯社区</span>
+						<span class="active">天涯社区</span>
+					</strong>
+				</a>
+			</li>
+		</ul>
+	</div>	
+</div>
+<!-- //轮播图 -->
+<div id="jd">
+	<img src="images/images/1.png" style="display:block;" />
+	<img src="images/images/2.png" alt="" />
+	<img src="images/images/3.png" alt="" />
+	<img src="images/images/4.png" alt="" />
+	<img src="images/images/5.png" alt="" />
+	<img src="images/images/6.png" alt="" />
+	<img src="images/images/7.png" alt="" />
+	<img src="images/images/8.png" alt="" />
+	<ul>
+		<li class="cur">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+</div>
+<!-- //他们正等着你的帮助 -->
+<div id="help">
+	<img src="images/help.png">
+</div>
+<!-- //二级菜单 -->
+<div id="second_box">
+	<div id="left_second">
+		<div class="goodat">
+			<a href=""><img src="images/goodat.png"></a>
+		</div>
+		<div class="all">
+			<a href=""><img src="images/all.png"></a>
+		</div>
+		
+		<div id="menu">
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/1.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					电脑/网络
+				</a>
+				<div class="hide_box1">
+					<ul id="cup">
+						<li><a href="">笔记本电脑</a></li>
+						<li><a href="">软件</a></li>
+						<li><a href="">360产品</a></li>
+					</ul>
+					<ul id="cup1">
+						<li><a href="">互联网</a></li>
+						<li><a href="">硬件</a></li>
+						<li><a href="">资源分享</a></li>
+					</ul>
+					<ul id="cup2">
+						<li><a href="">操作系统</a></li>
+						<li><a href="">编程开发</a></li>
+						<li><a href="">电脑知识</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/2.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					手机/数码
+				</a>
+				<div class="hide_box2" >
+					<ul id="iphone">
+						<li><a href="">手机/通讯</a></li>
+						<li><a href="">手机品牌</a></li>
+						<li><a href="">数码品牌</a></li>
+					</ul>
+					<ul id="iphone1">
+						<li><a href="">平板电脑</a></li>
+						<li><a href="">照相机</a></li>
+						<li><a href="">特供机</a></li>
+					</ul>
+					<ul id="iphone2">
+						<li><a href="">MP3/MP4</a></li>
+						<li><a href="">手机系统</a></li>
+						<li><a href="">其他数码</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/3.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					生活
+				</a>
+				<div class="hide_box3" >
+					<ul id="huo">
+						<li><a href="">购物时尚</a></li>
+						<li><a href="">品牌服装</a></li>
+						<li><a href="">购车保养</a></li>
+						<li><a href="">星座占卜</a></li>
+					</ul>
+					<ul id="huo1">
+						<li><a href="">生活知识</a></li>
+						<li><a href="">出行旅行</a></li>
+						<li><a href="">购房置业</a></li>
+						<li><a href="">家电用品</a></li>
+					</ul>
+					<ul id="huo2">
+						<li><a href="">美容塑身</a></li>
+						<li><a href="">交通</a></li>
+						<li><a href="">房屋装饰</a></li>
+						<li><a href="">美食</a></li>
+					</ul>	
+				</div>	
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/4.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					游戏
+				</a>
+				<div class="hide_box4" >
+					<ul id="play">
+						<li><a href="">腾讯游戏</a></li>
+						<li><a href="">九城游戏</a></li>
+						<li><a href="">久游游戏</a></li>
+						<li><a href="">网龙游戏</a></li>
+						<li><a href="">网页游戏</a></li>
+						<li><a href="">手机游戏</a></li>
+					</ul>
+					<ul id="play1">
+						<li><a href="">盛大游戏</a></li>
+						<li><a href="">360游戏</a></li>
+						<li><a href="">巨人游戏</a></li>
+						<li><a href="">网络游戏</a></li>
+						<li><a href="">电视游戏</a></li>
+						<li><a href="">小游戏</a></li>
+					</ul>
+					<ul id="play2">
+						<li><a href="">网易游戏</a></li>
+						<li><a href="">完美游戏</a></li>
+						<li><a href="">金山游戏</a></li>
+						<li><a href="">单击游戏</a></li>
+						<li><a href="">桌上游戏</a></li>
+						<li><a href="">电子竞技</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/5.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					体育/运动
+				</a>
+				<div class="hide_box5">
+					<ul id="sport">
+						<li><a href="">综合赛事</a></li>
+						<li><a href="">体育明星</a></li>
+						<li><a href="">小球运动</a></li>
+						<li><a href="">运动品牌</a></li>
+					</ul>
+					<ul id="sport1">
+						<li><a href="">篮球</a></li>
+						<li><a href="">赛车赛事</a></li>
+						<li><a href="">田径</a></li>
+						<li><a href="">排球</a></li>
+					</ul>
+					<ul id="sport2">
+						<li><a href="">足球</a></li>
+						<li><a href="">跳水游泳</a></li>
+						<li><a href="">强身健康</a></li>
+						<li><a href="">彩票</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/6.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					娱乐明星
+				</a>
+				<div class="hide_box6" >
+					<ul id="super">
+						<li><a href="">电影电视</a></li>
+						<li><a href="">动漫</a></li>
+					</ul>
+					<ul id="super1">
+						<li><a href="">明星</a></li>
+						<li><a href="">综艺节目</a></li>
+					</ul>
+					<ul id="super2">
+						<li><a href="">音乐</a></li>
+						<li><a href="">仇明杰</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/7.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					休闲爱好
+				</a>
+				<div class="hide_box7" >
+					<ul id="love">
+						<li><a href="">摄影摄像</a></li>
+						<li><a href="">猜谜语</a></li>
+						<li><a href="">起名</a></li>
+						<li><a href="">茶艺</a></li>
+					</ul>
+					<ul id="love1">
+						<li><a href="">收藏</a></li>
+						<li><a href="">综艺</a></li>
+						<li><a href="">园艺艺术</a></li>
+						<li><a href="">麻将棋艺</a></li>
+					</ul>
+					<ul id="love2">
+						<li><a href="">宠物</a></li>
+						<li><a href="">幽默搞笑</a></li>
+						<li><a href="">花草虫鱼</a></li>
+						<li><a href="">动漫</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/8.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					文化/艺术
+				</a>
+				<div class="hide_box8">
+					<ul id="culture">
+						<li><a href="">国内文学</a></li>
+						<li><a href="">散文/小说</a></li>
+						<li><a href="">小品相声</a></li>
+					</ul>
+					<ul id="culture1">
+						<li><a href="">美术</a></li>
+						<li><a href="">图书音像</a></li>
+						<li><a href="">戏剧戏曲</a></li>
+					</ul>
+					<ul id="culture2">
+						<li><a href="">舞蹈</a></li>
+						<li><a href="">器乐</a></li>
+						<li><a href="">声乐</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/9.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					社会民生
+				</a>
+				<div class="hide_box9">
+					<ul id="common">
+						<li><a href="">时事政治</a></li>
+						<li><a href="">历史话题</a></li>
+						<li><a href="">民族风情</a></li>
+						<li><a href="">礼仪</a></li>
+					</ul>
+					<ul id="common1">
+						<li><a href="">舆论</a></li>
+						<li><a href="">军事国防</a></li>
+						<li><a href="">法律知识</a></li>
+						<li><a href="">自然灾害</a></li>
+					</ul>
+					<ul id="common2">
+						<li><a href="">就业/职场</a></li>
+						<li><a href="">节日假期</a></li>
+						<li><a href="">宗教</a></li>
+						<li><a href="">360维权</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/10.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					教育/科学
+				</a>
+				<div class="hide_box10">
+					<ul id="public">
+						<li><a href="">高考</a></li>
+						<li><a href="">理工学科</a></li>
+						<li><a href="">考研</a></li>
+						<li><a href="">考证</a></li>
+					</ul>
+					<ul id="public1">
+						<li><a href="">孩子教育</a></li>
+						<li><a href="">高等院校</a></li>
+						<li><a href="">外语</a></li>
+						<li><a href="">公务员</a></li>
+					</ul>
+					<ul id="public2">
+						<li><a href="">人文学科</a></li>
+						<li><a href="">学习辅导</a></li>
+						<li><a href="">留学</a></li>
+						<li><a href="">出国</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/11.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					健康/医疗
+				</a>
+				<div class="hide_box11" style="background:green;">
+					<ul id="health">
+						<li><a href="">健康知识</a></li>
+						<li><a href="">内科</a></li>
+						<li><a href="">儿科</a></li>
+						<li><a href="">男科</a></li>
+						<li><a href="">药品</a></li>
+						<li><a href="">其他疾病</a></li>
+						<li><a href="">两性</a></li>
+					</ul>
+					<ul id="health1">
+						<li><a href="">心理健康</a></li>
+						<li><a href="">儿科</a></li>
+						<li><a href="">皮肤科</a></li>
+						<li><a href="">美容整形</a></li>
+						<li><a href="">心血管科</a></li>
+						<li><a href="">健康体检</a></li>
+						<li><a href="">青春期</a></li>
+					</ul>
+					<ul id="health2">
+						<li><a href="">孕育</a></li>
+						<li><a href="">家教</a></li>
+						<li><a href="">妇产科</a></li>
+						<li><a href="">五官科</a></li>
+						<li><a href="">中医</a></li>
+						<li><a href="">传染病</a></li>
+						<li><a href="">医院</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/12.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					商业/理财
+				</a>
+				<div class="hide_box12">
+					<ul id="bussine">
+						<li><a href="">创业</a></li>
+						<li><a href="">银行</a></li>
+						<li><a href="">基金债券</a></li>
+						<li><a href="">外贸</a></li>
+						<li><a href="">个人理财</a></li>
+					</ul>
+					<ul id="bussine1">
+						<li><a href="">企业管理</a></li>
+						<li><a href="">股票</a></li>
+						<li><a href="">保险</a></li>
+						<li><a href="">商务文书</a></li>
+						<li><a href="">电子商务</a></li>
+					</ul>
+					<ul id="bussine2">
+						<li><a href="">财务税务</a></li>
+						<li><a href="">金融</a></li>
+						<li><a href="">期货</a></li>
+						<li><a href="">贸易</a></li>
+						<li><a href="">国民贸易</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					情感/家庭
+					<img src="images/img/13.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+				</a>
+				<div class="hide_box14">
+					<ul id="family">
+						<li><a href="">恋爱</a></li>
+						<li><a href="">家庭</a></li>
+					</ul>
+					<ul id="family1">
+						<li><a href="">朋友</a></li>
+						<li><a href="">兄弟</a></li>
+					</ul>
+					<ul id="family2">
+						<li><a href="">婚嫁</a></li>
+						<li><a href="">两性</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="biga">
+					<img src="images/img/14.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					地区问题
+				</a>
+				<div class="hide_box15" style="background:red;">
+					<ul id="place">
+						<li><a href="">北京</a></li>
+						<li><a href="">天津</a></li>
+						<li><a href="">辽宁</a></li>
+						<li><a href="">山西</a></li>
+						<li><a href="">甘肃</a></li>
+						<li><a href="">西藏</a></li>
+						<li><a href="">云南</a></li>
+						<li><a href="">湖南</a></li>
+						<li><a href="">浙江</a></li>
+						<li><a href="">福建</a></li>
+						<li><a href="">海南</a></li>
+						<li><a href="">台湾</a></li>
+					</ul>
+					<ul id="place1">
+						<li><a href="">上海</a></li>
+						<li><a href="">黑龙江</a></li>
+						<li><a href="">河北</a></li>
+						<li><a href="">陕西</a></li>
+						<li><a href="">青海</a></li>
+						<li><a href="">四川</a></li>
+						<li><a href="">河南</a></li>
+						<li><a href="">山东</a></li>
+						<li><a href="">安徽</a></li>
+						<li><a href="">广东</a></li>
+						<li><a href="">香港</a></li>
+						<li><a href="">海外地区</a></li>
+					</ul>
+					<ul id="place2">
+						<li><a href="">重庆</a></li>
+						<li><a href="">吉林</a></li>
+						<li><a href="">内蒙古</a></li>
+						<li><a href="">宁夏</a></li>
+						<li><a href="">新疆</a></li>
+						<li><a href="">贵州</a></li>
+						<li><a href="">湖北</a></li>
+						<li><a href="">江苏</a></li>
+						<li><a href="">江西</a></li>
+						<li><a href="">广西</a></li>
+						<li><a href="">澳门</a></li>
+						<li><a href="">临沂</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="left">
+				<a href="" class="other">
+					<img src="images/img/15.png" class="img1">
+					<img src="images/img/16.png" class="img2">
+					其他
+				</a>
+				<div class="hide_box">				
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="body_second">
+		<div id="body_second_nav">
+			<a href=""  class="cur1" style="border-bottom: 3px solid green;" >待解决</a>
+			<a href=""  class="cur1">高悬赏</a>
+			<a href=""  class="cur1">零回答</a>
+		</div>
+
+		<div style="display:block;" class="con1">
+			<div  class="eq1">
+				<img src="images/pic/1.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				人在极度饥渴的情况下，能大量饮水吗？饥渴时大量饮水会有怎样？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq2">
+				<img src="images/pic/2.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				郑州2014年11月人力资源管理师和心里咨询师能不能提前报考？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq3">
+				<img src="images/pic/3.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				新手机号信息注册、需要实名、我按要求发给10086了，可......
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq4">
+				<img src="images/pic/4.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				医用木瓜能化痰吗？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq5">
+				<img src="images/pic/5.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				龙将三国姜子牙怎么打多少战斗力能过什么阵势？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq6">
+				<img src="images/pic/6.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				汇威fly one平板的开机动画在哪里？按许多安卓的目录都找不到
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq7">
+				<img src="images/pic/7.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				我手机停机了微信知道的可密码忘了咋办？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq8">
+				<img src="images/pic/8.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+					法拉克斯帝国的宝藏
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq9">
+				<img src="images/pic/9.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 公主被打屁屁
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq10">
+				<img src="images/pic/10.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 想找复古且带符合的昵称
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="last_div">
+				<p class="hove">没找到感兴趣的？</p>
+				<a href="" class="shuaxin"><img src="images/shuaxin.png"></a>
+				<a href="" class="search">查看全部问题 >></a>
+			</div>
+		</div>
+
+		<div class="con1">
+			<div class="eq1">
+				<img src="images/pic/5.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				有什么适合男生的短发发型，不用怎么整理的？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq2">
+				<img src="images/pic/4.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">40</span>
+				<a href="" class="title_mid">
+				湘潭关圣殿是道教什么门派？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq3">
+				<img src="images/pic/3.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">28</span>
+				<a href="" class="title_mid">
+				不要复制的，求一个防真石漆的配方，乳液万分感谢。
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq4">
+				<img src="images/pic/2.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				2014.08.12的往后357天是什么时候
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq5">
+				<img src="images/pic/1.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				怎样发说说才能蛊惑别人进一个连接
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq6">
+				<img src="images/pic/6.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				龟龟睁不开眼
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq7">
+				<img src="images/pic/8.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				b站会员邀请码，，，答题很久都没拿到QTQ
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq8">
+				<img src="images/pic/7.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				之前11平台弹出小广告被我设置360不在提示了，具体怎么弄？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq9">
+				<img src="images/pic/9.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+				 请根据以下故事情节写一首歌。。
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq10">
+				<img src="images/pic/10.png" class="face">
+				<p class="ask">问 :</p>
+				<img src="images/pic/11.png" class="small_img">
+				<span class="score">20</span>
+				<a href="" class="title_mid">
+					法拉克斯帝国的宝藏
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer_mid"><span>0</span>回答</p>
+				<p class="time_mid"><span>1</span>分钟前</p>
+			</div>
+			<div class="last_div">
+				<p class="hove">没找到感兴趣的？</p>
+				<a href="" class="shuaxin"><img src="images/shuaxin.png"></a>
+				<a href="" class="search">查看全部问题 >></a>
+			</div>
+		</div>
+
+		<div class="con1">
+			<div class="eq1">
+				<img src="images/pic/10.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 我的重要文件被放入回收站,回收站又被清空了,怎么办?
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq2">
+				<img src="images/pic/9.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 战龙三国神奇锻造石在哪购买
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq3">
+				<img src="images/pic/8.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 龙将三国姜子牙怎么打多少战斗力能过什么阵型
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq4">
+				<img src="images/pic/7.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				水浒风云神秘宝藏什么出劲歌
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq5">
+				<img src="images/pic/6.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 德国萨塔喷枪4000B和1000B是什么意思
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq6">
+				<img src="images/pic/5.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 海城大悲古寺三时系念的结束时佛曲名叫什么
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq7">
+				<img src="images/pic/4.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				从南宁坐动车到厦门怎么转车要最快的
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq8">
+				<img src="images/pic/3.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 fraps怎么用CF飞秒调法
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq9">
+				<img src="images/pic/2.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 变装合体后怎样发送截图和微信号？
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="eq10">
+				<img src="images/pic/1.png" class="face">
+				<p class="ask">问 :</p>
+				<a href="" class="title">
+				 如何承包陇南成县南部集团的出租车呢
+					<img src="images/pic/12.png" alt="" />
+				</a>
+				<p class="answer"><span>0</span>回答</p>
+				<p class="time"><span>1</span>分钟前</p>
+			</div>
+			<div class="last_div">
+				<p class="hove">没找到感兴趣的？</p>
+				<a href="" class="shuaxin"><img src="images/shuaxin.png"></a>
+				<a href="" class="search">查看全部问题 >></a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="right_second">
+		<div id="right_second_top">
+			<img src="images/fresh.png" class="fresh">
+			<ul>
+				<li><a href="">. 第三期达人之星火热报名中！</a></li>
+				<li><a href="">. 恭喜@heilongji荣获第二期达人之星</a></li>
+				<li><a href="">. 加入天涯问答乐帮团 精美礼品等你拿！</a></li>
+				<li><a href="">. 达人之星全新改版上线！</a></li>
+			</ul>
+		</div>
+		<div id="rightbody">
+			<div class="rightbody">
+				<img src="images/rightbody.png" alt="" class="rightbody" />
+			</div>
+			
+			<div class="forhead">
+				<span>1</span>
+				<a href="">仇明杰</a>
+				<p class="p1">234</p>
+				<p class="p2">94%</p>
+			</div>
+			<div class="forhead">
+				<span>2</span>
+				<a href="">仇郯郯</a>
+				<p class="p1">104</p>
+				<p class="p2">87%</p>
+			</div>
+			<div class="forhead">
+				<span>3</span>
+				<a href="">仇淘淘</a>
+				<p class="p1">92</p>
+				<p class="p2">78%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">4</span>
+				<a href="" class="mj">钱很多</a>
+				<p class="p1">85</p>
+				<p class="p2">77%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">5</span>
+				<a href="" class="mj">天涯</a>
+				<p class="p1">81</p>
+				<p class="p2">75%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">6</span>
+				<a href="" class="mj">张华</a>
+				<p class="p1">78</p>
+				<p class="p2">74%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">7</span>
+				<a href="" class="mj">吴晓敏</a>
+				<p class="p1">76</p>
+				<p class="p2">64%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">8</span>
+				<a href="" class="mj">李小可</a>
+				<p class="p1">74</p>
+				<p class="p2">59%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">9</span>
+				<a href="" class="mj">赵小丽</a>
+				<p class="p1">63</p>
+				<p class="p2">57%</p>
+			</div>
+			<div class="forhead">
+				<span class="lower">10</span>
+				<a href="" class="mj">张明明</a>
+				<p class="p1">51</p>
+				<p class="p2">45%</p>
+			</div>
+			<div class="more">
+				<a href="">更多 >></a>
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- //乐邦达人 -->
+<div id="superman">
+	<img src="images/superman.png">
+</div>
+<!-- ............................ -->
+<div id="lebangdaren">
+	<div class="lebangdaren_left">
+		<div>
+			<a href="" class="touxiang"><img src="images/pic/15.png"></a>
+			<a href="" class="name">暴力鸟叔</a>
+			<img src="images/20.png" class="good_at">
+			<a href="" class="good_at_content">开局先跑700米</a>
+			<img src="images/1.png" class="bean">
+			<img src="images/2.png" class="country">
+			<p class="count">11736</p>
+			<p class="point">50%</p>
+		</div>
+
+		<div>
+			<a href="" class="touxiang"><img src="images/pic/18.png"></a>
+			<a href="" class="name">审判女王</a>
+			<img src="images/20.png" class="good_at">
+			<a href="" class="good_at_content">拥有两条命</a>
+			<img src="images/1.png" class="bean">
+			<img src="images/2.png" class="country">
+			<p class="count">11536</p>
+			<p class="point">80%</p>
+		</div>
+
+		<div>
+			<a href="" class="touxiang"><img src="images/pic/13.png"></a>
+			<a href="" class="name">金枪小帅</a>
+			<img src="images/20.png" class="good_at">
+			<a href="" class="good_at_content">点石成金</a>
+			<img src="images/1.png" class="bean">
+			<img src="images/2.png" class="country">
+			<p class="count">15538</p>
+			<p class="point">80%</p>
+		</div>
+
+		<div>
+			<a href="" class="touxiang"><img src="images/pic/14.png"></a>
+			<a href="" class="name">闪电骑士</a>
+			<img src="images/20.png" class="good_at">
+			<a href="" class="good_at_content">提前进入超级模式</a>
+			<img src="images/1.png" class="bean">
+			<img src="images/2.png" class="country">
+			<p class="count">12537</p>
+			<p class="point">65%</p>
+		</div>
+
+		<div>
+			<a href="" class="touxiang"><img src="images/pic/19.png"></a>
+			<a href="" class="name">百变萝莉</a>
+			<img src="images/20.png" class="good_at">
+			<a href="" class="good_at_content">30秒更新一个道具</a>
+			<img src="images/1.png" class="bean">
+			<img src="images/2.png" class="country">
+			<p class="count">18365</p>
+			<p class="point">89%</p>
+		</div>
+	</div>
+
+	<div class="lebangdaren_right">
+		<div class="nav">
+			<img src="images/nav.png">
+		</div>
+		<div class="forhead_once">
+			<span>1</span>
+			<a href="">仇明杰</a>
+			<p class="p1">51234</p>
+			<p class="p2">84%</p>
+		</div>	
+		<div class="forhead_once">
+			<span>2</span>
+			<a href="">仇郯郯</a>
+			<p class="p1">43234</p>
+			<p class="p2">98%</p>
+		</div>	
+		<div class="forhead_once">
+			<span>3</span>
+			<a href="">仇淘淘</a>
+			<p class="p1">36234</p>
+			<p class="p2">73%</p>
+		</div>
+		<div class="forhead_once_too">
+			<span>4</span>
+			<a href="">张天华</a>
+			<p class="p1">30234</p>
+			<p class="p2">64%</p>
+		</div>	
+		<div class="forhead_once_too">
+			<span>5</span>
+			<a href="">周杰伦</a>
+			<p class="p1">25238</p>
+			<p class="p2">58%</p>
+		</div>	
+		<div class="forhead_once_too">
+			<span>6</span>
+			<a href="">谢霆锋</a>
+			<p class="p1">26954</p>
+			<p class="p2">63%</p>
+		</div>	
+	</div>
+</div>
+<!-- //最底部 -->
+<div id="button">
+	<div class="helper">
+		<a href="">帮助</a>
+		<a href="">用户反馈</a>
+		<a href="">侵权投诉</a>
+		<a href="">论坛</a>
+		<a href="">官方微博</a>
+		<span>短信反馈:1851068360</span>
+		<span>QQ反馈:1330002360</span>
+	</div>
+	<div class="lastest">
+		<span>Copyright © 2014 so.com All Rights Reserved</span>
+		<span> 京公安网备11000000000006</span>
+	</div>
+</div>
+
+</body>
+</html>

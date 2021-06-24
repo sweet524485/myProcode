@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.topBg{background:url(../Images/topBg.gif) top right no-repeat; padding:0px 42px;}
+.sBoxPos3{margin:16px 0px 16px 0px;}/*searchBox定位*/
+.inputBox input{color:#3a3a3a;}
+.borTop{border:none; border-top:solid 1px #dedede;}
+.dataTab{width:100%; border-collapse:collapse; border:none; font-size:14px; table-layout:auto; overflow:visible;}
+.dataTab tr th{font-weight:normal; text-align:center; height:30px; background-color:#add3e8; cursor:default; vertical-align:middle;
+ border:solid 1px #dedede; border-top:solid 1px #eff6fa; font-weight:bold;}
+.dataTab tr td{font-weight:normal; text-align:center; line-height:38px; vertical-align:middle; cursor:default;
+ border:solid 1px #dedede; white-space:nowrap;text-overflow:ellipsis; overflow:hidden;}
+.dataTab tr th:first-child{border-left:solid 1px #dedede;}
+.dataTab tr th:last-child{border-right:solid 1px #dedede;}
+.dataTab td a{cursor:pointer; margin:0px 7px;}
+.dataTab td a:hover{text-decoration:underline; color:#B70000;}
+.textBox{padding:34px 24px 0px 24px; min-height:434px; border:solid 1px #dedede; overflow:hidden; zoom:1;}
+.textBox h1{font-size:19px; height:1em; line-height:1em; text-align:center; margin-bottom:12px;}
+.textBox h2{font-size:13px; height:1em; line-height:1em; text-align:center; margin-bottom:25px; font-weight:normal;}
+.textBox p{font-size:14px; line-height:2em; text-indent:2em; margin-bottom:0.5em;}
+.textBox p a{text-decoration:underline; color:#00F; cursor:pointer;}
+.box5{padding:16px 67px; height:33px; margin-bottom:12px; overflow:hidden; zoom:1;}
+.justifyBox{text-align:justify; text-align-last:justify; line-height:0; height:33px; overflow:hidden; zoom:1;}
+@media all and (-webkit-min-device-pixel-ratio:0){.justifyBox{font-size:0;}}
+.justifyBox:after{display:inline-block; overflow:hidden; width:100%; height:0; content:''; vertical-align:top;}
+.justifyBox a{display:inline-block; height:31px; line-height:31px; background-color:#fafafa; border:solid 1px #dedede; padding:0px 22px; font-size:14px; font-weight:bold; overflow:visible; zoom:1;}
+.justifyBox a.current{background-color:#20b6ec; border:solid 1px #20b6ec; color:#fff;}
+.btn0{display:inline-block; height:17px; width:17px; background:url(../Images/pic_buy.png) no-repeat; cursor:pointer;}
+
+.sBoxPos2{margin:12px 25px;}
+.inputDiv{margin-top:10px; overflow:hidden;/* padding-left:17px;*/ zoom:1;}
+.inputRow{line-height:28px; width:auto; padding:5px 0px; font-size:14px; overflow:hidden; zoom:1;}
+.inputRow em{width:84px; text-align:right; display:inline-block; float:left;}
+.inputRow span{width:84px; height:27px; line-height:27px; margin-left:59px; *margin-left:29.5px; text-align:right; display:inline-block; float:left;}
+.inputBox input{color:#3a3a3a;}
+.inputDiv a{text-decoration:underline;}
+.w514{width:514px;}
+.w182{width:182px;}
+.w162{width:162px}
+.searchItem{display:inline-block; float:left; height:28px; line-height:28px; cursor:pointer; text-indent:28px; width:189px;}
+.searchItem.check{background:url(../Images/pic_checkIco.png) 0px 0px no-repeat;}
+.searchItem.uncheck{background:url(../Images/pic_uncheckIco.png) 0px 0px no-repeat;}
+.setDisplay{color:#00F; margin-right:10px;}
+.makePages{display:inline-block; height:1em; line-height:1em; padding:3px; margin-right:6px;}
+.makePages.current{color:#fff; background-color:#1b7dbc;}
+.tableView{width:100%; table-layout:fixed; color:#3a3a3a; overflow:hidden; zoom:1;}
+.tableView th{border-top:solid 1px #eff6fa; background-color:#add3e8; height:30px; line-height:30px; font-size:13px; font-weight:bold;}
+.tableView td{padding:10px 0px; vertical-align:top; text-align:center;}
+.tableView .evenTr{background-color:#edf6fc;}
+.tableView .oddTr{background-color:#fff;}
+.tableView span{text-indent:7px; text-align:left; float:left;}
+.tableView p{padding:0px 7px; text-align:left; font-size:13px;}
+.tableView a:hover{text-decoration:underline; color:#B70000;}
+.ulView{width:100%; color:#3a3a3a; overflow:hidden; zoom:1;}
+.ulView li{display:block; width:100%; padding:10px 0px 15px 0px; border-bottom:dashed 1px #dedede;}
+.ulView li p{padding-left:21px; font-size:14px;}
+.ulView li a:hover{text-decoration:underline; color:#B70000;}
+.stdNO{font-size:14px; height:1em; line-height:1em; font-weight:bold; color:#30afea; overflow:hidden; zoom:1;}
+.stdNO em{color:#3a3a3a; margin-right:13px;}
+.stdName{padding-left:21px; font-size:14px; line-height:1.5em; font-weight:bold; color:#30afea; overflow:hidden; zoom:1;}
+.stdInfo{padding:10px 0px 5px 21px; font-size:12px; height:1em; width:55%; line-height:1em; overflow:hidden; zoom:1;}
+.stdInfo label{margin-right:20px;}
+.buyBox{height:27px; overflow:hidden; zoom:1;}
+.btn1{display:inline-block; height:27px; width:77px; background:url(../Images/pic_bigBuy.png) no-repeat; cursor:pointer;}
+
+.stdNavBox{background:url(../../Common/Images/stdSearchBg.png) no-repeat; padding-top:31px; overflow:hidden; zoom:1;}
+.stdNavBox a{display:inline-block; height:31px; width:206px; text-indent:37px; line-height:31px; background-color:#fafafa; border:solid 1px #dedede; margin-top:5px; font-size:14px; font-weight:bold; overflow:hidden; zoom:1;}
+.stdNavBox a.current{background-color:#20b6ec; border:solid 1px #20b6ec; color:#fff;}
+.boxBodyGray{border:solid 1px #dedede; padding:14px 0px 12px 0px; background-color:#f2f2f2; overflow:hidden; zoom:1;}
+.grayBoxTitle{width:88px; height:100%; text-align:right; font-size:14px; height:1em; line-height:1em; font-weight:bold; color:#3a3a3a;}
+.relateSearch{display:block; width:650px; overflow:hidden; zoom:1; margin-top:-9px;}
+.relateSearch li{display:block; width:120px; padding-right:10px; font-size:14px; height:1em; line-height:1em; padding-top:9px; overflow:hidden; zoom:1; float:left;}
+.relateSearch li a:hover{text-decoration:underline; color:#B70000;}

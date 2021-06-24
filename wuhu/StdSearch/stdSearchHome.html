@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../Common/Style/resetCSS.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/Style/common.css" />
+    <link rel="stylesheet" type="text/css" href="Style/stdSearch.css" />
+    <title>无标题文档</title>
+    <style type="text/css"></style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+            <div class="wellcomeOpt">
+                <label class="wellcome">
+                    您好，欢迎来到芜湖市标准信息公共服务平台！</label>
+                <div class="login">
+                    <a onclick="javascript:void(0);">登录</a> <a style="margin-right: 37px;" onclick="javascript:void(0);">
+                        注册</a> <a onclick="javascript:void(0);">关于我们</a>&nbsp;| <a onclick="javascript:void(0);">
+                            网站地图</a>&nbsp;
+                </div>
+            </div>
+            <div class="banner">
+            </div>
+            <div class="navBar">
+                <a href="../index.html">首 页</a> <a class="current" href="../StdSearch/stdSearchHome.html">
+                    检索中心</a> <a href="../StdNews/stdNewsHome.html">信息公告</a> <!--<a href="../StdNav/stdNavHome.html">
+                        标准导航</a> <a href="../Bookstore/bookstoreHome.html">标准书店</a>--> <a href="../StdServices/specialServices.html">
+                            专项服务</a> <a href="../StdSpecialTopic/specialTopicHome.html">标准体系</a> <!--<a href="../StdSys/stdSysHome.html">
+                                政策法规</a> <a href="../StdNews/stdNewsHome.html">WTO/TBT贸易壁垒公告</a>--> <a href="../UserCenter/userCenterHome.html">
+                                    用户中心</a>
+            </div>
+        </div>
+        <div class="location">
+            当前位置：<a href="../index.html">首页</a>&nbsp;>&nbsp;检索中心&nbsp;>&nbsp;初级检索
+        </div>
+        <div class="main">
+            <div class="layout1">
+                <div class="box1">
+                    <div class="stdClassNav f_l">
+                        <div class="classNav f_r" onclick="javascript:void(0);">
+                        </div>
+                    </div>
+                    <div class="searchBox sBoxPos1 f_r">
+                        <ul class="labelBox">
+                            <li class="blueBg">全部标准</li>
+                            <li>国家标准</li>
+                            <li>行业标准</li>
+                            <li>安徽地标</li>
+                            <li>标准图书</li>
+                        </ul>
+                        <div class="inputGroup">
+                            <div class="inputBox f_l mr6">
+                                <input type="text" id="class" class="w_68" value="全部">
+                                <div class="btnDrop" onclick="showDropList(this, '#class','#classList')">
+                                </div>
+                                <ul id="classList" class="myDropList">
+                                    <li>全部</li>
+                                    <li>博文</li>
+                                    <li>图片</li>
+                                </ul>
+                            </div>
+                            <div class="inputBox f_l mr8">
+                                <input type="text" id="Keyword" class="w_473" value="请输入标准名称">
+                            </div>
+                            <a class="btnL btnPos1 mr8 f_l" onclick="javascript:void(0);"><span class="btnR">检 索</span></a>
+                            <a class="textBtn">结果中检索</a> <a class="textBtn" href="advancedSearch.html">高级检索</a>
+                        </div>
+                        <div class="hotWord">
+                            <span>热点词:</span>
+                            <ul>
+                                <li><a>食品安全</a></li>
+                                <li><a>国家标准</a></li>
+                                <li><a>数字医疗</a></li>
+                                <li><a>耐蚀材料</a></li>
+                                <li><a>电化学测试</a></li>
+                                <li><a>大气环境</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- layout1 END -->
+            <div class="layout2 f_l">
+                <div class="box3">
+                    <div style="border: solid 1px #dedede; padding: 0px 20px 0px 20px; overflow: hidden;
+                        zoom: 1;">
+                        <div style="border-bottom: dashed 1px #dedede; padding: 10px 0px 8px 0px; height: 20px;
+                            line-height: 20px; overflow: hidden; zoom: 1;">
+                            <span class="f_l">找到<label>481,112</label>条记录&nbsp;&nbsp;当前<label class="red">1</label>/<label>300</label>页</span>
+                            <span class="f_r"><a class="setDisplay">切换到摘要</a> <a class="setDisplay hide">切换到列表</a>
+                                每页记录数： <a class="makePages current">10</a> <a class="makePages">20</a> <a class="makePages">
+                                    50</a> <a class="pageNav" onclick="javascript:void(0);">上一页</a>&nbsp; <a class="pageNav enable"
+                                        onclick="javascript:void(0);">下一页</a></span>
+                        </div>
+                        <table class="tableView" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th style="width: 50px;">
+                                    序号
+                                </th>
+                                <th style="width: 123px; text-align: left; text-indent: 7px;">
+                                    标准号
+                                </th>
+                                <th style="width: 262px; text-align: left; text-indent: 7px;">
+                                    标准名称
+                                </th>
+                                <th style="width: 87px;">
+                                    发布日期
+                                </th>
+                                <th style="width: 87px;">
+                                    实施日期
+                                </th>
+                                <th style="width: 54px;">
+                                    状态
+                                </th>
+                                <th style="width: 39px;">
+                                    购买
+                                </th>
+                            </tr>
+                            <tr class="oddTr">
+                                <td>
+                                    <b>1</b>
+                                </td>
+                                <td>
+                                    <span><a href="stdDetail.html">BS EN 1528-1-1997<a></span>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的转换说明</a></p>
+                                </td>
+                                <td>
+                                    2007-06-15
+                                </td>
+                                <td>
+                                    2008-12-30
+                                </td>
+                                <td>
+                                    现行
+                                </td>
+                                <td>
+                                    <a class="btnBuy" href="buyStd.html"></a>
+                                </td>
+                            </tr>
+                            <tr class="evenTr">
+                                <td>
+                                    <b>481112</b>
+                                </td>
+                                <td>
+                                    <span><a href="stdDetail.html">BS EN 1528-1-1997<a></span>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系专项技术要求的食品安全管理体系认证的转换说明</a></p>
+                                </td>
+                                <td>
+                                    2007-06-15
+                                </td>
+                                <td>
+                                    2008-12-30
+                                </td>
+                                <td>
+                                    现行
+                                </td>
+                                <td>
+                                    <a class="btnBuy" href="buyStd.html"></a>
+                                </td>
+                            </tr>
+                            <tr class="oddTr">
+                                <td>
+                                    <b>1</b>
+                                </td>
+                                <td>
+                                    <span><a href="stdDetail.html">BS EN 1528-1-1997<a></span>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的转换说明</a></p>
+                                </td>
+                                <td>
+                                    2007-06-15
+                                </td>
+                                <td>
+                                    2008-12-30
+                                </td>
+                                <td>
+                                    现行
+                                </td>
+                                <td>
+                                    <a class="btnBuy" href="buyStd.html"></a>
+                                </td>
+                            </tr>
+                            <tr class="evenTr">
+                                <td>
+                                    <b>481112</b>
+                                </td>
+                                <td>
+                                    <span><a href="stdDetail.html">BS EN 1528-1-1997<a></span>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的转换说明</a></p>
+                                </td>
+                                <td>
+                                    2007-06-15
+                                </td>
+                                <td>
+                                    2008-12-30
+                                </td>
+                                <td>
+                                    现行
+                                </td>
+                                <td>
+                                    <a class="btnBuy" href="buyStd.html"></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <ul class="ulView hide">
+                            <li>
+                                <div class="stdNO">
+                                    <em>1</em><a href="stdDetail.html">CNAS EC019-2008</a></div>
+                                <div class="stdName">
+                                    <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认证安全管理体系认证的转换说</a></div>
+                                <div class="stdName">
+                                    cdacliaudsciaudjsacjandasjd</div>
+                                <p>
+                                    认证机构实施理体系认认证术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T
+                                    22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认。</p>
+                                <p>
+                                    专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认。</p>
+                                <div class="buyBox">
+                                    <div class="stdInfo f_l">
+                                        发布日期：<label>1007-06-15</label>
+                                        实施日期：<label>1007-06-15</label>
+                                        状态：<label>现行</label>
+                                    </div>
+                                    <a class="btnBuy f_r" href="buyStd.html"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="stdNO">
+                                    <em>481112</em><a href="stdDetail.html">CNAS EC019-2008</a></div>
+                                <div class="stdName">
+                                    <a href="stdDetail.html">认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认证安全管理体系认证的转换说</a></div>
+                                <div class="stdName">
+                                    cdacliaudsciaudjsacjandasjd</div>
+                                <p>
+                                    认证机构实施理体系认认证术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T
+                                    22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认。</p>
+                                <p>
+                                    专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认认证机构实施依据GB/T 22000和专项技术要求的食品安全管理体系认证的要求的食品安全管理体系认。</p>
+                                <div class="buyBox">
+                                    <div class="stdInfo f_l">
+                                        发布日期：<label>1007-06-15</label>
+                                        实施日期：<label>1007-06-15</label>
+                                        状态：<label>现行</label>
+                                    </div>
+                                    <a class="btnBuy f_r" href="buyStd.html"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pageNavBox" style="margin-top: 15px;">
+                            <a class="pageNav" onclick="javascript:void(0);">首页</a> <a class="pageNav current"
+                                onclick="javascript:void(0);">1</a> <a class="pageNav" onclick="javascript:void(0);">
+                                    2</a> <a class="pageNav" onclick="javascript:void(0);">3</a> <a class="pageNav" onclick="javascript:void(0);">
+                                        末页</a>
+                            <input type="text" class="inputPage" />
+                            <input type="image" src="Images/btnGo.png" class="btnGo" value="" />
+                        </div>
+                    </div>
+                    <!-- boxBody END -->
+                </div>
+                <!-- box END -->
+                <div class="box3">
+                    <div class="boxBodyGray">
+                        <div class="grayBoxTitle f_l">
+                            相关搜索:</div>
+                        <ul class="relateSearch f_r">
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                            <li><a>食品安全管理</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- box END -->
+            </div>
+            <!-- layout2 END -->
+            <div class="layout3 f_r">
+                <div class="box4">
+                    <div class="titleBox orange">
+                        <a>热门标准</a><a class="more" href="javascript:void(0);"></a></div>
+                    <div class="boxBody">
+                        <ul class="orangeList">
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- box4 END-->
+                <div class="box4">
+                    <div class="titleBox blue">
+                        <a>最新发布标准</a><a class="more" href="javascript:void(0);"></a></div>
+                    <div class="boxBody">
+                        <ul class="blueList" style="margin-top: -10px;">
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- box4 END-->
+                <div class="box4">
+                    <div class="titleBox blue">
+                        <a>即将实施标准</a><a class="more" href="javascript:void(0);"></a></div>
+                    <div class="boxBody">
+                        <ul class="blueList" style="margin-top: -10px;">
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                            <li><a>GB/T 26237.4-2014 信息技术设计产能撒理解擦MSDN擦快递财务那边的测试你多久啊</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- box4 END-->
+            </div>
+            <!-- layout3 END -->
+        </div>
+        <!-- Main End -->
+        <div class="HLine">
+        </div>
+        <div class="footer">
+            <a onclick="javascript:void(0);">联系我们</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">版权声明</a>&nbsp;|&nbsp;<a
+                onclick="javascript:void(0);">使用帮助</a>&nbsp;|&nbsp;<a onclick="javascript:void(0);">技术支持</a><br />
+            版权所有：芜湖市标准化研究所 备案号：皖ICP备 05005282号<br />
+            地址：芜湖市鸠江经济开发区万春西路20号 电话：0553-5968632 邮编： 241000<br />
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../ThirdPart/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../Common/JS/jsCommon.js"></script>
+<script type="text/javascript" src="Javascript/jsStdSearch.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        changeKeywordColor('#Keyword', '请输入标准名称');
+        switchSearchLabel();
+        showClassTree();
+        toggleDisplay();
+        setShowPages();
+        setPageNavBtns();
+    });
+</script>
+</html>

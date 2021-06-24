@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>智库-期刊列表页</title>
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/BasePage.css" />
+		<link rel="stylesheet" href="./css/zhiku_header.css" />
+		<link rel="stylesheet" href="./css/zhiku_footer.css" />
+		<link rel="stylesheet" href="./css/zhiku_organizationList.css" />
+		<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="./js/default.js"></script>
+		<script type="text/javascript" src="./js/zhiku_organizationList.js"></script>
+		<script type="text/javascript" src="./js/zhiku_siteMaster.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--最顶部-->
+			<div class="fl-top-container">
+				<div class="fl-top-content">
+					<div class="fl-top-right">
+						<div class="fl-top-srBox">
+							<a href="javascript:void(0);" class="fl-top-tag">
+								Sign In
+							</a>
+							<a href="javascript:void(0);" class="fl-top-tag fl-top-delBorder">
+								Register
+							</a>
+						</div>
+						<div class="fl-top-help">
+							<i class="fl-top-helpIcon"></i>
+							<div class="fl-top-helpTxt">
+								Help
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--logo、搜索框、导航条-->
+			<div class="fl-lsn-container">
+				<div class="fl-lsn-content">
+					<div class="fl-lsn-logoBox">
+						<img src="./Images/fl-logo.png" />
+					</div>
+					<div class="fl-lsn-right">
+						<div class="fl-lsn-searchBox">
+							<input type="text" class="fl-lsn-searchInput" id="keyText" value="Enter Chinese , I can also identify ..."/>  
+							<input type="button" value="Find" class="fl-lsn-searchBtn"/>
+						</div>
+						<div class="fl-lsn-navBox">
+							<a href="#" target="_blank" class="fl-lsn-navList">
+								<span class="fl-lsn-nav">
+									Home
+								</span>
+								<i class="fl-lsn-navIcon"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Press
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Publications
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Research
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Resources
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList">
+								<span class="fl-lsn-nav">
+									About
+								</span>
+								<i class="fl-lsn-navIcon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--二级导航背景-->
+			<div class="fl-lsn-navBg">
+				<div class="fl-lsn-navWrap">
+					<div class="fl-lsn-navCon">
+						<div class="fl-lsn-secondNavBox">
+							
+						</div>
+						<div class="fl-lsn-secondNavBox active">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Books
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Standards
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav" style="border:0;">
+								Thesis
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Books
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="fl-journalList-wrap">
+			<div class="fl-journalList-container">
+				<!-- 当前位置 -->
+				<div class="fl-journalList-websideBox">
+					<div class="fl-journalList-websideWrap">
+						<i class="fl-journalList-websideIcon"></i>
+						<a href="#" class="fl-journalList-websideHome">
+							Home
+						</a>
+						<i class="fl-journalList-websideSanIcon"></i>
+						<span class="fl-journalList-websidePosition">
+							Journal
+						</span>
+					</div>
+					<!--右侧搜索框-->
+					<div class="fl-org-searchBox">
+						<!--搜索小图标-->
+						<i class="fl-org-icon"></i>
+						<input type="text" class="fl-org-searchInput" value="Keyword"/>
+						<input type="button" value="Apply Filter" class="fl-org-searchBtn"/>
+					</div>
+				</div>
+
+			</div>
+			<!--地图-->
+			<div class="fl-org-mapContainer">
+				<div class="fl-org-mapContent">
+					<!--左侧-->
+					<div class="fl-org-mapLeft">
+						<div class="fl-org-mapTitleBox">
+							<div class="fl-org-mapTitle">
+								Think-Thanks
+							</div>
+						</div>
+						<div class="fl-org-InvolvedIn">
+							Involved in
+						</div>
+						<div class="fl-org-countries">
+							<span id="countryCount">0</span>countries
+						</div>
+						<div class="fl-org-InvolvedIn">
+							Involved in
+						</div>
+						<div class="fl-org-countries">
+							<span id="countryCount">0</span>think-thinks
+						</div>
+					</div>
+					<!--右侧地图背景-->
+					<div class="fl-org-mapRight"></div>
+				</div>
+			</div>
+			<!--背景色部分-->
+			<div class="fl-org-container">
+				<div class="fl-org-content">
+					<!--字母导航-->
+					<div class="fl-org-letterWrap">
+						<div class="fl-org-letterName">
+							letters navigation : 
+						</div>
+						<div class="fl-org-letterCon">
+							<a href="javascript:void(0);" class="fl-org-letter active" letter="" onclick="FilterLetter(this)">
+								全部
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="A" onclick="FilterLetter(this)">
+								A
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="B" onclick="FilterLetter(this)">
+								B
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="C" onclick="FilterLetter(this)">
+								C
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="D" onclick="FilterLetter(this)">
+								D
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="E" onclick="FilterLetter(this)">
+								E
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="F" onclick="FilterLetter(this)">
+								F
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="G" onclick="FilterLetter(this)">
+								G
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="H" onclick="FilterLetter(this)">
+								H
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="I" onclick="FilterLetter(this)">
+								I
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="J" onclick="FilterLetter(this)">
+								J
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="K" onclick="FilterLetter(this)">
+								K
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="L" onclick="FilterLetter(this)">
+								L
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="M" onclick="FilterLetter(this)">
+								M
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="N" onclick="FilterLetter(this)">
+								N
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="O" onclick="FilterLetter(this)">
+								O
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="P" onclick="FilterLetter(this)">
+								P
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="Q" onclick="FilterLetter(this)">
+								Q
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="R" onclick="FilterLetter(this)">
+								R
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="S" onclick="FilterLetter(this)">
+								S
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="T" onclick="FilterLetter(this)">
+								T
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="U" onclick="FilterLetter(this)">
+								U
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="W" onclick="FilterLetter(this)">
+								W
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="X" onclick="FilterLetter(this)">
+								X
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="Y" onclick="FilterLetter(this)">
+								Y
+							</a>
+							<a href="javascript:void(0);" class="fl-org-letter" letter="Z" onclick="FilterLetter(this)">
+								Z
+							</a>
+						</div>
+					</div>
+					<!--内容区-->
+					<div class="fl-org-listContent">
+						<div class="fl-org-listLeft">
+							<div id="dataHtml">
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+								<div class="fl-org-list">
+									<a href="#" target="_blank" class="fl-org-listLogo">
+										<img src="./Images/Organization/fl-list-logo.png" />
+									</a>
+									<div class="fl-org-listRight">
+										<a href="#" target="_blank" class="fl-org-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-org-listLocation">
+											<i class="fl-org-listLocationIcon"></i>
+											<span class="fl-org-listLocationTxt">
+												Countries Source
+											</span>
+										</div>
+										<div class="fl-org-listCon">
+											 To enable the details of this specific error message to be viewable on remote machines, please create a <customErrors> tag within a "web.config" configuration file located in the root directory of the current web application. This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".This <customErrors> tag should then have its "mode" attribute set to "Off".
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							<!--分页放置处-->
+							<div class="fl-page-box">
+								 <div class="pageBox">
+			                         <div class="pageNum">
+			                            	当前是第<span id="Page">0</span>页，共有<span id="Count">0</span>页
+			                         </div>
+			                         <div class="pagination">
+			                            <!-- 分页放置 -->
+			                         </div>
+			                         <div class="goBox">
+			                           	<input type="text" value="1" name="page" class="goNum" onkeydown="pageLoadData()" id="pageNum"/>
+			                            <input type="button" value="" name="go" class="pageGo"/>
+			                         </div>
+			                    </div>
+							</div>
+						</div>
+						<div class="fl-org-countRight">
+							<div class="fl-org-countryInner">
+								<div class="fl-org-countryTitle">
+									Countries
+								</div>
+								<div class="fl-org-countryBox">
+									<div class="fl-org-countryList active" country="usa" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-usa.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											U S A
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="uk" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-uk.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Britain
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="russian" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-russian.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Russian
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="germany" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-germany.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Germany
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="Brazil" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-Brazil.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Brazil
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="Australia" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-australia.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Australia
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="french" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-french.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											French
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="switzerland" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-switzerland.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Switzerland
+										</a>
+									</div>
+									<div class="fl-org-countryList" country="egypt" onclick="FilterCountry(this)">
+										<a href="javascript:void(0);" class="fl-org-countryLogo">
+											<img src="Images/Organization/fl-map-egypt.png" />
+										</a>
+										<a href="javascript:void(0);" class="fl-org-country">
+											Egypt
+										</a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<div class="fl-copyright-container">
+				<div class="fl-copyright-content">
+					<div class="fl-copyright-logoBox">
+						<img src="Images/fl-copyright-logo.png"/>
+					</div>
+					<div class="fl-copyright-middleBox">
+						<div class="fl-copyright-title">
+							CONTACT US
+						</div>
+						<div class="fl-copyright-box">
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon1"></i>
+								<span class="fl-copyright-listTxt">
+									地址：北京市海淀区阜成路8号院38号楼5单元402房
+								</span>
+							</div>
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon2"></i>
+								<span class="fl-copyright-listTxt">
+									电话：010-69674007
+								</span>
+							</div>
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon3"></i>
+								<span class="fl-copyright-listTxt">
+									邮箱：postmater@dfhsbj.net
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="fl-copyright-right">
+						<div class="fl-copyright-title">
+							Copyright information
+						</div>
+						<div class="fl-copyright-box">
+							<div class="fl-copyright-text">
+								京ICP备15018290号 <br/>
+								Copyright ©2016  <br/>
+								北京东方华数信息技术有限公司版权所有
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

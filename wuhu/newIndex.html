@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="Common/Style/resetCSS.css" />
+    <link rel="stylesheet" type="text/css" href="Common/Style/common.css" />
+    <script type="text/javascript" src="ThirdPart/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="Common/JS/jsCommon.js"></script>
+    <title></title>
+</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="Common/Style/resetCSS.css" />
+    	<link rel="stylesheet" type="text/css" href="Common/Style/common.css" />
+		<title>芜湖市标准信息公开服务平台</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<!--顶部背景区域-->
+			<div class="wuhu-top-container">
+				<!--状态栏-->
+				<div class="wuhu-top-content">
+					<!--登录后的状态-->
+					<div class="wuhu-top-left">
+						<span id="adminName">您好</span>，欢迎来到芜湖市标准信息公共服务平台！
+					</div>
+					<!--登录前的状态-->
+					<div class="wuhu-top-right">
+						<a href="#" class="wuhu-top-nav">
+							登录
+						</a>
+						<a href="#" class="wuhu-top-nav">
+							注册
+						</a>
+						<a href="#" class="wuhu-top-nav">
+							关于我们
+						</a>
+						<a href="#" class="wuhu-top-nav" style="border:0;">
+							联系我们
+						</a>
+					</div>
+				</div>
+				<a href="#" class="wuhu-logo-box">
+					<img src="Common/Images/logo.png"/>
+				</a>
+			</div>
+		</header>
+		<!--导航条-->
+		<nav>
+			<div class="wuhu-nav-container">
+				<div class="wuhu-nav-content">
+					<a href="#" class="wuhu-nav-list active">
+						<i class="wuhu-nav-listIcon sy"></i>
+						<span class="wuhu-nav-listTxt">
+							首页
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon zxfw"></i>
+						<span class="wuhu-nav-listTxt">
+							专项服务
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon jszx"></i>
+						<span class="wuhu-nav-listTxt">
+							检索中心
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon xxgg"></i>
+						<span class="wuhu-nav-listTxt">
+							信息公告
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon bzdt"></i>
+						<span class="wuhu-nav-listTxt">
+							标准动态
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon yhzx"></i>
+						<span class="wuhu-nav-listTxt">
+							用户中心
+						</span>
+					</a>
+					<a href="#" class="wuhu-nav-list">
+						<i class="wuhu-nav-listIcon lxwm"></i>
+						<span class="wuhu-nav-listTxt">
+							联系我们
+						</span>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--检索框-->
+		<div class="wuhu-search-container">
+			<div class="wuhu-search-content">
+				<div class="wuhu-search-navBox">
+					<a href="javascript:void(0);" class="wuhu-search-nav active">
+						通用检索
+					</a>
+					<a href="javascript:void(0);" class="wuhu-search-nav">
+						专业检索
+					</a>
+					<a href="javascript:void(0);" class="wuhu-search-nav">
+						地标检索
+					</a>
+					<a href="javascript:void(0);" class="wuhu-search-nav">
+						图书检索
+					</a>
+				</div>
+				<div class="wuhu-search-box">
+					<input type="text" value="请输入标准名称" class="wuhu-search-input"/>
+					<input type="button" value="检&nbsp;&nbsp;&nbsp;&nbsp;索" class="wuhu-search-jsBtn btn"/>
+					<input type="button" value="高级检索" class="wuhu-search-gjjsBtn btn"/>
+				</div>
+				<div class="wuhu-search-bottomBox">
+					<div class="wuhu-search-bottomName">
+						热点词：
+					</div>
+					<div class="wuhu-search-bottomRight">
+						<a href="#" class="wuhu-search-bottomLi">
+							食品安全
+						</a>
+						<a href="#" class="wuhu-search-bottomLi">
+							国家标准
+						</a>
+						<a href="#" class="wuhu-search-bottomLi">
+							数字医疗
+						</a>
+						<a href="#" class="wuhu-search-bottomLi">
+							耐蚀材料
+						</a>
+						<a href="#" class="wuhu-search-bottomLi">
+							电化学测试
+						</a>
+						<a href="#" class="wuhu-search-bottomLi">
+							大气环境
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--标准资讯-->
+		<div class="wuhu-news-container">
+			<div class="wuhu-news-title">
+				标准资讯
+			</div>
+			<!--左侧列表-->
+			<div class="wuhu-news-leftBox">
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						关于发布“高速公路养护档案管理标准化指南”等74项地方标准的公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第8号(总第212号)中国行业标准备案公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第7号(总第211号)中国行业标准备案公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第22号中国国家标准公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第21号中国国家标准公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第6号(总第210号)中国行业标准备案公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第18号中国国家标准公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第17号中国国家标准公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						关于发布“专利质量评价技术规范”等49项地方标准的公告
+					</a>
+				</div>
+				<div class="wuhu-news-list">
+					<i class="wuhu-news-listIcon"></i>
+					<a href="#" target="_blank" title="" class="wuhu-news-listTxt"> 
+						2017年第5号(总第209号)中国行业标准备案公告
+					</a>
+				</div>
+			</div>
+			<!--右侧轮播区-->
+			<div class="wuhu-news-rightBox" id="moveWrap">
+				<!--滚动小点-->
+				<div class="wuhu-move-docBox">
+					<div class="wuhu-move-docPosition">
+						
+					</div>
+				</div>
+				<!--更多链接-->
+				<a href="#" class="wuhu-move-href" target="_blank"></a>
+				<!--轮播区-->	
+				<div class="wuhu-move-content">
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move1.jpg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move2.jpg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move3.jpg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move4.jpg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move5.jpg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-move-li">
+						<img src="Common/Images/move6.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--专项服务-->
+		<div class="wuhu-common-box zxfu">
+			<div class="wuhu-common-title">
+				专项服务
+			</div>
+			<div class="wuhu-zxfw-wrap">
+				<div class="wuhu-zxfw-content">
+					<a href="#" class="wuhu-zxfw-nav">
+						<i class="wuhu-zxfw-navIcon cxzx"></i>
+						<div class="wuhu-zxfw-navTxt">
+							标准查新咨询
+						</div>
+					</a>
+					<a href="#" class="wuhu-zxfw-nav">
+						<i class="wuhu-zxfw-navIcon gzzx"></i>
+						<div class="wuhu-zxfw-navTxt">
+							标准跟踪咨询
+						</div>
+					</a>
+					<a href="#" class="wuhu-zxfw-nav">
+						<i class="wuhu-zxfw-navIcon bxzx"></i>
+						<div class="wuhu-zxfw-navTxt">
+							标准编写咨询
+						</div>
+					</a>
+					<a href="#" class="wuhu-zxfw-nav">
+						<i class="wuhu-zxfw-navIcon qrzx"></i>
+						<div class="wuhu-zxfw-navTxt">
+							标准有效性确认咨询
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--tab切换-->
+		<div class="wuhu-tab-container">
+			<!--左侧-->
+			<div class="wuhu-tab-content" style="float:left;">
+				<!--导航条-->
+				<div class="wuhu-tab-navWrap">
+					<div class="wuhu-tab-navBox">
+						<a href="javascript:void(0);" class="wuhu-tab-nav active">
+							近期发布标准
+						</a>
+						<a href="javascript:void(0);" class="wuhu-tab-nav">
+							即将实施标准
+						</a>
+						<a href="javascript:void(0);" class="wuhu-tab-nav">
+							即将作废标准
+						</a>
+					</div>
+				</div>
+				<!--内容列表区-->
+				<div class="wuhu-tab-conBox">
+					<div class="wuhu-tab-conList active">
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+					</div>
+					<div class="wuhu-tab-conList">
+						即将实施标准
+					</div>
+					<div class="wuhu-tab-conList">
+						即将作废标准
+					</div>
+				</div>
+				<!--更多-->
+				<a href="#" target="_blank" class="wuhu-common-more"></a>	
+			</div>
+			<!--右侧-->
+			<div class="wuhu-tab-content" style="float:right;">
+				<!--导航条-->
+				<div class="wuhu-tab-navWrap">
+					<div class="wuhu-tab-navBox">
+						<a href="javascript:void(0);" class="wuhu-tab-nav active">
+							标准公示
+						</a>
+						<a href="javascript:void(0);" class="wuhu-tab-nav">
+							标准公告
+						</a>
+						<a href="javascript:void(0);" class="wuhu-tab-nav">
+							WTO/TBT 贸易壁垒公告
+						</a>
+					</div>
+				</div>
+				<!--内容列表区-->
+				<div class="wuhu-tab-conBox">
+					<div class="wuhu-tab-conList active">
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第17号中国国家标准公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								关于发布“专利质量评价技术规范”等49项地方标准的公告
+							</a>
+						</div>
+						<div class="wuhu-tab-list">
+							<i class="wuhu-tab-listIcon"></i>
+							<a href="#" target="_blank" title="" class="wuhu-tab-listTxt"> 
+								2017年第5号(总第209号)中国行业标准备案公告
+							</a>
+						</div>
+					</div>
+					<div class="wuhu-tab-conList">
+						即将实施标准
+					</div>
+					<div class="wuhu-tab-conList">
+						即将作废标准
+					</div>
+				</div>
+				<!--更多-->
+				<a href="#" target="_blank" class="wuhu-common-more"></a>
+			</div>
+		</div>
+		<!--标准体系-->
+		<div class="wuhu-common-box bztx">
+			<div class="wuhu-common-title">
+				标准体系
+			</div>
+			<!--更多-->
+			<a href="#" target="_blank" class="wuhu-common-more"></a>
+			<!--内容区-->
+			<div class="wuhu-system-wrap">
+				<div class="wuhu-system-content">
+					<a href="#" target="_blank" class="wuhu-system-list">
+						<img src="Common/Images/blogPic1.jpg" class="wuhu-system-listImg"/>
+						<div class="wuhu-system-listMaster"></div>
+						<div class="wuhu-system-listTitle">
+							芜湖市水务行业标准体系
+						</div>
+					</a>
+					<a href="#" target="_blank" class="wuhu-system-list">
+						<img src="Common/Images/blogPic2.jpg" class="wuhu-system-listImg"/>
+						<div class="wuhu-system-listMaster"></div>
+						<div class="wuhu-system-listTitle">
+							芜湖市水务行业标准体系
+						</div>
+					</a>
+					<a href="#" target="_blank" class="wuhu-system-list">
+						<img src="Common/Images/blogPic3.jpg" class="wuhu-system-listImg"/>
+						<div class="wuhu-system-listMaster"></div>
+						<div class="wuhu-system-listTitle">
+							芜湖市水务行业标准体系
+						</div>
+					</a>
+					<a href="#" target="_blank" class="wuhu-system-list">
+						<img src="Common/Images/blogPic1.jpg" class="wuhu-system-listImg"/>
+						<div class="wuhu-system-listMaster"></div>
+						<div class="wuhu-system-listTitle">
+							芜湖市水务行业标准体系
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--标准图书-->
+		<div class="wuhu-common-box bzts">
+			<div class="wuhu-common-title">
+				标准图书
+			</div>
+			<!--更多-->
+			<a href="#" target="_blank" class="wuhu-common-more"></a>
+			<!--内容区-->
+			<div class="wuhu-bzts-wrap">
+				<div class="wuhu-bzts-content">
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="Common/Images/bookList.jpg" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="Common/Images/bookList.jpg" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+					<div class="wuhu-bzts-list">
+						<a href="#" target="_blank" class="wuhu-bzts-listFace">
+							<img src="Common/Images/bookList.jpg" class="wuhu-bzts-listImg"/>
+						</a>
+						<a href="#" target="_blank" class="wuhu-bzts-listTitle" title="计算机应用基础项目化教程(张庆丰 刘先花)">
+							计算机应用基础项目化教程(张庆丰 刘先花)
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--友情链接-->
+		<div class="wuhu-yqlj-container">
+			<div class="wuhu-yqlj-titleBox">
+				<div class="wuhu-yqlj-titleTxt">
+					友情链接
+				</div>
+				<a href="#" target="_blank" class="wuhu-yqlj-more">
+					更多 >
+				</a>
+			</div>
+			<div class="wuhu-yqlj-wrap">
+				<div class="wuhu-yqlj-content">
+					<a href="#" target="_blank" class="wuhu-yqlj-list">
+						<img src="Common/Images/logo1.png" class="wuhu-yqlj-listImg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-yqlj-list">
+						<img src="Common/Images/logo2.png" class="wuhu-yqlj-listImg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-yqlj-list">
+						<img src="Common/Images/logo3.png" class="wuhu-yqlj-listImg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-yqlj-list">
+						<img src="Common/Images/logo4.png" class="wuhu-yqlj-listImg" />
+					</a>
+					<a href="#" target="_blank" class="wuhu-yqlj-list">
+						<img src="Common/Images/logo1.png" class="wuhu-yqlj-listImg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<div class="wuhu-footer-container">
+				<div class="wuhu-footer-content">
+					<div class="wuhu-footer-listBox">
+						<a href="#" target="_blank" class="wuhu-footer-list">
+							联系我们
+						</a>
+						<a href="#" target="_blank" class="wuhu-footer-list">
+							版权声明
+						</a>
+						<a href="#" target="_blank" class="wuhu-footer-list">
+							使用帮助
+						</a>
+						<a href="#" target="_blank" class="wuhu-footer-list" style="border:0;">
+							技术支持
+						</a>
+					</div>
+					<div class="wuhu-footer-bottomBox">
+						<span class="wuhu-footer-bottomLeft">
+							版权所有：芜湖市标准化研究所
+						</span>
+						<span class="wuhu-footer-bottomRight">
+							备案号：皖ICP备 &nbsp;05005282号
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

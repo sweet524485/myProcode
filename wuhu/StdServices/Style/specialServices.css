@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+.topBg{background:url(../Images/topBg.gif) top right no-repeat; padding:0px 42px;}
+.inputBox input{color:#3a3a3a;}
+
+.w514{width:514px;}
+.w182{width:182px;}
+.w162{width:162px}
+.tableView{width:100%; table-layout:fixed; color:#3a3a3a; overflow:hidden; zoom:1;}
+.tableView th{padding:4px 0px; border-top:solid 1px #eff6fa; background-color:#add3e8; font-size:13px; line-height:1.5em; text-align:center; font-weight:bold;}
+.tableView td{padding:4px 0px; font-size:13px; line-height:1.5em; vertical-align:middle; text-align:center;}
+.tableView .evenTr{background-color:#edf6fc;}
+.tableView .oddTr{background-color:#fff;}
+
+.buyBox{height:27px; line-height:27px; padding-top:15px; overflow:hidden; zoom:1;}
+.buyBox span.red{font-size:14px; font-weight:bold; margin-left:320px;}
+.btnBigBuy{display:inline-block; height:27px; width:77px; background:url(../Images/pic_bigBuy.png) no-repeat; cursor:pointer;}
+
+.formHead{height:12px; line-height:12px; padding:20px 0px;}
+.formHead a{color:#00F; cursor:pointer; float:right;}
+.viewBox{width:100%; padding-bottom:12px; overflow:hidden; zoom:1;}
+.labelBox{width:100%; height:27px; background:url(../Images/label_Bg.png) repeat-x;}
+.labelDiv{min-width:14px; display:inline-block; width:auto; height:27px; line-height:27px; padding:0px 20px 0px 7px; background:url(../Images/labelText_Bg.png) repeat-x; border-right:solid 2px #fff; font-family:"微软雅黑"; font-size:14px; color:#1691d7; overflow:auto; zoom:1;}
+.inputDiv{margin-top:10px; overflow:hidden; padding-left:17px; zoom:1;}
+.inputRow{/*height:28px;*/ line-height:28px; width:auto; padding:5px 0px; font-size:14px; overflow:hidden; zoom:1;}
+.inputRow em{width:70px; text-align:right; display:inline-block; float:left;}
+.inputRow em{width:98px;}
+.inputRow span{width:143px; height:27px; line-height:27px; text-align:right; display:inline-block; float:left;}
+.inputBox input{color:#3a3a3a;}
+
+.serviceBox{padding:25px 0px 15px 0px; border-bottom:dashed 1px #dedede; overflow:hidden; zoom:1;}
+.noBorderB{border-bottom:none;}
+.serviceBox img{display:block; float:left; height:73px; width:88px; border:0px; margin-right:22px; overflow:hidden; zoom:1;}
+.serviceInfoBox{width:596px; float:right; overflow:hidden; zoom:1;}
+.serviceInfoBox h2{font-size:14px; height:1em; line-height:1em; margin-bottom:10px; color:#30afea;}
+.abstractBox, .detailedBox{width:100%; overflow:hidden; zoom:1;}
+.abstractBox p, .detailedBox p{font-size:14px; line-height:1.5em; overflow:hidden; text-indent:2em;}
+.detailedBox h4{font-size:14px; line-height:1.5em; font-weight:normal; overflow:hidden;}
+.zhanKai{display:inline-block; height:20px; vertical-align:-6px; width:49px; margin:0px; background:url(../Images/btn_zk.gif) 0px bottom no-repeat;}
+.shouQi{display:inline-block; height:20px; width:49px; margin:0px; background:url(../Images/btn_zk.gif) no-repeat;}
+
+.dataTab{width:100%; border-collapse:collapse; border:none; table-layout:fixed; margin-top:1px; overflow:visible;}
+.dataTab tr th{font-weight:normal; text-align:center; height:30px; background-color:#add3e8; cursor:default; vertical-align:middle;
+ border:solid 1px #dedede; border-top:solid 1px #eff6fa; font-weight:bold;}
+.dataTab tr td{font-weight:normal; text-align:center; line-height:20px; vertical-align:top; overflow:visible; cursor:default;
+ border:solid 1px #dedede;}
+.dataTab tr th:first-child{border-left:solid 1px #dedede;}
+.dataTab tr th:last-child{border-right:solid 1px #dedede;}
+.dataTab td p{margin:0px 0.5em; text-align:left;}
+.dataTab td p a{text-decoration:underline; color:#00F; cursor:pointer;}
+.dataTab td a:hover{color:#B70000;}
+.dataTab td span{text-align:left; float:right; margin-right:22px; *margin-right:11px;}
+.btn6{display:inline-block; height:16px; margin-top:4px; width:14px; background:url(../Images/pic_del.png) no-repeat; cursor:pointer;}
+
+.btnArea{height:32px; padding:12px 0px; text-align:center; overflow:hidden; zoom:1;}
+.btnBg{display:inline-block; height:32px; line-height:32px; font-size:16px; width:114px; background:url(../Images/pic_btnBg.png) no-repeat; text-align:center;}
+.mr_10{margin-right:10px;}
+.ml_10{margin-left:10px;}
+
+.radioBox{display:inline-block; float:left; height:28px; line-height:28px; overflow:hidden; zoom:1;}
+.myradio{display:inline-block; float:left; height:28px; line-height:28px; cursor:pointer; padding-right:40px; text-indent:28px;}
+.myradio.sel{background:url(../Images/pic_radio.png) 0px 4px no-repeat;}
+.myradio.unsel{background:url(../Images/pic_unradio.png) 0px 4px no-repeat;}
+
+.h28Btn{display:inline-block; margin:1px 0px; height:24px; line-height:24px; border:solid 1px #ccc; color:#656565; cursor:pointer; font-size:14px; padding:0px 0.75em; border-radius:3px; background:#fcfcfc;
+ background: linear-gradient(to bottom, #fff 0%,#eee 100%);
+ background: -ms-linear-gradient(top, #fff 0%,#eee 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eee',GradientType=0 );}

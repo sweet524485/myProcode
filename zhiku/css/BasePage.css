@@ -1,0 +1,256 @@
+﻿.zj-right-bottomBox {
+    width: 100%;
+    height: 22px;
+}
+.pageBox
+{
+    float:right; 
+    height:22px;   
+}
+.pageNum
+{
+    float:left;
+    height:22px;
+    color:#515151;
+    font-size:15px;
+    line-height:22px;
+    margin-right:14px;    
+}
+.pagination
+{
+    float:left;    
+}
+.goBox
+{
+    float:left;
+}
+.goNum
+{
+    width: 34px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #6F9CD5;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin-right: 8px;
+    float: left;
+}
+.pageGo
+{
+    width: 46px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: url(../Images/Journal/fl-go.png) no-repeat;
+    float: left;  
+    cursor: pointer;
+    margin-right: 15px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:    #bfc0c0;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color:    #bfc0c0;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:    #bfc0c0;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:    #bfc0c0;
+}
+
+.detail-button
+{
+    background:url(Images/collect-button.png) no-repeat;
+    width:103px;
+    height:52px;
+    border:0;
+    margin-left:18px;
+    color:#fff;
+    font-size:18px;
+}
+.detail-button:hover
+{
+    background:url(Images/collect-buttonhover.png) no-repeat;
+}
+input.detail-button-down
+{
+    background:url(Images/collect-buttonvisited.png) no-repeat;
+}
+.btVisted
+{
+    background:url(Images/collect-buttonvisited.png) no-repeat;
+}
+.paginationleft
+{
+    float:left;
+    display:inline;
+    line-height:31px;
+    margin-left:10px;
+}
+.pagination
+{
+    text-align:center;
+    line-height:27px;
+}
+.pager-list
+{
+    float:right;
+    display:inline;
+}
+.pagination .pager-list-number
+{
+    display: block;
+    float: left;
+    padding-left:8px;
+    padding-right:8px;
+    height:20px;
+    line-height: 20px;
+    color:#505050;
+    font-size: 12px;
+    border:1px solid #6F9CD5;
+    margin-right: 8px;
+}
+.pagination .current
+{
+    display: block;
+    float: left;
+    padding-left:8px;
+    padding-right:8px;
+    height:20px;
+    line-height: 20px;
+    color:#fff;
+    font-size: 12px;
+    border:1px solid #6F9CD5;
+    background: #8BB6ED;
+    margin-right: 8px;
+    font-weight: 700;
+}
+.pagination .pager-list .page-list-numberbig
+{
+    padding:0 8px;
+}
+.pagination .pager-list .page-list-numberlong
+{
+    padding:0 6px;
+}
+.pagination .pager-list .page-list-numberbest
+{
+    padding:0 4px;
+}
+.pagination span
+{
+    height:31px;
+    float:left;
+    display:inline;
+}
+.pagination .firstpage
+{
+    width: 47px;
+    height: 20px;
+    border:1px solid #6A97D2;
+    float: left;
+    display: block;
+    text-align: center;
+    color:#505050;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.pagination .prevpage
+{
+    width: 52px;
+    height: 20px;
+    border:1px solid #6A97D2;
+    float: left;
+    display: block;
+    text-align: center;
+    color:#505050;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.pagination .nextpage
+{
+    width: 52px;
+    height: 20px;
+    border:1px solid #6A97D2;
+    float: left;
+    display: block;
+    text-align: center;
+    color:#505050;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.pagination .lastpage
+{
+    width: 47px;
+    height: 20px;
+    border:1px solid #6A97D2;
+    float: left;
+    display: block;
+    text-align: center;
+    color:#505050;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.pagination .pager-list-input
+{
+    float:left;
+    display:inline;
+    margin:4px 5px;
+    padding:0 2px;
+    height:22px;
+    line-height:22px;
+    border:solid 1px #EDEDED;
+    text-decoration:none;
+    color:#646464;
+    background:#fff;
+}
+.pagination .pager-list-button
+{
+     float:left;
+    display:inline;
+    margin:3px 5px;
+    height:24px;
+    width:46px;
+    line-height:24px;
+    text-decoration:none;
+    cursor:pointer;
+    color:#646464;
+    background:url(Images/tz.png) no-repeat;
+}
+ .q-orgManage-on_off-box span.pay_list_c1 {
+    width: 24px;
+    height: 18px;
+    float: left;
+    padding-top: 3px;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(images/collect-wselect.png);
+    background-repeat: no-repeat;
+    margin-top:10px;
+}
+ .q-orgManage-on_off-box span.pay_list_txt
+{
+    float: left;
+    height:20px;
+    line-height:20px;
+    margin-right:5px;
+    margin-left:0;
+    cursor:pointer;
+}
+ .q-orgManage-on_off-box span.pay_list_txt label
+ {
+    cursor:pointer;
+ }
+.radioclass {
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+ .q-orgManage-on_off-box span.on {
+    background-image: url(images/collect-xselect.png);
+    background-repeat: no-repeat;
+}

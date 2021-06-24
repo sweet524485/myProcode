@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>智库-新闻检索页</title>
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/BasePage.css" />
+		<link rel="stylesheet" href="./css/zhiku_header.css" />
+		<link rel="stylesheet" href="./css/zhiku_footer.css" />
+		<link rel="stylesheet" href="./css/zhiku_newsSearch.css" />
+		<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="./js/default.js"></script>
+		<script type="text/javascript" src="./js/zhiku_newsSearch.js"></script>
+		<script type="text/javascript" src="./js/zhiku_siteMaster.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--最顶部-->
+			<div class="fl-top-container">
+				<div class="fl-top-content">
+					<div class="fl-top-right">
+						<div class="fl-top-srBox">
+							<a href="javascript:void(0);" class="fl-top-tag">
+								Sign In
+							</a>
+							<a href="javascript:void(0);" class="fl-top-tag fl-top-delBorder">
+								Register
+							</a>
+						</div>
+						<div class="fl-top-help">
+							<i class="fl-top-helpIcon"></i>
+							<div class="fl-top-helpTxt">
+								Help
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--logo、搜索框、导航条-->
+			<div class="fl-lsn-container">
+				<div class="fl-lsn-content">
+					<div class="fl-lsn-logoBox">
+						<img src="./Images/fl-logo.png" />
+					</div>
+					<div class="fl-lsn-right">
+						<div class="fl-lsn-searchBox">
+							<input type="text" class="fl-lsn-searchInput" id="keyText" value="Enter Chinese , I can also identify ..."/>  
+							<input type="button" value="Find" class="fl-lsn-searchBtn"/>
+						</div>
+						<div class="fl-lsn-navBox">
+							<a href="#" target="_blank" class="fl-lsn-navList">
+								<span class="fl-lsn-nav">
+									Home
+								</span>
+								<i class="fl-lsn-navIcon"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Press
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Publications
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Research
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList secondNav">
+								<span class="fl-lsn-nav">
+									Resources
+								</span>
+								<i class="fl-lsn-navIcon active"></i>
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-navList">
+								<span class="fl-lsn-nav">
+									About
+								</span>
+								<i class="fl-lsn-navIcon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--二级导航背景-->
+			<div class="fl-lsn-navBg">
+				<div class="fl-lsn-navWrap">
+					<div class="fl-lsn-navCon">
+						<div class="fl-lsn-secondNavBox">
+							
+						</div>
+						<div class="fl-lsn-secondNavBox active">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Books
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Standards
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav" style="border:0;">
+								Thesis
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Books
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+						</div>
+						<div class="fl-lsn-secondNavBox">
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Journals
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Magazines
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Reports
+							</a>
+							<a href="#" target="_blank" class="fl-lsn-secondNav">
+								Conference
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="fl-journalList-wrap">
+			<div class="fl-journalList-container">
+				<!-- 当前位置 -->
+				<div class="fl-journalList-websideBox">
+					<div class="fl-journalList-websideWrap">
+						<i class="fl-journalList-websideIcon"></i>
+						<a href="#" class="fl-journalList-websideHome">
+							Home
+						</a>
+						<i class="fl-journalList-websideSanIcon"></i>
+						<span class="fl-journalList-websidePosition">
+							News
+						</span>
+					</div>
+				</div>
+				<!--内容区-->
+				<div class="fl-newsSearch-container">
+					<!--检索区域-->
+					<div class="fl-newsSearch-searchBox">
+						<input type="text" value="Keyword" class="fl-newsSearch-searchInput"/>
+						<input type="text" value="Author" class="fl-newsSearch-searchInput" style="margin-left: -1px;"/>
+						<div class="select-container selectBigStyle">
+                            <div class="select-content">
+                                <span class="select-name autoWidth" val="">Year</span>
+                                <i class="select-icon"></i>
+                            </div>
+                            <div class="select-hideBox autoHight"> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="">
+                            		---
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2017">
+                            		2017
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2016">
+                            		2016
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2015">
+                            		2015
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2014">
+                            		2014
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2013">
+                            		2013
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2012">
+                            		2012
+                            	</a>
+                            	<a href="javascript:void(0);" class="select-hideList" val="2011">
+                            		2011
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2010">
+                            		2010
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2009">
+                            		2009
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2018">
+                            		2008
+                            	</a>
+                            	<a href="javascript:void(0);" class="select-hideList" val="2017">
+                            		2007
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2006">
+                            		2006
+                            	</a> 
+                            	<a href="javascript:void(0);" class="select-hideList" val="2005">
+                            		2005
+                            	</a> 
+                            </div>
+                        </div>
+                        <div class="fl-newsSearch-searchBtnBox">
+                        	<div class="fl-newsSearch-searchBtnWrap">
+                        		<input type="button" value="Filter" class="fl-newsSearch-searchBtn"/>
+                        		<input type="button" value="Clear" class="fl-newsSearch-searchBtn"/>
+                        	</div>
+                        </div>
+					</div>
+					<div class="fl-newsList-wrap">
+						<!--列表区域-->
+						<div class="fl-newsList-left">
+							<div class="fl-newsList-content">
+								<div class="fl-newsList-list">
+									<!--时间ui-->
+									<div class="fl-newsList-time">
+										<div class="fl-newsList-timeTop">
+											<div class="fl-newsList-timeMounth">
+												May
+											</div>
+											<div class="fl-newsList-timeDay">
+												30
+											</div>
+										</div>
+										<div class="fl-newsList-timeYear">
+											2017
+										</div>
+									</div>
+									<!--详细-->
+									<div class="fl-newsList-listRight">
+										<a href="#" target="_blank" class="fl-newsList-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-newsList-listAuthor">
+											Lawrence Livermore National Lab.
+										</div>
+										<div class="fl-newsList-listContent">
+											Three codes were tested at LLNL as part of a Tri-Lab effort to make detailed assessments of several proxy applications on various advanced architectures, with the eventual goal of extending these assessments to codes of programmatic interest running more realistic simulations. Teams from Sandia and Los Alamos tested proxy apps of their own.
+										</div>
+									</div>
+								</div>
+								<div class="fl-newsList-list">
+									<!--时间ui-->
+									<div class="fl-newsList-time">
+										<div class="fl-newsList-timeTop">
+											<div class="fl-newsList-timeMounth">
+												May
+											</div>
+											<div class="fl-newsList-timeDay">
+												30
+											</div>
+										</div>
+										<div class="fl-newsList-timeYear">
+											2017
+										</div>
+									</div>
+									<!--详细-->
+									<div class="fl-newsList-listRight">
+										<a href="#" target="_blank" class="fl-newsList-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-newsList-listAuthor">
+											Lawrence Livermore National Lab.
+										</div>
+										<div class="fl-newsList-listContent">
+											Three codes were tested at LLNL as part of a Tri-Lab effort to make detailed assessments of several proxy applications on various advanced architectures, with the eventual goal of extending these assessments to codes of programmatic interest running more realistic simulations. Teams from Sandia and Los Alamos tested proxy apps of their own.
+										</div>
+									</div>
+								</div>
+								<div class="fl-newsList-list">
+									<!--时间ui-->
+									<div class="fl-newsList-time">
+										<div class="fl-newsList-timeTop">
+											<div class="fl-newsList-timeMounth">
+												May
+											</div>
+											<div class="fl-newsList-timeDay">
+												30
+											</div>
+										</div>
+										<div class="fl-newsList-timeYear">
+											2017
+										</div>
+									</div>
+									<!--详细-->
+									<div class="fl-newsList-listRight">
+										<a href="#" target="_blank" class="fl-newsList-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-newsList-listAuthor">
+											Lawrence Livermore National Lab.
+										</div>
+										<div class="fl-newsList-listContent">
+											Three codes were tested at LLNL as part of a Tri-Lab effort to make detailed assessments of several proxy applications on various advanced architectures, with the eventual goal of extending these assessments to codes of programmatic interest running more realistic simulations. Teams from Sandia and Los Alamos tested proxy apps of their own.
+										</div>
+									</div>
+								</div>
+								<div class="fl-newsList-list">
+									<!--时间ui-->
+									<div class="fl-newsList-time">
+										<div class="fl-newsList-timeTop">
+											<div class="fl-newsList-timeMounth">
+												May
+											</div>
+											<div class="fl-newsList-timeDay">
+												30
+											</div>
+										</div>
+										<div class="fl-newsList-timeYear">
+											2017
+										</div>
+									</div>
+									<!--详细-->
+									<div class="fl-newsList-listRight">
+										<a href="#" target="_blank" class="fl-newsList-listTitle">
+											Falling Particles: Concept Definition and Capital Cost Estimate
+										</a>
+										<div class="fl-newsList-listAuthor">
+											Lawrence Livermore National Lab.
+										</div>
+										<div class="fl-newsList-listContent">
+											Three codes were tested at LLNL as part of a Tri-Lab effort to make detailed assessments of several proxy applications on various advanced architectures, with the eventual goal of extending these assessments to codes of programmatic interest running more realistic simulations. Teams from Sandia and Los Alamos tested proxy apps of their own.
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+						<!--日历-->
+						<div class="fl-newsList-right">
+							<div id="dateHtml">
+							<div class="fl-newsList-DateList active" style="height:auto;">
+								<div class="fl-newsList-DateYear">
+									2017
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2016
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2015
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2014
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2013
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2012
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2011
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							<div class="fl-newsList-DateList">
+								<div class="fl-newsList-DateYear">
+									2010
+								</div>
+								<div class="fl-newsList-DateHide">
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										December
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										November 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										October 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										September 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										August
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										July 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										June 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										May 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										April
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										March 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										February 
+									</a>
+									<a href="javascript:void(0);" class="fl-newsList-DateLi">
+										January
+									</a>
+								</div>
+							</div>
+							
+							</div>
+							<div id="dateMoreHtml">
+								<div class="fl-newsList-moreList">
+									<div class="fl-newsList-moreYear" id="dateMore">
+										more
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--分页放置处-->
+					<div class="fl-page-box">
+						 <div class="pageBox">
+	                         <div class="pageNum">
+	                            	当前是第<span id="Page">0</span>页，共有<span id="Count">0</span>页
+	                         </div>
+	                         <div class="pagination">
+	                            <!-- 分页放置 -->
+	                         </div>
+	                         <div class="goBox">
+	                           	<input type="text" value="1" name="page" class="goNum" onkeydown="pageLoadData()" id="pageNum"/>
+	                            <input type="button" value="" name="go" class="pageGo"/>
+	                         </div>
+	                    </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			<div class="fl-copyright-container">
+				<div class="fl-copyright-content">
+					<div class="fl-copyright-logoBox">
+						<img src="Images/fl-copyright-logo.png"/>
+					</div>
+					<div class="fl-copyright-middleBox">
+						<div class="fl-copyright-title">
+							CONTACT US
+						</div>
+						<div class="fl-copyright-box">
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon1"></i>
+								<span class="fl-copyright-listTxt">
+									地址：北京市海淀区阜成路8号院38号楼5单元402房
+								</span>
+							</div>
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon2"></i>
+								<span class="fl-copyright-listTxt">
+									电话：010-69674007
+								</span>
+							</div>
+							<div class="fl-copyright-list">
+								<i class="fl-copyright-listIcon3"></i>
+								<span class="fl-copyright-listTxt">
+									邮箱：postmater@dfhsbj.net
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="fl-copyright-right">
+						<div class="fl-copyright-title">
+							Copyright information
+						</div>
+						<div class="fl-copyright-box">
+							<div class="fl-copyright-text">
+								京ICP备15018290号 <br/>
+								Copyright ©2016  <br/>
+								北京东方华数信息技术有限公司版权所有
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

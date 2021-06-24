@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>知兮外文-列表页</title>
+	<link rel="stylesheet" type="text/css" href="css/SetBase.css">
+	<link rel="stylesheet" type="text/css" href="css/zhixiDefault.css">
+	<link rel="stylesheet" type="text/css" href="css/zhixiList.css">
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/zhixiDefault.js"></script>
+	<script type="text/javascript" src="js/zhixiList.js"></script>
+	<script type="text/javascript" src="js/select.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.divselect("#divselect1");
+			$.divselect("#divselect2");
+			$.divselect("#divselect3");
+			$.divselect("#divselect4");
+			$.divselect("#divselect5");
+			$.divselect("#divselect6");
+			$.divselect("#divselect7");
+			$.divselect("#divselect8");
+		})
+	</script>
+</head>
+<body>
+	<!-- 一楼顶部区域 -->
+	<div class="zhixi-top-container">
+		<!-- 左侧登录 注册-->
+		<div class="zhixi-top-left">
+			<div class="zhixi-top-logined_content">
+				<div class="zhixi-top-login-status">
+					<!-- 登录后效果 -->
+					<div class="zhixi-top-login-status1">
+						<span class="zhixi-top-txt">欢迎</span>
+						<a href="#" class="zhixi-top-admin">装备学院</a>
+						<span class="zhixi-top-txt">，</span>
+					</div>
+					<!-- 登录前效果 -->
+					<div class="zhixi-top-login-status2" style="display:none;">
+						<a href="#" class="zhixi-top-login">登录</a>
+						<div class="zhixi-top-txt zhixi-top-color">|</div>
+						<a href="#" class="zhixi-top-register">注册</a>
+					</div>
+				</div>
+				<span class="zhixi-top-txt">今天是&nbsp;2016年2月26日&nbsp;&nbsp;15:25</span>
+			</div>
+		</div>
+		<!-- 右侧意见反馈以进入词条 -->
+		<div class="zhixi-top-right">
+			<a href="#" class="zhixi-top-list zhixi-top-list1">进入词条</a>
+			<div class="zhixi-top-txt zhixi-top-pcolor">|</div>
+			<a href="#" class="zhixi-top-list zhixi-top-list2">意见反馈</a>
+		</div>
+	</div>
+	<!-- 二楼搜索区域 -->
+	<div class="zhixi-top-header">
+		<!-- 左侧LOGO区域 -->
+		<a href="#" class="zhixi-top-logo">
+			<img src="./images/zhixi/zhixi-logo.png" alt="logo" />
+		</a>
+		<!-- 右侧搜索和导航条区域 -->
+		<div class="zhixi-top-searchRight">
+			<div class="zhixi-top-searchContainer">
+				<input type="text" value="输入关键词" class="zhixi-top-searchText" />
+				<input type="button" class="zhixi-top-searchBtn" value="" />
+				<a href="#" class="zhixi-top-searchHelp">
+					搜索帮助
+				</a>
+			</div>
+			<div class="zhixi-top-navContainer">
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav6" target="_blank">
+					学位论文
+				</a>
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav5" target="_blank">
+					事实数据库
+				</a>
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav4" target="_blank">
+					文摘数据库
+				</a>
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav3" target="_blank">
+					会议文献
+				</a>
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav2" target="_blank">
+					科技报告
+				</a>
+				<a href="index.html" class="zhixi-top-nav zhixi-top-nav_cur zhixi-top-nav1" target="_blank">
+					电子期刊
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 二楼隐藏导航条 -->
+	<div class="zhixi-second-navContainer">
+		<div class="zhixi-second-navContent">
+			<a href="#" class="zhixi-second-logo">
+				<img src="./images/zhixi/zxxf.png" alt="logo" />
+			</a>
+			<div class="zhixi-second-navBox">
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav1 zhixi-second-nav_cur" target="_blank">
+					电子期刊
+				</a>
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav2" target="_blank">
+					科技报告
+				</a>
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav3" target="_blank">
+					会议文献
+				</a>
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav4" target="_blank">
+					文献数据库
+				</a>
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav5" target="_blank">
+					事实数据库
+				</a>
+				<a href="index.html" class="zhixi-second-nav zhixi-second-nav6" target="_blank">
+					学位论文
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 列表三楼 内容简介 -->
+	<div class="zhixi-list-Container">
+		<div class="zhixi-list-titleContent">
+			<i class="zhixi-list-titleIcon"></i>
+			<div class="zhixi-list-titleTxt">
+				ACM
+			</div>
+		</div>
+		<div class="zhixi-list-content">
+			ACM（Association for Computing Machinery，美国计算机学会）是世界上最早和最大的计算机教育和科研协会。它创立于1947年，目前提供的服务遍及100余个国家，会员人数达8万多人。它致力于发展信息技术教育、科研和应用，并于1999年起开始提供电子数据库服务－ACM Digital Library全文数据库。该数据库收录计算机科学技术及其相关学科的文献数据。每篇文献著录的内容包括：书目信息（包括题名、作者、出版者、卷、期、页码）、索引（以文章关键词和ACM 计算机分类系统编排）、文摘、评论和全文。绝大多数文章的全文采用PDF格式保存，本数据库收录了ACM全部的29种专业期刊和会刊。
+		</div>
+	</div>
+	<!-- 列表四楼 检索部分 -->
+	<div class="zhixi-select-Container">
+		<div class="zhixi-select-left">
+			<!-- 检索 container -->
+			<div class="zhixi-select-content">
+				<div class="zhixi-select-list">
+					<input type="text" value="篇名：" class="zhixi-select-listInput zhixi-select-listInput1" />
+					<div class="drop">
+	                    <div class="divselect" id="divselect1" style="z-index:200;">
+	                        <cite class="divcite">
+	                         	或
+	                        </cite>
+	                        <ul class="divcite_ul1">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="或">
+	                              		或
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="与">
+	                              		与
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="drop">
+	                    <div class="divselect" id="divselect2" style="z-index:200;">
+	                        <cite class="divcite">
+	                         	模糊
+	                        </cite>
+	                        <ul class="divcite_ul2">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="模糊">
+	                              		模糊
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="精确">
+	                              		精确
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+	                <input type="text" value="作者：" class="zhixi-select-listInput zhixi-select-listInput2" />
+	                <div class="drop">
+	                    <div class="divselect" id="divselect3">
+	                        <cite class="divcite">
+	                         	或
+	                        </cite>
+	                        <ul class="divcite_ul1">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="或">
+	                              		或
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="与">
+	                              		与
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="drop">
+	                    <div class="divselect" id="divselect4">
+	                        <cite class="divcite">
+	                         	模糊
+	                        </cite>
+	                        <ul class="divcite_ul2">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="模糊">
+	                              		模糊
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="精确">
+	                              		精确
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+				</div>
+				<div class="zhixi-select-list">
+					<input type="text" value="关键词：" class="zhixi-select-listInput zhixi-select-listInput3" />
+					<div class="drop">
+	                    <div class="divselect" id="divselect5">
+	                        <cite class="divcite">
+	                         	或
+	                        </cite>
+	                        <ul class="divcite_ul1">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="或">
+	                              		或
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="与">
+	                              		与
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="drop">
+	                    <div class="divselect" id="divselect6">
+	                        <cite class="divcite">
+	                         	模糊
+	                        </cite>
+	                        <ul class="divcite_ul2">
+	                          	<li>
+	                              	<a href="javascript:;" selectid="模糊">
+	                              		模糊
+	                              	</a>
+	                            </li>
+	                            <li>
+	                              	<a href="javascript:;" selectid="精确">
+	                              		精确
+	                              	</a>
+	                            </li>	
+	                        </ul>
+	                    </div>
+	                </div>
+	                <input type="text" value="文摘：" class="zhixi-select-listInput zhixi-select-listInput4" />  
+				</div>
+				<!-- 搜索 container -->
+				<div class="zhixi-select-searchBox">
+					<input type="button" class="zhixi-select-searchBtn btn" value="开始搜索" />
+				</div>
+			</div>
+			<div class="zhixi-select-ifContainer">
+				<div class="zhixi-select-ifContent">
+					<div class="zhixi-select-ifLeft">
+						全部（<span>共365，234篇</span>）
+					</div>
+					<div class="zhixi-select-ifRight">
+						<div class="zhixi-select-ifSort">
+							<div class="zhixi-select-ifTxt">
+								排序：
+							</div>
+							<label for="time" class="zhixi-select-ifList">
+								<span class="zhixi-select-ifListTxt">
+									时间
+								</span>
+							</label>
+							<label for="time" class="zhixi-select-ifList">
+								<span class="zhixi-select-ifListTxt">
+									相关度
+								</span>
+							</label>
+						</div>
+						<!-- 年代筛选 -->
+						<div class="zhixi-select-ifSort" style="margin-left:15px;">
+							<div class="zhixi-select-ifTxt">
+								年代筛选：
+							</div>
+							<div class="drop" style="margin-left:2px;margin-top:4px;">
+			                    <div class="divselect" id="divselect7">
+			                        <cite class="divcite" style="height:20px;line-height:20px;padding-left:7px;padding-right:20px;">
+			                         	1980
+			                        </cite>
+			                        <ul class="divcite_ul7">
+			                          	<li>
+			                              	<a href="javascript:;" selectid="1981">
+			                              		1981
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1982">
+			                              		1982
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1983">
+			                              		1983
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1984">
+			                              		1984
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="1985">
+			                              		1985
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1986">
+			                              		1986
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="1987">
+			                              		1987
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1988">
+			                              		1988
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="1989">
+			                              		1989
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1900">
+			                              		1900
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="1991">
+			                              		1991
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1992">
+			                              		1992
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="1993">
+			                              		1993
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1994">
+			                              		1994
+			                              	</a>
+			                            </li>		
+			                        </ul>
+			                    </div>
+			                </div>
+			                <div class="zhixi-select-ifLine"></div>
+							<div class="drop" style="margin-left:2px;margin-top:4px;">
+			                    <div class="divselect" id="divselect8">
+			                        <cite class="divcite" style="height:20px;line-height:20px;padding-left:7px;padding-right:20px;">
+			                         	1995
+			                        </cite>
+			                        <ul class="divcite_ul7">
+			                          	<li>
+			                              	<a href="javascript:;" selectid="1995">
+			                              		1995
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1996">
+			                              		1996
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1997">
+			                              		1997
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1998">
+			                              		1998
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="1999">
+			                              		1999
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2000">
+			                              		2000
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2001">
+			                              		2001
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2002">
+			                              		2002
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2001">
+			                              		2001
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2002">
+			                              		2002
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2003">
+			                              		2003
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2004">
+			                              		2004
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2005">
+			                              		2005
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2006">
+			                              		2006
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2007">
+			                              		2007
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2008">
+			                              		2008
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2009">
+			                              		2009
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2010">
+			                              		2010
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2011">
+			                              		2011
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2012">
+			                              		2012
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2013">
+			                              		2013
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="2014">
+			                              		2014
+			                              	</a>
+			                            </li>	
+			                            <li>
+			                              	<a href="javascript:;" selectid="2015">
+			                              		2015
+			                              	</a>
+			                            </li>
+			                            <li>
+			                              	<a href="javascript:;" selectid="2016">
+			                              		2016
+			                              	</a>
+			                            </li>		
+			                        </ul>
+			                    </div>
+			                </div>
+						</div>
+					</div>
+				</div>
+				<div class="zhixi-select-box">
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							2.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Animal Manure Separation Technologies Diminish the Environmental">
+							Animal Manure Separation Technologies Diminish the Environmental
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							3.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Graphene Biotransistor Interfaced with a Nitrifying Biofilm">
+							Graphene Biotransistor Interfaced with a Nitrifying Biofilm
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>	
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							4.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Total Concentrations of Virus and Bacteria in Indoor and Outdoor Air">
+							Total Concentrations of Virus and Bacteria in Indoor and Outdoor Air
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>	
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							5.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="An Optically Controlled Microscale Elevator Using Plasmonic Janus Particles">
+							An Optically Controlled Microscale Elevator Using Plasmonic Janus Particles
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							6.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Pretreatment of Macadamia Nut Shells with Ionic Liquids Facilitates Both Mis">
+							Pretreatment of Macadamia Nut Shells with Ionic Liquids Facilitates Both Mis
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							7.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Electrochemical Tuning of the Dielectric Function of Au Nanoparticles">
+							Electrochemical Tuning of the Dielectric Function of Au Nanoparticles
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							8.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Soybean Lecithin as a Dispersant for Crude Oil Spills">
+							Soybean Lecithin as a Dispersant for Crude Oil Spills
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							9.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Codon Compression Algorithms for Saturation Mutagenesis">
+							Codon Compression Algorithms for Saturation Mutagenesis
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							10.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Biochemistry-Enabled 3D Foams for Ultrafast Battery Cathodes">
+							Biochemistry-Enabled 3D Foams for Ultrafast Battery Cathodes
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>	
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							11.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Surface Control of Epitaxial Manganite Films via Oxygen Pressurrpprte">
+							Surface Control of Epitaxial Manganite Films via Oxygen Pressurrpprte
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>	
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							12.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="On-Demand Delivery of Single DNA Molecules Using Nanopipets">
+							On一Demand Delivery of Single DNA Molecules Using Nanopipets
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							13.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Polymer Distributed Bragg Reflectors for Vapor Sensing">
+							Polymer Distributed Bragg Reflectors for Vapor Sensing
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							14.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="Animal Manure Separation Technologies Diminish the Environmental">
+							Animal Manure Separation Technologies Diminish the Environmental
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>	
+					<div class="zhixi-select-boxList">
+						<div class="zhixi-select-boxNum">
+							15.
+						</div>
+						<a href="#" class="zhixi-select-boxCon" title="An Optically Controlled Microscale Elevator Using Plasmonic Janus Particles">
+							An Optically Controlled Microscale Elevator Using Plasmonic Janus Particles
+						</a>
+						<a href="#" class="zhixi-select-boxLoad" title="下载"></a>
+					</div>		
+				</div>
+				<!-- 分页 container -->
+				<div class="zhixi-select-pageContainer">
+					<img src="./images/zhixi/zhixi-select-page.png" class="zhixi-select-page" />
+				</div>
+			</div>
+		</div>
+		<div class="zhixi-select-right">
+			<!-- 右上侧  -->
+			<div class="zhixi-select-Rtop">
+				<div class="zhixi-select-rightInnerBox">
+					<div class="zhixi-select-rightTopBox">
+						<i class="zhixi-select-rightTopIcon"></i>
+						<span class="zhixi-select-rightTopTxt">检索点</span>
+					</div>
+					<div class="zhixi-select-rightListBox">
+						<div class="zhixi-select-rightList">
+							<i class="zhixi-select-rightListIcon"></i>
+							<div class="zhixi-select-rightListCon">
+								标题（<span>5623</span>）
+							</div>
+						</div>
+						<div class="zhixi-select-rightList">
+							<i class="zhixi-select-rightListIcon"></i>
+							<div class="zhixi-select-rightListCon">
+								作者（<span>5623</span>）
+							</div>
+						</div>
+						<div class="zhixi-select-rightList">
+							<i class="zhixi-select-rightListIcon"></i>
+							<div class="zhixi-select-rightListCon">
+								关键词（<span>5623</span>）
+							</div>
+						</div>
+						<div class="zhixi-select-rightList">
+							<i class="zhixi-select-rightListIcon"></i>
+							<div class="zhixi-select-rightListCon">
+								摘要（<span>5623</span>）
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 右下侧 -->
+			<div class="zhixi-select-Rtop" style="margin-top:20px;">
+				<div class="zhixi-select-rightInnerBox" style="padding-bottom:20px;">
+					<div class="zhixi-select-rightTopBox">
+						<i class="zhixi-select-RbootIcon"></i>
+						<span class="zhixi-select-rightTopTxt">相关词</span>
+					</div>
+					<div class="zhixi-select-RbootCon">
+						<div class="zhixi-select-RbootBox">
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								付晓龙
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								付晓龙
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								付晓龙
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								付晓龙
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList zhixi-select-RbootList_cur">
+								郯郯
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								东东
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								袁方
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								张泽平
+							</a>
+							<a href="javascript:void(0);" class="zhixi-select-RbootList">
+								南迪
+							</a>
+							<br style="clear:both;" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br style="clear:both;" />
+	</div>
+	<!-- 底部 -->
+	<div class="zhixi-degree-footContainer">
+		<div class="zhixi-degree-footTxt">
+			Copyright ©2015&nbsp;&nbsp;版权所有 
+		</div>
+	</div>
+</body>
+</html>
